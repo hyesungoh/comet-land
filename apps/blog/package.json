@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "^8.11.0"
+    "eslint": "^8.11.0",
+    "gray-matter": "^4.0.3",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1"
   },
   "devDependencies": {
     "config": "*",
