@@ -1,3 +1,1 @@
-module.exports = {
-  ...require('config/eslint-nextjs.js'),
-};
+module.exports = require('config/eslint-nextjs');

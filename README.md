@@ -2,7 +2,7 @@
 
 Monorepo for blog and resume
 
-한국 문서는 [다음 링크](https://github.com/hyesungoh/hyesungoh-land/tree/main/docs/korean.md)에서 확인하실 수 있습니다.
+한국 문서는 [다음 링크](https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/korean.md)에서 확인하실 수 있습니다.
 
 ## How to start
 
