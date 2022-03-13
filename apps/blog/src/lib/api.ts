@@ -13,7 +13,7 @@ export function getPostsByCategory(category: string) {
 }
 
 type Items = {
-  [key: string]: string | number;
+  [key: string]: string;
 };
 
 export function getPostBySlugAndCategory(slug: string, category: string, fields: string[] = []) {
