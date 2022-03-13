@@ -8,9 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "dependencies": {
-    "eslint": "^8.11.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "config": "*",
     "tsconfig": "*"
