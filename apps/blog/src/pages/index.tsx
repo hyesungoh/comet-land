@@ -10,8 +10,8 @@ function Blog({ allPosts }: Props) {
   return (
     <div>
       <h1>blog</h1>
-      {allPosts.map(post => (
-        <div key={post.title}>
+      {allPosts.map((post, index) => (
+        <div key={index}>
           <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
 
           <hr />
