@@ -131,7 +131,7 @@ export const codeHighlight = css`
     display: block;
     padding-left: 16px;
     padding-right: 16px;
-    margin-left: -16px;
+    margin-left: -18px;
     margin-right: -16px;
     border-left-style: solid;
     border-left-width: 4px;
@@ -147,10 +147,9 @@ export const codeHighlight = css`
   }
 
   .highlight-line {
-    margin-left: -16px;
+    margin-left: -18px;
     margin-right: -16px;
     background-color: rgba(55, 65, 81, 0.5); /* Set highlight bg color */
-    border-left-style: solid;
     border-left-width: 4px;
     border-left-color: rgb(59, 130, 246); /* Set highlight accent border color */
   }

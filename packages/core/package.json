@@ -5,9 +5,10 @@
   "types": "./index.tsx",
   "license": "MIT",
   "dependencies": {
-    "@emotion/babel-plugin": "^11.7.2",
     "@emotion/react": "^11.8.2",
-    "@emotion/styled": "^11.8.1"
+    "@emotion/styled": "^11.8.1",
+    "@nextui-org/react": "^1.0.2-beta.4",
+    "kbar": "^0.1.0-beta.30"
   },
   "devDependencies": {
     "config": "*",

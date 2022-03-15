@@ -1,14 +1,19 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { GlobalStyle } from 'core';
+import { GlobalStyle, Layout } from 'core';
 
 export default class BlogDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
-        <body>
+        <Head>
           <GlobalStyle />
-          <Main />
+        </Head>
+
+        <body>
+          <Layout>
+            <Main />
+          </Layout>
+
           <NextScript />
         </body>
       </Html>
