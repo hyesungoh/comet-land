@@ -1,0 +1,5 @@
+{
+  "extends": "tsconfig/config-library.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

@@ -131,8 +131,9 @@ pre[class*='language-'] {
   padding-right: 16px;
   margin-left: -16px;
   margin-right: -16px;
+  border-left-style: solid;
   border-left-width: 4px;
-  border-left-color: rgba(31, 41, 55, 0); /* Set code block color */
+  border-left-color: rgba(31, 41, 55, 0); /* Set code background color */
 }
 
 .code-line.inserted {
@@ -147,6 +148,7 @@ pre[class*='language-'] {
   margin-left: -16px;
   margin-right: -16px;
   background-color: rgba(55, 65, 81, 0.5); /* Set highlight bg color */
+  border-left-style: solid;
   border-left-width: 4px;
   border-left-color: rgb(59, 130, 246); /* Set highlight accent border color */
 }
