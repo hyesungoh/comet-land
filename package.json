@@ -1,4 +1,6 @@
 {
+  "name": "hyesungoh-land",
+  "version": "0.0.1",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -10,6 +12,11 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@1.22.17",
   "dependencies": {
     "next": "^12.1.0",
     "react": "^17.0.2",

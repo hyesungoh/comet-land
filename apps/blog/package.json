@@ -9,16 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "core": "*",
     "gray-matter": "^4.0.3",
     "rehype-prism-plus": "^1.3.2",
     "rehype-stringify": "^9.0.3",
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
-    "unified": "^10.1.2",
-    "core": "*"
+    "unified": "^10.1.2"
   },
   "devDependencies": {
     "config": "*",
+    "next-transpile-modules": "^9.0.0",
     "tsconfig": "*"
   }
 }

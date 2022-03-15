@@ -1,7 +1,6 @@
 import { getAllPosts } from '../lib/api';
 import PostType from '../types/post';
 import markdownToHtml from '../lib/markdownToHtml';
-import { Title } from 'core';
 
 interface Props {
   allPosts: PostType[];
@@ -11,7 +10,6 @@ function Blog({ allPosts }: Props) {
   return (
     <div>
       <h1>blog</h1>
-      <Title>나는 유아이</Title>
 
       {allPosts.map((post, index) => (
         <div key={index}>

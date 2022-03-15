@@ -4,13 +4,13 @@
   "main": "./index.tsx",
   "types": "./index.tsx",
   "license": "MIT",
-  "devDependencies": {
-    "config": "*",
-    "tsconfig": "*"
-  },
   "dependencies": {
     "@emotion/babel-plugin": "^11.7.2",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1"
+  },
+  "devDependencies": {
+    "config": "*",
+    "tsconfig": "*"
   }
 }
