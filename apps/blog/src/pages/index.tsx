@@ -1,7 +1,7 @@
 import { getAllPosts } from '../lib/api';
 import PostType from '../types/post';
 import markdownToHtml from '../lib/markdownToHtml';
-import { ThemeSwitch } from 'core';
+import { KbarButton, ThemeSwitch } from 'core';
 
 interface Props {
   allPosts: PostType[];
@@ -11,6 +11,7 @@ function Blog({ allPosts }: Props) {
   return (
     <div>
       <ThemeSwitch />
+      <KbarButton />
 
       <h1>blog</h1>
 

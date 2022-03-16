@@ -1,5 +1,5 @@
 {
   "extends": "tsconfig/config-library.json",
-  "include": [".", "custom.d.ts"],
+  "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

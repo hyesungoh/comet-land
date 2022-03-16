@@ -4,6 +4,8 @@ import { useTheme } from '@nextui-org/react';
 import { KBarAnimator, KBarPortal, KBarPositioner } from 'kbar';
 import KBarSearch from './Search';
 
+export * from './KbarButton';
+
 export function Kbar() {
   const { theme } = useTheme();
 

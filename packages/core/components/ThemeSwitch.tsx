@@ -9,6 +9,7 @@ export function ThemeSwitch() {
   return (
     <Switch
       css={{ '& span': { backgroundColor: '$white' } }}
+      size="lg"
       checked={isDark}
       onChange={e => setTheme(e.target.checked ? 'dark' : 'light')}
       iconOn={<Icon name="Sun" fill={theme?.colors.black.value ?? 'black'} />}
