@@ -20,7 +20,9 @@ function Blog({ allPosts }: Props) {
 
       {allPosts.map(post => (
         <>
-          <h3>{post.title}</h3>
+          <Link href={`/${post.slug}`} passHref>
+            <h3>{post.title}</h3>
+          </Link>
           <p>{post.date}</p>
         </>
       ))}
@@ -31,7 +33,7 @@ function Blog({ allPosts }: Props) {
 export default Blog;
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts(['title', 'date']);
+  const allPosts = getAllPosts(['title', 'date', 'slug']);
 
   return {
     props: {
