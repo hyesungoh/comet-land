@@ -9,6 +9,8 @@ export function Layout({ children }: PropsWithChildren<unknown>) {
         max-width: 660px;
         width: 100%;
         margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
       `}
     >
       {children}

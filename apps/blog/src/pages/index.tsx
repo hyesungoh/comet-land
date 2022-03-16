@@ -1,7 +1,7 @@
 import { getAllPosts } from '../lib/api';
 import PostType from '../types/post';
-import markdownToHtml from '../lib/markdownToHtml';
 import { KbarButton, ThemeSwitch } from 'core';
+import { getLocalDate } from '../utils/date';
 
 interface Props {
   allPosts: PostType[];
@@ -15,12 +15,11 @@ function Blog({ allPosts }: Props) {
 
       <h1>blog</h1>
 
-      {allPosts.map((post, index) => (
-        <div key={index}>
-          <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
-
-          <hr />
-        </div>
+      {allPosts.map(post => (
+        <>
+          <h3>{post.title}</h3>
+          <p>{post.date}</p>
+        </>
       ))}
     </div>
   );
@@ -29,12 +28,11 @@ function Blog({ allPosts }: Props) {
 export default Blog;
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts(['title', 'date', 'content']);
-
-  const postContent = await markdownToHtml(allPosts[0].content);
-  const post = { ...allPosts[0], content: postContent };
+  const allPosts = getAllPosts(['title', 'date']);
 
   return {
-    props: { allPosts: [post, post] },
+    props: {
+      allPosts: allPosts.map(post => ({ ...post, date: getLocalDate(post.date) })),
+    },
   };
 }

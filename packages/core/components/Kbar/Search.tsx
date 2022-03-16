@@ -23,7 +23,7 @@ export default function KBarSearch(props: React.InputHTMLAttributes<HTMLInputEle
       ref={ownRef}
       {...props}
       value={search}
-      placeholder="무엇을 도와드릴까요?"
+      placeholder="Cmd (or Cont) + k"
       onChange={event => {
         props.onChange?.(event);
         query.setSearch(event.target.value);

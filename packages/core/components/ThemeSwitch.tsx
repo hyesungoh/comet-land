@@ -12,8 +12,8 @@ export function ThemeSwitch() {
       size="lg"
       checked={isDark}
       onChange={e => setTheme(e.target.checked ? 'dark' : 'light')}
-      iconOn={<Icon name="Sun" fill={theme?.colors.black.value ?? 'black'} />}
-      iconOff={<Icon name="Moon" fill={theme?.colors.black.value ?? 'black'} />}
+      iconOn={<Icon name="Sun" fill={theme?.colors.black.value} />}
+      iconOff={<Icon name="Moon" fill={theme?.colors.black.value} />}
     />
   );
 }

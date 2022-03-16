@@ -34,7 +34,7 @@ export default function BlogApp({ Component, pageProps }: AppProps) {
       <NextUIProvider>
         <KBarProvider actions={actions}>
           <Kbar />
-          <Component {...pageProps} />;
+          <Component {...pageProps} />
         </KBarProvider>
       </NextUIProvider>
     </NextThemesProvider>
