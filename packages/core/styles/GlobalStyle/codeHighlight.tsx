@@ -39,7 +39,6 @@ export const codeHighlight = css`
     padding: 0.1em;
     border-radius: 0.3em;
     white-space: normal;
-    background-color: red;
   }
 
   .token.comment,

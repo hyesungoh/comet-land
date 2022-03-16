@@ -4,7 +4,7 @@ import { useTheme } from '@nextui-org/react';
 import { KBarAnimator, KBarPortal, KBarPositioner } from 'kbar';
 import KBarSearch from './Search';
 
-function Kbar() {
+export function Kbar() {
   const { theme } = useTheme();
 
   return (
@@ -27,5 +27,3 @@ function Kbar() {
     </KBarPortal>
   );
 }
-
-export default Kbar;

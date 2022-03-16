@@ -1,6 +1,7 @@
 import { getAllPosts } from '../lib/api';
 import PostType from '../types/post';
 import markdownToHtml from '../lib/markdownToHtml';
+import { ThemeSwitch } from 'core';
 
 interface Props {
   allPosts: PostType[];
@@ -9,6 +10,7 @@ interface Props {
 function Blog({ allPosts }: Props) {
   return (
     <div>
+      <ThemeSwitch />
       <h1>blog</h1>
 
       {allPosts.map((post, index) => (
