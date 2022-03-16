@@ -11,6 +11,7 @@ function Blog({ allPosts }: Props) {
   return (
     <div>
       <ThemeSwitch />
+
       <h1>blog</h1>
 
       {allPosts.map((post, index) => (

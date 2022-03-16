@@ -15,6 +15,7 @@ const globalStyle = css`
 
   body {
     margin: 0;
+    transition: background-color 0.4s, color 0.3s;
   }
 
   ${codeHighlight};

@@ -14,5 +14,6 @@
   "devDependencies": {
     "config": "*",
     "tsconfig": "*"
-  }
+  },
+  "scripts": {}
 }
