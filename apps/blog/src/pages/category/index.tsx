@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { getAllCategories } from '../../lib/api';
 
 interface Props {
@@ -8,12 +9,11 @@ function Category({ allCategories }: Props) {
   return (
     <div>
       {allCategories.map(category => (
-        <h3>{category}</h3>
+        <Link href={`category/${category}`}>{category}</Link>
       ))}
     </div>
   );
 }
-
 export default Category;
 
 export async function getStaticProps() {

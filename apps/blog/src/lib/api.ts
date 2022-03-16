@@ -8,7 +8,7 @@ export function getAllCategories() {
   return fs.readdirSync(postsDirectory);
 }
 
-export function getPostsByCategory(category: string) {
+export function getPostsPathByCategory(category: string) {
   return fs.readdirSync(`${postsDirectory}/${category}`);
 }
 
@@ -47,7 +47,7 @@ export function getPostBySlugAndCategory(slug: string, category: string, fields:
 }
 
 export function getAllPostsByCategory(category: string, field: string[] = []) {
-  const slugs = getPostsByCategory(category);
+  const slugs = getPostsPathByCategory(category);
   const posts = slugs
     .map(slug => getPostBySlugAndCategory(slug, category, field))
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));

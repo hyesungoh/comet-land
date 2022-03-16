@@ -11,6 +11,7 @@ const globalStyle = css`
   html {
     font-size: 16px;
     word-break: keep-all;
+    transition: background-color 0.4s, color 0.3s;
   }
 
   body {
