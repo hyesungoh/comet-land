@@ -2,6 +2,7 @@ import { getAllPosts } from '../lib/api';
 import PostType from '../types/post';
 import { KbarButton, ThemeSwitch } from 'core';
 import { getLocalDate } from '../utils/date';
+import Link from 'next/link';
 
 interface Props {
   allPosts: PostType[];
@@ -12,6 +13,8 @@ function Blog({ allPosts }: Props) {
     <div>
       <ThemeSwitch />
       <KbarButton />
+
+      <Link href="/category">category</Link>
 
       <h1>blog</h1>
 
