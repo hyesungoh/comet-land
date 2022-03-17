@@ -2,7 +2,7 @@
 
 Monorepo for blog and resume
 
-한국 문서는 [다음 링크](https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/korean.md)에서 확인하실 수 있습니다.
+한국어 문서는 [다음 링크](https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/korean.md)에서 확인하실 수 있습니다.
 
 ## How to start
 
@@ -17,7 +17,7 @@ yarn
 ```bash
 yarn turbo run dev
 # or just
-yarn run dev
+yarn dev
 ```
 
 ## How to add more packages

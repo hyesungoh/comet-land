@@ -15,7 +15,7 @@ yarn
 ```bash
 yarn turbo run dev
 # 아니면
-yarn run dev
+yarn dev
 ```
 
 ## 추가적인 패키지 설치하는 방법
