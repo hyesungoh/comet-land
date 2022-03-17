@@ -9,6 +9,7 @@ export function getAllCategories() {
 }
 
 export function getPostsPathByCategory(category: string) {
+  if (category[0] === '.') return [];
   return fs.readdirSync(`${postsDirectory}/${category}`);
 }
 
@@ -49,6 +50,7 @@ export function getPostBySlugAndCategory(slug: string, category: string, fields:
 export function getAllPostsByCategory(category: string, field: string[] = []) {
   const slugs = getPostsPathByCategory(category);
   const posts = slugs
+    .filter(slug => slug[0] !== '.')
     .map(slug => getPostBySlugAndCategory(slug, category, field))
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;

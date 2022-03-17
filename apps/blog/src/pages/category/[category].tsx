@@ -7,7 +7,6 @@ interface Props {
 }
 
 function EachCategory({ category, posts }: Props) {
-  console.log(posts);
   return (
     <div>
       <h1>{category}</h1>

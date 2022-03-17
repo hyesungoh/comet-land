@@ -38,7 +38,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
-  console.log(slug);
 
   // 한 개만 찾는 api 만들어서 리팩토링해야함
   const allPosts = getAllPosts(['title', 'date', 'category', 'content', 'slug']);
