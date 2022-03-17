@@ -42,6 +42,10 @@ export async function getStaticProps({ params }) {
   // 한 개만 찾는 api 만들어서 리팩토링해야함
   const allPosts = getAllPosts(['title', 'date', 'category', 'content', 'slug']);
   const currentPost = allPosts.filter(post => post.slug === slug)[0];
+  if (typeof currentPost === 'undefined') {
+    return { notFound: true };
+  }
+
   const content = await markdownToHtml(currentPost.content);
 
   return {
