@@ -35,6 +35,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { category } = params;
+  const allCategories = getAllCategories();
+  if (!allCategories.includes(category)) {
+    return { notFound: true };
+  }
   const postsInCategory = getAllPostsByCategory(category, ['title']);
 
   return { props: { category, posts: postsInCategory } };

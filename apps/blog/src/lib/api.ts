@@ -5,7 +5,9 @@ import matter from 'gray-matter';
 const postsDirectory = join(process.cwd(), '_content');
 
 export function getAllCategories() {
-  return fs.readdirSync(postsDirectory);
+  const allCategories = fs.readdirSync(postsDirectory);
+  const allCategoriesWithoutDot = allCategories.filter(category => category[0] !== '.');
+  return allCategoriesWithoutDot;
 }
 
 export function getPostsPathByCategory(category: string) {
