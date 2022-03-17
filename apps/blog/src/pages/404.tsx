@@ -1,5 +1,7 @@
+import { NotFound as NotFoundComponent } from 'core';
+
 function NotFound() {
-  return <div>notfound</div>;
+  return <NotFoundComponent />;
 }
 
 export default NotFound;
