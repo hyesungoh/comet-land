@@ -1,4 +1,4 @@
-import { Action } from 'kbar';
+import IconActionType from './type';
 import { githubUrl, instagramUrl, facebookUrl, linkedInUrl, twitterUrl } from 'core/constants';
 import { openExternalLink } from 'core/utils';
 
@@ -14,9 +14,9 @@ function getSocialMediaId(value: string) {
   return value.split('/').pop();
 }
 
-const socialActions: Action[] = [];
+const socialActions: IconActionType[] = [];
 
-function pushActionWhenValid(value: string, action: Action) {
+function pushActionWhenValid(value: string, action: IconActionType) {
   if (!isValid(value)) return;
   socialActions.push(action);
 }
@@ -28,7 +28,7 @@ pushActionWhenValid(githubUrl, {
   section: 'Social',
   shortcut: [],
   keywords: 'github, source code, open, code',
-  icon: 'github',
+  icon: 'Github',
   perform: () => openExternalLink(githubUrl),
 });
 
@@ -39,7 +39,7 @@ pushActionWhenValid(instagramUrl, {
   section: 'Social',
   shortcut: [],
   keywords: 'dm, meta, contact, social media',
-  icon: 'instagram',
+  icon: 'Instagram',
   perform: () => openExternalLink(instagramUrl),
 });
 
@@ -50,7 +50,7 @@ pushActionWhenValid(facebookUrl, {
   section: 'Social',
   shortcut: [],
   keywords: 'dm, meta, contact, social media',
-  icon: 'facebook',
+  icon: 'Facebook',
   perform: () => openExternalLink(facebookUrl),
 });
 
@@ -61,7 +61,7 @@ pushActionWhenValid(linkedInUrl, {
   section: 'Social',
   shortcut: [],
   keywords: 'contact, hire, job',
-  icon: 'linkedIn',
+  icon: 'Linkedin',
   perform: () => openExternalLink(linkedInUrl),
 });
 
@@ -72,7 +72,7 @@ pushActionWhenValid(twitterUrl, {
   section: 'Social',
   shortcut: [],
   keywords: 'dm, twitter, contact',
-  icon: 'twitter',
+  icon: 'Twitter',
   perform: () => openExternalLink(twitterUrl),
 });
 

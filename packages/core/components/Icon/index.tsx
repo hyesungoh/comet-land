@@ -6,3 +6,5 @@ export function Icon({ name, ...rest }: Props) {
 
   return <CurrentIcon {...rest} />;
 }
+
+export * from './type';

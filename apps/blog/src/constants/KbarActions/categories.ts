@@ -1,9 +1,9 @@
-import { Action } from 'kbar';
+import IconActionType from './type';
 import manifest from '../../../_content/manifest.json';
 
 const { categories } = manifest;
 
-const categoryActions: Action[] = [
+const categoryActions: IconActionType[] = [
   { id: 'category', name: 'Category', section: 'Scope', keywords: 'tag, keyword, categories' },
 ];
 

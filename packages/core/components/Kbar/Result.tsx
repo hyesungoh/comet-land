@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 import { useTheme, NextUITheme } from '@nextui-org/react';
 import { KBarResults, useMatches } from 'kbar';
+import { Icon } from '../Icon';
+import { IconNameType } from '../Icon/type';
 
 export function KBarResult() {
   const { results } = useMatches();
@@ -13,7 +15,7 @@ export function KBarResult() {
         if (typeof item === 'string') return <B theme={theme}>{item}</B>;
         return (
           <ItemWrapper key={item.id} active={active} theme={theme}>
-            {item.icon && <span>아이콘</span>}
+            {item.icon && <Icon name={item.icon as IconNameType} />}
             <TextWrapper>
               <Title>{item.name}</Title>
               {item.subtitle && <SubTitle theme={theme}>{item.subtitle}</SubTitle>}

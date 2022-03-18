@@ -1,9 +1,9 @@
-import { Action } from 'kbar';
+import IconActionType from './type';
 import manifest from '../../../_content/manifest.json';
 
 const { posts } = manifest;
 
-const postActions: Action[] = [{ id: 'posts', name: 'Posts', section: 'Scope', keywords: 'post, article' }];
+const postActions: IconActionType[] = [{ id: 'posts', name: 'Posts', section: 'Scope', keywords: 'post, article' }];
 
 posts.forEach(post => {
   postActions.push({
