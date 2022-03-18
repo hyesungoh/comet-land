@@ -1,3 +1,4 @@
+import { ChevronRight } from './ChevronRight';
 import { Facebook } from './Facebook';
 import { Github } from './Github';
 import { Instagram } from './Instagram';
@@ -7,4 +8,4 @@ import { Search } from './Search';
 import { Sun } from './Sun';
 import { Twitter } from './Twitter';
 
-export const svg = { Facebook, Github, Instagram, Linkedin, Moon, Search, Sun, Twitter };
+export const svg = { ChevronRight, Facebook, Github, Instagram, Linkedin, Moon, Search, Sun, Twitter };

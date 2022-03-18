@@ -11,6 +11,7 @@ posts.forEach(post => {
     name: post.title,
     subtitle: post.date,
     parent: 'posts',
+    icon: 'ChevronRight',
     perform: () => {
       location.href = `/${post.slug}`;
     },

@@ -15,7 +15,13 @@ export function KBarResult() {
         if (typeof item === 'string') return <B theme={theme}>{item}</B>;
         return (
           <ItemWrapper key={item.id} active={active} theme={theme}>
-            {item.icon && <Icon name={item.icon as IconNameType} />}
+            {item.icon && (
+              <Icon
+                name={item.icon as IconNameType}
+                fill={active ? theme?.colors.primary.value : theme?.colors.accents4.value}
+                style={{ transition: 'fill 0.3s', marginRight: '12px', flexShrink: '0' }}
+              />
+            )}
             <TextWrapper>
               <Title>{item.name}</Title>
               {item.subtitle && <SubTitle theme={theme}>{item.subtitle}</SubTitle>}
@@ -56,6 +62,7 @@ const TextWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  overflow: hidden;
 `;
 
 const Title = styled.span`
