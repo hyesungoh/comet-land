@@ -16,7 +16,7 @@ export default function BlogApp({ Component, pageProps }: AppProps) {
       }}
     >
       <NextUIProvider>
-        <KBarProvider actions={kbarActions}>
+        <KBarProvider actions={[...kbarActions]}>
           <Kbar />
           <Component {...pageProps} />
         </KBarProvider>

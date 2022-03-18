@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 3000",
+    "prebuild": "node ./_content/index.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -23,6 +24,7 @@
   "devDependencies": {
     "config": "*",
     "next-transpile-modules": "^9.0.0",
+    "ts-node": "^10.7.0",
     "tsconfig": "*"
   }
 }
