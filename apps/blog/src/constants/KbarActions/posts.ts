@@ -3,7 +3,7 @@ import manifest from '../../../_content/manifest.json';
 
 const { posts } = manifest;
 
-const postActions: Action[] = [{ id: 'posts', name: 'Posts', section: 'scope', keywords: 'post, article' }];
+const postActions: Action[] = [{ id: 'posts', name: 'Posts', section: 'Scope', keywords: 'post, article' }];
 
 posts.forEach(post => {
   postActions.push({
