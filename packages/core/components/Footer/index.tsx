@@ -25,11 +25,14 @@ export function Footer() {
 }
 
 const StyledFooter = styled.footer`
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 100px;
-  padding: 16px 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
   font-size: 0.75rem;
 `;

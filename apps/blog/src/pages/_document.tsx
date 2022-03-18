@@ -14,7 +14,6 @@ export default class BlogDocument extends Document {
             <Main />
             <Footer />
           </Layout>
-
           <NextScript />
         </body>
       </Html>

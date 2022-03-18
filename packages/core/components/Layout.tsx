@@ -6,9 +6,11 @@ export function Layout({ children }: PropsWithChildren<unknown>) {
 }
 
 const Div = styled.div`
+  position: relative;
   max-width: 660px;
   width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 100px; // for footer
 `;
