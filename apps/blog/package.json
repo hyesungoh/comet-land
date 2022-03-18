@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "predev": "node ./_content/index.js",
     "dev": "next dev --port 3000",
     "prebuild": "node ./_content/index.js",
     "build": "next build",
@@ -10,6 +11,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
     "@nextui-org/react": "^1.0.2-beta.4",
     "core": "*",
     "gray-matter": "^4.0.3",

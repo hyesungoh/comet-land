@@ -23,7 +23,7 @@ export default function KBarSearch(props: React.InputHTMLAttributes<HTMLInputEle
       ref={ownRef}
       {...props}
       value={search}
-      placeholder="Cmd (or Cont) + k"
+      placeholder="Cmd (or Cntr) + K to toggle"
       onChange={event => {
         props.onChange?.(event);
         query.setSearch(event.target.value);

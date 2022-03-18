@@ -55,17 +55,10 @@ export function useTransform<I, O>(
   options?: TransformOptions<O>
 ): MotionValue<O>;
 
-export function useTransform<I, O>(
-  input: MotionValue<I>,
-  transformer: SingleTransformer<I, O>
-): MotionValue<O>;
+export function useTransform<I, O>(input: MotionValue<I>, transformer: SingleTransformer<I, O>): MotionValue<O>;
 
 export function useTransform<I, O>(
-  input:
-    | MotionValue<I>
-    | MotionValue<string>[]
-    | MotionValue<number>[]
-    | MotionValue<string | number>[],
+  input: MotionValue<I> | MotionValue<string>[] | MotionValue<number>[] | MotionValue<string | number>[],
   inputRangeOrTransformer: InputRange | Transformer<I, O>,
   outputRange?: O[],
   options?: TransformOptions<O>

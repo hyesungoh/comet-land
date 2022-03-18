@@ -1,16 +1,1 @@
-{
-  "posts": [
-    {
-      "title": "TypeScript, 항상 같은 길이인 두 배열 Type 정의하기",
-      "date": "\"2022-03-09T20:24:00.000Z\"",
-      "slug": "typescript-same-length-array-types"
-    },
-    { "title": "'코딩을 지탱하는 기술'을 읽고", "date": "\"2022-02-14T17:50:00.000Z\"", "slug": "코딩을지탱하는기술" },
-    {
-      "title": "Svelte - Cannot convert undefined to object Error when using axios",
-      "date": "\"2020-11-15T20:24:00.000Z\"",
-      "slug": "svelteAxiosConvertError"
-    }
-  ],
-  "categories": ["Books", "Svelte"]
-}
+{"posts":[{"title":"TypeScript, 항상 같은 길이인 두 배열 Type 정의하기","date":"\"2022-03-09T20:24:00.000Z\"","slug":"typescript-same-length-array-types"},{"title":"'코딩을 지탱하는 기술'을 읽고","date":"\"2022-02-14T17:50:00.000Z\"","slug":"코딩을지탱하는기술"},{"title":"Svelte - Cannot convert undefined to object Error when using axios","date":"\"2020-11-15T20:24:00.000Z\"","slug":"svelteAxiosConvertError"}],"categories":["Books","Svelte"]}

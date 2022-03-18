@@ -1,5 +1,6 @@
 {
   "extends": "tsconfig/config-nextjs.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "_content/index.js"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "compilerOptions": { "types": ["@emotion/react/types/css-prop"] }
 }

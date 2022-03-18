@@ -8,7 +8,7 @@ export function ThemeSwitch() {
 
   return (
     <Switch
-      css={{ '& span': { backgroundColor: '$white' } }}
+      css={{ '& span': { backgroundColor: '$white' }, height: '32px', padding: '0' }}
       size="lg"
       checked={isDark}
       onChange={e => setTheme(e.target.checked ? 'dark' : 'light')}
