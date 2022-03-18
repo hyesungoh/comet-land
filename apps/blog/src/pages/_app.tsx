@@ -3,6 +3,7 @@ import { NextUIProvider } from '@nextui-org/react';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { KBarProvider } from 'kbar';
 import { Kbar, lightTheme, darkTheme } from 'core';
+import { openExternalLink } from 'core/utils';
 
 const actions = [
   {
@@ -17,7 +18,7 @@ const actions = [
     name: 'Contact',
     shortcut: ['c'],
     keywords: 'email',
-    perform: () => (window.location.pathname = 'contact'),
+    perform: () => openExternalLink('https://www.github.com'),
   },
 ];
 
