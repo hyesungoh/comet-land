@@ -2,7 +2,7 @@ import { Button, useTheme } from '@nextui-org/react';
 import { useKBar } from 'kbar';
 import { Icon } from '../Icon';
 
-export function KbarButton() {
+export function KBarToggleButton() {
   const { theme } = useTheme();
   const { query } = useKBar();
 

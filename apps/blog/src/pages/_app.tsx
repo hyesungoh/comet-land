@@ -3,24 +3,7 @@ import { NextUIProvider } from '@nextui-org/react';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { KBarProvider } from 'kbar';
 import { Kbar, lightTheme, darkTheme } from 'core';
-import { openExternalLink } from 'core/utils';
-
-const actions = [
-  {
-    id: 'blog',
-    name: 'Blog',
-    shortcut: ['b'],
-    keywords: 'writing words',
-    perform: () => (window.location.pathname = 'blog'),
-  },
-  {
-    id: 'contact',
-    name: 'Contact',
-    shortcut: ['c'],
-    keywords: 'email',
-    perform: () => openExternalLink('https://www.github.com'),
-  },
-];
+import kbarActions from '../constants/KbarActions';
 
 export default function BlogApp({ Component, pageProps }: AppProps) {
   return (
@@ -33,7 +16,7 @@ export default function BlogApp({ Component, pageProps }: AppProps) {
       }}
     >
       <NextUIProvider>
-        <KBarProvider actions={actions}>
+        <KBarProvider actions={kbarActions}>
           <Kbar />
           <Component {...pageProps} />
         </KBarProvider>

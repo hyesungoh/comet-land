@@ -2,9 +2,10 @@
 import { css } from '@emotion/react';
 import { useTheme, Backdrop } from '@nextui-org/react';
 import { KBarAnimator, KBarPortal, KBarPositioner, useKBar, VisualState } from 'kbar';
+import { KBarResult } from './Result';
 import KBarSearch from './Search';
 
-export * from './KbarButton';
+export * from './KBarToggleButton';
 
 export function Kbar() {
   const { theme } = useTheme();
@@ -28,6 +29,7 @@ export function Kbar() {
             `}
           >
             <KBarSearch />
+            <KBarResult />
           </KBarAnimator>
         </KBarPositioner>
       </Backdrop>
