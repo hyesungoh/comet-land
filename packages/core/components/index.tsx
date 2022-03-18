@@ -5,3 +5,4 @@ export * from './Kbar';
 export * from './ThemeSwitch';
 export * from './Icon';
 export * from './NotFound';
+export * from './Footer';
