@@ -20,6 +20,12 @@ const globalStyle = css`
   }
 
   ${codeHighlight};
+
+  @media (max-width: 800px) {
+    html {
+      font-size: 14px;
+    }
+  }
 `;
 
 export const GlobalStyle = () => {

@@ -5,13 +5,13 @@ interface Props {
   slug: string;
   title: string;
   date: string;
-  category: string;
+  category?: string;
   theme: typeof theme;
 }
 
-function PostCard({ slug, title, date, category }: Props) {
+function PostCard({ slug, title, date, category, theme }: Props) {
   return (
-    <article style={{ marginTop: '3rem' }}>
+    <article style={{ marginBottom: '2.5rem' }}>
       <h3>
         <NextLink href={`/${slug}`} passHref>
           <Link underline css={{ color: theme.colors.text.value }}>
@@ -20,7 +20,7 @@ function PostCard({ slug, title, date, category }: Props) {
         </NextLink>
       </h3>
       <small style={{ color: theme.colors.accents4.value }}>
-        {date} / {category}
+        {date} {category && `/ ${category}`}
       </small>
     </article>
   );

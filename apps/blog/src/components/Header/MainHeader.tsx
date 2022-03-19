@@ -2,17 +2,18 @@ import styled from '@emotion/styled';
 import { Text, useTheme } from '@nextui-org/react';
 import { KBarToggleButton, ThemeSwitch } from 'core';
 import { blogName } from 'core/constants';
+import Link from 'next/link';
 
 function MainHeader() {
   const { theme } = useTheme();
 
   return (
     <Header>
-      <H1
-        h1
-        dangerouslySetInnerHTML={{ __html: blogName }}
-        css={{ textGradient: `45deg, ${theme.colors.text.value} -20%, ${theme.colors.primary.value} 70%` }}
-      ></H1>
+      <H1 h1 css={{ textGradient: `45deg, ${theme.colors.text.value} -20%, ${theme.colors.primary.value} 70%` }}>
+        <Link href="/">
+          <a dangerouslySetInnerHTML={{ __html: blogName }}></a>
+        </Link>
+      </H1>
       <ButtonWrapper>
         <ThemeSwitch />
         <KBarToggleButton />

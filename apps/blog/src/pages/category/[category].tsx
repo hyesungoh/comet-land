@@ -1,5 +1,10 @@
-import { getAllCategories, getAllPostsByCategory } from '../../lib/api';
+import styled from '@emotion/styled';
+import { useTheme } from '@nextui-org/react';
+import PostCard from '../../components/PostCard';
+import MainHeader from '../../components/Header/MainHeader';
 import PostType from '../../types/post';
+import { getLocalDate } from '../../utils/date';
+import { getAllCategories, getAllPostsByCategory } from '../../lib/api';
 
 interface Props {
   category: string;
@@ -7,17 +12,30 @@ interface Props {
 }
 
 function EachCategory({ category, posts }: Props) {
+  const { theme } = useTheme();
+
   return (
-    <div>
-      <h1>{category}</h1>
-      {posts.map(post => (
-        <h3>{post.title}</h3>
-      ))}
-    </div>
+    <>
+      <MainHeader />
+      <H2>
+        Posts in <strong>{category}</strong> category
+      </H2>
+      <main>
+        {posts.map(({ slug, title, date }) => (
+          <PostCard slug={slug} title={title} date={date} theme={theme} />
+        ))}
+      </main>
+    </>
   );
 }
 
 export default EachCategory;
+
+const H2 = styled.h2`
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+`;
 
 interface Paths {
   params: {
@@ -39,7 +57,7 @@ export async function getStaticProps({ params }) {
   if (!allCategories.includes(category)) {
     return { notFound: true };
   }
-  const postsInCategory = getAllPostsByCategory(category, ['title']);
+  const postsInCategory = getAllPostsByCategory(category, ['slug', 'title', 'date']);
 
-  return { props: { category, posts: postsInCategory } };
+  return { props: { category, posts: postsInCategory.map(post => ({ ...post, date: getLocalDate(post.date) })) } };
 }

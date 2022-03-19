@@ -15,9 +15,11 @@ function Blog({ allPosts }: Props) {
   return (
     <>
       <MainHeader />
-      {allPosts.map(({ slug, title, date, category }) => (
-        <PostCard slug={slug} title={title} date={date} category={category} theme={theme} />
-      ))}
+      <main>
+        {allPosts.map(({ slug, title, date, category }) => (
+          <PostCard slug={slug} title={title} date={date} category={category} theme={theme} />
+        ))}
+      </main>
     </>
   );
 }
