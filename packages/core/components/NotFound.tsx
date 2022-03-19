@@ -5,7 +5,7 @@ import NextLink from 'next/link';
 export function NotFound() {
   return (
     <Main>
-      <Text h2 size={'4rem'} css={{ borderRight: 'solid $black 4px', padding: '0 32px' }} weight="bold">
+      <Text h1 size={'4rem'} css={{ borderRight: 'solid $black 4px', padding: '0 32px' }} weight="bold">
         404
       </Text>
       <Div>

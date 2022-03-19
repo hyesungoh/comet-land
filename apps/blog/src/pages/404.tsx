@@ -1,7 +1,3 @@
-import { NotFound as NotFoundComponent } from 'core';
-
-function NotFound() {
-  return <NotFoundComponent />;
-}
+import { NotFound } from 'core';
 
 export default NotFound;

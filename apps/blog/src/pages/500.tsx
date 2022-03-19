@@ -1,9 +1,3 @@
-function Error() {
-  return (
-    <div>
-      <h1>error</h1>
-    </div>
-  );
-}
+import { ServerError } from 'core';
 
-export default Error;
+export default ServerError;
