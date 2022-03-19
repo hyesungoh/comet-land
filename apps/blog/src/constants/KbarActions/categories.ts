@@ -13,9 +13,6 @@ categories.forEach(category => {
     name: category,
     parent: 'category',
     icon: 'ChevronRight',
-    perform: () => {
-      location.href = `/category/${category}`;
-    },
   });
 });
 

@@ -13,9 +13,6 @@ posts.forEach(post => {
     subtitle: getLocalDate(post.date),
     parent: 'posts',
     icon: 'ChevronRight',
-    perform: () => {
-      location.href = `/${post.slug}`;
-    },
   });
 });
 

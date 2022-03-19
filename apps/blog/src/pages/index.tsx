@@ -17,7 +17,7 @@ function Blog({ allPosts }: Props) {
       <MainHeader />
       <main>
         {allPosts.map(({ slug, title, date, category }) => (
-          <PostCard slug={slug} title={title} date={date} category={category} theme={theme} />
+          <PostCard key={slug} slug={slug} title={title} date={date} category={category} theme={theme} />
         ))}
       </main>
     </>

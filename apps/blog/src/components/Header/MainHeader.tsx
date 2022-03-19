@@ -35,7 +35,7 @@ const Header = styled.header`
 const H1 = styled(Text)`
   margin: 0;
   font-size: 6rem;
-  line-height: 1;
+  line-height: 6rem;
 `;
 
 const ButtonWrapper = styled.div`

@@ -36,3 +36,5 @@ export function Kbar() {
     </KBarPortal>
   );
 }
+
+export default Kbar;

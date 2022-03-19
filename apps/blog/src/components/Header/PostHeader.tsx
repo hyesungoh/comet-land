@@ -28,7 +28,7 @@ const Header = styled.header`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 2.25rem;
 `;
 
@@ -36,7 +36,7 @@ const H3 = styled(Text)`
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1;
+  line-height: 2rem;
 `;
 
 const ButtonWrapper = styled.div`

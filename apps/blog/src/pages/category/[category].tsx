@@ -22,7 +22,7 @@ function EachCategory({ category, posts }: Props) {
       </H2>
       <main>
         {posts.map(({ slug, title, date }) => (
-          <PostCard slug={slug} title={title} date={date} theme={theme} />
+          <PostCard key={slug} slug={slug} title={title} date={date} theme={theme} />
         ))}
       </main>
     </>
