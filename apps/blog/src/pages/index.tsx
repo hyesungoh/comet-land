@@ -5,6 +5,7 @@ import { getLocalDate } from '../utils/date';
 import MainHeader from '../components/Header/MainHeader';
 import PostCard from '../components/PostCard';
 import useInfiniteScroll from '../hooks/useInfiniteScroll';
+import markdownToPlainText from '../lib/markdownToPlainText';
 
 interface Props {
   allPosts: PostType[];
@@ -41,9 +42,18 @@ export default Blog;
 export async function getStaticProps() {
   const allPosts = getAllPosts(['title', 'date', 'slug', 'category', 'content']);
 
+  async function getFormattedPost(post) {
+    const formattedDate = getLocalDate(post.date);
+    const plainContent = await markdownToPlainText(post.content);
+
+    return { ...post, date: formattedDate, content: plainContent };
+  }
+
+  const formattedPosts = await Promise.all(allPosts.map(async post => await getFormattedPost(post)));
+
   return {
     props: {
-      allPosts: allPosts.map(post => ({ ...post, date: getLocalDate(post.date) })),
+      allPosts: formattedPosts,
     },
   };
 }
