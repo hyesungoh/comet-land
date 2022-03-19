@@ -1,3 +1,4 @@
+import PostHeader from '../components/Header/PostHeader';
 import { getAllPosts } from '../lib/api';
 import markdownToHtml from '../lib/markdownToHtml';
 import { getLocalDate } from '../utils/date';
@@ -11,12 +12,15 @@ interface Props {
 
 function Post({ title, category, date, content }: Props) {
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>{category}</p>
-      <p>{date}</p>
-      <article dangerouslySetInnerHTML={{ __html: content }}></article>
-    </div>
+    <>
+      <PostHeader />
+      <div>
+        <h1>{title}</h1>
+        <p>{category}</p>
+        <p>{date}</p>
+        <article dangerouslySetInnerHTML={{ __html: content }}></article>
+      </div>
+    </>
   );
 }
 
