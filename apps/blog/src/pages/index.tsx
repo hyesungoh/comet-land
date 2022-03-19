@@ -4,6 +4,7 @@ import { getAllPosts } from '../lib/api';
 import { getLocalDate } from '../utils/date';
 import MainHeader from '../components/Header/MainHeader';
 import PostCard from '../components/PostCard';
+import useInfiniteScroll from '../hooks/useInfiniteScroll';
 
 interface Props {
   allPosts: PostType[];
@@ -12,13 +13,24 @@ interface Props {
 function Blog({ allPosts }: Props) {
   const { theme } = useTheme();
 
+  const {
+    setTarget,
+    elements: posts,
+    isEnded,
+  } = useInfiniteScroll<PostType>({ fullElements: allPosts, offset: 10, rootMargin: '100px' });
+
   return (
     <>
       <MainHeader />
       <main>
-        {allPosts.map(({ slug, title, date, category }) => (
-          <PostCard key={slug} slug={slug} title={title} date={date} category={category} theme={theme} />
+        {posts.map(({ slug, title, date, category, content }) => (
+          <>
+            <PostCard key={slug} slug={slug} title={title} date={date} category={category} theme={theme} />
+            {content}
+          </>
         ))}
+
+        {!isEnded && <div ref={setTarget}></div>}
       </main>
     </>
   );
@@ -27,7 +39,7 @@ function Blog({ allPosts }: Props) {
 export default Blog;
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts(['title', 'date', 'slug', 'category']);
+  const allPosts = getAllPosts(['title', 'date', 'slug', 'category', 'content']);
 
   return {
     props: {
