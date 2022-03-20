@@ -20,6 +20,14 @@ yarn turbo run dev
 yarn dev
 ```
 
+## How to deploy with vercel
+
+1. blog
+
+```bash
+cd ../.. && npx turbo run build --scope=blog --include-dependencies --no-deps
+```
+
 ## How to add more packages
 
 - scope packages
