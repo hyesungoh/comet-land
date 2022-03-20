@@ -1,6 +1,7 @@
 import { useTheme } from '@nextui-org/react';
 import PostType from '../types/post';
 import { getAllPosts } from '../lib/api';
+import SEO from '../components/SEO';
 import MainHeader from '../components/Header/MainHeader';
 import PostCard from '../components/PostCard';
 import useInfiniteScroll from '../hooks/useInfiniteScroll';
@@ -21,6 +22,7 @@ function Blog({ allPosts }: Props) {
 
   return (
     <>
+      <SEO />
       <MainHeader />
       <AuthorSection />
       <main>

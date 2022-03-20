@@ -5,21 +5,24 @@ import AuthorSection from '../components/AuthorSection';
 import Comments from '../components/Comments';
 import DateAndCategoryLink from '../components/DateAndCategoryLink';
 import PostHeader from '../components/Header/PostHeader';
+import SEO from '../components/SEO';
 import { getAllPosts } from '../lib/api';
 import markdownToHtml from '../lib/markdownToHtml';
 
 interface Props {
   title: string;
+  subtitle: string;
   category: string;
   date: string;
   content: string;
 }
 
-function Post({ title, category, date, content }: Props) {
+function Post({ title, subtitle, category, date, content }: Props) {
   const { theme } = useTheme();
 
   return (
     <>
+      <SEO title={title} description={subtitle} />
       <PostHeader />
       <main>
         <H1>{title}</H1>
@@ -65,7 +68,7 @@ export async function getStaticProps({ params }) {
   const { slug } = params;
 
   // 한 개만 찾는 api 만들어서 리팩토링해야함
-  const allPosts = getAllPosts(['title', 'date', 'category', 'content', 'slug']);
+  const allPosts = getAllPosts(['title', 'subtitle', 'date', 'category', 'content', 'slug']);
   const currentPost = allPosts.filter(post => post.slug === slug)[0];
   if (typeof currentPost === 'undefined') {
     return { notFound: true };
@@ -76,6 +79,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       title: currentPost.title,
+      subtitle: currentPost.subtitle ?? null,
       category: currentPost.category,
       date: currentPost.date,
       content,

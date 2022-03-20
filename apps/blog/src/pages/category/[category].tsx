@@ -5,6 +5,7 @@ import MainHeader from '../../components/Header/MainHeader';
 import useInfiniteScroll from '../../hooks/useInfiniteScroll';
 import { getAllCategories, getAllPostsByCategory } from '../../lib/api';
 import PostType from '../../types/post';
+import SEO from '../../components/SEO';
 
 interface Props {
   category: string;
@@ -17,6 +18,7 @@ function EachCategory({ category, allPosts }: Props) {
 
   return (
     <>
+      <SEO title={category} />
       <MainHeader />
       <H2>
         Posts in <strong>{category}</strong> category

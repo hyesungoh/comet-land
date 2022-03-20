@@ -26,7 +26,7 @@ function Comments() {
       theme: currentTheme.includes('dark') ? DARK_THEME : LIGHT_THEME,
       label: 'comment',
       async: true,
-      'issue-term': 'title',
+      'issue-term': 'pathname',
       crossorigin: 'anonymous',
     };
 
