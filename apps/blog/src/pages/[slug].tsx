@@ -1,5 +1,8 @@
+import styled from '@emotion/styled';
+import { NextUITheme, useTheme } from '@nextui-org/react';
 import { PageProgressBar } from 'core';
 import AuthorSection from '../components/AuthorSection';
+import DateAndCategoryLink from '../components/DateAndCategoryLink';
 import PostHeader from '../components/Header/PostHeader';
 import { getAllPosts } from '../lib/api';
 import markdownToHtml from '../lib/markdownToHtml';
@@ -12,15 +15,18 @@ interface Props {
 }
 
 function Post({ title, category, date, content }: Props) {
+  const { theme } = useTheme();
+
   return (
     <>
       <PostHeader />
-      <div>
-        <h1>{title}</h1>
-        <p>{category}</p>
-        <p>{date}</p>
+      <main>
+        <H1>{title}</H1>
+        <P theme={theme}>
+          <DateAndCategoryLink date={date} category={category} />
+        </P>
         <article dangerouslySetInnerHTML={{ __html: content }}></article>
-      </div>
+      </main>
       <AuthorSection hasKbarButton />
       <PageProgressBar />
     </>
@@ -28,6 +34,16 @@ function Post({ title, category, date, content }: Props) {
 }
 
 export default Post;
+
+const H1 = styled.h1`
+  margin: 0;
+`;
+
+const P = styled.p<{ theme: NextUITheme | undefined }>`
+  margin-top: 0;
+  margin-bottom: 3rem;
+  color: ${({ theme }) => theme.colors.accents4.value};
+`;
 
 interface Paths {
   params: {
