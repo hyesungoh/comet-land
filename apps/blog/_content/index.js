@@ -18,6 +18,12 @@ function isVaildFile(value) {
   return true;
 }
 
+function getLocalDate(str) {
+  const regex = /"/gi;
+  const date = new Date(str.replace(regex, ''));
+  return date.toLocaleDateString();
+}
+
 function getAllCategories() {
   const allCategories = fs.readdirSync(postsDirectory);
   const allCategoriesWithoutDot = allCategories.filter(category => isValidCategory(category));
@@ -46,7 +52,7 @@ function getPostBySlugAndCategory(slug, category, fields = []) {
         items[field] = content;
         break;
       case 'date':
-        items[field] = JSON.stringify(data[field]);
+        items[field] = getLocalDate(JSON.stringify(data[field]));
         break;
       default:
         if (typeof data[field] !== 'undefined') {

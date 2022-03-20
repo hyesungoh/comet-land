@@ -1,4 +1,5 @@
 export function getLocalDate(str: string) {
-  const date = new Date(str.replaceAll('"', ''));
+  const regex = /"/gi;
+  const date = new Date(str.replace(regex, ''));
   return date.toLocaleDateString();
 }
