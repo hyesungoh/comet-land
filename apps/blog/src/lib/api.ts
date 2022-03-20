@@ -37,7 +37,7 @@ export function getPostBySlugAndCategory(slug: string, category: string, fields:
 
   const items: Items = {};
 
-  fields.forEach(async field => {
+  fields.forEach(field => {
     switch (field) {
       case 'slug':
         items[field] = realSlug;

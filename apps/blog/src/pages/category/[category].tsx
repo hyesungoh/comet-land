@@ -23,8 +23,8 @@ function EachCategory({ category, allPosts }: Props) {
         Posts in <strong>{category}</strong> category
       </H2>
       <main>
-        {posts.map(({ slug, title, date }) => (
-          <PostCard key={slug} slug={slug} title={title} date={date} theme={theme} />
+        {posts.map(({ slug, title, subtitle, date }) => (
+          <PostCard key={slug} slug={slug} title={title} subtitle={subtitle} date={date} theme={theme} />
         ))}
         {!isEnded && <div ref={setTarget}></div>}
       </main>
@@ -60,7 +60,7 @@ export async function getStaticProps({ params }) {
   if (!allCategories.includes(category)) {
     return { notFound: true };
   }
-  const postsInCategory = getAllPostsByCategory(category, ['slug', 'title', 'date']);
+  const postsInCategory = getAllPostsByCategory(category, ['slug', 'title', 'subtitle', 'date']);
 
   return { props: { category, allPosts: postsInCategory.map(post => ({ ...post, date: getLocalDate(post.date) })) } };
 }

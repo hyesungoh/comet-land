@@ -5,7 +5,6 @@ import { getLocalDate } from '../utils/date';
 import MainHeader from '../components/Header/MainHeader';
 import PostCard from '../components/PostCard';
 import useInfiniteScroll from '../hooks/useInfiniteScroll';
-import markdownToPlainText from '../lib/markdownToPlainText';
 
 interface Props {
   allPosts: PostType[];
@@ -24,11 +23,16 @@ function Blog({ allPosts }: Props) {
     <>
       <MainHeader />
       <main>
-        {posts.map(({ slug, title, date, category, content }) => (
-          <>
-            <PostCard key={slug} slug={slug} title={title} date={date} category={category} theme={theme} />
-            {content}
-          </>
+        {posts.map(({ slug, title, date, category, subtitle }) => (
+          <PostCard
+            key={slug}
+            slug={slug}
+            title={title}
+            subtitle={subtitle}
+            date={date}
+            category={category}
+            theme={theme}
+          />
         ))}
 
         {!isEnded && <div ref={setTarget}></div>}
@@ -40,16 +44,14 @@ function Blog({ allPosts }: Props) {
 export default Blog;
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts(['title', 'date', 'slug', 'category', 'content']);
+  const allPosts = getAllPosts(['title', 'date', 'slug', 'category', 'subtitle']);
 
-  async function getFormattedPost(post) {
+  function getFormattedPost(post) {
     const formattedDate = getLocalDate(post.date);
-    const plainContent = await markdownToPlainText(post.content);
-
-    return { ...post, date: formattedDate, content: plainContent };
+    return { ...post, date: formattedDate };
   }
 
-  const formattedPosts = await Promise.all(allPosts.map(async post => await getFormattedPost(post)));
+  const formattedPosts = allPosts.map(post => getFormattedPost(post));
 
   return {
     props: {
