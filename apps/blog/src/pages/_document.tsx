@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { CssBaseline } from '@nextui-org/react';
 import { Footer, GlobalStyle, Layout } from 'core';
 import { blogUrl, favicon } from 'core/constants';
 
@@ -15,6 +16,7 @@ export default class BlogDocument extends Document {
           <meta property="og:url" content={blogUrl} />
           <meta name="keywords" content="blog,development,developer,frontend,블로그,개발,개발자,프론트엔드" />
 
+          {CssBaseline.flush()}
           <GlobalStyle />
         </Head>
 
