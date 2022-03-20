@@ -4,6 +4,7 @@ import { getAllPosts } from '../lib/api';
 import MainHeader from '../components/Header/MainHeader';
 import PostCard from '../components/PostCard';
 import useInfiniteScroll from '../hooks/useInfiniteScroll';
+import AuthorSection from '../components/AuthorSection';
 
 interface Props {
   allPosts: PostType[];
@@ -21,6 +22,7 @@ function Blog({ allPosts }: Props) {
   return (
     <>
       <MainHeader />
+      <AuthorSection />
       <main>
         {posts.map(({ slug, title, date, category, subtitle }) => (
           <PostCard

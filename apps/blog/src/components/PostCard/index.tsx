@@ -42,6 +42,7 @@ const Small = styled.small<{ theme: NextUITheme | undefined }>`
 
 const P = styled.p`
   width: 100%;
+  margin: 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

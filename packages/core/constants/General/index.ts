@@ -7,3 +7,7 @@ export const authorName = 'hyesungoh';
 export const defaultUrl = githubUrl;
 
 export const blogName = 'Cometin&#146;';
+
+export const blogDescription = 'I like to share my knowledge.';
+
+export * as authorImage from './author.png';
