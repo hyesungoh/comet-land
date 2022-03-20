@@ -1,5 +1,7 @@
 import { githubUrl } from '../SocialMedia';
 
+export const blogRepoUrl = 'hyesungoh/comet-land';
+
 export const authorName = 'hyesungoh';
 
 // Write ever you want :D, default is github
