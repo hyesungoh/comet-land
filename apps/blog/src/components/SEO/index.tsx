@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { blogName, authorName, blogDescription } from 'core/constants';
+import { blogName, authorName, blogDescription, authorImage } from 'core/constants';
 
 interface Props {
   title?: string | undefined;
@@ -16,7 +16,7 @@ function SEO({ title, description }: Props) {
       <meta name="description" content={DESCRIPTION} />
       <meta property="og:title" content={TITLE} />
       <meta property="og:description" content={DESCRIPTION} />
-      <meta property="og:image" content="" />
+      <meta property="og:image" content={authorImage.default.src} />
 
       {/* for twitter */}
       <meta name="twitter:title" content={TITLE} />

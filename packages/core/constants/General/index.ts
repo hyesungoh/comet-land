@@ -14,4 +14,7 @@ export const blogName = "Cometin'";
 
 export const blogDescription = 'I like to share my knowledge.';
 
+// images
+export * as favicon from './favicon.ico';
 export * as authorImage from './author.png';
+export * as defaultMetaBackground from './defaultMetaBackground.png';

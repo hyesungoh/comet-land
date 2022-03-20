@@ -1,4 +1,5 @@
 import { css, Global } from '@emotion/react';
+import { config } from '@nextui-org/react';
 import { codeHighlight } from './codeHighlight';
 
 const globalStyle = css`
@@ -21,7 +22,8 @@ const globalStyle = css`
 
   ${codeHighlight};
 
-  @media (max-width: 800px) {
+  // this means 650px
+  @media ${config.media.xsMax} {
     html {
       font-size: 14px;
     }

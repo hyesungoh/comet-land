@@ -11,6 +11,5 @@ const Div = styled.div`
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  padding-top: 2rem;
-  padding-bottom: 100px; // for footer
+  padding: 2rem 1.3125rem 100px 1.3125rem;
 `;

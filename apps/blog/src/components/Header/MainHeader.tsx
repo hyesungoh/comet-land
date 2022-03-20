@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Text, useTheme } from '@nextui-org/react';
+import { Text, useTheme, config } from '@nextui-org/react';
 import { KBarToggleButton, ThemeSwitch } from 'core';
 import { blogName } from 'core/constants';
 import Link from 'next/link';
@@ -36,6 +36,16 @@ const H1 = styled(Text)`
   margin: 0;
   font-size: 6rem;
   line-height: 6rem;
+
+  @media ${config.media.xsMax} {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
 `;
 
 const ButtonWrapper = styled.div`

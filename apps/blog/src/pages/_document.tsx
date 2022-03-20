@@ -1,13 +1,13 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { Footer, GlobalStyle, Layout } from 'core';
-import { blogUrl } from 'core/constants';
+import { blogUrl, favicon } from 'core/constants';
 
 export default class BlogDocument extends Document {
   render() {
     return (
       <Html lang="ko">
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href={favicon.default.src} />
           <meta httpEquiv="Content-type" content="text/html; charset=utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta property="og:type" content="blog" />
