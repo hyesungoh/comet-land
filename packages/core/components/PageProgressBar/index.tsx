@@ -29,10 +29,10 @@ export function PageProgressBar() {
     };
   }, []);
 
-  return <Div pageYOffset={pageYOffset} offsetHeight={offsetHeight} theme={theme}></Div>;
+  return <Div style={{ transform: `scaleX(${(pageYOffset / offsetHeight) * 100}%)` }} theme={theme}></Div>;
 }
 
-const Div = styled.div<{ pageYOffset: number; offsetHeight: number; theme: NextUITheme | undefined }>`
+const Div = styled.div<{ theme: NextUITheme | undefined }>`
   position: fixed;
   top: 0;
   left: 0;
@@ -40,5 +40,4 @@ const Div = styled.div<{ pageYOffset: number; offsetHeight: number; theme: NextU
   height: 4px;
   background-color: ${({ theme }) => theme.colors.primary.value};
   transform-origin: left;
-  transform: scaleX(${({ pageYOffset, offsetHeight }) => (pageYOffset / offsetHeight) * 100}%);
 `;
