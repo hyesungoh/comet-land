@@ -2,7 +2,6 @@ import { PageProgressBar } from 'core';
 import PostHeader from '../components/Header/PostHeader';
 import { getAllPosts } from '../lib/api';
 import markdownToHtml from '../lib/markdownToHtml';
-import { getLocalDate } from '../utils/date';
 
 interface Props {
   title: string;
@@ -58,7 +57,7 @@ export async function getStaticProps({ params }) {
     props: {
       title: currentPost.title,
       category: currentPost.category,
-      date: getLocalDate(currentPost.date),
+      date: currentPost.date,
       content,
     },
   };

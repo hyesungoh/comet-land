@@ -1,6 +1,7 @@
 import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
+import { getLocalDate } from '../utils/date';
 
 const postsDirectory = join(process.cwd(), '_content');
 
@@ -46,7 +47,7 @@ export function getPostBySlugAndCategory(slug: string, category: string, fields:
         items[field] = content;
         break;
       case 'date':
-        items[field] = JSON.stringify(data[field]);
+        items[field] = getLocalDate(JSON.stringify(data[field]));
         break;
       default:
         if (typeof data[field] !== 'undefined') {

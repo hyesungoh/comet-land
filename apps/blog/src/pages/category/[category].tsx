@@ -2,10 +2,9 @@ import styled from '@emotion/styled';
 import { useTheme } from '@nextui-org/react';
 import PostCard from '../../components/PostCard';
 import MainHeader from '../../components/Header/MainHeader';
-import PostType from '../../types/post';
-import { getLocalDate } from '../../utils/date';
-import { getAllCategories, getAllPostsByCategory } from '../../lib/api';
 import useInfiniteScroll from '../../hooks/useInfiniteScroll';
+import { getAllCategories, getAllPostsByCategory } from '../../lib/api';
+import PostType from '../../types/post';
 
 interface Props {
   category: string;
@@ -62,5 +61,5 @@ export async function getStaticProps({ params }) {
   }
   const postsInCategory = getAllPostsByCategory(category, ['slug', 'title', 'subtitle', 'date']);
 
-  return { props: { category, allPosts: postsInCategory.map(post => ({ ...post, date: getLocalDate(post.date) })) } };
+  return { props: { category, allPosts: postsInCategory } };
 }

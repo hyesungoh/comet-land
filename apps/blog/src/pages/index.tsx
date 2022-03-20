@@ -1,7 +1,6 @@
 import { useTheme } from '@nextui-org/react';
 import PostType from '../types/post';
 import { getAllPosts } from '../lib/api';
-import { getLocalDate } from '../utils/date';
 import MainHeader from '../components/Header/MainHeader';
 import PostCard from '../components/PostCard';
 import useInfiniteScroll from '../hooks/useInfiniteScroll';
@@ -46,16 +45,9 @@ export default Blog;
 export async function getStaticProps() {
   const allPosts = getAllPosts(['title', 'date', 'slug', 'category', 'subtitle']);
 
-  function getFormattedPost(post) {
-    const formattedDate = getLocalDate(post.date);
-    return { ...post, date: formattedDate };
-  }
-
-  const formattedPosts = allPosts.map(post => getFormattedPost(post));
-
   return {
     props: {
-      allPosts: formattedPosts,
+      allPosts,
     },
   };
 }
