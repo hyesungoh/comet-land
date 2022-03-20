@@ -1,4 +1,5 @@
 import { PageProgressBar } from 'core';
+import AuthorSection from '../components/AuthorSection';
 import PostHeader from '../components/Header/PostHeader';
 import { getAllPosts } from '../lib/api';
 import markdownToHtml from '../lib/markdownToHtml';
@@ -20,6 +21,7 @@ function Post({ title, category, date, content }: Props) {
         <p>{date}</p>
         <article dangerouslySetInnerHTML={{ __html: content }}></article>
       </div>
+      <AuthorSection hasKbarButton />
       <PageProgressBar />
     </>
   );

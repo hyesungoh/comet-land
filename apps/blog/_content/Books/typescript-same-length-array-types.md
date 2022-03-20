@@ -1,8 +1,8 @@
 ---
 title: 'TypeScript, 항상 같은 길이인 두 배열 Type 정의하기'
-subtitle: '이게 되네?'
+subtitle: '이게 되네?이게 되네?이게 되네?이게 되네?이게 되네?이게 되네?이게 되네?이게 되네?'
 date: 2022-03-09 20:24:00
-category: 'JavaScript'
+category: 'Books'
 draft: false
 ---
 
