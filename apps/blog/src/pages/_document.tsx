@@ -14,8 +14,8 @@ export default class BlogDocument extends Document {
           <meta property="og:type" content="blog" />
           <meta property="og:locale" content="ko_KR" />
           <meta property="og:url" content={blogUrl} />
+          <link rel="canonical" href={blogUrl} />
           <meta name="keywords" content="blog,development,developer,frontend,블로그,개발,개발자,프론트엔드" />
-
           {CssBaseline.flush()}
           <GlobalStyle />
         </Head>

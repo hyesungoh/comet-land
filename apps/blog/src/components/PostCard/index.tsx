@@ -38,7 +38,7 @@ const Article = styled.article`
 `;
 
 const Small = styled.small<{ theme: NextUITheme | undefined }>`
-  color: ${({ theme }) => theme.colors.accents4.value};
+  color: ${({ theme }) => theme.colors.accents6.value};
 `;
 
 const P = styled.p`

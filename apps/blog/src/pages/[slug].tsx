@@ -47,7 +47,7 @@ const H1 = styled.h1`
 const P = styled.p<{ theme: NextUITheme | undefined }>`
   margin-top: 0;
   margin-bottom: 3rem;
-  color: ${({ theme }) => theme.colors.accents4.value};
+  color: ${({ theme }) => theme.colors.accents6.value};
 `;
 
 interface Paths {

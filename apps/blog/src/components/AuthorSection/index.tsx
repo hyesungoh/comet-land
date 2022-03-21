@@ -14,15 +14,16 @@ function AuthorSection({ marginBottom = '3.5rem', hasKbarButton = false }: Props
     <Section style={{ marginBottom }}>
       <Div>
         <Avatar src={authorImage.default.src} alt={authorName} text={authorName} size="xl" />
-        <P>
-          Written by{' '}
-          <Link href={defaultUrl} target="_blank" rel="noreferrer" color="primary">
-            {authorName}
-          </Link>
-          .
-          <br />
-          {blogDescription}
-        </P>
+        <TextWrapper>
+          <H2>
+            Personal blog by{' '}
+            <Link href={defaultUrl} target="_blank" rel="noreferrer" color="primary">
+              {authorName}
+            </Link>
+            .
+          </H2>
+          <p>{blogDescription}</p>
+        </TextWrapper>
       </Div>
 
       {hasKbarButton && <KBarToggleButton />}
@@ -44,6 +45,19 @@ const Div = styled.div`
   align-items: center;
 `;
 
-const P = styled.p`
+const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 0.875rem;
+
+  & > * {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+`;
+
+const H2 = styled.h2`
+  font-weight: normal;
 `;

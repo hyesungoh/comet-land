@@ -1,13 +1,24 @@
 import { useTheme as useNextTheme } from 'next-themes';
 import { Switch, useTheme } from '@nextui-org/react';
 import { Icon } from './Icon';
+import { useEffect } from 'react';
+
+const ARIA_LABEL = 'theme switch';
 
 export function ThemeSwitch() {
   const { setTheme } = useNextTheme();
   const { isDark, theme } = useTheme();
 
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+    const label = document.querySelector(`[aria-label="${ARIA_LABEL}"]`);
+    const div = label?.querySelector('[role="switch"]');
+    if (div) div.ariaLabel = 'theme toggle';
+  }, []);
+
   return (
     <Switch
+      aria-label={ARIA_LABEL}
       css={{
         height: '32px',
         padding: '0',
