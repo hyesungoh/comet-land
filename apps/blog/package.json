@@ -33,7 +33,6 @@
   "devDependencies": {
     "config": "*",
     "next-transpile-modules": "^9.0.0",
-    "ts-node": "^10.7.0",
     "tsconfig": "*"
   }
 }

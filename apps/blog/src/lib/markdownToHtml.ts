@@ -13,7 +13,7 @@ export default async function markdownToHtml(markdown: string) {
     .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypeSlug)
-    .use(rehypeAddClasses, { 'h1,h2,h3,h4': 'heading' })
+    .use(rehypeAddClasses, { 'h1,h2': 'heading' })
     .use(rehypePrism)
     .use(rehypeStringify)
     .process(markdown);
