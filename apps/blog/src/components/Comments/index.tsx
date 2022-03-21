@@ -14,7 +14,6 @@ function Comments() {
   // for initial
   useEffect(() => {
     if (!rootElm.current) return;
-    if (typeof document === 'undefined') return;
     if (document.querySelector(UTTERANCE_QUERY)) return;
 
     const currentTheme = document.querySelector('html').classList[0];

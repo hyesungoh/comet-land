@@ -8,8 +8,6 @@ export function PageProgressBar() {
   const [offsetHeight, setOffsetHeight] = useState<number>(100);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-
     function setScroll() {
       setPageYOffset(window.pageYOffset);
     }

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import styled from '@emotion/styled';
 import { Link, NextUITheme, useTheme } from '@nextui-org/react';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 interface Props {
   headings: string[];
@@ -13,9 +14,11 @@ function TOC({ headings }: Props) {
       rootMargin: '0% 0% -80% 0%',
     },
   });
-  const { theme } = useTheme();
 
-  if (headings.length <= 0) return <></>;
+  const { theme } = useTheme();
+  const isSmallToTOC = useMediaQuery(1000);
+
+  if (headings.length <= 0 || isSmallToTOC) return <></>;
 
   return (
     <Aside>

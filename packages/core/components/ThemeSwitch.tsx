@@ -10,7 +10,6 @@ export function ThemeSwitch() {
   const { isDark, theme } = useTheme();
 
   useEffect(() => {
-    if (typeof document === 'undefined') return;
     const label = document.querySelector(`[aria-label="${ARIA_LABEL}"]`);
     const div = label?.querySelector('[role="switch"]');
     if (div) div.ariaLabel = 'theme toggle';
