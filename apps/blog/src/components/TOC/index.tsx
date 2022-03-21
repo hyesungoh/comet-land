@@ -1,13 +1,19 @@
 import { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/router';
 import styled from '@emotion/styled';
 import { Link, NextUITheme, useTheme } from '@nextui-org/react';
 import useMediaQuery from '../../hooks/useMediaQuery';
+import getHeadings from '../../utils/getHeadings';
 
-interface Props {
-  headings: string[];
-}
+function TOC() {
+  const [headings, setHeadings] = useState<string[]>([]);
+  const router = useRouter();
+  const { theme } = useTheme();
 
-function TOC({ headings }: Props) {
+  useEffect(() => {
+    setHeadings(getHeadings());
+  }, [router]);
+
   const activeId = useScrollSpy({
     ids: headings,
     options: {
@@ -15,7 +21,6 @@ function TOC({ headings }: Props) {
     },
   });
 
-  const { theme } = useTheme();
   const isSmallToTOC = useMediaQuery(1000);
 
   if (headings.length <= 0 || isSmallToTOC) return <></>;

@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import { NextUITheme, useTheme } from '@nextui-org/react';
 import { PageProgressBar } from 'core';
@@ -7,10 +6,9 @@ import Comments from '../components/Comments';
 import DateAndCategoryLink from '../components/DateAndCategoryLink';
 import PostHeader from '../components/Header/PostHeader';
 import SEO from '../components/SEO';
+import TOC from '../components/TOC';
 import { getAllPosts } from '../lib/api';
 import markdownToHtml from '../lib/markdownToHtml';
-import getHeadings from '../utils/getHeadings';
-import TOC from '../components/TOC';
 
 interface Props {
   title: string;
@@ -21,18 +19,13 @@ interface Props {
 }
 
 function Post({ title, subtitle, category, date, content }: Props) {
-  const [headings, setHeadings] = useState<string[]>([]);
   const { theme } = useTheme();
-
-  useEffect(() => {
-    setHeadings(getHeadings());
-  }, []);
 
   return (
     <>
       <SEO title={title} description={subtitle} />
       <PostHeader />
-      <TOC headings={headings} />
+      <TOC />
       <main style={{ position: 'relative' }}>
         <H1>{title}</H1>
         <P theme={theme}>
