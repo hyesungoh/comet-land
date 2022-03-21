@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "predev": "node ./_content/index.js",
+    "predev": "node ./scripts/generate-content-manifest.js",
     "dev": "next dev --port 3000",
-    "prebuild": "node ./_content/index.js",
+    "prebuild": "node ./scripts/generate-content-manifest.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
