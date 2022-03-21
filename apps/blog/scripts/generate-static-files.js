@@ -1,3 +1,7 @@
+
+// refactor
+const blogUrl = 'https://comet-land-blog.vercel.app';
+
 const fs = require('fs');
 const path = require('path');
 const { join } = path;
@@ -91,12 +95,6 @@ function generateContentManifest() {
 
   fs.writeFileSync('./_content/manifest.json', JSON.stringify({ posts: allPosts, categories: allCategories }), 'utf-8');
 }
-
-// refactor
-// json 이용해서 url 가져오자
-// import { blogUrl } from 'core/constants';
-
-const blogUrl = 'https://comet-land-blog.vercel.app';
 
 // sitemap
 function getSitemapTemplate(value) {

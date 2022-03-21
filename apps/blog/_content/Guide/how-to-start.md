@@ -1,43 +1,50 @@
-# Comet-land
+---
+title: "Comet land guide"
+subtitle: 'how to start'
+date: 2022-03-26 17:50:00
+category: 'Guide'
+---
 
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/context:javascript)
 
 ![comet-land-blog](https://user-images.githubusercontent.com/26461307/159371599-95b2acd5-e5eb-482c-9ead-d8f601f034b5.png)
 
-turborepo를 사용한 블로그와 ~~이력서~~ 템플릿입니다.
+Blog and ~~Resume~~ template with turborepo
 
-> 아직 블로그만 사용 가능합니다
+> Only blog support yet
 
-## 기능
+한국어 문서는 [다음 링크](https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/korean.md)에서 확인하실 수 있습니다.
+
+## Feature
 
 ![postGif](https://user-images.githubusercontent.com/26461307/159372336-e42c1a9c-9915-4d05-9e51-4882d681dc80.gif)
 
-- 👔 강조 줄, 줄 수 기능이 있는 코드 하이라이트
-- 🎨 [NextUI](https://nextui.org/)를 사용한 디자인
+- 👔 Code highlight with line-highlight, line-numbers
+- 🎨 Design with [NextUI](https://nextui.org/)
 - 🍽 Table of contents
 - 🎩 Dark mode
 
 ![kbarGif](https://user-images.githubusercontent.com/26461307/159372344-d628b817-d7f5-4322-813e-3468a62e79d6.gif)
 
 - ⌨️ Search with [KBar](https://kbar.vercel.app/)
-- 🔨 수정 가능
-- 🔊 [Utterances](https://utteranc.es/) 댓글
+- 🔨 Configurable
+- 🔊 [Utterances](https://utteranc.es/) Comment
 - 🔭 Google Analytics
 - 🔥 Hotjar
 
-자세한 기능은 [`DEMO`](https://comet-land-blog.vercel.app/)를 확인해주세요!
+Please see [`DEMO`](https://comet-land-blog.vercel.app/)!
 
-## 시작하는 방법
+## How to start
 
-1. 해당 레포지토리를 Fork 혹은 clone 해주세요
+1. Fork or clone this repo
 
-2. dependencies를 설치해주세요
+2. Install dependencies
 
 ```bash
 yarn
 ```
 
-2. 터보 시작 ~~!
+2. Start Turbo !
 
 ```bash
 yarn turbo run dev
@@ -45,13 +52,13 @@ yarn turbo run dev
 yarn dev
 ```
 
-4. 이제 블로그를 `localhost:3000` 포트에서, 이력서를 `localhost:3001` 포트에서 확인할 수 있어요
+4. Now you can see blog at `localhost:3000`, resume at `localhost:3001`
 
-## 수정하는 방법
+## How to configuration
 
-`packages/core/constants` 디렉토리를 확인해주세요.
+Please see `packages/core/constants` directory.
 
-그 후 해당 디렉토리의 변수들을 수정하는 방법으로 간단히 수정할 수 있습니다.
+and you can reconfigure at that directory's variable
 
 - Analytics directory
   - GA ID
@@ -69,7 +76,7 @@ yarn dev
   - authorImage
   - defaultMetaBackground ~~not working yet~~
 - SocialMedia directory
-  꼭 '/'로 끊나지 않는 url을 채워주세요!
+  please fill url not ends with '/'
 
   - github
   - instagram
@@ -77,21 +84,20 @@ yarn dev
   - linkedin
   - twitter
 
-그리고 `apps/blog/scripts/generate-static-files.js` 파일을 확인해주세요.
+and please check `apps/blog/scripts/generate-static-files.js`
 
-서버 사이드에서 static file들을 생성하기 위해 `blogUrl` 변수를 채워주세요. ~~리팩토링할 부분입니다~~
+you should fill `blogUrl` variable for generating static files at server side. ~~This is refactor point~~
 
+## How to add your content
 
-## 콘텐츠 추가하는 방법
+You can add contents at `apps/blog/_content` directory.
 
-`apps/blog/_content` 디렉토리에 콘텐츠를 추가하시면 됩니다.
-
-`apps/blogs/_content/category/postname.md` 이런 포맷으로요!
+like this format `apps/blogs/_content/category/postname.md`.
 
 <details>
 
 <summary>
-마크다운 작성법은 해당 파일을 확인해보시면 좋을 것같아요 👈 (클릭해주세요!)
+markdown grammar is check this format 👈 (click this!)
 </summary>
 
 ````markdown
@@ -239,13 +245,11 @@ A note[^1]
 
 </details>
 
+## How to deploy with vercel
 
+This project using `turborepo`.
 
-## Vercel을 이용해 배포하는 방법
-
-이 프로젝트는 `turborepo`를 사용하였습니다.
-
-그렇기 때문에 [vercel guide](https://vercel.com/docs/concepts/git/monorepos#turborepo)를 보고 쉽게 배포할 수 있습니다 :D
+so, you can deploy very easy with this [vercel guide](https://vercel.com/docs/concepts/git/monorepos#turborepo)
 
 - blog build command
 
@@ -259,7 +263,7 @@ cd ../.. && npx turbo run build --scope=blog --include-dependencies --no-deps
 cd ../.. && npx turbo run build --scope=resume --include-dependencies --no-deps
 ```
 
-## 추가 패키지 설치하는 방법
+## How to add more packages
 
 - scope packages
 
@@ -282,4 +286,8 @@ yarn add package-name -DW
 
 ## Trouble shootings
 
-[위키](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting)를 참고해주세요. 도움이 될 수도 있습니다..!
+check [this wiki](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting) please! it might be help
+
+## License
+
+MIT
