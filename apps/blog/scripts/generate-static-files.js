@@ -135,6 +135,15 @@ function generateSitemap() {
   fs.writeFileSync('public/sitemap.xml', formattedSitemap);
 }
 
-generateContentManifest();
+// robots.txt
+function generateRobots() {
+  fs.writeFileSync(
+    'public/robots.txt',
+    `User-agent: *
+Sitemap: ${blogUrl}/sitemap.xml`
+  );
+}
 
+generateContentManifest();
 generateSitemap();
+generateRobots();
