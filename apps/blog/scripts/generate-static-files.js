@@ -1,10 +1,8 @@
-// SO WET!!
-// 'lib/api'
-
 const fs = require('fs');
 const path = require('path');
 const { join } = path;
 const matter = require('gray-matter');
+const prettier = require('prettier');
 
 const postsDirectory = join(process.cwd(), '_content');
 
@@ -87,7 +85,56 @@ function getAllPosts(fields = []) {
   return posts;
 }
 
-const allPosts = getAllPosts(['title', 'date', 'slug']);
-const allCategories = getAllCategories();
+function generateContentManifest() {
+  const allPosts = getAllPosts(['title', 'date', 'slug']);
+  const allCategories = getAllCategories();
 
-fs.writeFileSync('./_content/manifest.json', JSON.stringify({ posts: allPosts, categories: allCategories }), 'utf-8');
+  fs.writeFileSync('./_content/manifest.json', JSON.stringify({ posts: allPosts, categories: allCategories }), 'utf-8');
+}
+
+// refactor
+// json 이용해서 url 가져오자
+// import { blogUrl } from 'core/constants';
+
+const blogUrl = 'https://comet-land-blog.vercel.app';
+
+// sitemap
+function getSitemapTemplate(value) {
+  return `
+  <url>
+    <loc>${blogUrl}${value}</loc>
+  </url>`;
+}
+
+function generateSitemap() {
+  const allPosts = getAllPosts(['slug']);
+  const allCategories = getAllCategories();
+
+  const sitemap = `
+  <?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${getSitemapTemplate('')}
+
+    ${allPosts
+      .map(post => {
+        const { slug } = post;
+        return getSitemapTemplate(`/${slug}`);
+      })
+      .join('')}
+
+    ${allCategories
+      .map(category => {
+        return getSitemapTemplate(`/${category}`);
+      })
+      .join('')}
+  </urlset>
+  `;
+
+  const formattedSitemap = prettier.format(sitemap, { parser: 'html' });
+
+  fs.writeFileSync('public/sitemap.xml', formattedSitemap);
+}
+
+generateContentManifest();
+
+generateSitemap();

@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "predev": "node ./scripts/generate-content-manifest.js",
+    "predev": "node ./scripts/generate-static-files.js",
     "dev": "next dev --port 3000",
-    "prebuild": "node ./scripts/generate-content-manifest.js",
+    "prebuild": "node ./scripts/generate-static-files.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.8.1",
     "@nextui-org/react": "^1.0.2-beta.4",
     "core": "*",
+    "globby": "^13.1.1",
     "gray-matter": "^4.0.3",
     "kbar": "^0.1.0-beta.30",
     "next": "^12.1.0",
