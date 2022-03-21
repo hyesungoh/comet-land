@@ -11,20 +11,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^12.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "@nextui-org/react": "^1.0.2-beta.4",
     "core": "*",
     "gray-matter": "^4.0.3",
     "kbar": "^0.1.0-beta.30",
+    "next": "^12.1.0",
     "next-themes": "^0.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "rehype-prism-plus": "^1.3.2",
     "rehype-stringify": "^9.0.3",
-    "remark": "^14.0.2",
-    "remark-rehype": "^10.1.0"
+    "remark-gfm": "^3.0.1",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "unified": "^10.1.2"
   },
   "devDependencies": {
     "config": "*",

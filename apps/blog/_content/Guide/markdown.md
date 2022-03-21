@@ -21,9 +21,21 @@ category: 'Guide'
 
 _This is italic text_
 
+~~this is delete~~
+
 ## Blockquotes
 
 > Develop. Preview. Ship. – Vercel
+
+### nested
+
+> > Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
+> >
+> > — Alan Kay, A Personal Computer for Children of All Ages
+>
+> This is **great**.
+>
+> — Shu Ding.
 
 ## Lists
 
@@ -99,3 +111,26 @@ const H1 = styled.h1`
 
 - [Next.js](https://nextjs.org)
 - [Vercel](http://vercel.com)
+
+### Autolink
+
+www.example.com, https://example.com, and contact@example.com.
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.
+
+## Table
+
+| Syntax        | Description |   Test Text |
+| :------------ | :---------: | ----------: |
+| Header        |    Title    | Here's this |
+| Paragraph     |    Text     |    And more |
+| Strikethrough |             |    ~~Text~~ |
+
+## Tasklist
+
+- [ ] to do
+- [x] done
