@@ -5,97 +5,14 @@ date: 2021-12-01 17:50:00
 category: 'Bar'
 ---
 
-## h2 heading
+## bar
 
-### h3 heading
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.
 
-#### h4 heading
+## barbar
 
-##### h5 heading
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.
 
-###### h6 heading
+## barbarbar
 
-## Emphasis
-
-**This is bold text**
-
-_This is italic text_
-
-## Blockquotes
-
-> Develop. Preview. Ship. – Vercel
-
-## Lists
-
-Unordered
-
-- Lorem ipsum dolor.
-- sit amet consectetur adipisicing elit.
-- Iure, delectus.
-
-Ordered
-
-1. Lorem ipsum dolor.
-2. sit amet consectetur adipisicing elit.
-3. Iure, delectus.
-
-## Code
-
-Inline `code`
-
-```js
-import styled from '@emotion/styled';
-
-export default function Foo({ bar }) {
-  return (
-    <div>
-      <H1>Comet-land</H1>
-    </div>
-  );
-}
-
-const H1 = styled.h1`
-  color: red;
-`;
-```
-
-with line highlight
-
-```js {1, 11-13}
-import styled from '@emotion/styled';
-
-export default function Foo({ bar }) {
-  return (
-    <div>
-      <H1>Comet-land</H1>
-    </div>
-  );
-}
-
-const H1 = styled.h1`
-  color: red;
-`;
-```
-
-with line number
-
-```js {1, 3} showLineNumbers
-import styled from '@emotion/styled';
-
-export default function Foo({ bar }) {
-  return (
-    <div>
-      <H1>Comet-land</H1>
-    </div>
-  );
-}
-
-const H1 = styled.h1`
-  color: red;
-`;
-```
-
-## Links
-
-- [Next.js](https://nextjs.org)
-- [Vercel](http://vercel.com)
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.

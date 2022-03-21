@@ -1,5 +1,5 @@
 ---
-title: "Comet land guide"
+title: 'Comet land guide'
 subtitle: 'how to start'
 date: 2022-03-26 17:50:00
 category: 'Guide'
@@ -132,29 +132,29 @@ _This is italic text_
 
 ### nested
 
-> > Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
+> > great power comes great responsibility
 > >
-> > — Alan Kay, A Personal Computer for Children of All Ages
+> > — at spider man
 >
-> This is **great**.
+> This is **awesome**.
 >
-> — Shu Ding.
+> — hyesungoh
 
 ## Lists
 
 Unordered
 
 - Lorem ipsum dolor.
-  - asdf
-  - asdf
-    - asdf
-    - asdf
+  - foo
+    - bar
 - sit amet consectetur adipisicing elit.
 - Iure, delectus.
 
 Ordered
 
 1. Lorem ipsum dolor.
+   1. lorem
+      1. foo
 2. sit amet consectetur adipisicing elit.
 3. Iure, delectus.
 

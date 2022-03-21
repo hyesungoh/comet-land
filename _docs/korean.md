@@ -81,7 +81,6 @@ yarn dev
 
 서버 사이드에서 static file들을 생성하기 위해 `blogUrl` 변수를 채워주세요. ~~리팩토링할 부분입니다~~
 
-
 ## 콘텐츠 추가하는 방법
 
 `apps/blog/_content` 디렉토리에 콘텐츠를 추가하시면 됩니다.
@@ -126,29 +125,29 @@ _This is italic text_
 
 ### nested
 
-> > Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
+> > great power comes great responsibility
 > >
-> > — Alan Kay, A Personal Computer for Children of All Ages
+> > — at spider man
 >
-> This is **great**.
+> This is **awesome**.
 >
-> — Shu Ding.
+> — hyesungoh
 
 ## Lists
 
 Unordered
 
 - Lorem ipsum dolor.
-  - asdf
-  - asdf
-    - asdf
-    - asdf
+  - foo
+    - bar
 - sit amet consectetur adipisicing elit.
 - Iure, delectus.
 
 Ordered
 
 1. Lorem ipsum dolor.
+   1. lorem
+      1. foo
 2. sit amet consectetur adipisicing elit.
 3. Iure, delectus.
 
@@ -238,8 +237,6 @@ A note[^1]
 ````
 
 </details>
-
-
 
 ## Vercel을 이용해 배포하는 방법
 
