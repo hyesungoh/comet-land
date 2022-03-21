@@ -30,6 +30,7 @@ const StyledFooter = styled.footer`
   bottom: 0;
   width: 100%;
   height: 100px;
+  padding: 0 1.3125rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

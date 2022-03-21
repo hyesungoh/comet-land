@@ -20,6 +20,10 @@ const globalStyle = css`
     transition: background-color 0.4s, color 0.3s;
   }
 
+  ul:not(.contains-task-list) {
+    list-style-type: disc;
+  }
+
   ${codeHighlight};
 
   // this means 650px

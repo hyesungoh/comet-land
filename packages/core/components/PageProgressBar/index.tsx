@@ -40,4 +40,5 @@ const Div = styled.div<{ theme: NextUITheme | undefined }>`
   height: 4px;
   background-color: ${({ theme }) => theme.colors.primary.value};
   transform-origin: left;
+  transition: transform 0.05s;
 `;

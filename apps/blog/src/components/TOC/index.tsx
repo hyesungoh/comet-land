@@ -1,0 +1,130 @@
+import { useEffect, useRef, useState } from 'react';
+import styled from '@emotion/styled';
+import { Link, NextUITheme, useTheme } from '@nextui-org/react';
+
+interface Props {
+  headings: string[];
+}
+
+function TOC({ headings }: Props) {
+  const activeId = useScrollSpy({
+    ids: headings,
+    options: {
+      rootMargin: '0% 0% -80% 0%',
+    },
+  });
+  const { theme } = useTheme();
+
+  if (headings.length <= 0) return <></>;
+
+  return (
+    <Aside>
+      <Div>
+        <h4>Contents</h4>
+        <Ul>
+          {headings.map((heading, index) => (
+            <Li key={index}>
+              <Anchor href={`#${heading}`} underline className={heading === activeId ? 'active' : ''} theme={theme}>
+                {heading.replaceAll('-', ' ')}
+              </Anchor>
+            </Li>
+          ))}
+        </Ul>
+      </Div>
+    </Aside>
+  );
+}
+
+export default TOC;
+
+const Aside = styled.aside`
+  position: sticky;
+  top: 5rem;
+`;
+
+const Div = styled.div`
+  position: absolute;
+  padding-top: 0;
+  width: 280px;
+
+  overflow: hidden;
+  top: 0;
+  left: calc(100% + 2.25rem);
+`;
+
+const Ul = styled.ul`
+  width: 100%;
+  margin: 0;
+  padding-left: 1.25rem;
+  max-height: calc(100vh - 10rem);
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+`;
+
+const Li = styled.li`
+  width: 100%;
+  list-style-type: none;
+`;
+
+const Anchor = styled(Link)<{ theme: NextUITheme | undefined }>`
+  position: relative;
+  color: ${({ theme }) => theme.colors.accents6.value};
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 0;
+    transform: translate(-300%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: ${({ theme }) => theme.colors.primary.value};
+
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+
+  &.active {
+    color: ${({ theme }) => theme.colors.primary.value};
+
+    &::before {
+      opacity: 1;
+    }
+  }
+`;
+
+interface HookProps {
+  ids: string[];
+  options?: IntersectionObserverInit;
+}
+
+function useScrollSpy({ ids, options }: HookProps) {
+  const [activeId, setActiveId] = useState<string | null>();
+  const observer = useRef<IntersectionObserver>();
+
+  useEffect(() => {
+    const elements = ids.map(id => document.querySelector(`#${id}`));
+
+    if (observer.current) {
+      observer.current.disconnect();
+    }
+
+    observer.current = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry?.isIntersecting) {
+          setActiveId(entry.target.getAttribute('id'));
+        }
+      });
+    }, options);
+
+    elements.forEach(el => el && observer.current?.observe(el));
+    return () => observer.current?.disconnect();
+  }, [ids, options]);
+
+  return activeId;
+}
