@@ -16,14 +16,15 @@ interface Props {
   category: string;
   date: string;
   content: string;
+  ogImage: string | null;
 }
 
-function Post({ title, subtitle, category, date, content }: Props) {
+function Post({ title, subtitle, category, date, content, ogImage }: Props) {
   const { theme } = useTheme();
 
   return (
     <>
-      <SEO title={title} description={subtitle} />
+      <SEO title={title} description={subtitle} ogImage={ogImage} />
       <PostHeader />
       <TOC />
       <main style={{ position: 'relative' }}>
@@ -77,6 +78,7 @@ export async function getStaticProps({ params }) {
   }
 
   const content = await markdownToHtml(currentPost.content);
+  const firstImageSrc = getFirstImageSrc(content);
 
   return {
     props: {
@@ -85,6 +87,25 @@ export async function getStaticProps({ params }) {
       category: currentPost.category,
       date: currentPost.date,
       content,
+      ogImage: firstImageSrc,
     },
   };
+}
+
+function getFirstImageSrc(content: string): string | null {
+  try {
+    const tags = content.split('<');
+
+    const firstImageTag = tags.find(tag => {
+      const attrs = tag.split(' ');
+      return attrs[0] === 'img';
+    });
+
+    const attrs = firstImageTag.split(' ');
+    const srcAttr = attrs.find(attr => attr.slice(0, 3) === 'src');
+    const srcValue = srcAttr.slice(4, -1).replace(/"/gi, '');
+    return srcValue;
+  } catch {
+    return null;
+  }
 }
