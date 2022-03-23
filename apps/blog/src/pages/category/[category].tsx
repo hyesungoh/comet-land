@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { useTheme } from '@nextui-org/react';
 import PostCard from '../../components/PostCard';
 import MainHeader from '../../components/Header/MainHeader';
+import AuthorSection from '../../components/AuthorSection';
 import useInfiniteScroll from '../../hooks/useInfiniteScroll';
 import { getAllCategories, getAllPostsByCategory } from '../../lib/api';
 import PostType from '../../types/post';
@@ -20,6 +21,7 @@ function EachCategory({ category, allPosts }: Props) {
     <>
       <SEO title={category} />
       <MainHeader />
+      <AuthorSection />
       <H2>
         Posts in <strong>{category}</strong> category
       </H2>
