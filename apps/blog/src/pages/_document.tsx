@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { CssBaseline } from '@nextui-org/react';
 import { Footer, GlobalStyle, Layout } from 'core';
-import { blogGAID, blogHotjarID, blogUrl, favicon } from 'core/constants';
+import { authorName, blogGAID, blogHotjarID, blogUrl, favicon } from 'core/constants';
 
 function isValid(value: any) {
   if (typeof value === 'string' && value.length > 0) return true;
@@ -22,7 +22,9 @@ export default class BlogDocument extends Document {
           <meta property="og:locale" content="ko_KR" />
           <meta property="og:url" content={blogUrl} />
           <link rel="canonical" href={blogUrl} />
+          <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
           <meta name="keywords" content="blog,development,developer,frontend,블로그,개발,개발자,프론트엔드" />
+          <meta name="twitter:creator" content={authorName} />
 
           {/* for google analytics */}
           {isValid(blogGAID) && (
