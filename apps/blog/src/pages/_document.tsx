@@ -3,6 +3,10 @@ import { CssBaseline } from '@nextui-org/react';
 import { Footer, GlobalStyle, Layout } from 'core';
 import { blogGAID, blogHotjarID, blogUrl, favicon } from 'core/constants';
 
+function isValid(value: any) {
+  if (typeof value === 'string' && value.length > 0) return true;
+  return false;
+}
 export default class BlogDocument extends Document {
   render() {
     return (
@@ -21,21 +25,26 @@ export default class BlogDocument extends Document {
           <meta name="keywords" content="blog,development,developer,frontend,블로그,개발,개발자,프론트엔드" />
 
           {/* for google analytics */}
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${blogGAID}`}></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
+          {isValid(blogGAID) && (
+            <>
+              <script async src={`https://www.googletagmanager.com/gtag/js?id=${blogGAID}`}></script>
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '${blogGAID}');`,
-            }}
-          />
+                }}
+              />
+            </>
+          )}
 
           {/* for hotjar */}
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `(function(h,o,t,j,a,r){
+          {isValid(blogHotjarID) && (
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `(function(h,o,t,j,a,r){
               h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
               h._hjSettings={hjid:${blogHotjarID},hjsv:6};
               a=o.getElementsByTagName('head')[0];
@@ -43,8 +52,9 @@ export default class BlogDocument extends Document {
               r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
               a.appendChild(r);
           })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
-            }}
-          ></script>
+              }}
+            ></script>
+          )}
 
           <GlobalStyle />
         </Head>
