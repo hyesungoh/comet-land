@@ -6,7 +6,6 @@ import { getLocalDate } from '../utils/date';
 const postsDirectory = join(process.cwd(), '_content');
 
 function isValidCategory(value: string) {
-  if (typeof value !== 'string') return false;
   if (value.includes('.')) return false;
   return true;
 }
