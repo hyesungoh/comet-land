@@ -27,16 +27,15 @@ export function PageProgressBar() {
     };
   }, []);
 
-  return <Div style={{ transform: `scaleX(${(pageYOffset / offsetHeight) * 100}%)` }} theme={theme}></Div>;
+  return <Div style={{ width: `${(pageYOffset / offsetHeight) * 100}%` }} theme={theme}></Div>;
 }
 
 const Div = styled.div<{ theme: NextUITheme | undefined }>`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 0;
   height: 4px;
   background-color: ${({ theme }) => theme.colors.primary.value};
-  transform-origin: left;
-  transition: transform 0.05s;
+  transition: width 0.05s;
 `;
