@@ -5,6 +5,7 @@ import { useTheme } from '@nextui-org/react';
 const src = 'https://utteranc.es/client.js';
 const LIGHT_THEME = 'github-light';
 const DARK_THEME = 'github-dark';
+const SYSTEM_THEME = 'preferred-color-scheme';
 const UTTERANCE_QUERY = '.utterances-frame';
 
 function Comments() {
@@ -13,16 +14,22 @@ function Comments() {
 
   // for initial
   useEffect(() => {
-    if (!rootElm.current) return;
-    if (document.querySelector(UTTERANCE_QUERY)) return;
+    function getCurrentTheme() {
+      const initialTheme = document.querySelector('html').classList[0];
+      if (initialTheme) {
+        return initialTheme.includes('dark') ? DARK_THEME : LIGHT_THEME;
+      }
+      return SYSTEM_THEME;
+    }
 
-    const currentTheme = document.querySelector('html').classList[0];
+    if (!rootElm.current) return;
+    if (document.querySelector(UTTERANCE_QUERY)) return; // prevant duplicate
 
     const utterances = document.createElement('script');
     const utterancesConfig = {
       src,
       repo: blogRepoUrl,
-      theme: currentTheme.includes('dark') ? DARK_THEME : LIGHT_THEME,
+      theme: getCurrentTheme(),
       label: 'comment',
       async: true,
       'issue-term': 'pathname',
