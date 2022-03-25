@@ -11,6 +11,7 @@
   "dependencies": {
     "@nextui-org/react": "^1.0.4-beta.5",
     "core": "*",
+    "gray-matter": "^4.0.3",
     "next": "^12.1.0",
     "next-themes": "^0.1.1",
     "react": "^17.0.2",

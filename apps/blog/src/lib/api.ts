@@ -1,7 +1,6 @@
 import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
-import { getLocalDate } from '../utils/date';
 
 const postsDirectory = join(process.cwd(), '_content');
 
@@ -13,6 +12,12 @@ function isValidCategory(value: string) {
 function isVaildFile(value: string) {
   if (value[0] === '.') return false;
   return true;
+}
+
+function getLocalDate(str: string) {
+  const regex = /"/gi;
+  const date = new Date(str.replace(regex, ''));
+  return date.toLocaleDateString();
 }
 
 export function getAllCategories() {
