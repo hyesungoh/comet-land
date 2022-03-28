@@ -1,0 +1,46 @@
+{
+  "title": "Skills",
+  "list": [
+    {
+      "name": "Soft skill",
+      "descriptions": ["I like to talk"]
+    },
+    {
+      "name": "HTML/CSS",
+      "descriptions": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, molestias.",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quibusdam harum, nihil quidem ducimus explicabo soluta odio."
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "descriptions": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, molestias.",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "descriptions": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, molestias.",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quibusdam harum, nihil quidem ducimus explicabo soluta odio ut voluptatem praesentium."
+      ]
+    },
+    {
+      "name": "Dev Ops",
+      "descriptions": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, molestias.",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      ]
+    },
+    {
+      "name": "ETC",
+      "descriptions": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, molestias.",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      ]
+    }
+  ]
+}

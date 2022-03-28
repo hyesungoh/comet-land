@@ -25,7 +25,6 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 3rem;
 
   & > label:last-of-type {
     margin-top: 8px;
