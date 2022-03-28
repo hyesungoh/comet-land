@@ -19,6 +19,11 @@ const globalStyle = css`
     transition: background-color 0.4s, color 0.3s;
   }
 
+  ul,
+  ol {
+    color: inherit;
+  }
+
   ul:not(.contains-task-list) {
     list-style-type: disc;
   }
