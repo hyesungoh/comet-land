@@ -1,17 +1,16 @@
 import { ThemeSwitch } from 'core';
-import { getIntro } from '../lib/api';
+import { HeaderType, data as headerData } from '../../_content/Header';
 
 interface Props {
-  heading: string;
-  description: string;
+  header: HeaderType;
 }
 
-function Resume({ heading, description }: Props) {
+function Resume({ header }: Props) {
   return (
     <main>
+      {header.heading}
+
       <ThemeSwitch />
-      <h1>{heading}</h1>
-      <p>{description}</p>
     </main>
   );
 }
@@ -19,9 +18,5 @@ function Resume({ heading, description }: Props) {
 export default Resume;
 
 export async function getStaticProps() {
-  const { heading, description } = getIntro();
-
-  return {
-    props: { heading, description },
-  };
+  return { props: { header: headerData } };
 }
