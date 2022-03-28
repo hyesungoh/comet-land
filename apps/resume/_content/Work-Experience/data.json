@@ -10,19 +10,44 @@
       "projects": [
         {
           "title": "Foo Pay",
-          "role": "FE Dev Leader",
           "description": "leading FE developers",
-          "startData": "2020.03",
-          "endData": "2020.06",
+          "startDate": "2020.03",
+          "endDate": "2020.06",
           "which": ["foo foo foo", "bar bar bar"],
           "techStack": "TypeScript, React"
         },
         {
-          "title": "Foo Pay",
+          "title": "Foo Play",
+          "description": "leading FE developers",
+          "startDate": "2020.03",
+          "endDate": "2020.06",
+          "which": ["foo foo foo", "bar bar bar"],
+          "techStack": "TypeScript, React"
+        }
+      ]
+    },
+    {
+      "name": "Bar company",
+      "position": "Web Developer",
+      "startDate": "2020.03",
+      "endDate": "2021.03",
+      "description": "Bar company is very awesome",
+      "projects": [
+        {
+          "title": "Bar Pay",
           "role": "FE Dev Leader",
           "description": "leading FE developers",
-          "startData": "2020.03",
-          "endData": "2020.06",
+          "startDate": "2020.03",
+          "endDate": "2020.06",
+          "which": ["foo foo foo", "bar bar bar"],
+          "techStack": "TypeScript, React"
+        },
+        {
+          "title": "Bar Play",
+          "role": "FE Dev Leader",
+          "description": "leading FE developers",
+          "startDate": "2020.03",
+          "endDate": "2020.06",
           "which": ["foo foo foo", "bar bar bar"],
           "techStack": "TypeScript, React"
         }

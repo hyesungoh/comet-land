@@ -2,12 +2,11 @@ import data from './data.json';
 
 export interface IProject {
   title: string;
-  role: string;
   description: string;
   startDate: string;
   endDate: string;
   which: string[];
-  techStack: string[];
+  techStack: string;
 }
 
 export interface ICompany {
