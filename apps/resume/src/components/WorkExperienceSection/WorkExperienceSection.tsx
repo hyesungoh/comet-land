@@ -2,10 +2,11 @@ import styled from '@emotion/styled';
 import { IWorkExperience } from '../../../_content/Work-Experience';
 import Company from './Company';
 import Project from './Project';
+import Section from '../Section';
 
 function WorkExperienceSection({ title, list }: IWorkExperience) {
   return (
-    <section>
+    <Section>
       <h2>{title}</h2>
       {list.map((company, index) => (
         <CompanyWrapper key={index}>
@@ -20,7 +21,7 @@ function WorkExperienceSection({ title, list }: IWorkExperience) {
           </ProjectWrapper>
         </CompanyWrapper>
       ))}
-    </section>
+    </Section>
   );
 }
 
@@ -28,7 +29,7 @@ export default WorkExperienceSection;
 
 const CompanyWrapper = styled.div`
   display: flex;
-  margin-top: 1.5rem;
+  margin-bottom: 2rem;
 
   & > div:first-of-type {
     height: auto;

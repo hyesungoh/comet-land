@@ -1,18 +1,19 @@
 import styled from '@emotion/styled';
 import { useTheme } from '@nextui-org/react';
-import { IProject } from '../../../_content/Work-Experience';
+import { IExperience } from '../../../_content/Other-Experience';
 import Li from '../Li';
 
-function Project({ title, description, startDate, endDate, which, techStack }: IProject) {
+function Experience({ name, position, startDate, endDate, description, which }: IExperience) {
   const { theme } = useTheme();
 
   return (
     <Div>
-      <h3>{title}</h3>
+      <h3>{name}</h3>
       <small>
         {startDate} ~ {endDate}
       </small>
-      <span>{description}</span>
+      <span>{position}</span>
+      <p>{description}</p>
       {which.length > 0 && (
         <ul>
           {which.map((each, index) => (
@@ -22,15 +23,14 @@ function Project({ title, description, startDate, endDate, which, techStack }: I
           ))}
         </ul>
       )}
-      <span>{techStack}</span>
     </Div>
   );
 }
 
-export default Project;
+export default Experience;
 
 const Div = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
 `;
