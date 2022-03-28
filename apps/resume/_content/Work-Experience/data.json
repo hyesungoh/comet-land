@@ -4,24 +4,36 @@
     {
       "name": "Foo company",
       "position": "Web Developer",
-      "startDate": "2020.03",
-      "endDate": "2021.03",
-      "description": "Foo company is very awesome",
+      "startDate": "2021.03",
+      "endDate": "",
+      "description": "Foo company is social media company for every world",
       "projects": [
         {
           "title": "Foo Pay",
-          "description": "leading FE developers",
-          "startDate": "2020.03",
-          "endDate": "2020.06",
-          "which": ["foo foo foo", "bar bar bar"],
-          "techStack": "TypeScript, React"
+          "description": "Leading FE developers",
+          "startDate": "2022.01",
+          "endDate": "",
+          "which": ["leading fe developers", "foster SEO"],
+          "techStack": "TypeScript, React, Recoil"
         },
         {
           "title": "Foo Play",
-          "description": "leading FE developers",
-          "startDate": "2020.03",
-          "endDate": "2020.06",
-          "which": ["foo foo foo", "bar bar bar"],
+          "description": "Leading FE developers",
+          "startDate": "2021.6",
+          "endDate": "2021.12",
+          "which": ["publishing Foo Play"],
+          "techStack": "TypeScript, Next.js"
+        },
+        {
+          "title": "Foo Eat",
+          "description": "Leading FE developers",
+          "startDate": "2021.03",
+          "endDate": "2021.06",
+          "which": [
+            "develop comet-land",
+            "lorem lorem",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iusto quasi alias provident quos perspiciatis modi dolores libero tenetur nam?"
+          ],
           "techStack": "TypeScript, React"
         }
       ]
@@ -36,19 +48,19 @@
         {
           "title": "Bar Pay",
           "role": "FE Dev Leader",
-          "description": "leading FE developers",
-          "startDate": "2020.03",
-          "endDate": "2020.06",
-          "which": ["foo foo foo", "bar bar bar"],
+          "description": "Leading FE developers",
+          "startDate": "2020.08",
+          "endDate": "2021.03",
+          "which": ["Lorem ipsum dolor sit amet consectetur adipisicing elit", "Cum iusto quasi alias provident quos perspiciatis modi dolores libero tenetur nam?"],
           "techStack": "TypeScript, React"
         },
         {
           "title": "Bar Play",
           "role": "FE Dev Leader",
-          "description": "leading FE developers",
+          "description": "Leading FE developers",
           "startDate": "2020.03",
-          "endDate": "2020.06",
-          "which": ["foo foo foo", "bar bar bar"],
+          "endDate": "2020.08",
+          "which": ["perspiciatis modi dolores libero tenetur nam.", "Lorem ipsum dolor sit amet consectetur adipisicing."],
           "techStack": "TypeScript, React"
         }
       ]

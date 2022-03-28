@@ -2,36 +2,36 @@
   "title": "Other Experience",
   "list": [
     {
-      "name": "Foo company",
-      "position": "Web Developer",
-      "startDate": "2020.03",
+      "name": "Foo University",
+      "position": "Student",
+      "startDate": "2018.03",
       "endDate": "2021.03",
-      "description": "Foo company is very awesome",
-      "which": ["foo foo foo", "bar bar bar"]
+      "description": "Graduated software develop major",
+      "which": []
     },
     {
-      "name": "Foo company",
-      "position": "Web Developer",
-      "startDate": "2020.03",
-      "endDate": "2021.03",
-      "description": "Foo company is very awesome",
-      "which": ["foo foo foo", "bar bar bar"]
+      "name": "Bar club",
+      "position": "FE developer course",
+      "startDate": "2018.03",
+      "endDate": "2018.12",
+      "description": "Learning FE development",
+      "which": ["learning HTML/CSS", "learning SPA Framework"]
     },
     {
-      "name": "Foo company",
+      "name": "Lovin Next.js club",
       "position": "Web Developer",
       "startDate": "2020.03",
       "endDate": "2021.03",
-      "description": "Foo company is very awesome",
-      "which": ["foo foo foo", "bar bar bar"]
+      "description": "Love Next.js and NextUI",
+      "which": ["Comet-land build with Next.js and NextUI"]
     },
     {
-      "name": "Foo company",
+      "name": "Turbo developers",
       "position": "Web Developer",
       "startDate": "2020.03",
       "endDate": "2021.03",
-      "description": "Foo company is very awesome",
-      "which": ["foo foo foo", "bar bar bar"]
+      "description": "Comet-land build with turborepo",
+      "which": ["Turborepo is awesome", "It's super fast"]
     }
   ]
 }
