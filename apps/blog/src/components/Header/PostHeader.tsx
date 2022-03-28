@@ -5,7 +5,7 @@ import { blogName } from 'core/constants';
 import { Text, useTheme } from '@nextui-org/react';
 
 function PostHeader() {
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
 
   return (
     <Header>
@@ -15,7 +15,7 @@ function PostHeader() {
         </Link>
       </H3>
       <ButtonWrapper>
-        <ThemeSwitch />
+        <ThemeSwitch theme={theme} isDark={isDark} />
         <KBarToggleButton />
       </ButtonWrapper>
     </Header>

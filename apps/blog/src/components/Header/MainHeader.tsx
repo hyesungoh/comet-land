@@ -5,7 +5,7 @@ import { blogName } from 'core/constants';
 import Link from 'next/link';
 
 function MainHeader() {
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
 
   return (
     <Header>
@@ -15,7 +15,7 @@ function MainHeader() {
         </Link>
       </H1>
       <ButtonWrapper>
-        <ThemeSwitch />
+        <ThemeSwitch theme={theme} isDark={isDark} />
         <KBarToggleButton />
       </ButtonWrapper>
     </Header>

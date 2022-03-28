@@ -4,7 +4,7 @@ import { ThemeSwitch } from 'core';
 import { IHeader } from '../../../_content/Header';
 
 function Header({ heading, description }: IHeader) {
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
 
   return (
     <StyledHeader>
@@ -14,7 +14,7 @@ function Header({ heading, description }: IHeader) {
         </H1>
         <p dangerouslySetInnerHTML={{ __html: description }}></p>
       </div>
-      <ThemeSwitch />
+      <ThemeSwitch isDark={isDark} theme={theme} />
     </StyledHeader>
   );
 }

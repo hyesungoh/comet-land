@@ -1,13 +1,17 @@
 import { useTheme as useNextTheme } from 'next-themes';
-import { Switch, useTheme } from '@nextui-org/react';
+import { NextUITheme, Switch } from '@nextui-org/react';
 import { Icon } from './Icon';
 import { useEffect } from 'react';
 
 const ARIA_LABEL = 'theme switch';
 
-export function ThemeSwitch() {
+interface Props {
+  isDark: boolean | undefined;
+  theme: NextUITheme | undefined;
+}
+
+export function ThemeSwitch({ isDark, theme }: Props) {
   const { setTheme } = useNextTheme();
-  const { isDark, theme } = useTheme();
 
   useEffect(() => {
     const label = document.querySelector(`[aria-label="${ARIA_LABEL}"]`);

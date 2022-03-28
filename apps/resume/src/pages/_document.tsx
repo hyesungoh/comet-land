@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-
 import { CssBaseline } from '@nextui-org/react';
 import { Footer, GlobalStyle, Layout } from 'core';
 import { authorImage, authorName, favicon } from 'core/constants';
@@ -13,9 +12,6 @@ export default class ResumeDocument extends Document {
         <Head>
           {/* for NextUI */}
           {CssBaseline.flush()}
-
-          {/* eslint-disable-next-line @next/next/no-title-in-document-head */}
-          <title>{TITLE}</title>
 
           <link rel="icon" href={favicon.default.src} />
           <meta httpEquiv="Content-type" content="text/html; charset=utf-8" />

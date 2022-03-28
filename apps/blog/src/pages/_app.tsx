@@ -20,10 +20,7 @@ export default function BlogApp({ Component, pageProps }: AppProps) {
     <NextThemesProvider
       defaultTheme="system"
       attribute="class"
-      value={{
-        light: lightTheme.className,
-        dark: darkTheme.className,
-      }}
+      value={{ light: lightTheme.className, dark: darkTheme.className }}
     >
       <NextUIProvider>
         <KBarProvider actions={kbarActions}>
