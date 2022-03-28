@@ -7,7 +7,7 @@ import { lightTheme, darkTheme } from 'core';
 export default function ResumeApp({ Component, pageProps }: AppProps) {
   return (
     <NextThemesProvider
-      default="system"
+      defaultTheme="system"
       attribute="class"
       value={{ light: lightTheme.className, dark: darkTheme.className }}
     >
