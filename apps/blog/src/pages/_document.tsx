@@ -23,7 +23,9 @@ export default class BlogDocument extends Document {
           <meta property="og:url" content={blogUrl} />
           <link rel="canonical" href={blogUrl} />
           <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-          <meta name="keywords" content="blog,development,developer,frontend,블로그,개발,개발자,프론트엔드" />
+          <meta name="keywords" content="blog,development,developer,frontend" />
+          {/* for korean keywords */}
+          {/* <meta name="keywords" content="blog,development,developer,frontend,블로그,개발,개발자,프론트엔드" /> */}
           <meta name="twitter:creator" content={authorName} />
 
           {/* for google analytics */}

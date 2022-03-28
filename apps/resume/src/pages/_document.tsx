@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { CssBaseline } from '@nextui-org/react';
-import { GlobalStyle, Layout } from 'core';
+import { Footer, GlobalStyle, Layout } from 'core';
 import { authorName, favicon } from 'core/constants';
 
 export default class ResumeDocument extends Document {
@@ -14,7 +14,9 @@ export default class ResumeDocument extends Document {
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="ko_KR" />
-          <meta name="keywords" content="resume,이력서,development,개발,developer,개발자" />
+          <meta name="keywords" content="resume,development,developer" />
+          {/* for korean keywords */}
+          {/* <meta name="keywords" content="resume,development,developer,이력서,개발,개발자" /> */}
           <meta name="twitter:creator" content={authorName} />
 
           <GlobalStyle />
@@ -22,6 +24,7 @@ export default class ResumeDocument extends Document {
         <body>
           <Layout>
             <Main />
+            <Footer />
           </Layout>
           <NextScript />
         </body>
