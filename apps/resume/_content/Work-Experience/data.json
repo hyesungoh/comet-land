@@ -1,0 +1,32 @@
+{
+  "title": "Work Experience",
+  "list": [
+    {
+      "name": "Foo company",
+      "position": "Web Developer",
+      "startDate": "2020.03",
+      "endDate": "2021.03",
+      "description": "Foo company is very awesome",
+      "projects": [
+        {
+          "title": "Foo Pay",
+          "role": "FE Dev Leader",
+          "description": "leading FE developers",
+          "startData": "2020.03",
+          "endData": "2020.06",
+          "which": ["foo foo foo", "bar bar bar"],
+          "techStack": "TypeScript, React"
+        },
+        {
+          "title": "Foo Pay",
+          "role": "FE Dev Leader",
+          "description": "leading FE developers",
+          "startData": "2020.03",
+          "endData": "2020.06",
+          "which": ["foo foo foo", "bar bar bar"],
+          "techStack": "TypeScript, React"
+        }
+      ]
+    }
+  ]
+}

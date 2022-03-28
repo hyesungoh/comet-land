@@ -1,16 +1,19 @@
-import { ThemeSwitch } from 'core';
-import { HeaderType, data as headerData } from '../../_content/Header';
+import { IHeader, data as headerData } from '../../_content/Header';
+import { data as workExperienceData, IWorkExperience } from '../../_content/Work-Experience';
+
+import Header from '../components/Header';
+import WorkExperienceSection from '../components/WorkExperienceSection';
 
 interface Props {
-  header: HeaderType;
+  header: IHeader;
+  workExperience: IWorkExperience;
 }
 
-function Resume({ header }: Props) {
+function Resume({ header, workExperience }: Props) {
   return (
     <main>
-      {header.heading}
-
-      <ThemeSwitch />
+      <Header {...header} />
+      <WorkExperienceSection {...workExperience} />
     </main>
   );
 }
@@ -18,5 +21,5 @@ function Resume({ header }: Props) {
 export default Resume;
 
 export async function getStaticProps() {
-  return { props: { header: headerData } };
+  return { props: { header: headerData, workExperience: workExperienceData } };
 }
