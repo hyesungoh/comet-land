@@ -1,7 +1,6 @@
 import { IconActionType, socialActions } from 'core/constants';
 import { openExternalLink } from 'core/utils';
-import config from '../../../_config/index.json';
-const { blogUrl, email } = config;
+import { blogUrl, email } from '../../../_config';
 
 function openEmailTo(href: string) {
   Object.assign(document.createElement('a'), { href: `mailto:${href}` }).click();

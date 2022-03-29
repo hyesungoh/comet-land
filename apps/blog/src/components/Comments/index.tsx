@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useTheme } from '@nextui-org/react';
-import config from '../../../_config/index.json';
-const { blogRepo } = config;
+import { blogRepo } from '../../../_config';
 
 const src = 'https://utteranc.es/client.js';
 const LIGHT_THEME = 'github-light';
