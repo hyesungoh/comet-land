@@ -1,11 +1,13 @@
 import styled from '@emotion/styled';
-import { config } from '@nextui-org/react';
+import { useTheme, config, NextUITheme } from '@nextui-org/react';
 import { IWorkExperience } from '../../../_content/Work-Experience';
 import Company from './Company';
 import Project from './Project';
 import Section from '../Section';
 
 function WorkExperienceSection({ title, list }: IWorkExperience) {
+  const { theme } = useTheme();
+
   return (
     <Section>
       <h2>{title}</h2>
@@ -15,7 +17,7 @@ function WorkExperienceSection({ title, list }: IWorkExperience) {
             <Company {...company} />
           </div>
 
-          <ProjectWrapper>
+          <ProjectWrapper theme={theme}>
             {company.projects.map((project, index) => (
               <Project key={index} {...project} />
             ))}
@@ -41,9 +43,14 @@ const CompanyWrapper = styled.div`
   }
 `;
 
-const ProjectWrapper = styled.div`
+const ProjectWrapper = styled.div<{ theme: NextUITheme | undefined }>`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   gap: 12px;
+
+  @media ${config.media.xsMax} {
+    padding-left: 1rem;
+    border-left: solid 3px ${({ theme }) => theme.colors.primary.value};
+  }
 `;
