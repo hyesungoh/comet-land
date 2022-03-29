@@ -12,7 +12,6 @@
 
 turborepo를 사용한 블로그와 이력서 템플릿입니다.
 
-
 ## 블로그 기능
 
 ![postGif](https://user-images.githubusercontent.com/26461307/159372336-e42c1a9c-9915-4d05-9e51-4882d681dc80.gif)
@@ -78,9 +77,9 @@ yarn dev
   - linkedin
   - twitter
 
-그리고 `apps/blog/scripts/generate-static-files.js` 파일을 확인해주세요.
+그리고 `apps/blog/_config/index.json`와 `apps/resume/_config/index.json` 파일을 확인해주세요.
 
-서버 사이드에서 static file들을 생성하기 위해 `blogUrl` 변수를 채워주세요. ~~리팩토링할 부분입니다~~
+각 파일들은 각 앱의 설정 값들이 위치해있습니다.
 
 ## 사용하는 방법
 
@@ -88,7 +87,6 @@ yarn dev
 
 - [블로그 글 게시하는 방법](https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/ko-blog.md)
 - [이력서 수정하는 방법](https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/ko-resume.md)
-
 
 ## Vercel을 이용해 배포하는 방법
 
