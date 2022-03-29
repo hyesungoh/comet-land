@@ -1,7 +1,11 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { CssBaseline } from '@nextui-org/react';
 import { Footer, GlobalStyle, Layout } from 'core';
-import { authorName, blogGAID, blogHotjarID, blogUrl, favicon } from 'core/constants';
+import { authorName, blogGAID, blogHotjarID, favicon } from 'core/constants';
+
+// Should not import the named export from default-exporting module (only default export is available soon)
+import config from '../../_config/index.json';
+const { blogUrl } = config;
 
 function isValid(value: any) {
   if (typeof value === 'string' && value.length > 0) return true;

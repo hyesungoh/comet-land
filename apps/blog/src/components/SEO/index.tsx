@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import { blogName, authorName, blogDescription, authorImage } from 'core/constants';
+import { authorName, defaultMetaBackground } from 'core/constants';
+import config from '../../../_config/index.json';
+const { blogName, blogDescription } = config;
 
 interface Props {
   title?: string | undefined;
@@ -17,7 +19,7 @@ function SEO({ title, description, ogImage }: Props) {
       <meta name="description" content={DESCRIPTION} />
       <meta property="og:title" content={TITLE} />
       <meta property="og:description" content={DESCRIPTION} />
-      <meta property="og:image" content={ogImage ? ogImage : authorImage.default.src} />
+      <meta property="og:image" content={ogImage ? ogImage : defaultMetaBackground.default.src} />
 
       {/* for twitter */}
       <meta name="twitter:title" content={TITLE} />

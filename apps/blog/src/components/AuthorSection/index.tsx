@@ -2,7 +2,9 @@ import styled from '@emotion/styled';
 import { Avatar, Link } from '@nextui-org/react';
 import { KBarToggleButton } from 'core';
 
-import { authorImage, authorName, blogDescription, defaultUrl } from 'core/constants';
+import { authorImage, authorName, defaultUrl } from 'core/constants';
+import config from '../../../_config/index.json';
+const { blogDescription } = config;
 
 interface Props {
   marginBottom?: string;

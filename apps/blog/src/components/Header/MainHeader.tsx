@@ -1,8 +1,9 @@
+import Link from 'next/link';
 import styled from '@emotion/styled';
 import { Text, useTheme, config } from '@nextui-org/react';
 import { KBarToggleButton, ThemeSwitch } from 'core';
-import { blogName } from 'core/constants';
-import Link from 'next/link';
+import jsonConfig from '../../../_config/index.json';
+const { blogName } = jsonConfig;
 
 function MainHeader() {
   const { theme, isDark } = useTheme();

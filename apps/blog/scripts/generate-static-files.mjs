@@ -1,11 +1,12 @@
-const blogUrl = 'https://comet-land-blog.vercel.app';
-
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
 import { format } from 'prettier';
 
 const postsDirectory = join(process.cwd(), '_content');
+
+const configDirectory = join(process.cwd(), '_config');
+const { blogUrl } = JSON.parse(readFileSync(join(configDirectory, 'index.json')));
 
 function isValidCategory(value) {
   if (value.includes('.')) return false;

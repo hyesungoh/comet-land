@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
-import { blogRepoUrl } from 'core/constants';
 import { useTheme } from '@nextui-org/react';
+import config from '../../../_config/index.json';
+const { blogRepo } = config;
 
 const src = 'https://utteranc.es/client.js';
 const LIGHT_THEME = 'github-light';
@@ -28,7 +29,7 @@ function Comments() {
     const utterances = document.createElement('script');
     const utterancesConfig = {
       src,
-      repo: blogRepoUrl,
+      repo: blogRepo,
       theme: getCurrentTheme(),
       label: 'comment',
       async: true,

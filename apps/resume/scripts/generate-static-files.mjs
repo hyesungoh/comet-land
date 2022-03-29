@@ -3,8 +3,7 @@ import { join } from 'path';
 import { format } from 'prettier';
 
 const configDirectory = join(process.cwd(), '_config');
-const jsonData = JSON.parse(readFileSync(join(configDirectory, 'index.json')));
-const { resumeUrl } = jsonData;
+const { resumeUrl } = JSON.parse(readFileSync(join(configDirectory, 'index.json')));
 
 // sitemap
 function generateSitemap() {
