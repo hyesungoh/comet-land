@@ -6,7 +6,7 @@ export interface IProject {
   startDate: string;
   endDate: string;
   which: string[];
-  techStack: string;
+  techStack: string[];
 }
 
 export interface ICompany {

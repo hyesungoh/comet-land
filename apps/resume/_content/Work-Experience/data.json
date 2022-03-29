@@ -14,15 +14,15 @@
           "startDate": "2022.01",
           "endDate": "",
           "which": ["leading fe developers", "foster SEO"],
-          "techStack": "TypeScript, React, Recoil"
+          "techStack": ["TypeScript", "React", "Recoil"]
         },
         {
-          "title": "Foo Play",
-          "description": "Leading FE developers",
+          "title": "Comet-land",
+          "description": "Monorepo for blog and resume",
           "startDate": "2021.6",
           "endDate": "2021.12",
-          "which": ["publishing Foo Play"],
-          "techStack": "TypeScript, Next.js"
+          "which": ["construct monorepo with turborepo", "design with NextUI"],
+          "techStack": ["TypeScript", "React", "Next.js", "Turborepo", "NextUI", "Emotion"]
         },
         {
           "title": "Foo Eat",
@@ -34,7 +34,7 @@
             "lorem lorem",
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iusto quasi alias provident quos perspiciatis modi dolores libero tenetur nam?"
           ],
-          "techStack": "TypeScript, React"
+          "techStack": ["TypeScript", "React", "Recoil"]
         }
       ]
     },
@@ -51,8 +51,11 @@
           "description": "Leading FE developers",
           "startDate": "2020.08",
           "endDate": "2021.03",
-          "which": ["Lorem ipsum dolor sit amet consectetur adipisicing elit", "Cum iusto quasi alias provident quos perspiciatis modi dolores libero tenetur nam?"],
-          "techStack": "TypeScript, React"
+          "which": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+            "Cum iusto quasi alias provident quos perspiciatis modi dolores libero tenetur nam?"
+          ],
+          "techStack": ["TypeScript", "React", "Recoil"]
         },
         {
           "title": "Bar Play",
@@ -60,8 +63,11 @@
           "description": "Leading FE developers",
           "startDate": "2020.03",
           "endDate": "2020.08",
-          "which": ["perspiciatis modi dolores libero tenetur nam.", "Lorem ipsum dolor sit amet consectetur adipisicing."],
-          "techStack": "TypeScript, React"
+          "which": [
+            "perspiciatis modi dolores libero tenetur nam.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing."
+          ],
+          "techStack": ["TypeScript", "React", "Recoil"]
         }
       ]
     }
