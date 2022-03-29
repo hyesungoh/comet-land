@@ -1,5 +1,4 @@
-import IconActionType from './type';
-import socialActions from './socialMedia';
+import { socialActions, IconActionType } from 'core/constants';
 import postActions from './posts';
 import categoryActions from './categories';
 import { NextRouter } from 'next/router';

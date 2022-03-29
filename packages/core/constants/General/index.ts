@@ -10,7 +10,7 @@ export const defaultUrl = githubUrl;
 // using both app's favicon
 export * as favicon from './favicon.ico';
 
-// using blog header and resume og:image
+// using bot app's header and resume's og:image
 export * as authorImage from './author.png';
 
 // using blog og:image

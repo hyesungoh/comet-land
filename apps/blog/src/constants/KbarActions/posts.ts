@@ -1,4 +1,4 @@
-import IconActionType from './type';
+import { IconActionType } from 'core/constants';
 import manifest from '../../../_content/manifest.json';
 
 const { posts } = manifest;

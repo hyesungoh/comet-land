@@ -2479,7 +2479,7 @@ json5@^1.0.1:
     array-includes "^3.1.3"
     object.assign "^4.1.2"
 
-kbar@^0.1.0-beta.30:
+kbar@^0.1.0-beta.30, kbar@^0.1.0-beta.33:
   version "0.1.0-beta.33"
   resolved "https://registry.yarnpkg.com/kbar/-/kbar-0.1.0-beta.33.tgz#55230b2095ea21b1145e33ac18e55e971ebc0e08"
   integrity sha512-W+NQuQpQ7y31SdJc5Twtr88BD9oT4Yixo2ww9Ezsw6Gk+7Z5XfbxAQucFcCYljz/jJbg2hPOY1aNpvIDG6/jDw==

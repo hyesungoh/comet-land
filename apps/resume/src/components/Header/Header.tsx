@@ -13,6 +13,7 @@ function Header({ heading, description }: IHeader) {
         <H1 h1 css={{ textGradient: `45deg, ${theme.colors.text.value} 10%, ${theme.colors.primary.value} 60%` }}>
           {heading}
         </H1>
+
         <ThemeSwitch isDark={isDark} theme={theme} />
       </HeadingWrapper>
 

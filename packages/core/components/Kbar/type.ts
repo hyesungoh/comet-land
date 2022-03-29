@@ -20,6 +20,7 @@ export interface ResultHandlers {
   onMouseEnter: () => void;
   onPointerDown: () => void;
 }
+
 export interface ResultState {
   index: number;
   activeIndex: number;

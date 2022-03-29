@@ -1,6 +1,6 @@
-import IconActionType from './type';
-import { githubUrl, instagramUrl, facebookUrl, linkedInUrl, twitterUrl } from 'core/constants';
-import { openExternalLink } from 'core/utils';
+import { IconActionType } from './type';
+import { githubUrl, instagramUrl, facebookUrl, linkedInUrl, twitterUrl } from '../SocialMedia';
+import { openExternalLink } from '../../utils';
 
 function isValid(value: unknown) {
   if (typeof value === 'string' && value.length > 2) {
@@ -14,7 +14,7 @@ function getSocialMediaId(value: string) {
   return value.split('/').pop();
 }
 
-const socialActions: IconActionType[] = [];
+export const socialActions: IconActionType[] = [];
 
 function pushActionWhenValid(value: string, action: IconActionType) {
   if (!isValid(value)) return;
@@ -75,5 +75,3 @@ pushActionWhenValid(twitterUrl, {
   icon: 'Twitter',
   perform: () => openExternalLink(twitterUrl),
 });
-
-export default socialActions;
