@@ -1,12 +1,9 @@
-
-// refactor
 const blogUrl = 'https://comet-land-blog.vercel.app';
 
-const fs = require('fs');
-const path = require('path');
-const { join } = path;
-const matter = require('gray-matter');
-const prettier = require('prettier');
+import { readdirSync, readFileSync, writeFileSync } from 'fs';
+import { join } from 'path';
+import matter from 'gray-matter';
+import { format } from 'prettier';
 
 const postsDirectory = join(process.cwd(), '_content');
 
@@ -27,20 +24,20 @@ function getLocalDate(str) {
 }
 
 function getAllCategories() {
-  const allCategories = fs.readdirSync(postsDirectory);
+  const allCategories = readdirSync(postsDirectory);
   const allCategoriesWithoutDot = allCategories.filter(category => isValidCategory(category));
   return allCategoriesWithoutDot;
 }
 
 function getPostsPathByCategory(category) {
-  if (isVaildFile(category)) return fs.readdirSync(`${postsDirectory}/${category}`);
+  if (isVaildFile(category)) return readdirSync(`${postsDirectory}/${category}`);
   return [];
 }
 
 function getPostBySlugAndCategory(slug, category, fields = []) {
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(postsDirectory, `${category}/`, `${realSlug}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf-8');
+  const fileContents = readFileSync(fullPath, 'utf-8');
   const { data, content } = matter(fileContents);
 
   const items = {};
@@ -93,7 +90,7 @@ function generateContentManifest() {
   const allPosts = getAllPosts(['title', 'date', 'slug']);
   const allCategories = getAllCategories();
 
-  fs.writeFileSync('./_content/manifest.json', JSON.stringify({ posts: allPosts, categories: allCategories }), 'utf-8');
+  writeFileSync('./_content/manifest.json', JSON.stringify({ posts: allPosts, categories: allCategories }), 'utf-8');
 }
 
 // sitemap
@@ -128,14 +125,14 @@ function generateSitemap() {
   </urlset>
   `;
 
-  const formattedSitemap = prettier.format(sitemap, { parser: 'html' });
+  const formattedSitemap = format(sitemap, { parser: 'html' });
 
-  fs.writeFileSync('public/sitemap.xml', formattedSitemap);
+  writeFileSync('public/sitemap.xml', formattedSitemap);
 }
 
 // robots.txt
 function generateRobots() {
-  fs.writeFileSync(
+  writeFileSync(
     'public/robots.txt',
     `User-agent: *
 Sitemap: ${blogUrl}/sitemap.xml`

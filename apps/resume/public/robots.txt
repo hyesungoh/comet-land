@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://comet-land-resume.vercel.app/sitemap.xml

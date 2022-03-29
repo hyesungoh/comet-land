@@ -4,7 +4,6 @@ import { NextUITheme } from '@nextui-org/react';
 export default styled.li<{ theme: NextUITheme | undefined }>`
   list-style-type: none;
   position: relative;
-  transition: color 0.3s;
 
   &::before {
     content: '';

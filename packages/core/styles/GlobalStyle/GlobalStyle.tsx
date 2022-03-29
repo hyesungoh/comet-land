@@ -30,7 +30,6 @@ const globalStyle = css`
 
   ${codeHighlight};
 
-  // this means 650px
   @media ${config.media.xsMax} {
     html {
       font-size: 14px;

@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { config } from '@nextui-org/react';
 import { IWorkExperience } from '../../../_content/Work-Experience';
 import Company from './Company';
 import Project from './Project';
@@ -33,6 +34,10 @@ const CompanyWrapper = styled.div`
 
   & > div:first-of-type {
     height: auto;
+  }
+
+  @media ${config.media.xsMax} {
+    flex-direction: column;
   }
 `;
 

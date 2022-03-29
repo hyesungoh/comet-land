@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "predev": "node ./scripts/generate-static-files.js",
+    "predev": "node ./scripts/generate-static-files.mjs",
     "dev": "next dev --port 3000",
-    "prebuild": "node ./scripts/generate-static-files.js",
+    "prebuild": "node ./scripts/generate-static-files.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

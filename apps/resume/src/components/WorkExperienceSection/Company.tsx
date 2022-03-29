@@ -26,7 +26,7 @@ const CompanyCard = styled.div`
 
   display: flex;
   flex-direction: column;
-  width: 230px;
+  width: 14.375rem;
 `;
 
 const P = styled.p<{ theme: NextUITheme | undefined }>`
