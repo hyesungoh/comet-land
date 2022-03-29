@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { authorName, defaultMetaBackground } from 'core/constants';
-import config from '../../../_config/index.json';
-const { blogName, blogDescription } = config;
+import { blogName, blogDescription } from '../../../_config';
 
 interface Props {
   title?: string | undefined;

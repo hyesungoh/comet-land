@@ -2,8 +2,7 @@ import Link from 'next/link';
 import styled from '@emotion/styled';
 import { Text, useTheme } from '@nextui-org/react';
 import { KBarToggleButton, ThemeSwitch } from 'core';
-import config from '../../../_config/index.json';
-const { blogName } = config;
+import { blogName } from '../../../_config';
 
 function PostHeader() {
   const { theme, isDark } = useTheme();

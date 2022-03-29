@@ -3,8 +3,7 @@ import { Avatar, Link } from '@nextui-org/react';
 import { KBarToggleButton } from 'core';
 
 import { authorImage, authorName, defaultUrl } from 'core/constants';
-import config from '../../../_config/index.json';
-const { blogDescription } = config;
+import { blogDescription } from '../../../_config';
 
 interface Props {
   marginBottom?: string;
