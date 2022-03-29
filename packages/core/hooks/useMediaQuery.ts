@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useMediaQuery = (width: number): boolean => {
+export const useMediaQuery = (width: number): boolean => {
   const [targetReached, setTargetReached] = useState(false);
 
   useEffect(() => {
@@ -21,5 +21,3 @@ const useMediaQuery = (width: number): boolean => {
 
   return targetReached;
 };
-
-export default useMediaQuery;

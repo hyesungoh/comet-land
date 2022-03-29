@@ -8,6 +8,7 @@ import { KBarProvider } from 'kbar';
 import { lightTheme, darkTheme } from 'core';
 import { authorName } from 'core/constants';
 import generateKbarAction from '../constants/KbarActions';
+import ContactButton from '../components/ContactButton';
 
 const KbarComponent = dynamic(() => import('core/components/Kbar'), {
   ssr: false,
@@ -24,6 +25,7 @@ export default function ResumeApp({ Component, pageProps }: AppProps) {
         <KBarProvider actions={generateKbarAction()}>
           <Title />
           <KbarComponent />
+          <ContactButton />
           <Component {...pageProps} />
         </KBarProvider>
       </NextUIProvider>

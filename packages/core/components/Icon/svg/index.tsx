@@ -10,4 +10,16 @@ import { Search } from './Search';
 import { Sun } from './Sun';
 import { Twitter } from './Twitter';
 
-export const svg = { Blog, ChevronRight, Email, Facebook, Github, Instagram, Linkedin, Moon, Search, Sun, Twitter };
+export const svg = {
+  Blog,
+  ChevronRight,
+  Email,
+  Facebook,
+  Github,
+  Instagram,
+  Linkedin,
+  Moon,
+  Search,
+  Sun,
+  Twitter,
+};
