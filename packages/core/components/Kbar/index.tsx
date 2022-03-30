@@ -1,6 +1,5 @@
-/** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
-import { useTheme, Backdrop } from '@nextui-org/react';
+import styled from '@emotion/styled';
+import { useTheme, Backdrop, NextUITheme } from '@nextui-org/react';
 import { KBarAnimator, KBarPortal, KBarPositioner, useKBar, VisualState } from 'kbar';
 import { KBarResult } from './Result';
 import KBarSearch from './Search';
@@ -8,7 +7,11 @@ import KBarSearch from './Search';
 export * from './KBarToggleButton';
 
 export function Kbar() {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
+  const kt = useTheme();
+  const { theme } = kt;
+  console.log(kt);
+
   const { visible } = useKBar(state => ({
     visible: state.visualState !== VisualState.hidden,
   }));
@@ -17,20 +20,10 @@ export function Kbar() {
     <KBarPortal>
       <Backdrop blur className="backdrop" visible={visible}>
         <KBarPositioner>
-          <KBarAnimator
-            css={css`
-              max-width: 500px;
-              width: 100%;
-              background-color: ${theme?.colors?.accents1?.value};
-              color: ${theme?.colors?.text?.value};
-              border-radius: 8px;
-              overflow: hidden;
-              box-shadow: ${theme?.shadows?.md?.value};
-            `}
-          >
+          <StyledKBarAnimator theme={theme}>
             <KBarSearch />
             <KBarResult />
-          </KBarAnimator>
+          </StyledKBarAnimator>
         </KBarPositioner>
       </Backdrop>
     </KBarPortal>
@@ -38,3 +31,13 @@ export function Kbar() {
 }
 
 export default Kbar;
+
+const StyledKBarAnimator = styled(KBarAnimator)<{ theme: NextUITheme | undefined }>`
+  max-width: 500px;
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors.accents1.value};
+  color: ${({ theme }) => theme.colors.text.value};
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: ${({ theme }) => theme.shadows.md.value};
+`;
