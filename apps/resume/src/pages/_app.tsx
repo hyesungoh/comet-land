@@ -1,9 +1,9 @@
-import Head from 'next/head';
 import { AppProps } from 'next/app';
+import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import { KBarProvider } from 'kbar';
 import { NextUIProvider } from '@nextui-org/react';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
-import { KBarProvider } from 'kbar';
 
 import { lightTheme, darkTheme } from 'core';
 import { authorName } from 'core/constants';

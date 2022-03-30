@@ -13,10 +13,10 @@
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
-    "@nextui-org/react": "^1.0.2-beta.4",
+    "@nextui-org/react": "^1.0.4-beta.5",
     "core": "*",
     "gray-matter": "^4.0.3",
-    "kbar": "^0.1.0-beta.30",
+    "kbar": "^0.1.0-beta.33",
     "next": "^12.1.0",
     "next-themes": "^0.1.1",
     "react": "^17.0.2",

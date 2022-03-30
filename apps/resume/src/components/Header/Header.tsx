@@ -5,7 +5,7 @@ import { authorImage, authorName } from 'core/constants';
 import { IHeader } from '../../../_content/Header';
 
 function Header({ heading, description }: IHeader) {
-  const { theme, isDark } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <header>
@@ -14,7 +14,7 @@ function Header({ heading, description }: IHeader) {
           {heading}
         </H1>
 
-        <ThemeSwitch isDark={isDark} theme={theme} />
+        <ThemeSwitch />
       </HeadingWrapper>
 
       <DescriptionWrapper>

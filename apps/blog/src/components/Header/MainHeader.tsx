@@ -5,7 +5,7 @@ import { KBarToggleButton, ThemeSwitch } from 'core';
 import { blogName } from '../../../_config';
 
 function MainHeader() {
-  const { theme, isDark } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <Header>
@@ -15,7 +15,7 @@ function MainHeader() {
         </Link>
       </H1>
       <ButtonWrapper>
-        <ThemeSwitch theme={theme} isDark={isDark} />
+        <ThemeSwitch />
         <KBarToggleButton />
       </ButtonWrapper>
     </Header>

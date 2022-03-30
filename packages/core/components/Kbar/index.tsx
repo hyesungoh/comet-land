@@ -7,11 +7,7 @@ import KBarSearch from './Search';
 export * from './KBarToggleButton';
 
 export function Kbar() {
-  // const { theme } = useTheme();
-  const kt = useTheme();
-  const { theme } = kt;
-  console.log(kt);
-
+  const { theme } = useTheme();
   const { visible } = useKBar(state => ({
     visible: state.visualState !== VisualState.hidden,
   }));
