@@ -45,6 +45,37 @@ function TOC() {
 
 export default TOC;
 
+interface HookProps {
+  ids: string[];
+  options?: IntersectionObserverInit;
+}
+
+function useScrollSpy({ ids, options }: HookProps) {
+  const [activeId, setActiveId] = useState<string | null>();
+  const observer = useRef<IntersectionObserver>();
+
+  useEffect(() => {
+    const elements = ids.map(id => document.getElementById(id));
+
+    if (observer.current) {
+      observer.current.disconnect();
+    }
+
+    observer.current = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry?.isIntersecting) {
+          setActiveId(entry.target.getAttribute('id'));
+        }
+      });
+    }, options);
+
+    elements.forEach(el => el && observer.current?.observe(el));
+    return () => observer.current?.disconnect();
+  }, [ids, options]);
+
+  return activeId;
+}
+
 const Aside = styled.aside`
   position: sticky;
   top: 5rem;
@@ -105,34 +136,3 @@ const Anchor = styled(Link)<{ theme: NextUITheme | undefined }>`
     }
   }
 `;
-
-interface HookProps {
-  ids: string[];
-  options?: IntersectionObserverInit;
-}
-
-function useScrollSpy({ ids, options }: HookProps) {
-  const [activeId, setActiveId] = useState<string | null>();
-  const observer = useRef<IntersectionObserver>();
-
-  useEffect(() => {
-    const elements = ids.map(id => document.querySelector(`#${id}`));
-
-    if (observer.current) {
-      observer.current.disconnect();
-    }
-
-    observer.current = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry?.isIntersecting) {
-          setActiveId(entry.target.getAttribute('id'));
-        }
-      });
-    }, options);
-
-    elements.forEach(el => el && observer.current?.observe(el));
-    return () => observer.current?.disconnect();
-  }, [ids, options]);
-
-  return activeId;
-}
