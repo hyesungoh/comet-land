@@ -18,6 +18,7 @@ export function ThemeSwitch() {
   return (
     <Switch
       aria-label={ARIA_LABEL}
+      color="primary"
       css={{
         height: '32px',
         padding: '0',

@@ -1,7 +1,11 @@
 import data from './data.json';
 
 export interface IProject {
-  title: string;
+  title: {
+    text: string;
+    githubLink: string | null;
+    otherLink: string | null;
+  };
   description: string;
   startDate: string;
   endDate: string;

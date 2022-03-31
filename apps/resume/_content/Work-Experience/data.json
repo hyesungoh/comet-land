@@ -9,7 +9,11 @@
       "description": "Foo company is social media company for every world",
       "projects": [
         {
-          "title": "Foo Pay",
+          "title": {
+            "text": "Foo Pay",
+            "githubLink": null,
+            "otherLink": null
+          },
           "description": "Leading FE developers",
           "startDate": "2022.01",
           "endDate": "",
@@ -17,7 +21,11 @@
           "techStack": ["TypeScript", "React", "Recoil"]
         },
         {
-          "title": "Comet-land",
+          "title": {
+            "text": "Foo Pay",
+            "githubLink": "https://github.com/hyesungoh/comet-land",
+            "otherLink": "https://comet-land-blog.vercel.app"
+          },
           "description": "Monorepo for blog and resume",
           "startDate": "2021.6",
           "endDate": "2021.12",
@@ -25,7 +33,11 @@
           "techStack": ["TypeScript", "React", "Next.js", "Turborepo", "NextUI", "Emotion"]
         },
         {
-          "title": "Foo Eat",
+          "title": {
+            "text": "Foo Eat",
+            "githubLink": null,
+            "otherLink": null
+          },
           "description": "Leading FE developers",
           "startDate": "2021.03",
           "endDate": "2021.06",
@@ -46,7 +58,11 @@
       "description": "Bar company is very awesome",
       "projects": [
         {
-          "title": "Bar Pay",
+          "title": {
+            "text": "Bar Pay",
+            "githubLink": null,
+            "otherLink": null
+          },
           "role": "FE Dev Leader",
           "description": "Leading FE developers",
           "startDate": "2020.08",
@@ -58,7 +74,11 @@
           "techStack": ["TypeScript", "React", "Recoil"]
         },
         {
-          "title": "Bar Play",
+          "title": {
+            "text": "Bar Play",
+            "githubLink": null,
+            "otherLink": null
+          },
           "role": "FE Dev Leader",
           "description": "Leading FE developers",
           "startDate": "2020.03",
