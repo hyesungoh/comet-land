@@ -2,7 +2,11 @@
   "title": "Other Experience",
   "list": [
     {
-      "name": "Foo University",
+      "title": {
+        "text": "Foo University",
+        "githubLink": null,
+        "otherLink": null
+      },
       "position": "Student",
       "startDate": "2018.03",
       "endDate": "2021.03",
@@ -10,7 +14,11 @@
       "which": []
     },
     {
-      "name": "Bar club",
+      "title": {
+        "text": "Bar Club",
+        "githubLink": null,
+        "otherLink": null
+      },
       "position": "FE developer course",
       "startDate": "2018.03",
       "endDate": "2018.12",
@@ -18,7 +26,11 @@
       "which": ["learning HTML/CSS", "learning SPA Framework"]
     },
     {
-      "name": "Lovin Next.js club",
+      "title": {
+        "text": "Lovein Next.js Club",
+        "githubLink": null,
+        "otherLink": "https://nextjs.org/"
+      },
       "position": "Web Developer",
       "startDate": "2020.03",
       "endDate": "2021.03",
@@ -26,7 +38,11 @@
       "which": ["Comet-land build with Next.js and NextUI"]
     },
     {
-      "name": "Turbo developers",
+      "title": {
+        "text": "Turbo Developers",
+        "githubLink": null,
+        "otherLink": "https://turborepo.org/"
+      },
       "position": "Web Developer",
       "startDate": "2020.03",
       "endDate": "2021.03",

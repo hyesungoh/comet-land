@@ -2,13 +2,14 @@ import styled from '@emotion/styled';
 import { useTheme } from '@nextui-org/react';
 import { IExperience } from '../../../_content/Other-Experience';
 import Li from '../Li';
+import TitleTooltip from '../TitleTooltip';
 
-function Experience({ name, position, startDate, endDate, description, which }: IExperience) {
+function Experience({ title, position, startDate, endDate, description, which }: IExperience) {
   const { theme } = useTheme();
 
   return (
     <Div>
-      <h3>{name}</h3>
+      <TitleTooltip {...title} />
       <small>
         {startDate} ~ {endDate}
       </small>
