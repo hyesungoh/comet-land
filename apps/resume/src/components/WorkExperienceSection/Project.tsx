@@ -24,7 +24,7 @@ function Project({ title, description, startDate, endDate, which, techStack }: I
         </ul>
       )}
 
-      {techStack.length > 0 && (
+      {techStack && techStack.length > 0 && (
         <TechDiv>
           {techStack.map((tech, index) => (
             <TechSpan key={index} theme={theme}>
