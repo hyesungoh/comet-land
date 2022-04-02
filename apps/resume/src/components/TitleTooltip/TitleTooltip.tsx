@@ -23,7 +23,8 @@ function TitleTooltip({ text, githubLink, otherLink }: Props) {
 export default TitleTooltip;
 
 const StyledButton = styled(Button)`
-  padding: 0;
+  padding-left: 0;
+  padding-right: 2px;
 `;
 
 interface TooltipProps {
