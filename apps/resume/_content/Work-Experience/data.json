@@ -46,7 +46,7 @@
             "lorem lorem",
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iusto quasi alias provident quos perspiciatis modi dolores libero tenetur nam?"
           ],
-          "techStack": ["TypeScript", "React", "Recoil"]
+          "techStack": null
         }
       ]
     },
