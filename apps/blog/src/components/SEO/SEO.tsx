@@ -1,6 +1,7 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { authorName, defaultMetaBackground } from 'core/constants';
-import { blogName, blogDescription } from '../../../_config';
+import { blogName, blogDescription, blogUrl } from '../../../_config';
 
 interface Props {
   title?: string | undefined;
@@ -11,6 +12,7 @@ interface Props {
 function SEO({ title, description, ogImage }: Props) {
   const TITLE = title ? `${title} - ${authorName}` : `${blogName} - ${authorName}`;
   const DESCRIPTION = description ? description : blogDescription;
+  const router = useRouter();
 
   return (
     <Head>
@@ -19,6 +21,7 @@ function SEO({ title, description, ogImage }: Props) {
       <meta property="og:title" content={TITLE} />
       <meta property="og:description" content={DESCRIPTION} />
       <meta property="og:image" content={ogImage ? ogImage : defaultMetaBackground.default.src} />
+      <link rel="canonical" href={blogUrl + router.asPath} />
 
       {/* for twitter */}
       <meta name="twitter:title" content={TITLE} />
