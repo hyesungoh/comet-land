@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { NextUITheme, useTheme } from '@nextui-org/react';
+import { config, NextUITheme, useTheme } from '@nextui-org/react';
 import { ICompany } from '../../../_content/Work-Experience';
 
 function Company({ name, position, startDate, endDate, description }: Omit<ICompany, 'projects'>) {
@@ -27,6 +27,11 @@ const CompanyCard = styled.div`
   display: flex;
   flex-direction: column;
   width: 14.375rem;
+
+  @media ${config.media.xsMax} {
+    width: 100%;
+    padding-right: 0;
+  }
 `;
 
 const P = styled.p<{ theme: NextUITheme | undefined }>`
