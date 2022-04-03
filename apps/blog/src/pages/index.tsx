@@ -2,10 +2,11 @@ import { useTheme } from '@nextui-org/react';
 import PostType from '../types/post';
 import { getAllPosts } from '../lib/api';
 import SEO from '../components/SEO';
-import MainHeader from '../components/Header/MainHeader';
 import PostCard from '../components/PostCard';
-import useInfiniteScroll from '../hooks/useInfiniteScroll';
 import AuthorSection from '../components/AuthorSection';
+import MainHeader from '../components/Header/MainHeader';
+import useInfiniteScroll from '../hooks/useInfiniteScroll';
+import useScrollRestoration from '../hooks/useScrollRestoration';
 
 interface Props {
   allPosts: PostType[];
@@ -13,12 +14,13 @@ interface Props {
 
 function Blog({ allPosts }: Props) {
   const { theme } = useTheme();
+  useScrollRestoration();
 
   const {
     setTarget,
     elements: posts,
     isEnded,
-  } = useInfiniteScroll<PostType>({ fullElements: allPosts, offset: 10, rootMargin: '100px' });
+  } = useInfiniteScroll<PostType>({ fullElements: allPosts, sessionKey: 'home', offset: 20, rootMargin: '100px' });
 
   return (
     <>
