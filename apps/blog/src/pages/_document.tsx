@@ -2,7 +2,6 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { CssBaseline } from '@nextui-org/react';
 import { Footer, GlobalStyle, Layout } from 'core';
 import { authorName, blogGAID, blogHotjarID, favicon } from 'core/constants';
-import { blogUrl } from '../../_config';
 
 function isValid(value: any) {
   if (typeof value === 'string' && value.length > 0) return true;
@@ -22,7 +21,6 @@ export default class BlogDocument extends Document {
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta property="og:type" content="blog" />
           <meta property="og:locale" content="ko_KR" />
-          <meta property="og:url" content={blogUrl} />
           <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
           <meta name="keywords" content="blog,development,developer,frontend" />
           {/* for korean keywords */}

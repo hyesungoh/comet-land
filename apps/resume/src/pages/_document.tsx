@@ -37,6 +37,7 @@ export default class ResumeDocument extends Document {
           <meta name="twitter:creator" content={authorName} />
           <meta name="twitter:title" content={TITLE} />
           <meta name="twitter:description" content={data.description} />
+          <meta name="twitter:image" content={authorImage.default.src} />
 
           {/* for google analytics */}
           {isValid(resumeGAID) && (
