@@ -10,22 +10,27 @@ interface Props {
 }
 
 function SEO({ title, description, ogImage }: Props) {
+  const router = useRouter();
+
   const TITLE = title ? `${title} - ${authorName}` : `${blogName} - ${authorName}`;
   const DESCRIPTION = description ? description : blogDescription;
-  const router = useRouter();
+  const URL = blogUrl + router.asPath;
+  const IMAGE = ogImage ? ogImage : defaultMetaBackground.default.src;
 
   return (
     <Head>
       <title>{TITLE}</title>
+      <link rel="canonical" href={URL} />
       <meta name="description" content={DESCRIPTION} />
       <meta property="og:title" content={TITLE} />
       <meta property="og:description" content={DESCRIPTION} />
-      <meta property="og:image" content={ogImage ? ogImage : defaultMetaBackground.default.src} />
-      <link rel="canonical" href={blogUrl + router.asPath} />
+      <meta property="og:image" content={IMAGE} />
+      <meta property="og:url" content={URL} />
 
       {/* for twitter */}
       <meta name="twitter:title" content={TITLE} />
       <meta name="twitter:description" content={DESCRIPTION} />
+      <meta name="twitter:image" content={IMAGE} />
     </Head>
   );
 }
