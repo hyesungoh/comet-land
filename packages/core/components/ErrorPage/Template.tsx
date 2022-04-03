@@ -38,7 +38,7 @@ const Div = styled.div`
 
 const H1 = styled.h1<{ theme: NextUITheme | undefined }>`
   font-size: 4rem;
-  border-right: solid ${({ theme }) => theme.colors.black.value} 4px;
+  border-right: solid ${({ theme }) => theme.colors.text.value} 4px;
   padding: 0 32px;
   margin: 0;
 `;
