@@ -131,6 +131,18 @@ yarn add package-name -DW
 
 [위키](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting)를 참고해주세요. 도움이 될 수도 있습니다..!
 
+
+## 영감
+
+아래 블로그와 이력서에서 많은 영감을 받았습니다.
+
+- [Overreacted](https://overreacted.io/)
+- [gatsby-starter-bee](https://gatsby-starter-bee.netlify.app/)
+- [vallista-land](https://vallista.kr/)
+- [hyunseob.github.io/resume](https://hyunseob.github.io/resume/)
+- [Yceffort](https://yceffort.kr/)
+
+
 ## 라이센스
 
 MIT

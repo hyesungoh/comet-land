@@ -133,6 +133,16 @@ yarn add package-name -DW
 
 check [this wiki](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting) please! it might be help
 
+## Inspired
+
+I inspired below blogs and resume.
+
+- [Overreacted](https://overreacted.io/)
+- [Yceffort](https://yceffort.kr/)
+- [gatsby-starter-bee](https://gatsby-starter-bee.netlify.app/)
+- [vallista-land](https://vallista.kr/)
+- [hyunseob.github.io/resume](https://hyunseob.github.io/resume/)
+
 ## License
 
 MIT
