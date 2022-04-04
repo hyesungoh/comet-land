@@ -28,15 +28,21 @@ turborepo를 사용한 블로그와 이력서 템플릿입니다.
 - 🔊 [Utterances](https://utteranc.es/) 댓글
 - 🔭 Google Analytics
 - 🔥 Hotjar
+- 🏄 Lighthouse 점수
+
+![blog lighthouse score](https://user-images.githubusercontent.com/26461307/161536154-b85caf9f-0f73-4224-a1e7-540723916ff7.gif)
 
 ## 이력서 기능
 
 - 🎨 [NextUI](https://nextui.org/)를 사용한 디자인
 - 🎩 다크 모드
-- ⌨️ [KBar](https://kbar.vercel.app/)를 이용한 연락 방법 확인
+- ⌨️ [KBar](https://kbar.vercel.app/)를 이용한 연락처 확인
 - 🔨 수정 가능
 - 🔭 Google Analytics
 - 🔥 Hotjar
+- 🏄 Lighthouse 점수
+
+![resume lighthouse score](https://user-images.githubusercontent.com/26461307/161536162-63278484-ca52-42ed-89d4-951cd31e42c1.gif)
 
 ## 시작하는 방법
 
@@ -131,7 +137,6 @@ yarn add package-name -DW
 
 [위키](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting)를 참고해주세요. 도움이 될 수도 있습니다..!
 
-
 ## 영감
 
 아래 블로그와 이력서에서 많은 영감을 받았습니다.
@@ -141,7 +146,6 @@ yarn add package-name -DW
 - [vallista-land](https://vallista.kr/)
 - [hyunseob.github.io/resume](https://hyunseob.github.io/resume/)
 - [Yceffort](https://yceffort.kr/)
-
 
 ## 라이센스
 

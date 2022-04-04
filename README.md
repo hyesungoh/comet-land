@@ -30,6 +30,9 @@ Blog and Resume template with turborepo
 - 🔊 [Utterances](https://utteranc.es/) Comment
 - 🔭 Google Analytics
 - 🔥 Hotjar
+- 🏄 Lighthouse score
+
+![blog lighthouse score](https://user-images.githubusercontent.com/26461307/161536154-b85caf9f-0f73-4224-a1e7-540723916ff7.gif)
 
 ## Resume Feature
 
@@ -39,7 +42,9 @@ Blog and Resume template with turborepo
 - 🔨 Configurable
 - 🔭 Google Analytics
 - 🔥 Hotjar
+- 🏄 Lighthouse score
 
+![resume lighthouse score](https://user-images.githubusercontent.com/26461307/161536162-63278484-ca52-42ed-89d4-951cd31e42c1.gif)
 ## How to start
 
 1. Fork or clone this repo
