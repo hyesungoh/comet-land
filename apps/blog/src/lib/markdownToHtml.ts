@@ -5,6 +5,7 @@ import remarkRehype from 'remark-rehype';
 import rehypeSlug from 'rehype-slug';
 import rehypeAddClasses from 'rehype-add-classes';
 import rehypePrism from 'rehype-prism-plus';
+import rehypeExternalLinks from 'rehype-external-links';
 import rehypeStringify from 'rehype-stringify';
 
 export default async function markdownToHtml(markdown: string) {
@@ -15,6 +16,7 @@ export default async function markdownToHtml(markdown: string) {
     .use(rehypeSlug)
     .use(rehypeAddClasses, { 'h1,h2': 'heading' })
     .use(rehypePrism, { ignoreMissing: true })
+    .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferer'] })
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(markdown);
   return result.toString();
