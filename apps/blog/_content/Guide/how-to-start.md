@@ -9,13 +9,17 @@ category: 'Guide'
 
 ![comet-land-blog](https://user-images.githubusercontent.com/26461307/159371599-95b2acd5-e5eb-482c-9ead-d8f601f034b5.png)
 
-Blog and ~~Resume~~ template with turborepo
+### [BLOG DEMO](https://comet-land-blog.vercel.app/)
 
-> Only blog support yet
+![comet-land-resume](https://user-images.githubusercontent.com/26461307/160653172-c56a3b64-dfa9-4708-bf95-fca2fff47964.png)
 
-한국어 문서는 [다음 링크](https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/korean.md)에서 확인하실 수 있습니다.
+### [RESUME DEMO](https://comet-land-resume.vercel.app/)
 
-## Feature
+Blog and Resume template with turborepo
+
+한국어 문서는 [다음 링크](https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/ko-readme.md)에서 확인하실 수 있습니다.
+
+## Blog Feature
 
 ![postGif](https://user-images.githubusercontent.com/26461307/159372336-e42c1a9c-9915-4d05-9e51-4882d681dc80.gif)
 
@@ -31,8 +35,21 @@ Blog and ~~Resume~~ template with turborepo
 - 🔊 [Utterances](https://utteranc.es/) Comment
 - 🔭 Google Analytics
 - 🔥 Hotjar
+- 🏄 Lighthouse score
 
-Please see [`DEMO`](https://comet-land-blog.vercel.app/)!
+![blog lighthouse score](https://user-images.githubusercontent.com/26461307/161536154-b85caf9f-0f73-4224-a1e7-540723916ff7.gif)
+
+## Resume Feature
+
+- 🎨 Design with [NextUI](https://nextui.org/)
+- 🎩 Dark mode
+- ⌨️ Contact with [KBar](https://kbar.vercel.app/)
+- 🔨 Configurable
+- 🔭 Google Analytics
+- 🔥 Hotjar
+- 🏄 Lighthouse score
+
+![resume lighthouse score](https://user-images.githubusercontent.com/26461307/161536162-63278484-ca52-42ed-89d4-951cd31e42c1.gif)
 
 ## How to start
 
@@ -66,184 +83,23 @@ and you can reconfigure at that directory's variable
 - Colors directory
   - color schema
 - General directory
-  - authorName
-  - blogName
-  - blogDescription
-  - `blogRepoUrl` for utterance comment
-  - blogUrl
-  - defaultUrl
-  - favicon
-  - authorImage
-  - defaultMetaBackground ~~not working yet~~
 - SocialMedia directory
-  please fill url not ends with '/'
-
   - github
   - instagram
   - facebook
   - linkedin
   - twitter
 
-and please check `apps/blog/scripts/generate-static-files.js`
+and please check `apps/blog/_config/index.json` and `apps/resume/_config/index.json`.
 
-you should fill `blogUrl` variable for generating static files at server side. ~~This is refactor point~~
+This files are placing each app's configuration variable.
 
-## How to add your content
+## How to use it
 
-You can add contents at `apps/blog/_content` directory.
+please read following link.
 
-like this format `apps/blogs/_content/category/postname.md`.
-
-<details>
-
-<summary>
-markdown grammar is check this format 👈 (click this!)
-</summary>
-
-````markdown
----
-title: 'Markdown Examples'
-subtitle: 'example for writing markdown'
-date: 2022-03-01 17:50:00
-category: 'Guide'
----
-
-## h2 heading
-
-### h3 heading
-
-#### h4 heading
-
-##### h5 heading
-
-###### h6 heading
-
-## Emphasis
-
-**This is bold text**
-
-_This is italic text_
-
-~~this is delete~~
-
-## Blockquotes
-
-> Develop. Preview. Ship. – Vercel
-
-### nested
-
-> > great power comes great responsibility
-> >
-> > — at spider man
->
-> This is **awesome**.
->
-> — hyesungoh
-
-## Lists
-
-Unordered
-
-- Lorem ipsum dolor.
-  - foo
-    - bar
-- sit amet consectetur adipisicing elit.
-- Iure, delectus.
-
-Ordered
-
-1. Lorem ipsum dolor.
-   1. lorem
-      1. foo
-2. sit amet consectetur adipisicing elit.
-3. Iure, delectus.
-
-## Code
-
-Inline `code`
-
-```js
-import styled from '@emotion/styled';
-
-export default function Foo({ bar }) {
-  return (
-    <div>
-      <H1>Comet-land</H1>
-    </div>
-  );
-}
-
-const H1 = styled.h1`
-  color: red;
-`;
-```
-
-with line highlight
-
-```js {1, 11-13}
-import styled from '@emotion/styled';
-
-export default function Foo({ bar }) {
-  return (
-    <div>
-      <H1>Comet-land</H1>
-    </div>
-  );
-}
-
-const H1 = styled.h1`
-  color: red;
-`;
-```
-
-with line number
-
-```js {1, 3} showLineNumbers
-import styled from '@emotion/styled';
-
-export default function Foo({ bar }) {
-  return (
-    <div>
-      <H1>Comet-land</H1>
-    </div>
-  );
-}
-
-const H1 = styled.h1`
-  color: red;
-`;
-```
-
-## Links
-
-- [Next.js](https://nextjs.org)
-- [Vercel](http://vercel.com)
-
-### Autolink
-
-www.example.com, https://example.com, and contact@example.com.
-
-## Footnote
-
-A note[^1]
-
-[^1]: Big note.
-
-## Table
-
-| Syntax        | Description |   Test Text |
-| :------------ | :---------: | ----------: |
-| Header        |    Title    | Here's this |
-| Paragraph     |    Text     |    And more |
-| Strikethrough |             |    ~~Text~~ |
-
-## Tasklist
-
-- [ ] to do
-- [x] done
-````
-
-</details>
+- [how to add blog post](https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/en-blog.md)
+- [how to custom resume](https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/en-resume.md)
 
 ## How to deploy with vercel
 
@@ -287,6 +143,16 @@ yarn add package-name -DW
 ## Trouble shootings
 
 check [this wiki](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting) please! it might be help
+
+## Inspired
+
+I inspired below blogs and resume.
+
+- [Overreacted](https://overreacted.io/)
+- [Yceffort](https://yceffort.kr/)
+- [gatsby-starter-bee](https://gatsby-starter-bee.netlify.app/)
+- [vallista-land](https://vallista.kr/)
+- [hyunseob.github.io/resume](https://hyunseob.github.io/resume/)
 
 ## License
 
