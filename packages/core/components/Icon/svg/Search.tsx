@@ -1,3 +1,4 @@
+import React from 'react';
 import { IconProps } from '../type';
 
 export function Search({ width = '24px', ...props }: IconProps) {

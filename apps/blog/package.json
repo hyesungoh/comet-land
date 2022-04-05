@@ -8,7 +8,9 @@
     "prebuild": "node ./scripts/generate-static-files.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --coverage",
+    "test-watch": "jest --watch"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",

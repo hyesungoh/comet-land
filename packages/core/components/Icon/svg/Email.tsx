@@ -1,3 +1,4 @@
+import React from 'react';
 import { IconProps } from '../type';
 
 export function Email({ width = '24px', height = '24px', ...props }: IconProps) {

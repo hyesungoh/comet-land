@@ -43,10 +43,23 @@ module.exports = {
     'prefer-const': 'error',
     'no-var': 'error',
     'import/no-duplicates': 'error',
+    'import/default': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
 
     'react/jsx-no-target-blank': 'error',
   },
+  overrides: [
+    {
+      env: {
+        jest: true,
+      },
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:testing-library/react', 'plugin:jest/recommended'],
+      rules: {
+        'import/no-extraneous-dependencies': ['off', { devDependencies: ['**/?(*.)+(spec|test).[jt]s?(x)'] }],
+      },
+    },
+  ],
   ignorePatterns: ['**/*.js', '**/*.json', 'node_modules', 'public', 'styles', '.next', 'coverage', 'dist', '.turbo'],
 };
