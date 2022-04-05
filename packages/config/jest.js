@@ -3,7 +3,7 @@ module.exports = {
   moduleDirectories: ['node_modules'],
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['@testing-library/jest-dom'],
-  collectCoverageFrom: ['**/src/**/*.{js,ts,jsx,tsx}'],
+  collectCoverageFrom: ['**/src/**/*.{js,ts,jsx,tsx}', '**/core/{components,hooks,utils}/**/*.{ts,tsx}'],
   moduleNameMapper: {
     '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|ico)$': 'identity-obj-proxy',
   },

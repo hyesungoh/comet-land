@@ -9,6 +9,27 @@ on:
       - main
 
 jobs:
+  run-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Caching dependencies
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+              ${{ runner.OS }}-build-
+              ${{ runner.OS }}-
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Check lint
+        run: yarn lint
+
   run-jest:
     runs-on: ubuntu-latest
     steps:
@@ -51,7 +72,7 @@ jobs:
       - name: Generate coverage report
         run: yarn test-coverage
 
-      - name: Codecov
+      - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3.0.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
