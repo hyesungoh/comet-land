@@ -1,3 +1,4 @@
+import React from 'react';
 import { IconProps } from '../type';
 
 export function Github({ width = '24px', ...props }: IconProps) {

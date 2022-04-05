@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 import { Text, useTheme, Avatar } from '@nextui-org/react';
 import { ThemeSwitch } from 'core';

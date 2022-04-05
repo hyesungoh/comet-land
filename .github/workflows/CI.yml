@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches:
+      -main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  run-jest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Caching dependencies
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+              ${{ runner.OS }}-build-
+              ${{ runner.OS }}-
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Run tests
+        run: yarn test
+
+  run-codecov:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Caching dependencies
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+              ${{ runner.OS }}-build-
+              ${{ runner.OS }}-
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Generate coverage report
+        run: yarn test-coverage
+
+      - name: Codecov
+        uses: codecov/codecov-action@v3.0.0
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
