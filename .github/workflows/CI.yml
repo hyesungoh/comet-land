@@ -49,7 +49,7 @@ jobs:
         run: yarn
 
       - name: Generate coverage report
-        run: jest --coverage
+        run: yarn test-coverage
 
       - name: Codecov
         uses: codecov/codecov-action@v3.0.0
