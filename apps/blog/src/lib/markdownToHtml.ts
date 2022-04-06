@@ -1,12 +1,12 @@
-import { unified } from 'unified';
-import remarkParse from 'remark-parse';
-import remarkGfm from 'remark-gfm';
-import remarkRehype from 'remark-rehype';
-import rehypeSlug from 'rehype-slug';
 import rehypeAddClasses from 'rehype-add-classes';
-import rehypePrism from 'rehype-prism-plus';
 import rehypeExternalLinks from 'rehype-external-links';
+import rehypePrism from 'rehype-prism-plus';
+import rehypeSlug from 'rehype-slug';
 import rehypeStringify from 'rehype-stringify';
+import remarkGfm from 'remark-gfm';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import { unified } from 'unified';
 
 export default async function markdownToHtml(markdown: string) {
   const result = await unified()

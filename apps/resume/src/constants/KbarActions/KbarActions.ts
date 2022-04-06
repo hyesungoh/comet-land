@@ -1,5 +1,6 @@
 import { IconActionType, socialActions } from 'core/constants';
 import { openExternalLink } from 'core/utils';
+
 import { blogUrl, email } from '../../../_config';
 
 function openEmailTo(href: string) {

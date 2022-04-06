@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 function saveScrollPos(url) {
   const scrollPos = { x: window.scrollX, y: window.scrollY };

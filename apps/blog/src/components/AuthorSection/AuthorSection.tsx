@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { Avatar, Link } from '@nextui-org/react';
 import { KBarToggleButton } from 'core';
-
 import { authorImage, authorName, defaultUrl } from 'core/constants';
+
 import { blogDescription } from '../../../_config';
 
 interface Props {

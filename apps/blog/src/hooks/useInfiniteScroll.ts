@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+
 import useIntersectionObserver, { Props as IntersectionOberserProps } from './useIntersectionObserver';
 
 interface Props<T> extends Omit<IntersectionOberserProps, 'onIntersect'> {

@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
 import { useTheme } from '@nextui-org/react';
-import SEO from '../../components/SEO';
-import PostCard from '../../components/PostCard';
-import MainHeader from '../../components/Header/MainHeader';
+
 import AuthorSection from '../../components/AuthorSection';
+import MainHeader from '../../components/Header/MainHeader';
+import PostCard from '../../components/PostCard';
+import SEO from '../../components/SEO';
 import useInfiniteScroll from '../../hooks/useInfiniteScroll';
 import useScrollRestoration from '../../hooks/useScrollRestoration';
 import { getAllCategories, getAllPostsByCategory } from '../../lib/api';

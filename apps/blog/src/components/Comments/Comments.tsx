@@ -1,5 +1,6 @@
-import { useEffect, useRef } from 'react';
 import { useTheme } from '@nextui-org/react';
+import { useEffect, useRef } from 'react';
+
 import { blogRepo } from '../../../_config';
 
 const src = 'https://utteranc.es/client.js';

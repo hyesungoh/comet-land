@@ -1,7 +1,8 @@
-import { socialActions, IconActionType } from 'core/constants';
-import postActions from './posts';
-import categoryActions from './categories';
+import { IconActionType, socialActions } from 'core/constants';
 import { NextRouter } from 'next/router';
+
+import categoryActions from './categories';
+import postActions from './posts';
 
 function generateKbarAction(router: NextRouter) {
   const routePostActions = postActions.map(postAction => {

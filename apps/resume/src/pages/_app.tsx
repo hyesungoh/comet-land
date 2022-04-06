@@ -1,14 +1,14 @@
-import { AppProps } from 'next/app';
-import Head from 'next/head';
-import dynamic from 'next/dynamic';
-import { KBarProvider } from 'kbar';
 import { NextUIProvider } from '@nextui-org/react';
+import { darkTheme, lightTheme } from 'core';
+import { authorName } from 'core/constants';
+import { KBarProvider } from 'kbar';
+import { AppProps } from 'next/app';
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
-import { lightTheme, darkTheme } from 'core';
-import { authorName } from 'core/constants';
-import generateKbarAction from '../constants/KbarActions';
 import ContactButton from '../components/ContactButton';
+import generateKbarAction from '../constants/KbarActions';
 
 const KbarComponent = dynamic(() => import('core/components/Kbar'), {
   ssr: false,

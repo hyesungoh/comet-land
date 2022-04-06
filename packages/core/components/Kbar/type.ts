@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode, CSSProperties } from 'react';
+import { CSSProperties, ReactElement, ReactNode } from 'react';
 
 export type ActionId = string;
 

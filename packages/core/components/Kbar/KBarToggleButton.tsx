@@ -1,5 +1,6 @@
 import { Button, useTheme } from '@nextui-org/react';
 import { useKBar } from 'kbar';
+
 import { Icon } from '../Icon';
 
 export function KBarToggleButton() {

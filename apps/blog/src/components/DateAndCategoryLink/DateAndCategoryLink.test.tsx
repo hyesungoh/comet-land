@@ -1,5 +1,6 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
+import React from 'react';
+
 import DateAndCategoryLink from './DateAndCategoryLink';
 
 const DATE = '2022-04-14';

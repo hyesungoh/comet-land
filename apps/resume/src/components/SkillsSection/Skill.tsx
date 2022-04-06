@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { useTheme } from '@nextui-org/react';
+
 import { ISkill } from '../../../_content/Skills';
 import Li from '../Li';
 

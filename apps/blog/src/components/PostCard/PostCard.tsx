@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
-import NextLink from 'next/link';
 import { Link, NextUITheme, theme } from '@nextui-org/react';
+import NextLink from 'next/link';
+
 import DateAndCategoryLink from '../DateAndCategoryLink';
 
 interface Props {

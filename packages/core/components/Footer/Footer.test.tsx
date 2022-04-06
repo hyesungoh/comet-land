@@ -1,7 +1,8 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { Footer } from './Footer';
+import React from 'react';
+
 import { authorName } from '../../constants';
+import { Footer } from './Footer';
 
 describe('core - Header', () => {
   it('should', () => {

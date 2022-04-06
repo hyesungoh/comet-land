@@ -1,7 +1,8 @@
-import Link from 'next/link';
 import styled from '@emotion/styled';
-import { Text, useTheme, config } from '@nextui-org/react';
+import { config, Text, useTheme } from '@nextui-org/react';
 import { KBarToggleButton, ThemeSwitch } from 'core';
+import Link from 'next/link';
+
 import { blogName } from '../../../_config';
 
 function MainHeader() {

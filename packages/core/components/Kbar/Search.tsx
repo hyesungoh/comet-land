@@ -1,7 +1,7 @@
-import * as React from 'react';
 import styled from '@emotion/styled';
-import { useKBar } from 'kbar';
 import { NextUITheme, useTheme } from '@nextui-org/react';
+import { useKBar } from 'kbar';
+import * as React from 'react';
 
 export default function KBarSearch(props: React.InputHTMLAttributes<HTMLInputElement>) {
   const { query, search, actions, currentRootActionId } = useKBar(state => ({

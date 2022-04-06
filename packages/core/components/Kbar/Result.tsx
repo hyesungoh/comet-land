@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
-import { useTheme, NextUITheme } from '@nextui-org/react';
+import { NextUITheme, useTheme } from '@nextui-org/react';
 import { KBarResults, useMatches } from 'kbar';
+
 import { Icon } from '../Icon';
 import { IconNameType } from '../Icon/type';
 

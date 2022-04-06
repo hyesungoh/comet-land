@@ -1,12 +1,13 @@
 import { useTheme } from '@nextui-org/react';
-import PostType from '../types/post';
-import { getAllPosts } from '../lib/api';
-import SEO from '../components/SEO';
-import PostCard from '../components/PostCard';
+
 import AuthorSection from '../components/AuthorSection';
 import MainHeader from '../components/Header/MainHeader';
+import PostCard from '../components/PostCard';
+import SEO from '../components/SEO';
 import useInfiniteScroll from '../hooks/useInfiniteScroll';
 import useScrollRestoration from '../hooks/useScrollRestoration';
+import { getAllPosts } from '../lib/api';
+import PostType from '../types/post';
 
 interface Props {
   allPosts: PostType[];

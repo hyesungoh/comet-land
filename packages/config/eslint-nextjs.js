@@ -4,7 +4,7 @@ module.exports = {
     node: true,
   },
   extends: ['next', 'plugin:import/recommended', 'plugin:import/typescript', 'prettier'],
-  plugins: ['@typescript-eslint', 'import', 'prettier'],
+  plugins: ['@typescript-eslint', 'import', 'prettier', 'simple-import-sort'],
   settings: {
     next: {
       rootDir: ['apps/*/', 'packages/*/'],
@@ -22,10 +22,6 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'no-implicit-coercion': 'error',
-
-    'react/jsx-key': 'off',
-    '@next/next/no-html-link-for-pages': 'off',
-
     '@typescript-eslint/naming-convention': [
       'error',
       {
@@ -39,15 +35,18 @@ module.exports = {
     ],
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
     '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
-
     'prefer-const': 'error',
     'no-var': 'error',
     'import/no-duplicates': 'error',
-    'import/default': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
-
     'react/jsx-no-target-blank': 'error',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+
+    'import/default': 'off',
+    'react/jsx-key': 'off',
+    '@next/next/no-html-link-for-pages': 'off',
   },
   overrides: [
     {

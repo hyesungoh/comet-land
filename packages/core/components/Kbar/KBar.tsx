@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
-import { useTheme, Backdrop, NextUITheme } from '@nextui-org/react';
+import { Backdrop, NextUITheme, useTheme } from '@nextui-org/react';
 import { KBarAnimator, KBarPortal, KBarPositioner, useKBar, VisualState } from 'kbar';
+
 import { KBarResult } from './Result';
 import KBarSearch from './Search';
 

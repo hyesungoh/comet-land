@@ -1,6 +1,6 @@
-import { IconActionType } from './type';
-import { githubUrl, instagramUrl, facebookUrl, linkedInUrl, twitterUrl } from '../SocialMedia';
 import { openExternalLink } from '../../utils';
+import { facebookUrl, githubUrl, instagramUrl, linkedInUrl, twitterUrl } from '../SocialMedia';
+import { IconActionType } from './type';
 
 function isValid(value: unknown) {
   if (typeof value === 'string' && value.length > 2) {

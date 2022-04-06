@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import { Switch, useTheme } from '@nextui-org/react';
 import { useTheme as useNextTheme } from 'next-themes';
-import { useTheme, Switch } from '@nextui-org/react';
+import React, { useEffect } from 'react';
+
 import { Icon } from '../Icon';
 
 const ARIA_LABEL = 'theme switch';
