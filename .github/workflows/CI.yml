@@ -2,8 +2,7 @@ name: CI
 
 on:
   push:
-    branches:
-      -main
+    branches: -main
   pull_request:
     branches:
       - main
@@ -21,8 +20,8 @@ jobs:
           path: node_modules
           key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-              ${{ runner.OS }}-build-
-              ${{ runner.OS }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
 
       - name: Install dependencies
         run: yarn
@@ -42,8 +41,8 @@ jobs:
           path: node_modules
           key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-              ${{ runner.OS }}-build-
-              ${{ runner.OS }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
 
       - name: Install dependencies
         run: yarn
@@ -63,8 +62,8 @@ jobs:
           path: node_modules
           key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-              ${{ runner.OS }}-build-
-              ${{ runner.OS }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
 
       - name: Install dependencies
         run: yarn
@@ -77,3 +76,43 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
+
+  run-cypress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Caching dependencies
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Cypress run - blog
+        uses: cypress-io/github-action@v2
+        with:
+          working-directory: apps/blog
+          start: yarn dev
+          wait-on: 'http://localhost:3000'
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_BLOG_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Cypress run - resume
+        uses: cypress-io/github-action@v2
+        with:
+          working-directory: apps/resume
+          start: yarn dev
+          wait-on: 'http://localhost:3001'
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RESUME_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

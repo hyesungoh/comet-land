@@ -22,6 +22,10 @@
     "test:watch": {
       "dependsOn": ["^build"],
       "outputs": []
+    },
+    "cypress": {
+      "dependsOn": ["^build"],
+      "outputs": []
     }
   }
 }
