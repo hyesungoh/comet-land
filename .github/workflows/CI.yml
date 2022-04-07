@@ -101,11 +101,10 @@ jobs:
           working-directory: apps/blog
           start: yarn dev
           wait-on: 'http://localhost:3000'
-          with:
-            record: true
-          env:
-            CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_BLOG_RECORD_KEY }}
-            GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_BLOG_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Cypress run - resume
         uses: cypress-io/github-action@v2
@@ -113,8 +112,7 @@ jobs:
           working-directory: apps/resume
           start: yarn dev
           wait-on: 'http://localhost:3001'
-          with:
-            record: true
-          env:
-            CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RESUME_RECORD_KEY }}
-            GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RESUME_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
