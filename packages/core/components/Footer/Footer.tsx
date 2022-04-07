@@ -1,6 +1,6 @@
+import React from 'react';
 import styled from '@emotion/styled';
 import { Link } from '@nextui-org/react';
-import React from 'react';
 
 import { authorName, defaultUrl } from '../../constants';
 

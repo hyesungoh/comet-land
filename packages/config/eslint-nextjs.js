@@ -41,7 +41,16 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
     'react/jsx-no-target-blank': 'error',
-    'simple-import-sort/imports': 'error',
+    'simple-import-sort/imports': [
+      'error',
+      {
+        groups: [
+          ['^react$', '^next', '^@', '^~', '^[a-z]'],
+          ['^\\.\\.(?!/?$)', '^\\.\\./?$', '^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+          ['^\\u0000'],
+        ],
+      },
+    ],
     'simple-import-sort/exports': 'error',
 
     'import/default': 'off',

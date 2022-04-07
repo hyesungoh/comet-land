@@ -1,4 +1,5 @@
 import { SVGProps } from 'react';
+
 import { svg } from './svg';
 
 export type IconNameType = keyof typeof svg;

@@ -1,6 +1,6 @@
+import { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import { NextUITheme, useTheme } from '@nextui-org/react';
-import { useEffect, useState } from 'react';
 
 export function PageProgressBar() {
   const { theme } = useTheme();

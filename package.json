@@ -10,9 +10,10 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
     "test": "turbo run test",
-    "test-watch": "turbo run test-watch",
-    "test-coverage": "jest --coverage",
+    "test:watch": "turbo run test:watch",
+    "test:coverage": "jest --coverage",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "engines": {

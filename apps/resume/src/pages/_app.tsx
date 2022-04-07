@@ -1,11 +1,11 @@
-import { NextUIProvider } from '@nextui-org/react';
-import { darkTheme, lightTheme } from 'core';
-import { authorName } from 'core/constants';
-import { KBarProvider } from 'kbar';
 import { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
+import { NextUIProvider } from '@nextui-org/react';
+import { darkTheme, lightTheme } from 'core';
+import { authorName } from 'core/constants';
+import { KBarProvider } from 'kbar';
 
 import ContactButton from '../components/ContactButton';
 import generateKbarAction from '../constants/KbarActions';

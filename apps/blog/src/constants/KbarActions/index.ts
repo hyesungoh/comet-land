@@ -1,5 +1,5 @@
-import { IconActionType, socialActions } from 'core/constants';
 import { NextRouter } from 'next/router';
+import { IconActionType, socialActions } from 'core/constants';
 
 import categoryActions from './categories';
 import postActions from './posts';

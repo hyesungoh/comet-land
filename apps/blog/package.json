@@ -9,8 +9,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "eslint --fix --ext .ts,.tsx .",
     "test": "jest --coverage",
-    "test-watch": "jest --watch"
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",

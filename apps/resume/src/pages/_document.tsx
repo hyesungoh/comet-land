@@ -1,7 +1,7 @@
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 import { CssBaseline } from '@nextui-org/react';
 import { Footer, GlobalStyle, Layout } from 'core';
 import { authorImage, authorName, favicon, resumeGAID, resumeHotjarID } from 'core/constants';
-import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 import { resumeUrl } from '../../_config';
 import { data } from '../../_content/Header';

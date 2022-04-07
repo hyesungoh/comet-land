@@ -1,6 +1,6 @@
-import { authorName, defaultMetaBackground } from 'core/constants';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { authorName, defaultMetaBackground } from 'core/constants';
 
 import { blogDescription, blogName, blogUrl } from '../../../_config';
 

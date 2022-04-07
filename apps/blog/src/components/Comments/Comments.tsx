@@ -1,5 +1,5 @@
-import { useTheme } from '@nextui-org/react';
 import { useEffect, useRef } from 'react';
+import { useTheme } from '@nextui-org/react';
 
 import { blogRepo } from '../../../_config';
 

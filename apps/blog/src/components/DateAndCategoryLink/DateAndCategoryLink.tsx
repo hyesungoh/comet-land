@@ -1,6 +1,6 @@
-import { Link } from '@nextui-org/react';
-import NextLink from 'next/link';
 import React from 'react';
+import NextLink from 'next/link';
+import { Link } from '@nextui-org/react';
 
 interface Props {
   date: string;

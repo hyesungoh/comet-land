@@ -70,7 +70,7 @@ jobs:
         run: yarn
 
       - name: Generate coverage report
-        run: yarn test-coverage
+        run: yarn test:coverage
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3.0.0

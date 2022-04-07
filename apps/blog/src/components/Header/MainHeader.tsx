@@ -1,7 +1,7 @@
+import Link from 'next/link';
 import styled from '@emotion/styled';
 import { config, Text, useTheme } from '@nextui-org/react';
 import { KBarToggleButton, ThemeSwitch } from 'core';
-import Link from 'next/link';
 
 import { blogName } from '../../../_config';
 
