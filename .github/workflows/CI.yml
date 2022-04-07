@@ -98,9 +98,13 @@ jobs:
       - name: Cypress run - blog
         uses: cypress-io/github-action@v2
         with:
-          start: cd apps/blog && yarn dev
+          working-directory: apps/blog
+          start: yarn dev
+          wait-on: 'http://localhost:3000'
 
       - name: Cypress run - resume
         uses: cypress-io/github-action@v2
         with:
-          start: cd apps/resume && yarn dev
+          working-directory: apps/resume
+          start: yarn dev
+          wait-on: 'http://localhost:3001'
