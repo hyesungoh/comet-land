@@ -11,7 +11,8 @@
     "lint": "next lint",
     "lint:fix": "eslint --fix --ext .ts,.tsx .",
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -37,6 +38,7 @@
   "devDependencies": {
     "compression-webpack-plugin": "^9.2.0",
     "config": "*",
+    "cypress": "^9.5.3",
     "next-transpile-modules": "^9.0.0",
     "tsconfig": "*"
   }
