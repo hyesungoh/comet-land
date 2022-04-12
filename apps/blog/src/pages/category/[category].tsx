@@ -19,11 +19,7 @@ function EachCategory({ category, allPosts }: Props) {
   const { theme } = useTheme();
   useScrollRestoration();
 
-  const {
-    setTarget,
-    elements: posts,
-    isEnded,
-  } = useInfiniteScroll<PostType>({ offset: 10, sessionKey: 'category', fullElements: allPosts });
+  const { setTarget, elements: posts, isEnded } = useInfiniteScroll<PostType>({ offset: 12, fullElements: allPosts });
 
   return (
     <>
