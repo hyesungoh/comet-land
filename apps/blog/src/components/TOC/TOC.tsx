@@ -4,10 +4,10 @@ import styled from '@emotion/styled';
 import { Link, NextUITheme, useTheme } from '@nextui-org/react';
 import { useMediaQuery } from 'core';
 
-import getHeadings from '../../utils/getHeadings';
+import getHeadings, { IHeading } from '../../utils/getHeadings';
 
 function TOC() {
-  const [headings, setHeadings] = useState<string[]>([]);
+  const [headings, setHeadings] = useState<IHeading[]>([]);
   const router = useRouter();
   const { theme } = useTheme();
 
@@ -16,7 +16,7 @@ function TOC() {
   }, [router]);
 
   const activeId = useScrollSpy({
-    ids: headings,
+    ids: headings.map(heading => heading.id),
     options: {
       rootMargin: '0% 0% -80% 0%',
     },
@@ -33,8 +33,13 @@ function TOC() {
         <Ul>
           {headings.map((heading, index) => (
             <Li key={index}>
-              <Anchor href={`#${heading}`} underline className={heading === activeId ? 'active' : ''} theme={theme}>
-                {heading.replaceAll('-', ' ')}
+              <Anchor
+                href={`#${heading.id}`}
+                underline
+                className={heading.id === activeId ? 'active' : ''}
+                theme={theme}
+              >
+                {heading.text}
               </Anchor>
             </Li>
           ))}
@@ -56,7 +61,7 @@ function useScrollSpy({ ids, options }: HookProps) {
   const observer = useRef<IntersectionObserver>();
 
   useEffect(() => {
-    const elements = ids.map(id => document.getElementById(id));
+    const elements = ids.map(id => document.getElementById(`${id}`));
 
     if (observer.current) {
       observer.current.disconnect();
