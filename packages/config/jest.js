@@ -13,4 +13,5 @@ module.exports = {
     '^.+\\.tsx?$': 'esbuild-jest',
   },
   coverageThreshold: null,
+  setupFilesAfterEnv: ['./jest.setup.js'],
 };
