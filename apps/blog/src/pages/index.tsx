@@ -21,7 +21,7 @@ function Blog({ allPosts }: Props) {
     setTarget,
     elements: posts,
     isEnded,
-  } = useInfiniteScroll<PostType>({ fullElements: allPosts, sessionKey: 'home', offset: 20, rootMargin: '100px' });
+  } = useInfiniteScroll<PostType>({ fullElements: allPosts, offset: 12, rootMargin: '100px' });
 
   return (
     <>
