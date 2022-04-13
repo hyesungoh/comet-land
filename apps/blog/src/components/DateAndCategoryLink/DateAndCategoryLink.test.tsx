@@ -6,7 +6,7 @@ import DateAndCategoryLink from './DateAndCategoryLink';
 const DATE = '2022-04-14';
 const CATEGORY = 'Guide';
 
-describe('blog - component - DateAbdCategoryLink', () => {
+describe('blog - component - DateAndCategoryLink', () => {
   it('should', () => {
     render(<DateAndCategoryLink date={DATE} category={CATEGORY} />);
     expect(screen.getByText(CATEGORY)).toBeInTheDocument();
