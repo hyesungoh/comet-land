@@ -1,7 +1,17 @@
-function getHeadings(): string[] {
+export interface IHeading {
+  id: string;
+  text: string;
+}
+
+function getHeadings() {
   if (typeof document === 'undefined') return [];
-  const headings = document.getElementsByClassName('heading') as HTMLCollection;
-  return Array.from(headings).map((e: HTMLHtmlElement) => e.id);
+
+  const headings = document.querySelectorAll<HTMLHeadingElement>('.heading');
+
+  return Array.from(headings).map(element => ({
+    id: element.id,
+    text: element.innerText,
+  }));
 }
 
 export default getHeadings;
