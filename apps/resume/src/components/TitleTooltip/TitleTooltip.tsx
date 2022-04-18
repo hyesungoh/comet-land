@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 import { Button, Tooltip, useTheme } from '@nextui-org/react';
 import { Icon } from 'core';

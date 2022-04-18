@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 import { config, NextUITheme, useTheme } from '@nextui-org/react';
 
@@ -7,7 +8,7 @@ function Company({ name, position, startDate, endDate, description }: Omit<IComp
   const { theme } = useTheme();
 
   return (
-    <CompanyCard>
+    <CompanyCard data-testid="wrapper">
       <h3>{name}</h3>
       <small>
         {startDate} ~ {endDate}
