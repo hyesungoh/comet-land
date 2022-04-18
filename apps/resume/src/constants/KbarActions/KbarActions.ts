@@ -18,6 +18,7 @@ function generateKbarAction() {
   pushLeftWhenValid(blogUrl, {
     id: 'blog',
     name: 'Blog',
+    subtitle: blogUrl,
     section: 'Social',
     shortcut: [],
     keywords: 'blog, article, post',
@@ -28,6 +29,7 @@ function generateKbarAction() {
   pushLeftWhenValid(email, {
     id: 'email',
     name: 'Email',
+    subtitle: email,
     section: 'Social',
     shortcut: [],
     keywords: 'contact, email, mail',
