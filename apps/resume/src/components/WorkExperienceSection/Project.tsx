@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 import { NextUITheme, useTheme } from '@nextui-org/react';
 
@@ -16,7 +17,7 @@ function Project({ title, description, startDate, endDate, which, techStack }: I
       </small>
       <span>{description}</span>
       {which.length > 0 && (
-        <ul>
+        <ul data-testid="which wrapper">
           {which.map((each, index) => (
             <Li key={index} theme={theme}>
               {each}
@@ -26,7 +27,7 @@ function Project({ title, description, startDate, endDate, which, techStack }: I
       )}
 
       {techStack && techStack.length > 0 && (
-        <TechDiv>
+        <TechDiv data-testid="tech stack wrapper">
           {techStack.map((tech, index) => (
             <TechSpan key={index} theme={theme}>
               {tech}
