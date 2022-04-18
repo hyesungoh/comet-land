@@ -46,14 +46,27 @@ const B = styled.b<{ theme: NextUITheme | undefined }>`
 `;
 
 const ItemWrapper = styled.div<{ active: boolean; theme: NextUITheme | undefined }>`
+  position: relative;
   width: 100%;
   padding: 4px 16px;
   display: flex;
   align-items: center;
   background-color: ${({ active, theme }) => (active ? theme.colors.accents2.value : 'inherit')};
-  border-left: solid 4px ${({ active, theme }) => (active ? theme.colors.primary.value : 'inherit')};
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s, border 0.2s;
+  transition: background-color 0.2s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: ${({ theme }) => theme.colors.primary.value};
+    transform: scaleX(${({ active }) => (active ? '100%' : '0')});
+    transform-origin: left;
+    transition: transform 0.2s;
+  }
 `;
 
 const TextWrapper = styled.div`
