@@ -3,10 +3,20 @@ import { join } from 'path';
 import matter from 'gray-matter';
 import { format } from 'prettier';
 
+import rehypeAddClasses from 'rehype-add-classes';
+import rehypeExternalLinks from 'rehype-external-links';
+import rehypePrism from 'rehype-prism-plus';
+import rehypeSlug from 'rehype-slug';
+import rehypeStringify from 'rehype-stringify';
+import remarkGfm from 'remark-gfm';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import { unified } from 'unified';
+
 const postsDirectory = join(process.cwd(), '_content');
 
 const configDirectory = join(process.cwd(), '_config');
-const { blogUrl } = JSON.parse(readFileSync(join(configDirectory, 'index.json')));
+const { blogUrl, blogDescription, blogName } = JSON.parse(readFileSync(join(configDirectory, 'index.json')));
 
 function isValidCategory(value) {
   if (value.includes('.')) return false;
@@ -98,7 +108,7 @@ function generateContentManifest() {
   writeFileSync('./_content/manifest.json', JSON.stringify({ posts: allPosts, categories: allCategories }), 'utf-8');
 }
 
-// sitemap
+// sitemap.xml
 function getSitemapTemplate(value) {
   return `
   <url>
@@ -114,14 +124,12 @@ function generateSitemap() {
   <?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     ${getSitemapTemplate('')}
-
     ${allPosts
       .map(post => {
         const { slug } = post;
         return getSitemapTemplate(`/${slug}`);
       })
       .join('')}
-
     ${allCategories
       .map(category => {
         return getSitemapTemplate(`/${category}`);
@@ -144,6 +152,77 @@ Sitemap: ${blogUrl}/sitemap.xml`
   );
 }
 
+// rss.xml
+async function markdownToHtml(markdown) {
+  const result = await unified()
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeSlug)
+    .use(rehypeAddClasses, { 'h1,h2': 'heading' })
+    .use(rehypePrism, { ignoreMissing: true })
+    .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferer'] })
+    .use(rehypeStringify, { allowDangerousHtml: true })
+    .process(markdown);
+  return result.toString();
+}
+
+async function getPostsRssData() {
+  const posts = getAllPosts(['title', 'date', 'slug', 'category', 'subtitle', 'content']);
+  const lastPostDate = posts[0].date;
+
+  const postsRssData = posts.map(async post => {
+    const postHref = `${blogUrl}/${post.slug}`;
+    const postContent = await markdownToHtml(post.content);
+
+    return `<item>
+    <title><![CDATA[${post.title}]]></title>
+    <link>${postHref}</link>
+    <pubDate>${post.date}</pubDate>
+    <guid isPermaLink="false">${postHref}</guid>
+    <description>
+    <![CDATA[${post.subtitle ?? post.slug}]]>
+    </description>
+    <content:encoded>
+      <![CDATA[${postContent}]]>
+    </content:encoded>
+  </item>`;
+  });
+
+  const fulfilledPostsRssData = await Promise.all(postsRssData);
+
+  return {
+    postsRssData: fulfilledPostsRssData.join(``),
+    lastPostDate,
+  };
+}
+
+async function generateRss() {
+  const { postsRssData, lastPostDate } = await getPostsRssData();
+
+  const rssData = `<?xml version="1.0" ?>
+  <rss
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    version="2.0"
+  >
+    <channel>
+        <title><![CDATA[${blogName}]]></title>
+        <link>${blogUrl}</link>
+        <description>
+          <![CDATA[${blogDescription}]]>
+        </description>
+        <language>en</language>
+        <lastBuildDate>${lastPostDate}</lastBuildDate>
+        ${postsRssData}
+    </channel>
+  </rss>`;
+
+  writeFileSync('public/rss.xml', rssData);
+}
+
 generateContentManifest();
 generateSitemap();
 generateRobots();
+generateRss();
