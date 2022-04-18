@@ -169,7 +169,7 @@ async function markdownToHtml(markdown) {
 
 async function getPostsRssData() {
   const posts = getAllPosts(['title', 'date', 'slug', 'category', 'subtitle', 'content']);
-  const lastPostDate = posts[0].data;
+  const lastPostDate = posts[0].date;
 
   const postsRssData = posts.map(async post => {
     const postHref = `${blogUrl}/${post.slug}`;
