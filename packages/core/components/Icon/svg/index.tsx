@@ -4,6 +4,7 @@ import { Email } from './Email';
 import { Facebook } from './Facebook';
 import { Github } from './Github';
 import { GithubLine } from './GithubLine';
+import { Info } from './Info';
 import { Instagram } from './Instagram';
 import { Link } from './Link';
 import { Linkedin } from './Linkedin';
@@ -19,6 +20,7 @@ export const svg = {
   Facebook,
   Github,
   GithubLine,
+  Info,
   Instagram,
   Link,
   Linkedin,
