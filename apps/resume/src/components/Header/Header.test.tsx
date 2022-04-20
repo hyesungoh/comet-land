@@ -3,13 +3,13 @@ import { render, screen } from '@testing-library/react';
 
 import Header from './Header';
 
-const HEADING = 'heading';
-const DESCRIPTION = 'description';
+const mockHeading = 'heading';
+const mockDescription = 'description';
 
 describe('resume - component - Header', () => {
   it('should', () => {
-    render(<Header heading={HEADING} description={DESCRIPTION} />);
-    expect(screen.getByText(HEADING)).toBeInTheDocument();
-    expect(screen.getByText(DESCRIPTION)).toBeInTheDocument();
+    render(<Header heading={mockHeading} description={mockDescription} />);
+    expect(screen.getByText(mockHeading)).toBeInTheDocument();
+    expect(screen.getByText(mockDescription)).toBeInTheDocument();
   });
 });
