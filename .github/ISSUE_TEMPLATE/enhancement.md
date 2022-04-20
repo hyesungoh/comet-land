@@ -1,6 +1,7 @@
 ---
 name: Enhancement
-about: I need you're help!
+about: Do you need more feature?
+labels: 'enhancement'
 ---
 
 ## Description
