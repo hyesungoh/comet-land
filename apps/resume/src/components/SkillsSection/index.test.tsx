@@ -10,8 +10,8 @@ const mockSkills: ISkills = {
   list: [{ name: 'skill name', descriptions: ['skill dsc'] }],
 };
 
-describe('resume - components - Li index', () => {
-  it('should render same things with Li component', () => {
+describe('resume - components - SkillsSection index', () => {
+  it('should render same things with SkillsSection component', () => {
     const { container: defaultContainer } = render(<Default {...mockSkills} />);
     const { container } = render(<SkillsSection {...mockSkills} />);
     expect(defaultContainer).toEqual(container);
