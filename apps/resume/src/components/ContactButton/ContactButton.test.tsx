@@ -4,10 +4,8 @@ import { render, screen } from '@testing-library/react';
 import ContactButton from './ContactButton';
 
 describe('resume - component - ContactButton', () => {
-  beforeAll(() => {});
-
-  it('should', () => {
+  it('should render button', () => {
     render(<ContactButton />);
-    expect(screen.getByText('Contact')).toBeInTheDocument();
+    expect(screen.getByRole('button')).toBeInTheDocument();
   });
 });
