@@ -3,19 +3,15 @@ import { openExternalLink } from 'core/utils';
 
 import { blogUrl, email } from '../../../_config';
 
-function openEmailTo(href: string) {
-  Object.assign(document.createElement('a'), { href: `mailto:${href}` }).click();
-}
-
 function generateKbarAction() {
   const KbarActions: IconActionType[] = [...socialActions];
 
-  function pushLeftWhenValid(value: string | null, action: IconActionType) {
-    if (typeof value !== 'string') return;
+  function unshiftWhenValid(value: string | null, action: IconActionType) {
+    if (typeof value !== 'string' || value.length < 1) return;
     KbarActions.unshift(action);
   }
 
-  pushLeftWhenValid(blogUrl, {
+  unshiftWhenValid(blogUrl, {
     id: 'blog',
     name: 'Blog',
     subtitle: blogUrl,
@@ -26,7 +22,7 @@ function generateKbarAction() {
     perform: () => openExternalLink(blogUrl),
   });
 
-  pushLeftWhenValid(email, {
+  unshiftWhenValid(email, {
     id: 'email',
     name: 'Email',
     subtitle: email,
@@ -34,7 +30,7 @@ function generateKbarAction() {
     shortcut: [],
     keywords: 'contact, email, mail',
     icon: 'Email',
-    perform: () => openEmailTo(email),
+    perform: () => openExternalLink(`mailto:${email}`),
   });
 
   return KbarActions;
