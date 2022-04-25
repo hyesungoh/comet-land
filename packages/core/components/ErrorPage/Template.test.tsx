@@ -16,11 +16,10 @@ describe('core - components - ErrorPage Template', () => {
     expect(screen.getByText(mockProps.errorTitle)).toBeInTheDocument();
     expect(screen.getByRole('heading')).toBeInTheDocument();
     expect(screen.getByText(mockProps.paragraph)).toBeInTheDocument();
+    expect(screen.getByTestId('paragraph')).toBeInTheDocument();
     expect(screen.getByText(mockProps.anchorMessage)).toBeInTheDocument();
     expect(screen.getByRole('link')).toBeInTheDocument();
   });
 
-  it('should using theme', () => {
-    render(<ErrorTemplate {...mockProps} />);
-  });
+  // TODO: testing called useTheme
 });
