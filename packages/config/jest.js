@@ -3,7 +3,7 @@ module.exports = {
   moduleDirectories: ['node_modules'],
   testEnvironment: 'jsdom',
   testRegex: '(/__tests__/.*|(\\.|/)(test))\\.[jt]sx?$',
-  collectCoverageFrom: ['**/src/**/*.{js,ts,jsx,tsx}', '**/core/{components,hooks,utils}/**/*.{ts,tsx}'],
+  collectCoverageFrom: ['**/src/**/*.{js,ts,jsx,tsx}', '**/{components,hooks,utils}/**/*.{ts,tsx}'],
   moduleNameMapper: {
     '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|ico)$': 'identity-obj-proxy',
   },

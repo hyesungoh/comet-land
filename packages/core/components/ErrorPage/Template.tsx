@@ -1,3 +1,4 @@
+import React from 'react';
 import NextLink from 'next/link';
 import styled from '@emotion/styled';
 import { Link, NextUITheme, useTheme } from '@nextui-org/react';
@@ -15,7 +16,7 @@ export function ErrorTemplate({ errorTitle, paragraph, anchorMessage }: Props) {
     <Main>
       <H1 theme={theme}>{errorTitle}</H1>
       <Div>
-        <p>{paragraph}</p>
+        <p data-testid="paragraph">{paragraph}</p>
         <NextLink href="/" passHref>
           <Link>{anchorMessage}</Link>
         </NextLink>
