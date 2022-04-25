@@ -12,8 +12,6 @@ jest.spyOn(React, 'useRef').mockImplementation(() => ({
 jest.spyOn(React, 'useEffect').mockImplementation(f => f());
 
 describe('blog - TOC', () => {
-  beforeAll(() => {});
-
   it('does not render when zero headings', () => {
     render(<TOC />);
     expect(screen.queryByText('Contents')).not.toBeInTheDocument();
