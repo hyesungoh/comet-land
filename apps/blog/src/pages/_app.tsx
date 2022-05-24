@@ -6,7 +6,7 @@ import { NextUIProvider } from '@nextui-org/react';
 import { darkTheme, lightTheme } from 'core';
 import { KBarProvider, useRegisterActions } from 'kbar';
 
-import generateKbarAction from '../constants/KbarActions';
+import generateKbarAction from '../libs/kbarActions';
 
 const KbarComponent = dynamic(() => import('core/components/Kbar'), {
   ssr: false,

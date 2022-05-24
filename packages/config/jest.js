@@ -13,4 +13,5 @@ module.exports = {
   },
   coverageThreshold: null,
   setupFilesAfterEnv: ['./jest.setup.js'],
+  transformIgnorePatterns: ['<rootDir>/node_modules/'],
 };

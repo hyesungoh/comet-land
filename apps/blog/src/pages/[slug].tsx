@@ -8,8 +8,8 @@ import DateAndCategoryLink from '../components/DateAndCategoryLink';
 import PostHeader from '../components/Header/PostHeader';
 import SEO from '../components/SEO';
 import TOC from '../components/TOC';
-import { getAllPosts } from '../lib/api';
-import markdownToHtml from '../lib/markdownToHtml';
+import { getAllPosts } from '../libs/api';
+import markdownToHtml from '../libs/markdownToHtml';
 
 interface Props {
   title: string;
