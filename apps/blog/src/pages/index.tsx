@@ -6,7 +6,7 @@ import PostCard from '../components/PostCard';
 import SEO from '../components/SEO';
 import useInfiniteScroll from '../hooks/useInfiniteScroll';
 import useScrollRestoration from '../hooks/useScrollRestoration';
-import { getAllPosts } from '../lib/api';
+import { getAllPosts } from '../libs/api';
 import PostType from '../types/post';
 
 interface Props {
