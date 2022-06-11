@@ -15,21 +15,21 @@
     "cypress": "cypress open"
   },
   "dependencies": {
-    "@emotion/react": "^11.8.2",
+    "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@nextui-org/react": "^1.0.4-beta.5",
-    "core": "*",
-    "kbar": "^0.1.0-beta.33",
-    "next": "^12.1.0",
+    "core": "0.0.1",
+    "kbar": "^0.1.0-beta.35",
+    "next": "^12.1.6",
     "next-themes": "^0.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "compression-webpack-plugin": "^9.2.0",
-    "config": "*",
-    "cypress": "^9.5.3",
+    "config": "1.0.0",
+    "cypress": "^9.7.0",
     "next-transpile-modules": "^9.0.0",
-    "tsconfig": "*"
+    "tsconfig": "0.0.0"
   }
 }
