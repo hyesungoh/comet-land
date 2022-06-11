@@ -96,7 +96,7 @@ jobs:
         run: yarn
 
       - name: Cypress run - blog
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           browser: chrome
           working-directory: apps/blog
@@ -108,7 +108,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Cypress run - resume
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           browser: chrome
           working-directory: apps/resume
