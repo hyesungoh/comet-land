@@ -28,7 +28,7 @@
   "devDependencies": {
     "compression-webpack-plugin": "^9.2.0",
     "config": "1.0.0",
-    "cypress": "^9.7.0",
+    "cypress": "^10.1.0",
     "next-transpile-modules": "^9.0.0",
     "tsconfig": "0.0.0"
   }
