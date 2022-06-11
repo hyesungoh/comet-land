@@ -8,7 +8,7 @@ import { authorName } from 'core/constants';
 import { KBarProvider } from 'kbar';
 
 import ContactButton from '../components/ContactButton';
-import generateKbarAction from '../constants/KbarActions';
+import generateKbarAction from '../libs/KbarActions';
 
 const KbarComponent = dynamic(() => import('core/components/Kbar'), {
   ssr: false,
