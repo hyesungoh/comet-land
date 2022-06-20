@@ -13,17 +13,28 @@ export function PageProgressBar() {
     }
 
     function setPageOffsetHeight() {
-      setOffsetHeight(window.document.body.offsetHeight - window.innerHeight);
+      const diff = window.document.body.offsetHeight - window.innerHeight;
+      setOffsetHeight(diff);
     }
 
-    setScroll();
-    setPageOffsetHeight();
+    function setScrollAndOffsetHeight() {
+      setScroll();
+      setPageOffsetHeight();
+    }
+
+    setScrollAndOffsetHeight();
+
+    const resizeObserver = new ResizeObserver(setScrollAndOffsetHeight);
+    resizeObserver.observe(window.document.body);
+
     window.addEventListener('scroll', setScroll);
-    window.addEventListener('resize', setPageOffsetHeight);
+    // for window height changed
+    window.addEventListener('resize', setScrollAndOffsetHeight);
 
     return () => {
+      resizeObserver.unobserve(window.document.body);
       window.removeEventListener('scroll', setScroll);
-      window.removeEventListener('resize', setPageOffsetHeight);
+      window.removeEventListener('resize', setScrollAndOffsetHeight);
     };
   }, []);
 
