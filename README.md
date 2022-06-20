@@ -47,9 +47,17 @@ Blog and Resume template with turborepo
 
 ## How to start
 
-1. Fork or clone this repo
+`comet-land` has own generate package [`create-comet-land`](https://github.com/hyesungoh/create-comet-land)
 
-2. Install dependencies
+```bash
+npx create-comet-land
+# or
+yarn create comet-land
+```
+
+> Or using Fork or clone this repo
+
+1. Install dependencies
 
 ```bash
 yarn
@@ -77,6 +85,9 @@ and you can reconfigure at that directory's variable
 - Colors directory
   - color schema
 - General directory
+  - author image
+  - default open-graph image
+  - favicon
 - SocialMedia directory
   - github
   - instagram
@@ -137,6 +148,10 @@ yarn add package-name -DW
 ## Trouble shootings
 
 check [this wiki](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting) please! it might be help
+
+## Use Case
+
+- [hyesungoh.xyz](https://github.com/hyesungoh/hyesungoh.xyz)
 
 ## Inspired
 
