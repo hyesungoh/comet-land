@@ -25,6 +25,8 @@ export function ThemeSwitch() {
         padding: '0',
         '& span': { backgroundColor: '$white' },
         '& div': { height: '32px' },
+        '--nextui--switchColor': theme?.colors.accents2.value,
+        '--nextui--switchColorHover': theme?.colors.accents2.value,
       }}
       size="lg"
       checked={isDark}
