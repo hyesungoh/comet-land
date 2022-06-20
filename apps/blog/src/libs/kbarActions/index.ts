@@ -27,7 +27,7 @@ function generateKbarAction(router: NextRouter) {
     };
   });
 
-  const rssFeedAction = {
+  const rssFeedAction: IconActionType = {
     id: 'rss',
     name: 'RSS',
     section: 'Scope',
@@ -36,7 +36,9 @@ function generateKbarAction(router: NextRouter) {
     perform: () => openExternalLink('/rss.xml'),
   };
 
-  const resumeAction = {
+  const kbarActions: IconActionType[] = [...routePostActions, ...routeCategoryActions, rssFeedAction, ...socialActions];
+
+  const resumeAction: IconActionType = {
     id: 'resume',
     name: 'Resume',
     subtitle: resumeUrl,
@@ -47,13 +49,9 @@ function generateKbarAction(router: NextRouter) {
     perform: () => openExternalLink(resumeUrl),
   };
 
-  const kbarActions: IconActionType[] = [
-    ...routePostActions,
-    ...routeCategoryActions,
-    rssFeedAction,
-    ...socialActions,
-    resumeAction,
-  ];
+  if (typeof resumeUrl === 'string' && resumeUrl.length > 0) {
+    kbarActions.push(resumeAction);
+  }
 
   return kbarActions;
 }
