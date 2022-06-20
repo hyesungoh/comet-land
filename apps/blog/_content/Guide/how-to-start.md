@@ -5,8 +5,7 @@ date: 2022-03-26 17:50:00
 category: 'Guide'
 ---
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/context:javascript)
-
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/context:javascript) [![Continious Intergration](https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml/badge.svg)](https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml) [![codecov](https://codecov.io/gh/hyesungoh/comet-land/branch/main/graph/badge.svg?token=TA7LT3RQ1P)](https://codecov.io/gh/hyesungoh/comet-land) [![blog](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/yiddyz&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/yiddyz/runs) [![resume](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/inc4yo&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/inc4yo/runs)
 ![comet-land-blog](https://user-images.githubusercontent.com/26461307/159371599-95b2acd5-e5eb-482c-9ead-d8f601f034b5.png)
 
 ### [BLOG DEMO](https://comet-land-blog.vercel.app/)
@@ -53,9 +52,17 @@ Blog and Resume template with turborepo
 
 ## How to start
 
-1. Fork or clone this repo
+`comet-land` has own generate package [`create-comet-land`](https://github.com/hyesungoh/create-comet-land)
 
-2. Install dependencies
+```bash
+npx create-comet-land
+# or
+yarn create comet-land
+```
+
+> Or using Fork or clone this repo
+
+1. Install dependencies
 
 ```bash
 yarn
@@ -83,6 +90,9 @@ and you can reconfigure at that directory's variable
 - Colors directory
   - color schema
 - General directory
+  - author image
+  - default open-graph image
+  - favicon
 - SocialMedia directory
   - github
   - instagram
@@ -143,6 +153,10 @@ yarn add package-name -DW
 ## Trouble shootings
 
 check [this wiki](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting) please! it might be help
+
+## Use Case
+
+- [hyesungoh.xyz](https://github.com/hyesungoh/hyesungoh.xyz)
 
 ## Inspired
 
