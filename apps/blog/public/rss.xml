@@ -22,8 +22,8 @@
     <![CDATA[how to start]]>
     </description>
     <content:encoded>
-      <![CDATA[<p><a href="https://lgtm.com/projects/g/hyesungoh/comet-land/alerts/" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/lgtm/alerts/g/hyesungoh/comet-land.svg?logo=lgtm&#x26;logoWidth=18" alt="Total alerts"></a> <a href="https://lgtm.com/projects/g/hyesungoh/comet-land/context:javascript" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/lgtm/grade/javascript/g/hyesungoh/comet-land.svg?logo=lgtm&#x26;logoWidth=18" alt="Language grade: JavaScript"></a></p>
-<p><img src="https://user-images.githubusercontent.com/26461307/159371599-95b2acd5-e5eb-482c-9ead-d8f601f034b5.png" alt="comet-land-blog"></p>
+      <![CDATA[<p><a href="https://lgtm.com/projects/g/hyesungoh/comet-land/alerts/" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/lgtm/alerts/g/hyesungoh/comet-land.svg?logo=lgtm&#x26;logoWidth=18" alt="Total alerts"></a> <a href="https://lgtm.com/projects/g/hyesungoh/comet-land/context:javascript" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/lgtm/grade/javascript/g/hyesungoh/comet-land.svg?logo=lgtm&#x26;logoWidth=18" alt="Language grade: JavaScript"></a> <a href="https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml" target="_blank" rel="noopener noreferer"><img src="https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml/badge.svg" alt="Continious Intergration"></a> <a href="https://codecov.io/gh/hyesungoh/comet-land" target="_blank" rel="noopener noreferer"><img src="https://codecov.io/gh/hyesungoh/comet-land/branch/main/graph/badge.svg?token=TA7LT3RQ1P" alt="codecov"></a> <a href="https://dashboard.cypress.io/projects/yiddyz/runs" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/yiddyz&#x26;style=flat&#x26;logo=cypress" alt="blog"></a> <a href="https://dashboard.cypress.io/projects/inc4yo/runs" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/inc4yo&#x26;style=flat&#x26;logo=cypress" alt="resume"></a>
+<img src="https://user-images.githubusercontent.com/26461307/159371599-95b2acd5-e5eb-482c-9ead-d8f601f034b5.png" alt="comet-land-blog"></p>
 <h3 id="blog-demo"><a href="https://comet-land-blog.vercel.app/" target="_blank" rel="noopener noreferer">BLOG DEMO</a></h3>
 <p><img src="https://user-images.githubusercontent.com/26461307/160653172-c56a3b64-dfa9-4708-bf95-fca2fff47964.png" alt="comet-land-resume"></p>
 <h3 id="resume-demo"><a href="https://comet-land-resume.vercel.app/" target="_blank" rel="noopener noreferer">RESUME DEMO</a></h3>
@@ -59,13 +59,16 @@
 </ul>
 <p><img src="https://user-images.githubusercontent.com/26461307/161536162-63278484-ca52-42ed-89d4-951cd31e42c1.gif" alt="resume lighthouse score"></p>
 <h2 id="how-to-start" class="heading">How to start</h2>
+<p><code>comet-land</code> has own generate package <a href="https://github.com/hyesungoh/create-comet-land" target="_blank" rel="noopener noreferer"><code>create-comet-land</code></a></p>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line">npx create-comet-land
+</span><span class="code-line"><span class="token comment"># or</span>
+</span><span class="code-line"><span class="token function">yarn</span> create comet-land
+</span></code></pre>
+<blockquote>
+<p>Or using Fork or clone this repo</p>
+</blockquote>
 <ol>
-<li>
-<p>Fork or clone this repo</p>
-</li>
-<li>
-<p>Install dependencies</p>
-</li>
+<li>Install dependencies</li>
 </ol>
 <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">yarn</span>
 </span></code></pre>
@@ -94,7 +97,13 @@
 <li>color schema</li>
 </ul>
 </li>
-<li>General directory</li>
+<li>General directory
+<ul>
+<li>author image</li>
+<li>default open-graph image</li>
+<li>favicon</li>
+</ul>
+</li>
 <li>SocialMedia directory
 <ul>
 <li>github</li>
@@ -145,6 +154,10 @@
 </span></code></pre>
 <h2 id="trouble-shootings" class="heading">Trouble shootings</h2>
 <p>check <a href="https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting" target="_blank" rel="noopener noreferer">this wiki</a> please! it might be help</p>
+<h2 id="use-case" class="heading">Use Case</h2>
+<ul>
+<li><a href="https://github.com/hyesungoh/hyesungoh.xyz" target="_blank" rel="noopener noreferer">hyesungoh.xyz</a></li>
+</ul>
 <h2 id="inspired" class="heading">Inspired</h2>
 <p>I inspired below blogs and resume.</p>
 <ul>
