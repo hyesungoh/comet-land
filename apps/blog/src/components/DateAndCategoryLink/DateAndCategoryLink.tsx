@@ -24,4 +24,5 @@ function DateAndCategoryLink({ date, category }: Props) {
     </>
   );
 }
+
 export default DateAndCategoryLink;
