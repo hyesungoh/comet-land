@@ -16,7 +16,7 @@ describe('blog - component - DateAndCategoryLink', () => {
     expect(screen.getByText(CATEGORY)).toBeInTheDocument();
   });
 
-  it('should render only date withou category', () => {
+  it('should render only date without category', () => {
     render(<DateAndCategoryLink date={DATE} />);
     expect(screen.getByText(DATE)).toBeInTheDocument();
   });
