@@ -1,6 +1,6 @@
 # Comet-land
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/context:javascript)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/context:javascript) [![Continious Intergration](https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml/badge.svg)](https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml) [![codecov](https://codecov.io/gh/hyesungoh/comet-land/branch/main/graph/badge.svg?token=TA7LT3RQ1P)](https://codecov.io/gh/hyesungoh/comet-land) [![blog](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/yiddyz&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/yiddyz/runs) [![resume](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/inc4yo&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/inc4yo/runs)
 
 ![comet-land-blog](https://user-images.githubusercontent.com/26461307/159371599-95b2acd5-e5eb-482c-9ead-d8f601f034b5.png)
 
@@ -46,9 +46,17 @@ turborepo를 사용한 블로그와 이력서 템플릿입니다.
 
 ## 시작하는 방법
 
-1. 해당 레포지토리를 Fork 혹은 clone 해주세요
+`comet-land`는 전용 생성기 [`create-comet-land`](https://github.com/hyesungoh/create-comet-land)를 이용해 쉽게 시작할 수 있어요.
 
-2. dependencies를 설치해주세요
+```bash
+npx create-comet-land
+# or
+yarn create comet-land
+```
+
+> 혹은 해당 레포를 포크하거나 클론해주세요.
+
+1. dependencies를 설치해주세요.
 
 ```bash
 yarn
@@ -76,6 +84,9 @@ yarn dev
 - Colors directory
   - color schema
 - General directory
+  - author image
+  - default open-graph image
+  - favicon
 - SocialMedia directory
   - github
   - instagram
@@ -136,6 +147,10 @@ yarn add package-name -DW
 ## Trouble shootings
 
 [위키](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting)를 참고해주세요. 도움이 될 수도 있습니다..!
+
+## 사용 예
+
+- [hyesungoh.xyz](https://github.com/hyesungoh/hyesungoh.xyz)
 
 ## 영감
 
