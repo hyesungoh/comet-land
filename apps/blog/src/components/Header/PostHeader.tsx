@@ -5,7 +5,7 @@ import { KBarToggleButton, ThemeSwitch } from 'core';
 
 import { blogName } from '../../../_config';
 
-function PostHeader() {
+export function PostHeader() {
   const { theme } = useTheme();
 
   return (
@@ -22,8 +22,6 @@ function PostHeader() {
     </Header>
   );
 }
-
-export default PostHeader;
 
 const Header = styled.header`
   width: 100%;
