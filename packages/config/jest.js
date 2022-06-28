@@ -9,7 +9,7 @@ module.exports = {
   },
   moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
   transform: {
-    '^.+\\.tsx?$': 'esbuild-jest',
+    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
   },
   coverageThreshold: null,
   setupFilesAfterEnv: ['./jest.setup.js'],
