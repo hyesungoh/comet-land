@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { IconProps } from '../type';
 
 export function Info({ width = '24px', ...props }: IconProps) {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ISkills } from '../../../_content/Skills';
 import Section from '../Section';
 import Skill from './Skill';

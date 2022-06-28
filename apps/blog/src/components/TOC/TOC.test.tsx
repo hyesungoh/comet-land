@@ -9,6 +9,7 @@ jest.spyOn(React, 'useRef').mockImplementation(() => ({
     disconnect: jest.fn(),
   },
 }));
+
 jest.spyOn(React, 'useEffect').mockImplementation(f => f());
 
 describe('blog - TOC', () => {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ErrorTemplate } from './Template';
 
 export function Offline() {

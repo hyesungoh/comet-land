@@ -32,7 +32,7 @@
     "@types/react": "^17.0.45",
     "@types/react-dom": "^17.0.17",
     "codecov": "^3.8.3",
-    "esbuild": "^0.14.43",
+    "esbuild": "^0.14.47",
     "esbuild-jest": "^0.5.0",
     "eslint": "^7.32.0",
     "identity-obj-proxy": "^3.0.0",

@@ -1,4 +1,7 @@
 require('@testing-library/jest-dom');
+const React = require('react');
+
+window.React = React;
 
 jest.mock('next/router', () => ({
   useRouter() {

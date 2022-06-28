@@ -21,7 +21,6 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^17.0.42",
     "core": "0.0.1",
-    "esbuild": "^0.14.43",
     "gray-matter": "^4.0.3",
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
@@ -47,6 +46,9 @@
     "compression-webpack-plugin": "^9.2.0",
     "config": "1.0.0",
     "cypress": "^10.1.0",
+    "esbuild": "^0.14.47",
+    "esbuild-jest": "^0.5.0",
+    "intersection-observer": "^0.12.2",
     "next-transpile-modules": "^9.0.0",
     "tsconfig": "0.0.0"
   }

@@ -1,4 +1,3 @@
-import React from 'react';
 import NextLink from 'next/link';
 import styled from '@emotion/styled';
 import { Link, NextUITheme, useTheme } from '@nextui-org/react';

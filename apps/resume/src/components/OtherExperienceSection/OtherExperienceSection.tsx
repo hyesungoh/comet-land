@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { IOtherExperience } from '../../../_content/Other-Experience';
 import Section from '../Section';
 import Experience from './Experience';
