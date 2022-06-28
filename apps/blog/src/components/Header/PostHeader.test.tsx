@@ -1,36 +1,36 @@
 import { render, screen } from '@testing-library/react';
 
 import { blogName } from '../../../_config';
-import { MainHeader } from './MainHeader';
+import { PostHeader } from './PostHeader';
 
-describe('blog - components - Header - MainHeader', () => {
+describe('blog - components - Header - PostHeader', () => {
   it('should named defined', () => {
-    expect(MainHeader).toBeDefined();
+    expect(PostHeader).toBeDefined();
   });
 
-  it('should have level 1 heading', () => {
-    render(<MainHeader />);
-    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
+  it('should have level 3 heading', () => {
+    render(<PostHeader />);
+    expect(screen.getByRole('heading', { level: 3 })).toBeInTheDocument();
   });
 
-  it('should render blog name with heading', () => {
-    render(<MainHeader />);
+  it('should render blog name', () => {
+    render(<PostHeader />);
     expect(screen.getByText(blogName)).toBeInTheDocument();
   });
 
   it('should have blog name link with root href', () => {
-    render(<MainHeader />);
+    render(<PostHeader />);
     expect(screen.getByRole('link').innerHTML).toBe(blogName);
     expect(screen.getByRole('link')).toHaveAttribute('href', '/');
   });
 
   it('should render ThemeSwitch', () => {
-    render(<MainHeader />);
+    render(<PostHeader />);
     expect(screen.getByLabelText('theme switch')).toBeInTheDocument();
   });
 
   it('should render KBarToggleButton', () => {
-    render(<MainHeader />);
+    render(<PostHeader />);
     expect(screen.getByRole('button')).toBeInTheDocument();
   });
 });
