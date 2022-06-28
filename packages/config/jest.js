@@ -11,10 +11,6 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': 'esbuild-jest',
   },
-  // transform: {
-  // '^.+\\.tsx?$': ['babel-jest', { presets: ['next/babel'] }],
-  // '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
-  // },
   coverageThreshold: null,
   setupFilesAfterEnv: ['./jest.setup.js'],
   transformIgnorePatterns: ['<rootDir>/node_modules/'],
