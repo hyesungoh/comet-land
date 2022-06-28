@@ -1,4 +1,4 @@
-import React, { ComponentProps } from 'react';
+import { ComponentProps } from 'react';
 import { render, screen } from '@testing-library/react';
 
 import { ErrorTemplate } from './Template';
