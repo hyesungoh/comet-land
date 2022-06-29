@@ -1,6 +1,6 @@
 import { githubUrl } from '../SocialMedia';
 
-// unsing both app's footer
+// using both app's footer
 export const authorName = 'hyesungoh';
 
 // Write ever you want :D, default is github
