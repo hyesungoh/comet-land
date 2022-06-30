@@ -24,7 +24,7 @@ function Comments() {
     }
 
     if (!rootElm.current) return;
-    if (document.querySelector(UTTERANCE_QUERY)) return; // prevant duplicate
+    if (document.querySelector(UTTERANCE_QUERY)) return; // prevent duplicate
 
     const utterances = document.createElement('script');
     const utterancesConfig = {
