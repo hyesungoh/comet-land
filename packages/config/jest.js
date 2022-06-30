@@ -11,8 +11,9 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': 'esbuild-jest',
     '^.+\\.(js|ts)$': ['babel-jest', { presets: ['next/babel'] }],
+    '<rootDir>/node_modules/rehype-external-links/': ['babel-jest', { presets: ['next/babel'] }],
   },
   coverageThreshold: null,
   setupFilesAfterEnv: ['./jest.setup.js'],
-  transformIgnorePatterns: ['<rootDir>/node_modules/'],
+  transformIgnorePatterns: [],
 };
