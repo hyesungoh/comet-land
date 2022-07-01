@@ -6,5 +6,3 @@ type PostType = {
   category: string;
   content: string;
 };
-
-export default PostType;
