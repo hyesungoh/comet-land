@@ -8,7 +8,6 @@ import SEO from '../../components/SEO';
 import useInfiniteScroll from '../../hooks/useInfiniteScroll';
 import useScrollRestoration from '../../hooks/useScrollRestoration';
 import { getAllCategories, getAllPostsByCategory } from '../../libs/api';
-import PostType from '../../types/post';
 
 interface Props {
   category: string;
