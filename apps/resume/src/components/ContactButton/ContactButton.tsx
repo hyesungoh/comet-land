@@ -24,8 +24,8 @@ const Div = styled.div`
   right: 2rem;
 
   @media ${config.media.xsMax} {
-    bottom: 0.5rem;
-    right: 0.75rem;
+    bottom: 1rem;
+    right: 1.25rem;
   }
 `;
 
