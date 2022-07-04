@@ -69,7 +69,7 @@ function useScrollSpy({ ids, options }: HookProps) {
 
     observer.current = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry?.isIntersecting) {
+        if (entry.isIntersecting) {
           setActiveId(entry.target.getAttribute('id'));
         }
       });
