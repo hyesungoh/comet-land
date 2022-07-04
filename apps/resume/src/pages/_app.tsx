@@ -25,8 +25,8 @@ export default function ResumeApp({ Component, pageProps }: AppProps) {
         <KBarProvider actions={generateKbarAction()}>
           <Title />
           <KbarComponent />
-          <ContactButton />
           <Component {...pageProps} />
+          <ContactButton />
         </KBarProvider>
       </NextUIProvider>
     </NextThemesProvider>
