@@ -137,7 +137,7 @@ cd ../.. && npx turbo run build --scope=blog --include-dependencies --no-deps
 cd ../.. && npx turbo run build --scope=resume --include-dependencies --no-deps
 ```
 
-### 5. Click the Deploy button!
+### 5. Click the Deploy button! 🎉
 
 ![click the deploy button](https://user-images.githubusercontent.com/26461307/177278617-82982395-d1fc-46f1-8f96-f7cb7bae95d9.png)
 

@@ -135,7 +135,7 @@ cd ../.. && npx turbo run build --scope=blog --include-dependencies --no-deps
 cd ../.. && npx turbo run build --scope=resume --include-dependencies --no-deps
 ```
 
-### 5. Depoly 버튼 클릭!
+### 5. Depoly 버튼 클릭! 🎉
 
 ![click the deploy button](https://user-images.githubusercontent.com/26461307/177278617-82982395-d1fc-46f1-8f96-f7cb7bae95d9.png)
 
@@ -143,7 +143,7 @@ cd ../.. && npx turbo run build --scope=resume --include-dependencies --no-deps
 
 이 프로젝트는 `turborepo`를 사용하였습니다.
 
-그렇기 때문에 추가적인 정보는 다음 [vercel 가이드 링크](https://vercel.com/docs/concepts/git/monorepos#turborepo)에서 확인할 수 있습니다.
+그렇기 때문에 추가적인 정보는 [vercel 가이드 링크](https://vercel.com/docs/concepts/git/monorepos#turborepo)에서 확인할 수 있습니다.
 
 ## 추가 패키지 설치하는 방법
 
