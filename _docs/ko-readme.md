@@ -107,21 +107,39 @@ yarn dev
 
 ## Vercel을 이용해 배포하는 방법
 
-이 프로젝트는 `turborepo`를 사용하였습니다.
+### 1. Import git repository
 
-그렇기 때문에 [vercel guide](https://vercel.com/docs/concepts/git/monorepos#turborepo)를 보고 쉽게 배포할 수 있습니다 :D
+![vercel import git repo](https://user-images.githubusercontent.com/26461307/177274354-292a1f8a-39b5-4dc2-a205-6b14d9459973.png)
 
-- 블로그 빌드 커맨드
+### 2. framework preset을 `Next.js`로 설정
+
+![vercel select framework preset](https://user-images.githubusercontent.com/26461307/177274592-c0111349-6718-4de9-945f-2df0a1bdb9fb.png)
+
+### 3. root directory를 `apps/blog` 혹은 `apps/resume`로 설정
+
+![vercel set root directory](https://user-images.githubusercontent.com/26461307/177274839-977e04f1-3b32-4fec-8fce-566f556f9a2d.png)
+
+### 4. build command 설정
+
+![vercel set build command](https://user-images.githubusercontent.com/26461307/177275097-3d93ce93-e30e-473e-9126-c9a38a64e9e1.png)
+
+- blog build command
 
 ```bash
 cd ../.. && npx turbo run build --scope=blog --include-dependencies --no-deps
 ```
 
-- 이력서 빌드 커맨드
+- resume build command
 
 ```bash
 cd ../.. && npx turbo run build --scope=resume --include-dependencies --no-deps
 ```
+
+### 추가 정보
+
+이 프로젝트는 `turborepo`를 사용하였습니다.
+
+그렇기 때문에 추가적인 정보는 다음 [vercel 가이드 링크](https://vercel.com/docs/concepts/git/monorepos#turborepo)에서 확인할 수 있습니다.
 
 ## 추가 패키지 설치하는 방법
 
