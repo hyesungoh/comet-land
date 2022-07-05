@@ -158,13 +158,14 @@ after
     expect(result).toHaveLength(posts.length);
   });
 
-  function testIf(condition: boolean) {
-    return condition ? it : it.skip;
-  }
-
-  testIf(getAllPosts(['date']).length > 1)('getAllPosts return recently sorted data', () => {
+  test('getAllPosts return recently sorted data', () => {
     const result = getAllPosts(['date']);
-    // eslint-disable-next-line jest/no-standalone-expect
+    if (result.length < 2) {
+      // eslint-disable-next-line jest/no-conditional-expect
+      expect(true).toBeTruthy();
+      return;
+    }
+
     expect(result[0].date > result[1].date).toBeTruthy();
   });
 });
