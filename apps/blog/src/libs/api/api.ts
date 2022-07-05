@@ -65,11 +65,11 @@ export function getPostBySlugAndCategory(slug: string, category: string, fields:
   return items;
 }
 
-export function getAllPostsByCategory(category: string, field: string[] = []) {
+export function getAllPostsByCategory(category: string, fields: string[] = []) {
   const slugs = getPostsPathByCategory(category);
   const posts = slugs
     .filter(slug => isVaildFile(slug))
-    .map(slug => getPostBySlugAndCategory(slug, category, field))
+    .map(slug => getPostBySlugAndCategory(slug, category, fields))
     .sort((post1, post2) => {
       const post1Date = new Date(post1.date);
       const post2Date = new Date(post2.date);
