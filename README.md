@@ -109,9 +109,21 @@ please read following link.
 
 ## How to deploy with vercel
 
-This project using `turborepo`.
+### 1. Import git repository
 
-so, you can deploy very easy with this [vercel guide](https://vercel.com/docs/concepts/git/monorepos#turborepo)
+![vercel import git repo](https://user-images.githubusercontent.com/26461307/177274354-292a1f8a-39b5-4dc2-a205-6b14d9459973.png)
+
+### 2. Select framework preset to `Next.js`
+
+![vercel select framework preset](https://user-images.githubusercontent.com/26461307/177274592-c0111349-6718-4de9-945f-2df0a1bdb9fb.png)
+
+### 3. Set root directory to `apps/blog` or `apps/resume`
+
+![vercel set root directory](https://user-images.githubusercontent.com/26461307/177274839-977e04f1-3b32-4fec-8fce-566f556f9a2d.png)
+
+### 4. Set build command
+
+![vercel set build command](https://user-images.githubusercontent.com/26461307/177275097-3d93ce93-e30e-473e-9126-c9a38a64e9e1.png)
 
 - blog build command
 
@@ -124,6 +136,12 @@ cd ../.. && npx turbo run build --scope=blog --include-dependencies --no-deps
 ```bash
 cd ../.. && npx turbo run build --scope=resume --include-dependencies --no-deps
 ```
+
+### more setting
+
+This project using `turborepo`.
+
+so, you can find more information at this [vercel guide](https://vercel.com/docs/concepts/git/monorepos#turborepo).
 
 ## How to add more packages
 
