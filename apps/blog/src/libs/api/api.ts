@@ -2,7 +2,11 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import { join } from 'path';
 
-const postsDirectory = join(process.cwd(), '_content');
+const cwd = process.cwd();
+// NOTE: Trinomial for test:coverage environment
+const postsDirectory = join(cwd, cwd.endsWith('blog') ? '_content' : 'apps/blog/_content');
+
+console.log(postsDirectory);
 
 function isValidCategory(value: string) {
   if (value.includes('.')) return false;
