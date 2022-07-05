@@ -111,19 +111,19 @@ please read following link.
 
 ### 1. Import git repository
 
-![vercel import git repo](https://user-images.githubusercontent.com/26461307/177274354-292a1f8a-39b5-4dc2-a205-6b14d9459973.png)
+![deploy step 1](https://user-images.githubusercontent.com/26461307/177278351-7b82fcbe-e6db-46bd-93f4-10e8524ef2bf.gif)
 
 ### 2. Select framework preset to `Next.js`
 
-![vercel select framework preset](https://user-images.githubusercontent.com/26461307/177274592-c0111349-6718-4de9-945f-2df0a1bdb9fb.png)
+![deploy step 2](https://user-images.githubusercontent.com/26461307/177278363-509b3d69-f692-4458-8bc2-62173eef5e7e.gif)
 
 ### 3. Set root directory to `apps/blog` or `apps/resume`
 
-![vercel set root directory](https://user-images.githubusercontent.com/26461307/177274839-977e04f1-3b32-4fec-8fce-566f556f9a2d.png)
+![deploy step 3](https://user-images.githubusercontent.com/26461307/177278370-1651b4d7-e561-44df-8a62-a283450773d9.gif)
 
 ### 4. Set build command
 
-![vercel set build command](https://user-images.githubusercontent.com/26461307/177275097-3d93ce93-e30e-473e-9126-c9a38a64e9e1.png)
+![deploy step 4](https://user-images.githubusercontent.com/26461307/177278380-659ba348-7952-4875-9e19-0a006ad57c1a.gif)
 
 - blog build command
 
@@ -136,6 +136,10 @@ cd ../.. && npx turbo run build --scope=blog --include-dependencies --no-deps
 ```bash
 cd ../.. && npx turbo run build --scope=resume --include-dependencies --no-deps
 ```
+
+### 5. Click the Deploy button!
+
+![click the deploy button](https://user-images.githubusercontent.com/26461307/177278617-82982395-d1fc-46f1-8f96-f7cb7bae95d9.png)
 
 ### More information
 
