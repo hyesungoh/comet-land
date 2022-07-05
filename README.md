@@ -137,11 +137,11 @@ cd ../.. && npx turbo run build --scope=blog --include-dependencies --no-deps
 cd ../.. && npx turbo run build --scope=resume --include-dependencies --no-deps
 ```
 
-### more setting
+### More information
 
 This project using `turborepo`.
 
-so, you can find more information at this [vercel guide](https://vercel.com/docs/concepts/git/monorepos#turborepo).
+so, you can find more information at this [vercel guide](https://vercel.com/docs/concepts/monorepos/turborepo).
 
 ## How to add more packages
 
