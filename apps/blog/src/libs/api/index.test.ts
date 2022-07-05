@@ -1,7 +1,7 @@
 import * as api from './index';
 
-describe('blog - libs/api/index', () => {
-  it('should be defined', () => {
+describe('blog - libs - api - index', () => {
+  it('should defined', () => {
     expect(api).toBeDefined();
     expect(api.getAllCategories).toBeDefined();
     expect(api.getAllPosts).toBeDefined();
