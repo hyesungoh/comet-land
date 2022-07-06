@@ -11,7 +11,7 @@ function isValid(value: any) {
 export default class BlogDocument extends Document {
   render() {
     return (
-      <Html lang="ko">
+      <Html lang="en">
         <Head>
           {/* for NextUI */}
           {CssBaseline.flush()}
