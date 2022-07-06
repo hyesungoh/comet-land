@@ -1,6 +1,7 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import Index from '../index.page';
+import Slug from '../[slug].page';
 
 const MOCK_POST = {
   slug: 'comet-land',
@@ -9,27 +10,25 @@ const MOCK_POST = {
   date: '2022-01-01',
   category: 'blog',
   content: '<h2>heading</h2>',
+  ogImage: null,
 };
 
-describe('blog - pages - index', () => {
+// NOTE: prevent ResizeObserver and IntersectionObserver at PageProgressBar, TOC
+jest.spyOn(React, 'useEffect').mockImplementation(f => f());
+
+describe('blog - pages - [slug]', () => {
   it('should defined', () => {
-    expect(Index).toBeDefined();
+    expect(Slug).toBeDefined();
   });
 
   it('should render main', () => {
-    render(<Index allPosts={[MOCK_POST]} />);
+    render(<Slug {...MOCK_POST} />);
 
     expect(screen.getByRole('main')).toBeInTheDocument();
   });
 
-  it('should render post title', () => {
-    render(<Index allPosts={[MOCK_POST]} />);
-
-    expect(screen.getByText(MOCK_POST.title)).toBeInTheDocument();
-  });
-
-  it('should has one level 1 heading', () => {
-    render(<Index allPosts={[MOCK_POST]} />);
+  it('should render one level 1 heading', () => {
+    render(<Slug {...MOCK_POST} />);
 
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
   });
