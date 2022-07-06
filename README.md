@@ -174,7 +174,9 @@ check [this wiki](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting)
 
 ## Use Case
 
-- [hyesungoh.xyz](https://github.com/hyesungoh/hyesungoh.xyz)
+- [hyesungoh.xyz](https://www.hyesungoh.xyz/)
+- [seulheehan.com](https://www.seulheehan.com/)
+- [bong-bonga.vercel.app](https://bong-bonga.vercel.app/)
 
 ## Inspired
 

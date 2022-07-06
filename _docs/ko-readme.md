@@ -172,7 +172,9 @@ yarn add package-name -DW
 
 ## 사용 예
 
-- [hyesungoh.xyz](https://github.com/hyesungoh/hyesungoh.xyz)
+- [hyesungoh.xyz](https://www.hyesungoh.xyz/)
+- [seulheehan.com](https://www.seulheehan.com/)
+- [bong-bonga.vercel.app](https://bong-bonga.vercel.app/)
 
 ## 영감
 
