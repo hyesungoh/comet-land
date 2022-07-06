@@ -6,8 +6,6 @@ const cwd = process.cwd();
 // NOTE: Trinomial for test:coverage environment
 const postsDirectory = join(cwd, cwd.endsWith('blog') ? '_content' : 'apps/blog/_content');
 
-console.log(postsDirectory);
-
 function isValidCategory(value: string) {
   if (value.includes('.')) return false;
   return true;
