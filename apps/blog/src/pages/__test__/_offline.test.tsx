@@ -2,7 +2,7 @@ import { Offline as CoreOffline } from 'core';
 
 import Offline from '../_offline.page';
 
-describe('resume - pages - offline', () => {
+describe('blog - pages - offline', () => {
   it('should defined', () => {
     expect(Offline).toBeDefined();
   });

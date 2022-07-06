@@ -2,7 +2,7 @@ import { ServerError as CoreServerError } from 'core';
 
 import ServerError from '../500.page';
 
-describe('resume - pages - 500', () => {
+describe('blog - pages - 500', () => {
   it('should defined', () => {
     expect(ServerError).toBeDefined();
   });
