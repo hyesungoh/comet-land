@@ -33,9 +33,9 @@ const Header = styled.header`
 
 const H3 = styled(Text)`
   margin: 0;
+
   font-size: 2rem;
   font-weight: bold;
-  line-height: 2rem;
 `;
 
 const ButtonWrapper = styled.div`
