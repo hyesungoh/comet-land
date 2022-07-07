@@ -8,13 +8,19 @@ Blog and Resume template with turborepo
 
 ![comet-land-blog](https://user-images.githubusercontent.com/26461307/159371599-95b2acd5-e5eb-482c-9ead-d8f601f034b5.png)
 
-### [`BLOG DEMO ☄️`](https://comet-land-blog.vercel.app/)
+<h2 align="center">
+
+[`BLOG DEMO ☄️`](https://comet-land-blog.vercel.app/)
+
+</h2>
 
 ![comet-land-resume](https://user-images.githubusercontent.com/26461307/160653172-c56a3b64-dfa9-4708-bf95-fca2fff47964.png)
 
-### [`RESUME DEMO 💫`](https://comet-land-resume.vercel.app/)
+<h2 align="center">
 
-## Blog Feature
+[`RESUME DEMO 💫`](https://comet-land-resume.vercel.app/)
+
+</h2>
 
 ![postGif](https://user-images.githubusercontent.com/26461307/159372336-e42c1a9c-9915-4d05-9e51-4882d681dc80.gif)
 
