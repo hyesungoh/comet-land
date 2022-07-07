@@ -6,7 +6,7 @@
     version="2.0"
   >
     <channel>
-        <title><![CDATA[CometLand]]></title>
+        <title><![CDATA[Comet log]]></title>
         <link>https://comet-land-blog.vercel.app</link>
         <description>
           <![CDATA[I like to share my knowledge.]]>
