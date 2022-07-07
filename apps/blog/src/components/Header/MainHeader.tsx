@@ -34,16 +34,16 @@ const Header = styled.header`
 const H1 = styled(Text)`
   margin: 0;
   font-size: 6rem;
-  line-height: 6rem;
+  line-height: 7rem;
 
   @media ${config.media.xsMax} {
     font-size: 5.5rem;
-    line-height: 5.5rem;
+    line-height: 6.5rem;
   }
 
   @media (max-width: 480px) {
     font-size: 4rem;
-    line-height: 4rem;
+    line-height: 5rem;
   }
 `;
 
