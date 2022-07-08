@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: ['next', 'plugin:import/recommended', 'plugin:import/typescript', 'prettier'],
+  extends: ['next', 'plugin:import/recommended', 'plugin:import/typescript', 'prettier', 'plugin:cypress/recommended'],
   plugins: ['@typescript-eslint', 'import', 'prettier', 'simple-import-sort'],
   settings: {
     next: {
