@@ -132,7 +132,7 @@ function generateSitemap() {
       .join('')}
     ${allCategories
       .map(category => {
-        return getSitemapTemplate(`/${category}`);
+        return getSitemapTemplate(`/category/${category}`);
       })
       .join('')}
   </urlset>
