@@ -21,12 +21,12 @@
   </url>
 
   <url>
-    <loc>https://comet-land-blog.vercel.app/Bar</loc>
+    <loc>https://comet-land-blog.vercel.app/category/Bar</loc>
   </url>
   <url>
-    <loc>https://comet-land-blog.vercel.app/Foo</loc>
+    <loc>https://comet-land-blog.vercel.app/category/Foo</loc>
   </url>
   <url>
-    <loc>https://comet-land-blog.vercel.app/Guide</loc>
+    <loc>https://comet-land-blog.vercel.app/category/Guide</loc>
   </url>
 </urlset>
