@@ -24,4 +24,20 @@ describe('root - header', () => {
   it('should visible theme toggle switch at header', () => {
     cy.get('header').find(GET_THEME_SWITCH_BY_LABEL).should('be.visible');
   });
+
+  it('should toggle theme when click theme toggle switch', () => {
+    // it means prefer light theme and width greater than 650px
+    cy.visit('/', {
+      onBeforeLoad: win => {
+        cy.stub(win, 'matchMedia').returns({ matches: false, addListener: () => {}, removeListener: () => {} });
+      },
+    });
+
+    cy.get('body').then($body => {
+      const lightBgColor = $body.css('background-color');
+
+      cy.get(GET_THEME_SWITCH_BY_LABEL).click();
+      cy.get('body').should('have.css', 'background-color').and('not.eq', lightBgColor);
+    });
+  });
 });
