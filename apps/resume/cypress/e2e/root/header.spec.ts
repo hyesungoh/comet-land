@@ -17,4 +17,11 @@ describe('root - header', () => {
   it('should display headerData description at header', () => {
     cy.get('header').find('p').should('be.visible');
   });
+
+  const THEME_SWITCH_LABEL = 'theme switch';
+  const GET_THEME_SWITCH_BY_LABEL = `[aria-label="${THEME_SWITCH_LABEL}"]`;
+
+  it('should visible theme toggle switch at header', () => {
+    cy.get('header').find(GET_THEME_SWITCH_BY_LABEL).should('be.visible');
+  });
 });
