@@ -6,7 +6,7 @@
     "lib": ["es5", "dom"],
     "types": ["cypress", "node"],
     "resolveJsonModule": true,
-    "esModuleInterop": true
-  },
-  "include": ["**/*.ts"]
+    "esModuleInterop": true,
+    "jsx": "preserve"
+  }
 }
