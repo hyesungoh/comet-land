@@ -56,6 +56,8 @@ module.exports = {
     'import/default': 'off',
     'react/jsx-key': 'off',
     '@next/next/no-html-link-for-pages': 'off',
+
+    'cypress/no-unnecessary-waiting': 'off',
   },
   overrides: [
     {
