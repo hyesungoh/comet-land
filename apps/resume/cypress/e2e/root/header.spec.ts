@@ -7,7 +7,7 @@ describe('root - header', () => {
   });
 
   it('should render header data at level 1 heading where inside of header', () => {
-    cy.get('header').find('h1').contains(headerData.heading);
+    cy.get('header').find('h1').should('contain', headerData.heading);
   });
 
   it('should display image at header', () => {
