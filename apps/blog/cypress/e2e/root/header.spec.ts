@@ -43,9 +43,7 @@ describe('root - header', () => {
   });
 
   it('should render kbar menu when click kbar button', () => {
-    cy.get('header').within(() => {
-      cy.get('button').click();
-    });
+    cy.get('header').find('button').click();
 
     cy.get('input').should('be.visible');
   });
