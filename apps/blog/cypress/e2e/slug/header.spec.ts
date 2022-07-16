@@ -1,4 +1,4 @@
-describe('slug - nav', () => {
+describe('slug - header', () => {
   it('should linkable to slug', () => {
     cy.visit('/');
     cy.get('main').find('a').first().click();
