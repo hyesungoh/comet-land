@@ -10,5 +10,6 @@ export default defineConfig({
     },
     specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
     baseUrl: 'http://localhost:3000/',
+    defaultCommandTimeout: 30000,
   },
 });
