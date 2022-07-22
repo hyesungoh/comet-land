@@ -1,11 +1,11 @@
 import { githubUrl } from '../SocialMedia';
 
 // using both app's footer
-export const authorName = '[jeong]';
+export const authorName = 'Jeong';
 
 // Write ever you want :D, default is github
 // 직접 작성해주셔도 좋습니다. 기본적으로 깃허브 주소를 사용합니다.
-export const defaultUrl = 'https://github.com/dgd03146/dgd03146.github.io.git';
+export const defaultUrl = 'https://github.com/dgd03146';
 
 // using both app's favicon
 export * as favicon from './favicon.ico';
