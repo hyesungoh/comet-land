@@ -7,6 +7,7 @@
     "packages/*"
   ],
   "scripts": {
+    "generate-static-files": "turbo run generate-static-files",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
