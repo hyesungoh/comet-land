@@ -27,7 +27,11 @@ function AuthorSection({ marginBottom = '3.5rem', hasKbarButton = false }: Props
         </TextWrapper>
       </Div>
 
-      {hasKbarButton && <KBarToggleButton />}
+      {hasKbarButton && (
+        <KbarButtonWrapper>
+          <KBarToggleButton />
+        </KbarButtonWrapper>
+      )}
     </Section>
   );
 }
@@ -61,4 +65,8 @@ const TextWrapper = styled.div`
 
 const H2 = styled.h2`
   font-weight: normal;
+`;
+
+const KbarButtonWrapper = styled.div`
+  flex-grow: 1;
 `;
