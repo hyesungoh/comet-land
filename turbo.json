@@ -15,6 +15,9 @@
     "dev": {
       "cache": false
     },
+    "generate-static-files": {
+      "cache": false
+    },
     "test": {
       "dependsOn": ["^build"],
       "outputs": ["coverage/**"]
