@@ -68,5 +68,6 @@ const H2 = styled.h2`
 `;
 
 const KbarButtonWrapper = styled.div`
-  flex-grow: 1;
+  width: 32px;
+  flex-shrink: 0;
 `;
