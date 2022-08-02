@@ -1,13 +1,13 @@
-# How to deploy with github pages
+# Github pages를 이용해 배포하는 방법
 
-### 1. Generate workflows
+### 1. workflows 생성
 
-Generate workflows files with below content at `.github/workflows/github-pages-deploy.yml`
+`.github/workflows/github-pages-deploy.yml`에 아래의 내용들로 채워주세요.
 
-> You can change file name `github-pages-deploy.yml`
+> `github-pages-deploy.yml`의 파일명은 변경하셔도 됩니다.
 
 ```yml
-# this is content of .github/workflows/github-pages-deploy.yml
+# 이 내용들이 .github/workflows/github-pages-deploy.yml에 위치해있으면 됩니다.
 name: github pages deploy
 
 on:
@@ -55,16 +55,16 @@ jobs:
           FOLDER: apps/${{ env.TYPE_OF_APP }}/out
 ```
 
-### 2. Set `TYPE_OF_APP`
+### 2. `TYPE_OF_APP` 설정
 
 ```yml
 env:
   TYPE_OF_APP: blog #or resume
 ```
 
-Set app what you want to deploy, which `blog` or `resume`
+`blog` 혹은 `resume`로 배포하고자 하는 앱의 이름으로 설정해주세요.
 
-### 3. Set your repo name
+### 3. Repo 이름 설정
 
 ```yml
 - name: Export app
@@ -73,28 +73,28 @@ Set app what you want to deploy, which `blog` or `resume`
     NEXT_PUBLIC_BASE_PATH: /your-repo-name
 ```
 
-Fill your repo name into this line.
+배포하고자 하는 repo 이름으로 위의 값을 채워주세요.
 
-If you using root repo name(`name.github.io`), just delete this line
+만약 `name.github.io`와 같은 형식의 이름이라면, 해당 줄을 지워주세요.
 
 ```yml
-# If your repo name like 'name.github.io'
+# 'name.github.io'과 같은 형식의 repo 이름이라면
 - name: Export app
   run: npm run export:${{ env.TYPE_OF_APP }}
 ```
 
-### 4. Setting github pages
+### 4. Github pages 설정
 
-Github repo's pages setting like below image.
+아래 이미지같이 github pages 설정을 해주세요.
 
 ![setting github pages](https://user-images.githubusercontent.com/26461307/182302514-81512700-d329-4083-b901-dd48ce525fc1.png)
 
-> Above action set builded project to `gh-pages`.
+> 위에 기술했던 github action은 `gh-pages` 브랜치에 빌드 결과물을 생성합니다.
 
 ### Done 🎉
 
-Now you deployed with github pages!
+Github page로 배포가 끝났습니다!
 
-If you have any question, [just ask me anything.](https://github.com/hyesungoh/comet-land/discussions)
+만약 궁금한 점이 있으시다면, [무엇이든 여쭤봐주세요.](https://github.com/hyesungoh/comet-land/discussions)
 
-- [Check example](https://github.com/hyesungoh/comet-land-github-pages-example)
+- [예제 확인하기](https://github.com/hyesungoh/comet-land-github-pages-example)
