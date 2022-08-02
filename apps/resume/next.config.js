@@ -5,6 +5,8 @@ const CompressionPlugin = require('compression-webpack-plugin');
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
 };
 
 module.exports = withTM({
