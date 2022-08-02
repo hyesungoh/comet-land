@@ -13,7 +13,8 @@
     "lint:fix": "eslint --fix --ext .ts,.tsx .",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
