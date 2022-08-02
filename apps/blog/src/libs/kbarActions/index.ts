@@ -33,7 +33,7 @@ function generateKbarAction(router: NextRouter) {
     section: 'Scope',
     shortcut: [],
     keywords: 'rss, feed',
-    perform: () => router.push('/rss.xml'),
+    perform: () => openExternalLink(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/rss.xml`),
   };
 
   const kbarActions: IconActionType[] = [...routePostActions, ...routeCategoryActions, rssFeedAction, ...socialActions];
