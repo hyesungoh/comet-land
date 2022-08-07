@@ -1,6 +1,6 @@
 ---
-title: '[TIL] 20220806'
-subtitle: '[LeetCode] Diagonal Traverse'
+title: '[LeetCode] Diagonal Traverse'
+subtitle: 'Array and String'
 date: 2022-08-06 00:00:00
 category: 'Algorithm'
 ---
