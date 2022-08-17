@@ -148,7 +148,7 @@ check [this wiki](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting)
 
 - [hyesungoh.xyz](https://www.hyesungoh.xyz/)
 - [seulheehan.com](https://www.seulheehan.com/)
-- [bong-bonga.vercel.app](https://bong-bonga.vercel.app/)
+- [thebong.net](https://thebong.net/)
 
 ## Inspired
 
