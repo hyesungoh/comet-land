@@ -1,0 +1,35 @@
+name: Check static files
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  update-static-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Run generate-static-files
+        run: yarn generate-static-files
+
+      - name: Update static files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'github-actions: Update static files'

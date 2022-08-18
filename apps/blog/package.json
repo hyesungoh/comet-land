@@ -3,16 +3,18 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "predev": "node ./scripts/generate-static-files.mjs",
+    "generate-static-files": "node ./scripts/generate-static-files.mjs",
+    "predev": "yarn generate-static-files",
     "dev": "next dev --port 3000",
-    "prebuild": "node ./scripts/generate-static-files.mjs",
+    "prebuild": "yarn generate-static-files",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "eslint --fix --ext .ts,.tsx .",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",

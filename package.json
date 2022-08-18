@@ -7,6 +7,7 @@
     "packages/*"
   ],
   "scripts": {
+    "generate-static-files": "turbo run generate-static-files",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
@@ -15,7 +16,9 @@
     "test:watch": "turbo run test:watch",
     "test:coverage": "jest --coverage",
     "cypress": "turbo run cypress",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "export:blog": "cd apps/blog && yarn export",
+    "export:resume": "cd apps/resume && yarn export"
   },
   "engines": {
     "npm": ">=7.0.0",

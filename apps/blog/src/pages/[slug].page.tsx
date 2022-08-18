@@ -28,13 +28,13 @@ function Post({ title, subtitle, category, date, content, ogImage }: Props) {
       <SEO title={title} description={subtitle} ogImage={ogImage} />
       <PostHeader />
       <TOC />
-      <main style={{ position: 'relative' }}>
+      <Main>
         <H1>{title}</H1>
         <P theme={theme}>
           <DateAndCategoryLink date={date} category={category} />
         </P>
         <article dangerouslySetInnerHTML={{ __html: content }}></article>
-      </main>
+      </Main>
       <AuthorSection hasKbarButton />
       <Comments />
       <PageProgressBar />
@@ -43,6 +43,11 @@ function Post({ title, subtitle, category, date, content, ogImage }: Props) {
 }
 
 export default Post;
+
+const Main = styled.main`
+  position: relative;
+  margin-bottom: 3rem;
+`;
 
 const H1 = styled.h1`
   margin: 0;
