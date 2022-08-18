@@ -1,7 +1,7 @@
 ---
 title: '[LeetCode] Pascal's Triangle'
 subtitle: 'Array and String'
-date: 2022-08-18 00:00:00
+date: 2022-08-17 00:00:00
 category: 'Algorithm'
 ---
 
