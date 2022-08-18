@@ -1,5 +1,5 @@
 ---
-title: '[LeetCode] Pascal's Triangle'
+title: '[LeetCode] Spiral Matrix'
 subtitle: 'Array and String'
 date: 2022-08-17 00:00:00
 category: 'Algorithm'
