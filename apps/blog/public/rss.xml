@@ -6,388 +6,2481 @@
     version="2.0"
   >
     <channel>
-        <title><![CDATA[Comet log]]></title>
-        <link>https://comet-land-blog.vercel.app</link>
+        <title><![CDATA[JeongLog]]></title>
+        <link>https://dgd03146-github-io.vercel.app/</link>
         <description>
           <![CDATA[I like to share my knowledge.]]>
         </description>
         <language>en</language>
-        <lastBuildDate>2022-03-26</lastBuildDate>
+        <lastBuildDate>2022-08-18</lastBuildDate>
         <item>
-    <title><![CDATA[Comet land guide]]></title>
-    <link>https://comet-land-blog.vercel.app/how-to-start</link>
-    <pubDate>2022-03-26</pubDate>
-    <guid isPermaLink="false">https://comet-land-blog.vercel.app/how-to-start</guid>
+    <title><![CDATA[[LeetCode] Add Binary]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220818-Add-Binary</link>
+    <pubDate>2022-08-18</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220818-Add-Binary</guid>
     <description>
-    <![CDATA[how to start]]>
+    <![CDATA[Array and String]]>
     </description>
     <content:encoded>
-      <![CDATA[<p><a href="https://lgtm.com/projects/g/hyesungoh/comet-land/alerts/" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/lgtm/alerts/g/hyesungoh/comet-land.svg?logo=lgtm&#x26;logoWidth=18" alt="Total alerts"></a> <a href="https://lgtm.com/projects/g/hyesungoh/comet-land/context:javascript" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/lgtm/grade/javascript/g/hyesungoh/comet-land.svg?logo=lgtm&#x26;logoWidth=18" alt="Language grade: JavaScript"></a> <a href="https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml" target="_blank" rel="noopener noreferer"><img src="https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml/badge.svg" alt="Continious Intergration"></a> <a href="https://codecov.io/gh/hyesungoh/comet-land" target="_blank" rel="noopener noreferer"><img src="https://codecov.io/gh/hyesungoh/comet-land/branch/main/graph/badge.svg?token=TA7LT3RQ1P" alt="codecov"></a> <a href="https://dashboard.cypress.io/projects/yiddyz/runs" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/yiddyz&#x26;style=flat&#x26;logo=cypress" alt="blog"></a> <a href="https://dashboard.cypress.io/projects/inc4yo/runs" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/inc4yo&#x26;style=flat&#x26;logo=cypress" alt="resume"></a></p>
-<p><img src="https://user-images.githubusercontent.com/26461307/159371599-95b2acd5-e5eb-482c-9ead-d8f601f034b5.png" alt="comet-land-blog"></p>
-<h3 id="blog-demo"><a href="https://comet-land-blog.vercel.app/" target="_blank" rel="noopener noreferer">BLOG DEMO</a></h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/160653172-c56a3b64-dfa9-4708-bf95-fca2fff47964.png" alt="comet-land-resume"></p>
-<h3 id="resume-demo"><a href="https://comet-land-resume.vercel.app/" target="_blank" rel="noopener noreferer">RESUME DEMO</a></h3>
-<p>Blog and Resume template with turborepo</p>
-<p>한국어 문서는 <a href="https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/ko-readme.md" target="_blank" rel="noopener noreferer">다음 링크</a>에서 확인하실 수 있습니다.</p>
-<h2 id="blog-feature" class="heading">Blog Feature</h2>
-<p><img src="https://user-images.githubusercontent.com/26461307/159372336-e42c1a9c-9915-4d05-9e51-4882d681dc80.gif" alt="postGif"></p>
-<ul>
-<li>👔 Code highlight with line-highlight, line-numbers</li>
-<li>🎨 Design with <a href="https://nextui.org/" target="_blank" rel="noopener noreferer">NextUI</a></li>
-<li>🍽 Table of contents</li>
-<li>🎩 Dark mode</li>
-</ul>
-<p><img src="https://user-images.githubusercontent.com/26461307/159372344-d628b817-d7f5-4322-813e-3468a62e79d6.gif" alt="kbarGif"></p>
-<ul>
-<li>⌨️ Search with <a href="https://kbar.vercel.app/" target="_blank" rel="noopener noreferer">KBar</a></li>
-<li>🔨 Configurable</li>
-<li>🔊 <a href="https://utteranc.es/" target="_blank" rel="noopener noreferer">Utterances</a> Comment</li>
-<li>🔭 Google Analytics</li>
-<li>🔥 Hotjar</li>
-<li>🏄 Lighthouse score</li>
-</ul>
-<p><img src="https://user-images.githubusercontent.com/26461307/161536154-b85caf9f-0f73-4224-a1e7-540723916ff7.gif" alt="blog lighthouse score"></p>
-<h2 id="resume-feature" class="heading">Resume Feature</h2>
-<ul>
-<li>🎨 Design with <a href="https://nextui.org/" target="_blank" rel="noopener noreferer">NextUI</a></li>
-<li>🎩 Dark mode</li>
-<li>⌨️ Contact with <a href="https://kbar.vercel.app/" target="_blank" rel="noopener noreferer">KBar</a></li>
-<li>🔨 Configurable</li>
-<li>🔭 Google Analytics</li>
-<li>🔥 Hotjar</li>
-<li>🏄 Lighthouse score</li>
-</ul>
-<p><img src="https://user-images.githubusercontent.com/26461307/161536162-63278484-ca52-42ed-89d4-951cd31e42c1.gif" alt="resume lighthouse score"></p>
-<h2 id="how-to-start" class="heading">How to start</h2>
-<p><code>comet-land</code> has own generate package <a href="https://github.com/hyesungoh/create-comet-land" target="_blank" rel="noopener noreferer"><code>create-comet-land</code></a></p>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line">npx create-comet-land
-</span><span class="code-line"><span class="token comment"># or</span>
-</span><span class="code-line"><span class="token function">yarn</span> create comet-land
+      <![CDATA[<h2 id="description" class="heading">Description</h2>
+<p>Given two binary strings <code>a</code> and <code>b</code>, return <em>their sum as a binary string</em>.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code class="code-highlight"><span class="code-line">Input: a = "11", b = "1"
+</span><span class="code-line">Output: "100"
+</span><span class="code-line">
 </span></code></pre>
-<blockquote>
-<p>Or using Fork or clone this repo</p>
-</blockquote>
-<ol>
-<li>Install dependencies</li>
-</ol>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">yarn</span>
+<p><strong>Example 2:</strong></p>
+<pre><code class="code-highlight"><span class="code-line">Input: a = "1010", b = "1011"
+</span><span class="code-line">Output: "10101"
+</span><span class="code-line">
 </span></code></pre>
-<ol start="2">
-<li>Start Turbo !</li>
-</ol>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">yarn</span> turbo run dev
-</span><span class="code-line"><span class="token comment"># or just</span>
-</span><span class="code-line"><span class="token function">yarn</span> dev
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &#x3C;= a.length, b.length &#x3C;= 104</code></li>
+<li><code>a</code> and <code>b</code> consist only of <code>'0'</code> or <code>'1'</code> characters.</li>
+<li>Each string does not contain leading zeros except for the zero itself.</li>
+</ul>
+<br/>
+<h2 id="submission" class="heading">Submission</h2>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function">addBinary</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword">let</span> sum <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">let</span> carry <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword">let</span> i <span class="token operator">=</span> a<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">let</span> j <span class="token operator">=</span> b<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">while</span> <span class="token punctuation">(</span>i <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">||</span> j <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword">let</span> <span class="token constant">A</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">?</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">:</span> <span class="token string">'0'</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token keyword">let</span> <span class="token constant">B</span> <span class="token operator">=</span> b<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">?</span> b<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">:</span> <span class="token string">'0'</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>sum<span class="token punctuation">,</span> <span class="token string">'sum'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">    sum <span class="token operator">=</span> <span class="token known-class-name class-name">String</span><span class="token punctuation">(</span><span class="token constant">A</span> <span class="token operator">^</span> <span class="token constant">B</span> <span class="token operator">^</span> carry<span class="token punctuation">)</span> <span class="token operator">+</span> sum<span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">    <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span><span class="token constant">A</span> <span class="token operator">===</span> <span class="token constant">B</span> <span class="token operator">&#x26;&#x26;</span> <span class="token constant">A</span> <span class="token operator">!==</span> <span class="token known-class-name class-name">String</span><span class="token punctuation">(</span>carry<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      carry <span class="token operator">=</span> <span class="token known-class-name class-name">Number</span><span class="token punctuation">(</span><span class="token operator">!</span>carry<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">    i<span class="token operator">--</span><span class="token punctuation">;</span>
+</span><span class="code-line">    j<span class="token operator">--</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>carry<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    sum <span class="token operator">=</span> <span class="token known-class-name class-name">String</span><span class="token punctuation">(</span>carry<span class="token punctuation">)</span> <span class="token operator">+</span> sum<span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> sum<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token function">addBinary</span><span class="token punctuation">(</span><span class="token punctuation">(</span>a <span class="token operator">=</span> <span class="token string">'11'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>b <span class="token operator">=</span> <span class="token string">'1'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </span></code></pre>
-<ol start="4">
-<li>Now you can see blog at <code>localhost:3000</code>, resume at <code>localhost:3001</code></li>
-</ol>
-<h2 id="how-to-configuration" class="heading">How to configuration</h2>
-<p>Please see <code>packages/core/constants</code> directory.</p>
-<p>and you can reconfigure at that directory's variable</p>
-<ul>
-<li>Analytics directory
-<ul>
-<li>GA ID</li>
-<li>Hotjar ID</li>
-</ul>
-</li>
-<li>Colors directory
-<ul>
-<li>color schema</li>
-</ul>
-</li>
-<li>General directory
-<ul>
-<li>author image</li>
-<li>default open-graph image</li>
-<li>favicon</li>
-</ul>
-</li>
-<li>SocialMedia directory
-<ul>
-<li>github</li>
-<li>instagram</li>
-<li>facebook</li>
-<li>linkedin</li>
-<li>twitter</li>
-</ul>
-</li>
-</ul>
-<p>and please check <code>apps/blog/_config/index.json</code> and <code>apps/resume/_config/index.json</code>.</p>
-<p>This files are placing each app's configuration variable.</p>
-<h2 id="how-to-use-it" class="heading">How to use it</h2>
-<p>please read following link.</p>
-<ul>
-<li><a href="https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/en-blog.md" target="_blank" rel="noopener noreferer">how to add blog post</a></li>
-<li><a href="https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/en-resume.md" target="_blank" rel="noopener noreferer">how to custom resume</a></li>
-</ul>
-<h2 id="how-to-deploy-with-vercel" class="heading">How to deploy with vercel</h2>
-<h3 id="1-import-git-repository">1. Import git repository</h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/177278351-7b82fcbe-e6db-46bd-93f4-10e8524ef2bf.gif" alt="deploy step 1"></p>
-<h3 id="2-select-framework-preset-to-nextjs">2. Select framework preset to <code>Next.js</code></h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/177278363-509b3d69-f692-4458-8bc2-62173eef5e7e.gif" alt="deploy step 2"></p>
-<h3 id="3-set-root-directory-to-appsblog-or-appsresume">3. Set root directory to <code>apps/blog</code> or <code>apps/resume</code></h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/177278370-1651b4d7-e561-44df-8a62-a283450773d9.gif" alt="deploy step 3"></p>
-<h3 id="4-set-build-command">4. Set build command</h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/177278380-659ba348-7952-4875-9e19-0a006ad57c1a.gif" alt="deploy step 4"></p>
-<ul>
-<li>blog build command</li>
-</ul>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/<span class="token punctuation">..</span> <span class="token operator">&#x26;&#x26;</span> npx turbo run build --scope<span class="token operator">=</span>blog --include-dependencies --no-deps
-</span></code></pre>
-<ul>
-<li>resume build command</li>
-</ul>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/<span class="token punctuation">..</span> <span class="token operator">&#x26;&#x26;</span> npx turbo run build --scope<span class="token operator">=</span>resume --include-dependencies --no-deps
-</span></code></pre>
-<h3 id="5-click-the-deploy-button-">5. Click the Deploy button! 🎉</h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/177278617-82982395-d1fc-46f1-8f96-f7cb7bae95d9.png" alt="click the deploy button"></p>
-<h3 id="more-information">More information</h3>
-<p>This project using <code>turborepo</code>.</p>
-<p>so, you can find more information at this <a href="https://vercel.com/docs/concepts/monorepos/turborepo" target="_blank" rel="noopener noreferer">vercel guide</a>.</p>
-<h2 id="how-to-add-more-packages" class="heading">How to add more packages</h2>
-<ul>
-<li>scope packages</li>
-</ul>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token builtin class-name">cd</span> where-you-want
-</span><span class="code-line"><span class="token function">yarn</span> <span class="token function">add</span> package-name
-</span></code></pre>
-<ul>
-<li>global packages</li>
-</ul>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">yarn</span> <span class="token function">add</span> package-name -W
-</span></code></pre>
-<ul>
-<li>global dev packages</li>
-</ul>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">yarn</span> <span class="token function">add</span> package-name -DW
-</span></code></pre>
-<h2 id="trouble-shootings" class="heading">Trouble shootings</h2>
-<p>check <a href="https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting" target="_blank" rel="noopener noreferer">this wiki</a> please! it might be help</p>
-<h2 id="use-case" class="heading">Use Case</h2>
-<ul>
-<li><a href="https://github.com/hyesungoh/hyesungoh.xyz" target="_blank" rel="noopener noreferer">hyesungoh.xyz</a></li>
-</ul>
-<h2 id="inspired" class="heading">Inspired</h2>
-<p>I inspired below blogs and resume.</p>
-<ul>
-<li><a href="https://overreacted.io/" target="_blank" rel="noopener noreferer">Overreacted</a></li>
-<li><a href="https://yceffort.kr/" target="_blank" rel="noopener noreferer">Yceffort</a></li>
-<li><a href="https://gatsby-starter-bee.netlify.app/" target="_blank" rel="noopener noreferer">gatsby-starter-bee</a></li>
-<li><a href="https://vallista.kr/" target="_blank" rel="noopener noreferer">vallista-land</a></li>
-<li><a href="https://hyunseob.github.io/resume/" target="_blank" rel="noopener noreferer">hyunseob.github.io/resume</a></li>
-</ul>
-<h2 id="license" class="heading">License</h2>
-<p>MIT</p>]]>
+<p>Runtime: <strong>104 ms</strong></p>
+<p>Memory Usage: <strong>42.8 MB</strong></p>
+<h3 id="문제-풀이">문제 풀이</h3>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cb18b884-d8ae-4d93-92f6-05f7bdc058b2/Untitled.png" alt="Untitled"></p>
+<p>문자열 맨 뒤에 값부터 비교해야하므로 각각 문자열의 마지막 문자부터 while문을 돌면서 하나씩 비교를 한다.</p>
+<p>XOR을 했을때 같으면 0, 다르면 1이 되는데 sum은 XOR 값으로 구할수 있다. 뒤에서 부터 값을 구하는 것이기에 sum을 뒤에다가 붙여준다.</p>
+<p>carry가 변하는 구간만 carry 값을 flip하는 조건을 추가한다.</p>
+<p>carry가 1이면 carry를 sum에 추가한다.</p>]]>
     </content:encoded>
   </item><item>
-    <title><![CDATA[Markdown Examples]]></title>
-    <link>https://comet-land-blog.vercel.app/markdown</link>
-    <pubDate>2022-03-01</pubDate>
-    <guid isPermaLink="false">https://comet-land-blog.vercel.app/markdown</guid>
+    <title><![CDATA[[LeetCode] Spiral Matrix]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220817-Pascal-Triangle</link>
+    <pubDate>2022-08-17</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220817-Pascal-Triangle</guid>
     <description>
-    <![CDATA[example for writing markdown]]>
+    <![CDATA[Array and String]]>
     </description>
     <content:encoded>
-      <![CDATA[<h2 id="h2-heading" class="heading">h2 heading</h2>
-<h3 id="h3-heading">h3 heading</h3>
-<h4 id="h4-heading">h4 heading</h4>
-<h5 id="h5-heading">h5 heading</h5>
-<h6 id="h6-heading">h6 heading</h6>
-<h2 id="emphasis" class="heading">Emphasis</h2>
-<p><strong>This is bold text</strong></p>
-<p><em>This is italic text</em></p>
-<p><del>this is delete</del></p>
-<h2 id="blockquotes" class="heading">Blockquotes</h2>
-<blockquote>
-<p>Develop. Preview. Ship. – Vercel</p>
-</blockquote>
-<h3 id="nested">nested</h3>
-<blockquote>
-<blockquote>
-<p>great power comes great responsibility</p>
-<p>— at spider man</p>
-</blockquote>
-<p>This is <strong>awesome</strong>.</p>
-<p>— hyesungoh</p>
-</blockquote>
-<h2 id="lists" class="heading">Lists</h2>
-<p>Unordered</p>
-<ul>
-<li>Lorem ipsum dolor.
-<ul>
-<li>foo
-<ul>
-<li>bar</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>sit amet consectetur adipisicing elit.</li>
-<li>Iure, delectus.</li>
-</ul>
-<p>Ordered</p>
-<ol>
-<li>Lorem ipsum dolor.
-<ol>
-<li>lorem
-<ol>
-<li>foo</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>sit amet consectetur adipisicing elit.</li>
-<li>Iure, delectus.</li>
-</ol>
-<h2 id="code" class="heading">Code</h2>
-<p>Inline <code>code</code></p>
-<pre class="language-js"><code class="language-js code-highlight"><span class="code-line"><span class="token keyword module">import</span> <span class="token imports">styled</span> <span class="token keyword module">from</span> <span class="token string">'@emotion/styled'</span><span class="token punctuation">;</span>
+      <![CDATA[<h2 id="description" class="heading">Description</h2>
+<p>Given an integer <code>numRows</code>, return the first numRows of <strong>Pascal's triangle</strong>.</p>
+<p>In <strong>Pascal's triangle</strong>, each number is the sum of the two numbers directly above it as shown:</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif" alt="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif"></p>
+<p><strong>Example 1:</strong></p>
+<pre><code class="code-highlight"><span class="code-line">Input: numRows = 5
+</span><span class="code-line">Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
 </span><span class="code-line">
-</span><span class="code-line"><span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">Foo</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> bar <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line">  <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
-</span><span class="code-line">    <span class="token operator">&#x3C;</span>div<span class="token operator">></span>
-</span><span class="code-line">      <span class="token operator">&#x3C;</span><span class="token constant">H1</span><span class="token operator">></span><span class="token maybe-class-name">Comet</span><span class="token operator">-</span>land<span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token constant">H1</span><span class="token operator">></span>
-</span><span class="code-line">    <span class="token operator">&#x3C;</span><span class="token operator">/</span>div<span class="token operator">></span>
-</span><span class="code-line">  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-</span><span class="code-line"><span class="token punctuation">}</span>
-</span><span class="code-line">
-</span><span class="code-line"><span class="token keyword">const</span> <span class="token constant">H1</span> <span class="token operator">=</span> styled<span class="token punctuation">.</span><span class="token property-access">h1</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token css language-css">
-</span></span></span><span class="code-line"><span class="token template-string"><span class="token css language-css">  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">red</span><span class="token punctuation">;</span>
-</span></span></span><span class="code-line"><span class="token template-string"><span class="token css language-css"></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
 </span></code></pre>
-<p>with line highlight</p>
-<pre class="language-js"><code class="language-js code-highlight"><span class="code-line highlight-line"><span class="token keyword module">import</span> <span class="token imports">styled</span> <span class="token keyword module">from</span> <span class="token string">'@emotion/styled'</span><span class="token punctuation">;</span>
+<p><strong>Example 2:</strong></p>
+<pre><code class="code-highlight"><span class="code-line">Input: numRows = 1
+</span><span class="code-line">Output: [[1]]
 </span><span class="code-line">
-</span><span class="code-line"><span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">Foo</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> bar <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line">  <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
-</span><span class="code-line">    <span class="token operator">&#x3C;</span>div<span class="token operator">></span>
-</span><span class="code-line">      <span class="token operator">&#x3C;</span><span class="token constant">H1</span><span class="token operator">></span><span class="token maybe-class-name">Comet</span><span class="token operator">-</span>land<span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token constant">H1</span><span class="token operator">></span>
-</span><span class="code-line">    <span class="token operator">&#x3C;</span><span class="token operator">/</span>div<span class="token operator">></span>
-</span><span class="code-line">  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-</span><span class="code-line"><span class="token punctuation">}</span>
-</span><span class="code-line">
-</span><span class="code-line highlight-line"><span class="token keyword">const</span> <span class="token constant">H1</span> <span class="token operator">=</span> styled<span class="token punctuation">.</span><span class="token property-access">h1</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token css language-css">
-</span></span></span><span class="code-line highlight-line"><span class="token template-string"><span class="token css language-css">  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">red</span><span class="token punctuation">;</span>
-</span></span></span><span class="code-line highlight-line"><span class="token template-string"><span class="token css language-css"></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
 </span></code></pre>
-<p>with line number</p>
-<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number highlight-line" line="1"><span class="token keyword module">import</span> <span class="token imports">styled</span> <span class="token keyword module">from</span> <span class="token string">'@emotion/styled'</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="2">
-</span><span class="code-line line-number highlight-line" line="3"><span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">Foo</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> bar <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="4">  <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
-</span><span class="code-line line-number" line="5">    <span class="token operator">&#x3C;</span>div<span class="token operator">></span>
-</span><span class="code-line line-number" line="6">      <span class="token operator">&#x3C;</span><span class="token constant">H1</span><span class="token operator">></span><span class="token maybe-class-name">Comet</span><span class="token operator">-</span>land<span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token constant">H1</span><span class="token operator">></span>
-</span><span class="code-line line-number" line="7">    <span class="token operator">&#x3C;</span><span class="token operator">/</span>div<span class="token operator">></span>
-</span><span class="code-line line-number" line="8">  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="9"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="10">
-</span><span class="code-line line-number" line="11"><span class="token keyword">const</span> <span class="token constant">H1</span> <span class="token operator">=</span> styled<span class="token punctuation">.</span><span class="token property-access">h1</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token css language-css">
-</span></span></span><span class="code-line line-number" line="12"><span class="token template-string"><span class="token css language-css">  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">red</span><span class="token punctuation">;</span>
-</span></span></span><span class="code-line line-number" line="13"><span class="token template-string"><span class="token css language-css"></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
-</span></code></pre>
-<h2 id="links" class="heading">Links</h2>
+<p><strong>Constraints:</strong></p>
 <ul>
-<li><a href="https://nextjs.org" target="_blank" rel="noopener noreferer">Next.js</a></li>
-<li><a href="http://vercel.com" target="_blank" rel="noopener noreferer">Vercel</a></li>
+<li><code>1 &#x3C;= numRows &#x3C;= 30</code></li>
 </ul>
-<h3 id="autolink">Autolink</h3>
-<p><a href="http://www.example.com" target="_blank" rel="noopener noreferer">www.example.com</a>, <a href="https://example.com" target="_blank" rel="noopener noreferer">https://example.com</a>, and <a href="mailto:contact@example.com">contact@example.com</a>.</p>
-<h2 id="footnote" class="heading">Footnote</h2>
-<p>A note<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">1</a></sup></p>
-<h2 id="table" class="heading">Table</h2>
+<br/>
+<h2 id="submission" class="heading">Submission</h2>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function">generate</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">numRows</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword">const</span> array <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>numRows<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">fill</span><span class="token punctuation">(</span><span class="token keyword null nil">null</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> array<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&#x3C;=</span> i<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span><span class="token keyword null nil">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> array<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="code-line">    array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> array<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&#x3C;=</span> i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> array<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> array<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>Runtime: <strong>82 ms</strong></p>
+<p>Memory Usage: <strong>41.8 MB</strong></p>
+<br/>
+<h3 id="문제-풀이">문제 풀이</h3>
+<p>Array 함수를 통해서 배열을 만든 후 각 배열 안에 원소들을 map을 통해서 배열로 바꾼다.</p>
+<p>배열의 0번째 원소와 끝 원소는 1이기 때문에 나머지 원소들은 null로 채운다.</p>
+<p>배열의 0번째 원소, 끝 원소를 1로 채운다.</p>
+<p>이중 포문을 돌면서 array 배열의 이전의 두 원소의 합을 더한다.</p>
+<br/>
+<h3 id="다른-사람의-풀이">다른 사람의 풀이</h3>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function">generate</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">numRows</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword">const</span> array <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>numRows<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> array<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword">let</span> row <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    row<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="code-line">    row<span class="token punctuation">[</span>row<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">    <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> row<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      <span class="token keyword">let</span> rowAbove <span class="token operator">=</span> array<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">      row<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> rowAbove<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> rowAbove<span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">    array<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> row<span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> array<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>원리는 똑같지만 한 for문 안에서 실행해서 코드가 더 갅단해졌고 불필요한 for문이 없어져서 런타임도 줄어들게 되었다.</p>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220814]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220814</link>
+    <pubDate>2022-08-14</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220814</guid>
+    <description>
+    <![CDATA[React-Query 무한 스크롤]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React Query Infinite Scroll
+<ul>
+<li>사용자가 스크롤 할 때마다 새로운 데이터를 가져오는 것이. 당연히 모든 데이터를 한 번에 가져오는 것보다 훨씬 효율적이다. 엄청난 양의 데이터가 있는 사이트를 구축한다면 더더욱 그렇다.</li>
+<li>useInfiniteQuery에서 객체는 두 개의 프로퍼티를 가지고 있다. 데이터 객체에는 두 개의 프로퍼티가 있다.
+하나는 데이터 페이지 객체의 배열(Array)인 페이지이다. 페이지에 있는 각 요소가 하나의 useQuery에서 받는 데이터에 해당한다.
+그리고 pageParams가 있다. 각 페이지의 매개변수가 기록되어 있고 모든 쿼리는 페이지 배열에 고유한 요소를 가지고 있고 그 요소는 해당 쿼리에 대한 데이터에 해당한다. 페이지기 진행되면서 쿼리도 바뀐다. pageParams은 검색된 쿼리의 키를 추적한다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>실전 프로젝트 모임 게시판 페이지</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220813]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220813</link>
+    <pubDate>2022-08-13</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220813</guid>
+    <description>
+    <![CDATA[React-Query Pagination & Prefetching]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>
+<p>React Query Pagination</p>
+<ul>
+<li>
+<p>페이지마다 다른 쿼리 키가 필요하다. 따라서 쿼리 키를 배열(Array)로 업데이트해서 가져오는 페이지 번호를 포함하도록 한다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">const</span> <span class="token punctuation">[</span>currentPage<span class="token punctuation">,</span> setCurrentPage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1페이지부터</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">const</span> <span class="token punctuation">{</span> data<span class="token punctuation">,</span> isError<span class="token punctuation">,</span> isLoading<span class="token punctuation">,</span> error <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useQuery</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'posts'</span><span class="token punctuation">,</span> currentPage<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token function">fetchPosts</span><span class="token punctuation">(</span>currentPage<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token literal-property property">staleTime</span><span class="token operator">:</span> <span class="token number">2000</span><span class="token punctuation">,</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>React Query Prefetching</p>
+<ul>
+<li>데이터를 미리 가져와 캐시에 넣어서 사용자가 기다릴 필요 없도록 한다.</li>
+<li>다시 말해 프리페칭(Prefetching)은 데이터를 캐시에 추가하며 구성할 수 있긴 하지만 기본값으로 만료(stale) 상태이다. 즉 데이터를 사용하고자 할 때 만료 상태에서 데이터를 다시 가져온다.</li>
+</ul>
+</li>
+<li>
+<p>React Query Mutation</p>
+<ul>
+<li>useMutation은 일부 예외를 제외하고 useQuery와 상당히 유사하다. mutate 함수를 반환하는데 이 mutate 함수는 우리가 변경 사항을 토대로 서버를 호출할 때 사용할 것이다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>React query Infinite Scroll</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220812]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220812</link>
+    <pubDate>2022-08-12</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220812</guid>
+    <description>
+    <![CDATA[React-Query stale time & cache time & query key]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React Query stale time vs cache time
+<ul>
+<li>staleTime은 리페칭할때 고려 사항이다.</li>
+<li>캐시(cache)는 나중에 다시 필요할 수도 있는 데이터용이다.
+특정 쿼리에 대한 활성 useQuery가 없는 경우 해당 데이터는 콜드 스토리지로 이동한다.
+구성된 cacheTime이 지나면 캐시의 데이터가 만료되며 유효 시간의 기본값은 5분이다.
+cacheTime이 관찰하는 시간의 양은 특정 쿼리에 대한 useQuery가 활성화된 후 경과한 시간이다.</li>
+</ul>
+</li>
+<li>React Query 쿼리키
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e0068a86-83b6-43cf-8fbc-e586a6acd5df/Untitled.png" alt="Untitled">
+쿼리 키를 쿼리에 대한 의존성 배열로 취급하게 된다. 따라서 쿼리 키가 변경되면 즉 post.id가 업데이트되면 React Query가 새 쿼리를 생성해서 staleTime과 cacheTime을 가지게 되고 의존성 배열이 다르다면 완전히 다른 것으로 간주된다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>React Query Pagination</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220811]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220811</link>
+    <pubDate>2022-08-11</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220811</guid>
+    <description>
+    <![CDATA[React-Query]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React Query 개념을 공부하였다.
+<ul>
+<li>React Query는 클라이언트에서 서버 데이터 캐시를 관리한다.</li>
+<li>React 코드에 서버 데이터가 필요할 때 페치(Fetch)나 Axios를 사용해 서버로 바로 이동하지 않고 React Query 캐시를 요청한다.</li>
+<li>React Query의 역할은 React Query 클라이언트를 어떻게 구성했느냐에 따라 해당 캐시의 데이터를 유지 관리하는 것이다.</li>
+<li>데이터를 관리하는 것은 React Query이지만 서버의 새 데이터로 캐시를 업데이트하는 시기를 설정하는 것은 사용자의 몫이다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>React Query stale time, cache time, 쿼리키 개념 공부</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220810]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220810</link>
+    <pubDate>2022-08-10</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220810</guid>
+    <description>
+    <![CDATA[JWT refresh 토큰 개념, axios interceptor]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>JWT refresh 토큰 개념 공부
+<ul>
+<li>refresh 토큰의 원리를 이해하게 되었다. 리프레시 토큰은 액세스 토큰이 만료되었을 경우 이를 확인하고 다시 액세스 토큰을 발급하는 방법이다.</li>
+<li>사용자는 재로그인을 하지 않고도, 본인이 인지하지 못하는 사이에 액세스 토큰을 재발급, 계속해서 로그인 상태를 유지하는 방법이다.</li>
+</ul>
+</li>
+<li>axios interceptor 원리 이해
+<ul>
+<li>인터셉터는 <code>1.요청하기 직전, 2. 응답을 받고 then, catch로 처리 직전</code> 에 가로챌 수 있다.</li>
+<li>매번 axios 요청할때마다, 겹치는 부분을 기본 URL로 설정한다.</li>
+<li>axios 사용할때마다 헤더를 매번 넣고 싶지 않을때 사용한다.</li>
+</ul>
+</li>
+<li>LeetCode Spiral Matrix 1문제, Digonal Traverse 복습</li>
+<li>와이어프레임 회의</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>React query 인강</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220809]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220809</link>
+    <pubDate>2022-08-09</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220809</guid>
+    <description>
+    <![CDATA[실전 프로젝트 API 설계, 코테 문제 복습]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>실전 프로젝트 API 설계
+<ul>
+<li>API 설계를 하던 중 기획에서 조금 수정되는 부분도 있고 구현 가능성을 검토하면서 설계를 하여서 시간이 생각보다 더 걸리게 된 것 같다.</li>
+</ul>
+</li>
+<li>LeetCode 문제 복습</li>
+<li>프로그래머스 1문제</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>실전 프로젝트 기능 테스트</p>
+</li>
+<li>
+<p>LeetCode 2문제</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220808]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220808</link>
+    <pubDate>2022-08-08</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220808</guid>
+    <description>
+    <![CDATA[클론코딩 프로젝트 React-Query 무한 스크롤, 실전 프로젝트 기획 회의]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>클론코딩 프로젝트 React-Query로 무한 스크롤 구현
+<ul>
+<li>코드 구현은 하였으나 테스트를 못하였다.</li>
+</ul>
+</li>
+<li>실전 프로젝트 기획 회의
+<ul>
+<li>디자이너님과 다시 다 같이 회의를 하면서 기획을 확실히 정하였다. 처음 기획을 확실하게 해야 API 설계할때도 좋고 프로젝트를 진행하는 과정에서 문제가 없을 것 같아 기획을 하는데 시간이 많이 걸리더라도 확실히 하는게 좋다고 생각한다.</li>
+</ul>
+</li>
+<li>날씨 API, 지도 API 사용법 익히기
+<ul>
+<li>프로젝트에 필요한 핵심 기능 중 하나인 날씨 API와 지도 API 사용법을 익혀보았다. 외부 API를 사용하는것은 처음인데 문서가 정리가 잘 되어있어 쉽게 사용할 수 있을것 같았다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>프로그래머스 구명보트, 섬 연결하기</p>
+</li>
+<li>
+<p>실전 프로젝트 API 설계</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[LeetCode] Spiral Matrix]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220807-Spiral-Matrix</link>
+    <pubDate>2022-08-07</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220807-Spiral-Matrix</guid>
+    <description>
+    <![CDATA[Array and String]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="description" class="heading">Description</h2>
+<p>Given an <code>m x n</code> <code>matrix</code>, return <em>all elements of the</em> <code>matrix</code> <em>in spiral order</em>.</p>
+<p><strong>Example 1:</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2020/11/13/spiral1.jpg" alt="https://assets.leetcode.com/uploads/2020/11/13/spiral1.jpg"></p>
+<pre><code class="code-highlight"><span class="code-line">Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+</span><span class="code-line">Output: [1,2,3,6,9,8,7,4,5]
+</span><span class="code-line">
+</span></code></pre>
+<p><strong>Example 2:</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2020/11/13/spiral.jpg" alt="https://assets.leetcode.com/uploads/2020/11/13/spiral.jpg"></p>
+<pre><code class="code-highlight"><span class="code-line">Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+</span><span class="code-line">Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+</span><span class="code-line">
+</span></code></pre>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>m == matrix.length</code></li>
+<li><code>n == matrix[i].length</code></li>
+<li><code>1 &#x3C;= m, n &#x3C;= 10</code></li>
+<li><code>100 &#x3C;= matrix[i][j] &#x3C;= 100</code></li>
+</ul>
+<br/>
+<h2 id="submission" class="heading">Submission</h2>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function">spiralOrder</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">matrix</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword">let</span> left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">let</span> top <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">let</span> right <span class="token operator">=</span> matrix<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">let</span> bottom <span class="token operator">=</span> matrix<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">const</span> size <span class="token operator">=</span> matrix<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">*</span> matrix<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">while</span> <span class="token punctuation">(</span>result<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">&#x3C;</span> size<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> left<span class="token punctuation">;</span> i <span class="token operator">&#x3C;=</span> right <span class="token operator">&#x26;&#x26;</span> result<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">&#x3C;</span> size<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      result<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>top<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">    top<span class="token operator">++</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">    <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> top<span class="token punctuation">;</span> i <span class="token operator">&#x3C;=</span> bottom <span class="token operator">&#x26;&#x26;</span> result<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">&#x3C;</span> size<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      result<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">    right<span class="token operator">--</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">    <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> right<span class="token punctuation">;</span> i <span class="token operator">>=</span> left <span class="token operator">&#x26;&#x26;</span> result<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">&#x3C;</span> size<span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      result<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>bottom<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">    bottom<span class="token operator">--</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">    <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> bottom<span class="token punctuation">;</span> i <span class="token operator">>=</span> top <span class="token operator">&#x26;&#x26;</span> result<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">&#x3C;</span> size<span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      result<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">    left<span class="token operator">++</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> result<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>left, right, top, bottom 위치를 정해놓고 result 빈 배열에 넣으면서 result 배열이 전체 숫자 개수의 크기를 넘기면 안되므로 result 배열의 길이를 size보다 작게 한다.</p>
+<p>각 위치에서 left는 right 보다 작거나 같을때 까지, top은 bottom보다 작거나 같을때까지 for문을 계속 반복한다.</p>
+<p>문제를 직관적으로 푸는 방법이다. 다른 방법이 생각 나지 않을때 문제 요구 사항을 그대로 따라하는 코드도 짜보도록 고려해보아야겠다.</p>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220807]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220807</link>
+    <pubDate>2022-08-07</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220807</guid>
+    <description>
+    <![CDATA[실전 프로젝트 기획 회의, 미니 프로젝트 배포]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>실전 프로젝트 기획 회의
+<ul>
+<li>디자이너님께서 기획회의에 같이 참여하시고 싶다고 하셔서 디자이너님이 짜오신 와이어프레임을 보면서 다른 팀원들과 기획에 대해서 다시 얘기를 하였다. 디자이너님이 적극적으로 의견을 내주셔서 좋았고 좋은 아이디어들이 있었지만 개발 과정에서 구현 가능성을 검토를 해야하기에 섣불리 정할수는 없었다. 다른 팀원들과 더 상의를 해보면서 설계를 확실히 해야할 것 같다. 기획을 하고 설계를 하는것은 확실히 어려운 듯 하다.
+모든 사람들의 의견이 다 다르고 우리가 이 프로젝트를 통한 목적이 분명해야하는데 그것을 정하는 것은 쉽지가 않다. 모두가 적극적으로 참여해서 얘기를 많이 나눌수 있어서 이러한 점은 차차 개선이 될 것 같다.</li>
+</ul>
+</li>
+<li>미니 프로젝트 배포
+<ul>
+<li>미니 프로젝트 마지막으로 기능 점검을 하고 프론트, 백 따로 배포를 하였다. 비록 마감시한 안에 과제 제출은 못했지만 끝까지 팀원들과 팀장으로써 책임감을 지고 마무리를 했다는 것에 의의를 둔다.</li>
+</ul>
+</li>
+<li>WIL 작성</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>클론코딩 프로젝트 React-Query로 무한 스크롤 구현</p>
+</li>
+<li>
+<p>실전 프로젝트 기획 회의</p>
+</li>
+<li>
+<p>오픈 API 사용법 익히기</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[WIL] 항해99 7주차 WIL]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220807-wil</link>
+    <pubDate>2022-08-07</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220807-wil</guid>
+    <description>
+    <![CDATA[클론코딩 주차]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="클론-코딩-프로젝트" class="heading">클론 코딩 프로젝트</h2>
+<p>클론코딩 프로젝트 주차가 시작이 되었다! 이번주만 마치면 바로 실전 프로젝트를 하다니 시간이 정말 빠르게 가는것 같다. 그동안 나는 얼마나 늘었을까..? 실감이 잘 나지 않는다. 백엔드와 협업하는 두번째 주차인데 확실히 전보다 진행이 원활하게 되었다.</p>
+<p>클론코딩을 하는 거기 때문에 팀원들마다 각자 클론코딩을 하고 싶은 사이트와 하고 싶은 기능도 다르기 때문에 정하는데 시간이 많이 걸렸던 것 같다. 1주밖에 안되는 시간이기에 클론코딩을 하더라도 모든 기능을 구현을 못하고 특정 기능을 구현해야하는데 스코프를 정하는게 쉽지 않았다.</p>
+<p>각자 제시한 클론코딩 사이트의 장단점과 특정 기능의 스코프를 판단하여 정하였는데 우리 조는 텀블벅 웹사이트를 클론 코딩하기로 정하였다. 텀블벅에는 많은 기능이 있지만 우리가 정한 기능은 아래 SA링크에서 확인할 수 있다.</p>
+<p><a href="https://www.notion.so/tumblbug-2-256d08cd3a8d43c4ad955cf40f8c83a3" target="_blank" rel="noopener noreferer">SA링크</a></p>
+<p><a href="https://github.com/HangHae99-Tumblbug/frontend" target="_blank" rel="noopener noreferer">깃헙 링크</a></p>
+<p><a href="https://www.youtube.com/watch?v=pitNSMnWOXs" target="_blank" rel="noopener noreferer">시연 영상 링크</a></p>
+<br/>
+<h3 id="새롭게-알게-된-것">새롭게 알게 된 것</h3>
+<p><strong>styled-component</strong></p>
+<p>항상 POST CSS를 사용하여서 CSS 작업을 하였는데 같이 협업하는 프론트엔드 분이 styled-component로 작성을 제안하셔서 한번 써보게 되었다. styled component는 JS를 CSS에서 사용할 수 있어서 아주 편한것 같다고 느꼈다. 익숙치 않아서 CSS를 구성하는데 시간이 걸렸지만 적응만 하면 좋은 CSS 툴인것 같다.</p>
+<p><strong>React-query</strong></p>
+<p>서버에서 데이터를 받아오고 전달하는 비동기 과정에서 React-query를 사용하였다. 처음 사용해보아서 공식문서도 읽고 다른 유튜브 강의 영상도 보면서 적용을 하였다. 확실히 boiler plate가 없어서 코드가 간결하였다. React-query는 아래와 같은 장점이 있다.</p>
+<ol>
+<li>서버 데이터 캐싱</li>
+<li>데이터 패칭 시 로딩, 에러 처리를 한 곳에서 처리 가능</li>
+<li>prefetching, retry 등 다양한 옵션</li>
+<li>쉬운 상태 관리</li>
+</ol>
+<p>이번 프로젝트에서 React-query를 사용하면서 느꼈던 장점들이다. 특히 로딩, 에러 처리를 한 곳에서 처리를 가능하게 한다는 점을 잘 적용시켜서 매니저님께 칭찬도 받았다. 데이터를 받아오는 과정에서 기존의 데이터가 나타났다가 사라지는 트러블 슈팅을 겪었는데 옵션을 설정해주면 된다고 한다.</p>
+<p>useQuery에서 데이터를 패칭하는 것이 눈으로 보여지는 과정이 아니라 내부에서 동작하는 과정이라 쉽게 와닿지 않아 어렵다고들 한다. 아직 감이 잘 안잡히지만 다음 프로젝트에서도 사용을 다시 해보아야겠다.</p>
+<p><strong>Git branch로 협업하기</strong></p>
+<p>저번에도 마찬가지로 새롭게 배우긴 하였지만 혼자서 적용해보니 어떻게 되어가는지 잘 몰랐다. 이번에는 진짜 다른 프론트 분과 페이지별로 나누고 브랜치를 나누어 분할로 작업을 하였다. 각자 브랜치에서 작업을 하고 pull request 요청을 통해서 merge를 하면서 conflict 해결을 하였는데 이번에야말로 진짜 협업 작업을 하는것 같다고 느꼈다.</p>
+<br/>
+<h3 id="아쉬웠던-점">아쉬웠던 점</h3>
+<p>styled component를 처음 써봐서 적응을 하고 익히는데 시간이 조금 걸렸다. 그리고 태그들을 다 컴포넌트들로 만들어서 엄청나게 많은 태그들이 컴포넌트들로 구성이 되어서 가독성이 별로 좋지 않게 작성하였던 것 같다.</p>
+<p>React-query로 무한스크롤 구현을 하려고 하였으나 마감 시한 안에 구현을 하지 못하였다. 추후에 무한스크롤을 구현하는 방법을 익혔고 시간이 있을때 코드 리팩토링을 하면서 구현을 해볼 예정이다.</p>
+<p>useQuery 패칭 원리를 잘 모르고 쓰는 느낌이 들었다. 코드를 작성했을때 내가 작성한 코드가 맞게 되는지 의문이 들면서 작성하였던 것 같다. React-query를 쓰는 것은 좋지만 깊이 있는 공부가 필요할 것 같다.</p>
+<br/>
+<h3 id="보완하고-싶었던-점">보완하고 싶었던 점</h3>
+<p>검색을 할때 실시간 검색 기능 구현</p>
+<p>프로젝트를 수정, 삭제 하는 기능을 구현</p>
+<p>최적화를 통해 렌더링 시간을 줄이기</p>
+<p>무한 스크롤링 구현</p>
+<br/>
+<h2 id="회고" class="heading">회고</h2>
+<p>이번주에는 팀원들을 잘 만나게 되어서 행복했던 주인것 같다. 잘하시는 백엔드 분들과 프론트 분들을 만나게 되어서 프로젝트를 진행하는데 막힘이 없었다.</p>
+<p>백엔드 분들이 작업을 엄청 빠르게 해주셔서 프론트엔드 작업에 속도를 가할수 밖에 없었다. 특히 UI를 구성하는 부분에서 실제 웹사이트를 따라하려고 하다보니 시간이 많이 걸릴수 밖에 없어서 잠도 줄이고 피곤에 쩌든채 코딩을 계속하는 그런 한 주였다.</p>
+<p>두번째로 진행된 백엔드와의 협업이었는데 확실히 API 설계를 할때 익숙해지게 된 것 같고 새로운 기술도 써보고 새로운 기능도 만들어보면서 성장을 하게 되었던 것 같다.</p>
+<p>프로젝트를 잘 마무리 할 수 있어서 좋았고 좋은 팀원들과 함께해서 행복한 주였다.</p>
+<br/>
+<h2 id="마치며" class="heading"><strong>마치며</strong></h2>
+<p>벌써 클론코딩주차가 끝나고 이제 대망의 마지막 6주 실전프로젝트만 남았다. 실전 프로젝트에서는 리더 부리더 신청을 받는데 아마 리더를 지원하게 될 것 같다. 책임감을 가지고 프로젝트를 주도적으로 이끌어나가고 싶기때문이다. 좋은 팀원들을 만나서 마지막 6주를 제대로 항해를 해보자!</p>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[LeetCode] Diagonal Traverse]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220806-Diagonal-Traverse</link>
+    <pubDate>2022-08-06</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220806-Diagonal-Traverse</guid>
+    <description>
+    <![CDATA[Array and String]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="description" class="heading">Description</h2>
+<p>Given an <code>m x n</code> matrix <code>mat</code>, return <em>an array of all the elements of the array in a diagonal order</em>.</p>
+<p><strong>Example 1:</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2021/04/10/diag1-grid.jpg" alt="https://assets.leetcode.com/uploads/2021/04/10/diag1-grid.jpg"></p>
+<pre><code class="code-highlight"><span class="code-line">Input: mat = [[1,2,3],[4,5,6],[7,8,9]]
+</span><span class="code-line">Output: [1,2,4,7,5,3,6,8,9]
+</span><span class="code-line">
+</span></code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code class="code-highlight"><span class="code-line">Input: mat = [[1,2],[3,4]]
+</span><span class="code-line">Output: [1,2,3,4]
+</span><span class="code-line">
+</span></code></pre>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>m == mat.length</code></li>
+<li><code>n == mat[i].length</code></li>
+<li><code>1 &#x3C;= m, n &#x3C;= 104</code></li>
+<li><code>1 &#x3C;= m * n &#x3C;= 104</code></li>
+<li><code>105 &#x3C;= mat[i][j] &#x3C;= 105</code></li>
+</ul>
+<br/>
+<h2 id="submission" class="heading">Submission</h2>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function">findDiagonalOrder</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">matrix</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>matrix<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword control-flow">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">let</span> rows <span class="token operator">=</span> matrix<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">let</span> cols <span class="token operator">=</span> matrix<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>rows <span class="token operator">+</span> cols <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">fill</span><span class="token punctuation">(</span><span class="token keyword null nil">null</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> rows<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&#x3C;</span> cols<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>i <span class="token operator">+</span> j<span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">        result<span class="token punctuation">[</span>i <span class="token operator">+</span> j<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token method function property-access">unshift</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">        <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">      <span class="token punctuation">}</span> <span class="token keyword control-flow">else</span> <span class="token punctuation">{</span>
+</span><span class="code-line">        result<span class="token punctuation">[</span>i <span class="token operator">+</span> j<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">      <span class="token punctuation">}</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> result<span class="token punctuation">.</span><span class="token method function property-access">flat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p><strong>Submission Detail</strong></p>
 <table>
 <thead>
 <tr>
-<th align="left">Syntax</th>
-<th align="center">Description</th>
-<th align="right">Test Text</th>
+<th>32 / 32 test cases passed.</th>
+<th>Status: Accepted</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td align="left">Header</td>
-<td align="center">Title</td>
-<td align="right">Here's this</td>
-</tr>
-<tr>
-<td align="left">Paragraph</td>
-<td align="center">Text</td>
-<td align="right">And more</td>
-</tr>
-<tr>
-<td align="left">Strikethrough</td>
-<td align="center"></td>
-<td align="right"><del>Text</del></td>
-</tr>
-</tbody>
 </table>
-<h2 id="tasklist" class="heading">Tasklist</h2>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" disabled> to do</li>
-<li class="task-list-item"><input type="checkbox" checked disabled> done</li>
-</ul>
-<section data-footnotes class="footnotes"><h2 id="footnote-label" class="sr-only heading">Footnotes</h2>
-<ol>
-<li id="user-content-fn-1">
-<p>Big note. <a href="#user-content-fnref-1" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
-</li>
-</ol>
-</section>]]>
+<p>| Runtime: 153 ms
+Memory Usage: 49 MB | Submitted: 0 minutes ago |</p>
+<p>행과 열의 합이 핵심이다. 행과 열의 합이 짝수이면 위에서 부터 내려가고 홀수 이면 아래에서부터 올라오면서 숫자가 시작이된다. 이중배열을 만들어서 선언을 한 다음 키값이 짝수일때는 앞에서 부터 배열에 넣고 홀수 일때 뒤에다가 배열에 추가해주면 된다.</p>]]>
     </content:encoded>
   </item><item>
-    <title><![CDATA[Support KBar]]></title>
-    <link>https://comet-land-blog.vercel.app/kbar-support</link>
-    <pubDate>2022-02-28</pubDate>
-    <guid isPermaLink="false">https://comet-land-blog.vercel.app/kbar-support</guid>
+    <title><![CDATA[[TIL] 20220806]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220806</link>
+    <pubDate>2022-08-06</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220806</guid>
     <description>
-    <![CDATA[please press CMD + K!]]>
+    <![CDATA[실전 프로젝트 와이어프레임, LeetCode]]>
     </description>
     <content:encoded>
-      <![CDATA[<p><strong>Comet-land</strong> support <a href="https://kbar.vercel.app/" target="_blank" rel="noopener noreferer">Kbar</a></p>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
 <ul>
-<li>for searching post,</li>
-<li>visiting specific category,</li>
-<li>link to social media</li>
+<li>실전 프로젝트 와이어프레임 점검</li>
+<li>LeetCode 1문제
+<ul>
+<li>LeetCode에 유형별로 쉬운 문제가 있어서 풀었는데 아직 어렵다. 코드를 어떻게 짜야하는지 감이 잘 오지 않는다. 계속 꾸준히 풀어봐야겠다.</li>
 </ul>
-<h2 id="hot-to-use-it" class="heading">hot to use it</h2>
-<p>just press <code>CMD + k</code></p>
-<blockquote>
-<p>window is <code>Cntl + K</code></p>
-</blockquote>]]>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>실전 프로젝트 기획 회의</p>
+</li>
+<li>
+<p>미니 프로젝트 배포</p>
+<br/>
+</li>
+</ul>]]>
     </content:encoded>
   </item><item>
-    <title><![CDATA[Foo]]></title>
-    <link>https://comet-land-blog.vercel.app/foo</link>
-    <pubDate>2022-01-01</pubDate>
-    <guid isPermaLink="false">https://comet-land-blog.vercel.app/foo</guid>
+    <title><![CDATA[[TIL] 20220805]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220805</link>
+    <pubDate>2022-08-05</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220805</guid>
     <description>
-    <![CDATA[foo foo foo]]>
+    <![CDATA[실전 프로젝트 기획 및 설계]]>
     </description>
     <content:encoded>
-      <![CDATA[<h2 id="foo" class="heading">foo</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>
-<h2 id="foofoo" class="heading">foofoo</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>
-<h2 id="foofoofoo" class="heading">foofoofoo</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>]]>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>실전 프로젝트 기획 및 설계
+<ul>
+<li>실전 프로젝트 주차가 시작되었다. 새로운 팀원들을 만났고 이번에 리더로 지원하게 되어서 앞으로 6주동안 팀을 잘 이끌어가봐야겠다는 책임감이 생겼다.</li>
+<li>팀원마다 의견이 다 다르고 6주동안 진행하는 마지막 큰 프로젝트기에 프로젝트 주제를 정하는것이 쉽지 않았다. 각자가 하고 싶은 프로젝트를 정하고 장단점을 분석하여 주제를 정하였다. 주제를 정하고 나니 쉽게 진행이 되었다.</li>
+</ul>
+</li>
+<li>실전 프로젝트 와이어 프레임 작성
+<ul>
+<li>와이어 프레임을 잘 작성할수록 디자이너님이 뷰를 쉽게 구현할 수 있을것 같아 최대한 와이어프레임을 꼼꼼하게 작성하였다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>Leet Code 2문제</p>
+</li>
+<li>
+<p>리액트 개념 공부 및 블로그 정리</p>
+<br/>
+</li>
+</ul>]]>
     </content:encoded>
   </item><item>
-    <title><![CDATA[Bar]]></title>
-    <link>https://comet-land-blog.vercel.app/bar</link>
-    <pubDate>2021-12-01</pubDate>
-    <guid isPermaLink="false">https://comet-land-blog.vercel.app/bar</guid>
+    <title><![CDATA[[TIL] 20220804]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220804</link>
+    <pubDate>2022-08-04</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220804</guid>
     <description>
-    <![CDATA[bar bar bar]]>
+    <![CDATA[프로젝트 최종 마무리]]>
     </description>
     <content:encoded>
-      <![CDATA[<h2 id="bar" class="heading">bar</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>
-<h2 id="barbar" class="heading">barbar</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>
-<h2 id="barbarbar" class="heading">barbarbar</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>]]>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>프로젝트 최종 발표
+<ul>
+<li>React query로 데이터를 사용하는 것을 칭찬 받았다. 새롭게 시도해본것을 칭찬해주셨고 코드를 맞게 잘 작성하셨다고 했다. React 쿼리에 대한 개념이 아직 부족한거 같은데 다른 옵션들을 잘 사용할 수 있도록 해야겠다.</li>
+<li>좋은 팀원들을 만나서 쉽게 프로젝트를 마무리 할 수 있어서 기분이 좋다.</li>
+</ul>
+</li>
+<li>트러블 슈팅
+<ul>
+<li>트러블 슈팅들을 정리하면서 코드 회고를 해보았느데 아직 불필요한 코드가 많다는 것을 느꼈다. 프로젝트를 끝내도 리팩토링을 하면서 코드를 개선해보아야겠다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>실전 프로젝트 SA 작성</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220803]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220803</link>
+    <pubDate>2022-08-03</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220803</guid>
+    <description>
+    <![CDATA[상세 페이지 UI 퍼블리싱]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>상세페이지 기능 구현
+<ul>
+<li>useMutation 사용하여 api로 post 요청을 해보았는데 useQuery에 조금 익숙해지는 느낌이다.</li>
+</ul>
+</li>
+<li>작업 내용 Merge 후 conflict 해결
+<ul>
+<li>Pull request를 요청하고 Merge 작업을 처음 해보았는데 확실히 협업을 할때 분리해서 하는게 편한것 같다.</li>
+</ul>
+</li>
+<li>추가작업
+<ul>
+<li>검색 기능 구현
+<ul>
+<li>검색 기능을 처음 구현해보았는데 api로 요청만 받으면 되어서 쉽게 할 수 있었다. 실시간 검색으로 하는 방법을 더 추가적으로 할 수 있을지 고려해보아야겠다.</li>
+</ul>
+</li>
+<li>필터 기능 구현</li>
+<li>반응형 구현</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>프로젝트 최종 제출 및 발표</p>
+</li>
+<li>
+<p>트러블 슈팅 정리 및 리드미 작성</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220802]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220802</link>
+    <pubDate>2022-08-02</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220802</guid>
+    <description>
+    <![CDATA[React query 개념 공부, 메인 페이지 기능 구현]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React query 개념 공부
+<ul>
+<li>쿼리를 처음 사용해서 적용을 하는데 아직 개념이 확실하지 않는듯 하다. 어떻게 하다보니 구현을 하였는데 이게 맞게 적용이 되는건지를 몰랐다.</li>
+<li>useQuery 내부에서 바뀐 state의 값의 최신화가 적용 되질 않는 어려움을 겪었다.</li>
+</ul>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+</span><span class="code-line">  queryClient<span class="token punctuation">.</span><span class="token method function property-access">invalidateQueries</span><span class="token punctuation">(</span><span class="token string">'projects_category'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token function">refetch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>value<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d2c9f5bf-d9f0-448b-9536-51306c7c8efe/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220806%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220806T065907Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=da15823d53e6fa45b2d45fc2bfcb07b3f6bddfb65b04e351671ca2942b0eee17&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled">
+react-query가 업그레이드 되면서 invalidateQueries 사용 방법이 조금 바뀌었는데 refetchType에 옵션을 all로 설정하여 해결을 하면 된다고 한다</li>
+<li>메인페이지 기능 구현
+<ul>
+<li>카테고리</li>
+</ul>
+</li>
+</ul>
+ <br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>상세 페이지 기능 구현</li>
+<li>Git Merge하기</li>
+<li>추가 기능 구현
+<br/></li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220801]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220801</link>
+    <pubDate>2022-08-01</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220801</guid>
+    <description>
+    <![CDATA[상세 페이지 UI 퍼블리싱]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>상세 페이지 UI 퍼블리싱 - CSS로 상세 페이지를 구현하는데 시간이 많이 걸렸다. 웹사이트를 직접 클론코딩을 하다보니 생각보다 시간이 많이 소모되었고 나의 부족한 CSS 지식으로는 하나하나 검색하면서 하다보니 어려움을 겪었다. 시맨틱하게 매우 세부적으로 HTML 태그들이 나눠져 있는걸 알게 되었고 다음에 퍼블리싱 작업을 할때도 적용을 해보아야겠다. - 이번에 React quill 이라는 글쓰기 에디터 라이브러리를 사용하여 HTML 값을 받아오는데 HTML을 문자 형태로 리액트에 추가하려면 <code>dangerouslySetInnerHTML</code> 을 사용하여야 한다. 하지만 이 방식 그대로 쓰면 해킹에 취약하기에 보안에 약하다. - <code>DOMpurify</code> 라이브러리를 사용하면 해킹에 취약한 문제점을 해결할 수 있다.
+<code>jsx &#x3C;div className="view ql-editor" style={{ padding: 0 }} dangerouslySetInnerHTML={{ __html: sanitizer( `&#x3C;p>오 혹시 이것도 되나요&#x3C;/p>&#x3C;iframe class="ql-video" frameborder="0" allowfullscreen="true" src="https://www.youtube.com/embed/kORKuULdiKM?showinfo=0">&#x3C;/iframe>&#x3C;p>&#x3C;br>&#x3C;/p>`, { ALLOWED_TAGS: ['iframe'], ADD_ATTR: [ 'allow', 'allowfullscreen', 'frameborder', 'scrolling' ] } ) }} >&#x3C;/div> </code>
+<br/></li>
+</ul>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>React Query 개념 공부</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220731]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220731</link>
+    <pubDate>2022-07-31</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220731</guid>
+    <description>
+    <![CDATA[클론코딩 주차 발제, SA 작성 및 프로젝트 설계]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>WIL 작성</li>
+<li>메인페이지 UI - 클론 코딩을 하면서 그냥 Inspector에서 가지고 오면 될거라고 생각했는데 그것을 그냥 가져오면서 나의 CSS에 적용을 하려고 하니 생각보다 쉽지 않았다. - CSS 작업을 빨리 끝내야 기능 구현을 할 수 있을텐데 아직 익숙치 않은것 같다. 아마 styled-component로 처음 사용해봐서 더 오래 걸리는 것 같기도 하다.
+<br/></li>
+</ul>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>상세 페이지 UI 만들기
+<br/></li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[WIL] 항해99 6주차 WIL]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220731-wil</link>
+    <pubDate>2022-07-31</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220731-wil</guid>
+    <description>
+    <![CDATA[미니프로젝트 주차]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="미니-프로젝트" class="heading">미니 프로젝트</h2>
+<p>이번주는 미니프로젝트 주차로 처음으로 백엔드와 협업하는 조였다. 이번주에도 어쩌다보니 팀장을 맡게 되었다… 벌써 4번째 팀장?! 하지만 팀장을 하는거도 좋은 경험이라고 생각한다. 책임감이 생기다보니 더욱 열심히 임하게 된것 같다. 이번주차는 항해를 하면서 가장 힘든 주차가 아니었나 하는 생각이 든다. 여러가지 난항을 많이 겪었는데 밑에 회고란에서 자세히 써보려 한다.</p>
+<p>주제는 팀원들끼리 상의해서 정할 수 있었다. 백엔드와의 첫 협업이라 설레기도 하고 새롭게 무언가를 한다는 것에 두렵기도 하였다. 그렇게 정한 우리 조의 주제는 기술 면접 질문 모음 사이트를 만드는거로 정하였다. 저번주에 배웠던 기능들을 복습하는 느낌으로 하는거여서 스코프는 개인과제와 비슷하게 기능을 정하였다. 우리조가 정한 기능은 아래와 같다.</p>
+<p><a href="https://www.notion.so/3-05f4cb72bb1b4f6f8081fe4f29a60224" target="_blank" rel="noopener noreferer">SA 링크</a></p>
+<br/>
+<h3 id="구현-기능">구현 기능</h3>
+<p><strong>1. 메인 페이지</strong></p>
+<ul>
+<li>게시글 목록 가져오기</li>
+<li>기술별로 카테고리 불러오기</li>
+<li>게시글 하나에 작성자, 작성 시간, 텍스트 내용으로 구성</li>
+<li>게시글 하나 클릭 시 게시글 상세 페이지로 이동</li>
+</ul>
+<p><strong>2. 상세 페이지</strong></p>
+<ul>
+<li>게시글 작성</li>
+<li>게시글 수정</li>
+<li>게시글 삭제</li>
+<li>본인의 게시글이면 수정, 삭제 버튼이 생긴다.</li>
+<li>텍스트 입력 중 안 된 게 있으면 게시글 작성 버튼 비활성화</li>
+<li>작성 완료 시 메인 페이지로 이동</li>
+</ul>
+<p><strong>3. 마이 페이지</strong></p>
+<ul>
+<li>본인의 게시물 조회 가능</li>
+<li>게시글 누르면 게시글 상세 페이지로 이동</li>
+</ul>
+<p><strong>4. 댓글</strong></p>
+<ul>
+<li>댓글 작성</li>
+<li>댓글 수정</li>
+<li>댓글 삭제</li>
+</ul>
+<p><strong>4. 로그인하기</strong></p>
+<ul>
+<li>이메일, 비밀번호 미기입 시 로그인 버튼 비활성화 하기</li>
+</ul>
+<p><strong>5. 회원가입하기</strong></p>
+<ul>
+<li>이메일 형식 확인하기</li>
+<li>비밀번호 재확인하기</li>
+</ul>
+<br/>
+<h3 id="아쉬웠던-점">아쉬웠던 점</h3>
+<p>CSS 라이브러리를 안쓰고 순수 CSS로 구현하여서 시간이 많이걸렸다.</p>
+<p>API 설계를 처음에 제대로 해놓지 않아서 API를 수정하면서 코드를 작성하였고 API 대로 request와 response가 달라 코드 오류가 많이 떴다.</p>
+<p>시간이 없어서 MOCK API로 테스트를 다 해보지 못한채 코드를 짜서 제대로 작동되는지 체크를 바로 못하여 서버와 연결할때 많은 오류를 겪었다.</p>
+<p>유효성검사를 백에서만 해주어서 프론트에서는 유효성 검사에 따른 메세지를 나타내지 못하였다.</p>
+<p>로딩스피너 구현을 계획 하였으나 시간이 없어 하지 못하였다.</p>
+<p>무한스크롤 구현을 이번에도 하지 못하였다.</p>
+<p>로그인 없이 주소로 접근을 바로 하는것을 막지 못하였다.</p>
+<p>코드 구현에서 놓치거나 아쉬웠던 점이 꽤 많다. 구현하려고 했으나 못 구현한 기능도 꽤 있고 너무 촉박하게 하려다보니 코드의 가독성도 꽤 떨어지는 것 같다. 리팩토링을 다시 하면서 코드를 수정해나가고 못해본 기능들도 마저 구현해보고 싶다.</p>
+<br/>
+<h3 id="보완하고-싶었던-점">보완하고 싶었던 점</h3>
+<p>무언가 새로운것을 시도해보지 못하여 다음에는 꼭 새로운 기능이나 기술을 시도해보고 싶다.</p>
+<p>CSS 라이브러리를 써서 시간을 더 줄였으면 추가 기능 구현을 할 수 있었을 것 같다.</p>
+<p>최적화를 통해 렌더링 시간을 줄이고 싶다.</p>
+<p>무한 스크롤링을 구현하고 싶다.</p>
+<p>반응형을 통해 모바일에서도 잘 보이게 하고 싶다.</p>
+<br/>
+<h3 id="새롭게-알게-된-것">새롭게 알게 된 것</h3>
+<p><strong>json-server 와 Mock API 이용하기</strong></p>
+<p>Mock API를 통해 백에서 데이터를 넘겨주기 전에 프론트에서 서버와 통신하는 것을 연습해 볼 수 있다. 미리 API 통신을 연습해 볼 수 있기에 MOCK API를 만들어서 테스트를 한 후 서버와 연결하게 되면 더 효율적일 것 같다.</p>
+<p><strong>JWT로 로그인/회원가입</strong></p>
+<p>JWT로 로그인 회원가입을 할때 어떻게 동작하는지 원리를 알게 되었다. 로그인을 할때 서버에서 토큰을 받아와 토큰을 저장한 다음 그 토큰으로 API 통신을 할때 HEADER에 넘겨준다. 그러면 서버에서는 로그인이 필요한 동작을 할때 그 토큰으로 로그인 여부를 판단할 수 있다.</p>
+<p><strong>Git branch로 협업하기</strong></p>
+<p>비록 혼자 프론트를 진행하였지만 협업을 하는것처럼 브랜치를 나누어서 pull request 요청을 하고 merge 하는 작업을 진행하였다. 혼자서 해보긴 하였지만 원리를 이해하였고 다음주에는 다른 분들과 함께 직접 branch로 협업하는 과정을 겪어보고 싶다.</p>
+<br/>
+<h2 id="회고" class="heading">회고</h2>
+<p><strong>협업의 중요성을 알게 되었다.</strong></p>
+<p>팀장으로써 팀을 이끌어가는것도 꽤나 쉬운일이 아니었다. 같이 하는 프론트엔드 분은 지난 주차들동안 무엇을 하였는지도 모를 정도로 React에 대한 개념이 전혀 없었고 태도도 전혀 좋지 않았으며 부족한 만큼 열심히 하려고 하는 의지조차 없어서 소통에 너무나 애를 겪었다. 결국 멘토님께 말씀 드리고 나서 멘토님의 의견에 따라 프론트엔드를 혼자 진행하기로 결정하였다.</p>
+<p>한 백엔드분의 무책임한 탈주가 있었다.</p>
+<p>정말 다시는 만나고 싶지 않고 겪고 싶지 않은 상황이었다. 백엔드와 협업을 하는 첫주차부터 프론트엔드를 혼자 진행을 하는것과 더불어 게시판이라는 중요한 역할을 맡은 백엔드 분이 참여하실것 처럼 하다가 과제 제출 하루 전날에 잠수를 타는 어이가 없는 상황을 겪었다. 이러한 어려움을 해결하는것도 하나의 트러블 슈팅이 될까.. 결국 나머지 백엔드 두분이 저녁부터 진행을 하게 되었으나 과제를 제출하기에는 시간이 너무 부족했었다.</p>
+<p>다시는 이러한 상황을 겪고 싶지 않다. 협업을 할때에는 태도와 소통이 정말 중요하다고 생각한다. 실력이 부족해도 열심히 하는 의지만 있다면 서로 도와주면서 작업을 진행할 수 있을것이다. 하지만 이번처럼 이런 이기적인 행동은 첫 협업 과정에서 나에게 너무나 힘들었던 것 같다. 긍정적으로 남은 팀원들끼리 마감시한까지 최선을 다하였지만 이런 예기치 못하게 발생하는 상황들을 해결하는 것은 쉽지 않았다. 과제 제출을 못한 것이 너무 아쉬웠고 내가 조금 더 실력이 있었다면 충분히 마무리할 수 있지않았을까 하는 실력에 대한 아쉬움도 너무 컸다.</p>
+<p>마저 못한 미니 프로젝트는 나머지 팀원들과 함께 끝까지 진행하도록 하였다. 끝까지 진행해서 깃헙에 올리고 리드미도 써서 우리의 시간이 아깝지 않게 하여야겠다. 같이 끝까지 열심히 해주신 팀원들에게 너무 감사하다.</p>
+<br/>
+<h2 id="마치며" class="heading"><strong>마치며</strong></h2>
+<p>Axios를 통한 백엔드와의 통신에 대해 조금 더 이해를 할 수 있었고 동작원리를 알게 되었다. 혼자서 프론트를 하다보니 여러 분들에게 많이 물어보곤 했었는데 그 과정에서 정말 많이 배운것 같다. 그 배운 것들을 다음 프로젝트에도 사용해보면서 나의 것으로 익혀야겠다.</p>
+<p>협업의 중요성을 많이 깨우친 이번주이다. 다음에는 좋은 팀원들을 만나 행복 코딩하고 싶다.
+<br/></p>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220730]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220730</link>
+    <pubDate>2022-07-30</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220730</guid>
+    <description>
+    <![CDATA[클론코딩 Main 페이지 UI, 그리디 알고리즘, 미니 프로젝트]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>프로그래머스 그리디 알고리즘 2문제
+<ul>
+<li>아직은 레벨 2를 풀 단계가 아닌가라는 생각이 든다. 그리디 알고리즘 개념에 대해 학습을 하고도 문제를 보면 코드를 어떻게 짜야할지 막막하다. 답을 보고 이해를 하는 식으로 넘어가고 있는데 옳은 방법인지 잘 모르겠다. 넘어간 문제는 꼭 다시 풀어서 내 것으로 만드는 과정을 겪어야겠다.</li>
+</ul>
+</li>
+<li>메인페이지 UI
+<ul>
+<li>Header를 만들었다. 스타일드 컴포넌트를 처음 써봐서 아직 많이 익숙치 않다. 클론코딩을 하다보니 UI적 요소가 강한데 생각보다 시간이 걸린다.</li>
+<li>React-router 6에서 사용하는 Outlet을 사용해보았다. 다른 분이 Route 안에 Route를 설정하여 자식 코드들의 위치를 Outlet으로 설정하는 것을 보았는데 나도 한번 적용시켜보고 싶었는데 App.jsx에서 Router에 관련된것만 볼 수 있기에 가독성에 좋은것 같았다.</li>
+</ul>
+</li>
+<li>미니 프로젝트 클라이언트와 서버 합치기
+<ul>
+<li>프론트엔드 기능적 구현을 다하였고 서버와 합쳤다. 합치는 과정에서 API 명세서대로 request와 response값들이 조금 달라서 오류를 많이 겪었다. API 명세서대로 코드를 작성하는 것의 중요성을 알게 되었다.</li>
+<li>기본 기능 구현은 다하였고 마무리로 UI 반응형과 무한 스크롤링, 유효성 검사가 남았다. 무한 스크롤링을 구현해본적이 없었는데 이번에 해보면서 클론코딩에도 한번 적용시켜보아야겠다.</li>
+<li>데이터를 받아오는 과정에서 데이터가 비동기로 받아와지기 전에 데이터가 없는 경우에는 옵셔널 체이닝을 통해서 확인을 해주어야하는 것을 배웠다. 아니면 .then을 사용하여서 비동기가 완료되었을때 데이터를 불러오게 코드를 작성하여야한다. 이 오류 덕분에 조금 시간이 걸렸는데 다른 분들의 도움으로 해결할 수 있었다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>WIL 작성</p>
+</li>
+<li>
+<p>메인 페이지 UI 마무리</p>
+</li>
+<li>
+<p>게시글 상세 페이지 UI</p>
+</li>
+<li>
+<p>블로그 구글 검색 엔진 노출</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220729]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220729</link>
+    <pubDate>2022-07-29</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220729</guid>
+    <description>
+    <![CDATA[클론코딩 주차 발제, SA 작성 및 프로젝트 설계]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>클론코딩 주차 발제
+<ul>
+<li>클론 코딩 주차가 시작이 되었다. 우리조는 텀블벅이라는 사이트를 클론코딩 하기로 정하였다. 텀블벅은 와디즈 같은 펀딩 모금 사이트이다.</li>
+<li><a href="https://www.notion.so/tumblbug-2-256d08cd3a8d43c4ad955cf40f8c83a3" target="_blank" rel="noopener noreferer">SA 작성</a>
+<ul>
+<li>1주 밖에 안되는 만큼 스코프를 적절히 정해야했다. 실제 웹사이트는 기능이 워낙 많아서 그걸 다 구현하는것은 힘들다. 팀원들과 상의해서 API 설계를 하고 기능을 정하였다.</li>
+<li>클론코딩을 하는거라 확실히 UI 측면에서 프론트가 할일이 많아 보였다. 미리미리 시작해야겠다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>미니프로젝트 댓글 수정 구현 - 본인 아이디의 모든 댓글 수정 삭제하는 기능을 구현하였다 기존에 구현하였던 댓글 수정 삭제는 본인 아이디 댓글중 하나의 댓글만 삭제하는것이었는데 같은 아이디로 등록된 댓글들의 수정, 삭제를 할 수 있어야했기에 로직을 다시 짰다. state를 좀 많이 사용한것 같은데 더 효율적인 방법이 있을지 Refactoring을 하면서 코드를 간소화 시켜보아야겠다.
+<br/></li>
+</ul>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>메인 페이지 UI</li>
+<li>프로그래머스 그리디 알고리즘 2문제</li>
+<li>미니 프로젝트 서버와 연결하기</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220728]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220728</link>
+    <pubDate>2022-07-28</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220728</guid>
+    <description>
+    <![CDATA[미니 프로젝트 구현, Axios instance]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>미니 프로젝트 기능 구현
+<ul>
+<li>댓글 작성 CRUD 구현</li>
+<li>로그인 시 회원가입 유지 구현</li>
+<li>로그인 방식을 세션에서 JWT로 바꾸고 다시 로그인 회원가입을 다시 통신을 해보았다.
+<ul>
+<li>Axios를 전역으로 설정하고 헤더에 토큰을 전달하였다. Axios를 전역으로 설정하여 주소 api를 변수로 작성하여 코드를 간결하게 작성할 수 있었다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>미니 프로젝트 제출날이었는데 팀원의 이탈로 인해 기능 구현을 다 못하였다.
+<ul>
+<li>기능 구현을 다 하지 못해서 제출을 못했었던 점이 너무 아쉬웠다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>미니 프로젝트 게시판 연결</li>
+<li>클론코딩 프로젝트 발제 및 SA 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220727]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220727</link>
+    <pubDate>2022-07-27</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220727</guid>
+    <description>
+    <![CDATA[미니 프로젝트 구현, 게시판 CRUD 작성]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>미니 프로젝트 구현
+<ul>
+<li>게시물 CRUD 완성
+<ul>
+<li>짜여진 API 명세서대로 게시판 CRUD를 완성하였다.</li>
+</ul>
+</li>
+<li>API 명세서 재작성
+<ul>
+<li>로직을 짜면서 API 명세서가 제대로 있지 않은 점을 발견하였다. 받아오거나 전달하는 데이터가 제대로 되어 있지 않아 백엔드 분들과 여러번 API 명세서를 다시 작성하는 경우가 발생하였다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>JWT 로그인 방식으로 회원가입 로그인 연결</li>
+<li>API 명세서대로 CRUD 로직 짜기</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220726]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220726</link>
+    <pubDate>2022-07-26</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220726</guid>
+    <description>
+    <![CDATA[미니 프로젝트 기능 구현, CORS 에러]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>미니 프로젝트 기능 구현
+<ul>
+<li>Mock api로 로그인, 회원가입 axios 통신 연습.
+<ul>
+<li>백엔드와 협업 과정에서 세션 로그인 방식을 통한 로그인, 회원가입을 구현하였다.</li>
+</ul>
+</li>
+<li>백엔드 서버와 회원가입 post시 CORS 에러
+<ul>
+<li>이번에 백엔드와 처음 데이터 통신을 해보면서 겪은 CORS 문제였다. CORS 문제를 해결하기 위해 거의 백엔드 분들과 하루종일 매달렸었던 것 같다. 서버에서 CORS 설정을 허용하도록 하는 코드 로직을 다른 조 분들의 도움을 받아 해결할 수 있었다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>게시물 CRUD 작성</li>
+<li>API 명세서 수정</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220725]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220725</link>
+    <pubDate>2022-07-25</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220725</guid>
+    <description>
+    <![CDATA[미니 프로젝트 UI, Greedy 알고리즘]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>Greedy 알고리즘 개념 스터디를 하였다.
+<ul>
+<li>그리디 알고리즘에 대한 깊은 이해를 할 수 있었다. 완전 탐색과는 다른 최적의 해를 구해간다는점에서 인상적이었다.</li>
+</ul>
+</li>
+<li>게시글 상세 페이지 UI를 구현하였다.
+<ul>
+<li>혼자서 디자인하고 UI를 구현하다보니 생각보다 시간이 많이 걸렸다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>로그인 회원가입 MOCK API로 통신 연습</li>
+<li>서버와 회원가입, 로그인 연결하기</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220724]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220724</link>
+    <pubDate>2022-07-24</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220724</guid>
+    <description>
+    <![CDATA[미니 프로젝트 UI, 프로그래머스 완전 탐색]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>WIL 5주차 작성</li>
+<li>프로그래머스 완전탐색 2문제 풀기
+<ul>
+<li>아직 DFS에 대한 개념이 부족한 것 같다. 재귀로 함수를 돌때 동작원리에 대한 이해가 부족하여서 문제를 접근하는 방법을 생각하지 못하였다. 완전 탐색 문제를 더 풀어보아야겠다.</li>
+</ul>
+</li>
+<li>미니 프로젝트 UI를 만들었다. - 로그인, 회원가입 UI 완성 - 메인 페이지 UI 완성</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>미니 프로젝트
+<ul>
+<li>게시글 작성 페이지 UI</li>
+<li>게시글 상세 페이지 UI</li>
+<li>Mock API 연습</li>
+</ul>
+</li>
+<li>Greedy 알고리즘 개념 공부</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[WIL] 항해99 5주차 WIL]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220724-wil</link>
+    <pubDate>2022-07-24</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220724-wil</guid>
+    <description>
+    <![CDATA[React 심화 주차]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="개인-과제" class="heading">개인 과제</h2>
+<p>이번주는 리액트 심화 주차로 개인과제와 팀과제가 주어졌고 조는 저번주와 같이 진행이 되었다.</p>
+<p>과제에서 요구되는 기능들이 전보다 많았는데 그 기능들은 아래와 같다.</p>
+<br/>
+<h3 id="구현-기능">구현 기능</h3>
+<ol>
+<li>게시글</li>
+</ol>
+<p><strong>목록 가져오기</strong></p>
+<ul>
+<li>무한 스크롤</li>
+<li>게시글 하나에 작성자, 작성 시간, 이미지 미리보기, 텍스트 내용으로 구성</li>
+<li>게시글 하나 클릭 시 게시글 상세 페이지로 이동</li>
+<li>게시글 레이아웃에 맞춰 이미지, 텍스트 위치 조절해서 노출</li>
+<li>게시글 중 하트 버튼을 클릭하면 하트 색이 바뀌면서 좋아요 개수가 +1, 다시 클릭하면 하트가 다시 회색이 되면서 좋아요가 -1 되도록 구현</li>
+</ul>
+<p><strong>추가하기 (+이미지 업로드하기)</strong></p>
+<ul>
+<li>세 가지 레이아웃 중 선택하도록 만들기</li>
+<li>레이아웃 선택 시 게시글이 레이아웃대로 보이도록 만들기</li>
+<li>이미지 업로드, 텍스트 입력 중 안 된 게 있으면 게시글 작성 버튼 비활성화</li>
+<li>작성 완료 시 메인 페이지로 이동</li>
+</ul>
+<p><strong>삭제하기</strong></p>
+<p><strong>수정하기</strong></p>
+<ol start="2">
+<li>좋아요</li>
+</ol>
+<p>게시글에 좋아요하기</p>
+<p>게시글에 좋아요 취소하기</p>
+<ol start="3">
+<li>회원가입하기</li>
+</ol>
+<p>이메일 형식 확인하기</p>
+<p>비밀번호 재확인하기</p>
+<ol start="4">
+<li>로그인하기</li>
+</ol>
+<p>이메일, 비밀번호 미기입 시 로그인 버튼 비활성화 하기</p>
+<ol start="5">
+<li>배포하기</li>
+</ol>
+<p>파이어베이스 or S3로 배포</p>
+<p>저번주에는 redux-toolkit을 처음 사용해보아서 익숙치 않았다면 이번주에는 기능을 구현하면서 redux-toolkit을 활용한 CRUD에 조금 더 익숙해졌달까. Firestore를 활용한 데이터를 불러오고 추가하는 것도 공식문서를 보면서 계속 하다보니 많이 익숙해졌다.</p>
+<br/>
+<h3 id="아쉬웠던-점">아쉬웠던 점</h3>
+<p>CSS에 시간을 많이 투자하였는데 생각보다 만족스런 결과가 나오지 않았다. 아직 전체 height를 설정하는것에서 문제를 많이 겪었다. 다른 프론트 분들이 어떻게 적용하는지 궁금해서 도움도 청하고 했는데 아직 어떻게 적용시켜야 전체 화면의 height를 구성할 수 있을지 잘 모르겠다. 멘토님께도 물어보고 다른 프론트 분들께도 계속 정보를 물어보면서 초기 CSS 설정에서 시간을 줄이고 나만의 CSS 초기 세팅을 만들어야겠다.</p>
+<p>마이페이지 기능을 추가하여서 그 기능을 구현하는데 시간을 많이 쏟았다. 요구사항에 있던 기능은 아니지만 만들어보고 싶었다. 성공적으로 구현은 했으나 CSS 적용 과정에서 flex와 grid의 개념이 부족하다고 느꼈다. CSS가 유독 어렵다고 많이 느껴진다. 부족한 만큼 찾아서 공부를 해야겠다.</p>
+<p>회원가입 유효성 검사를 Input 값에 따른 변화를 바로 인지하면서 하고 싶었는데 어떻게 코드 구현을 해야할지 몰라서 state로 에러를 만들고 회원가입 버튼을 누르면 나오게 하였다. 이 방법도 멘토님께 물어보니 onChange를 사용하여서 구현을 하면 된다고 하였다.</p>
+<p>로그인 시 새로고침 정보를 남아있게 하기위해서 세션스토리지에 회원 정보를 저장하고 체크하는 로직을 짰는데 그 로직에서 오류가 있었다. 뭐냐면 새로고침을 해도 리덕스에 user 정보가 있는지 없는지 체크하는 것을 짜주어야 유저정보가 없을때에만 새로고침을 해서 유저정보를 받아오기때문에 불필요한 과정을 줄일 수 있다. 이부분도 고민을 하다가 멘토님이 도움을 주셔서 고치게 되었다.</p>
+<p>그 외에 레이아웃에 따른 기능 구현, 무한스크롤링, 좋아요를 누르면 좋아요가 추가되는 기능, 상세 페이지등 추가 기능 구현을 하지 못하였다. 안되는 로직 구현은 일단 넘기고 다른 기능 구현부터 먼저 접근했으면 충분히 가능했을것 같다.</p>
+<br/>
+<h2 id="이번주-회고" class="heading">이번주 회고</h2>
+<p>저번주에 반성과 회고를 통해 이번주는 정말 열심히 임하노라 생각하였다. 다짐 덕분일까 동기부여가 생겼기 때문인지 확실히 저번주보다는 열심히 한 것 같다. 공부 시간을 늘렸고 과제를 구현하기 위해 질문도 많이 하고 적극적인 한 주를 보내었다. 벌써 5주차가 되었다. 이제 대략 2달 정도 남았는데 더 열심히 최선을 다하자. 앞으로 주어진 기회와 시간을 놓치지 않는다면 나는 얼마나 성장할 수 있을까? 기회와 시간을 놓치지 말자!</p>
+<br/>
+<h2 id="-이번주-키워드" class="heading">🔑 이번주 키워드</h2>
+<h2 id="axios" class="heading">Axios</h2>
+<h3 id="axios란">Axios란?</h3>
+<p>Axios는 node.js와 브라우저를 위한 <em><a href="https://javascript.info/promise-basics" target="_blank" rel="noopener noreferer">Promise 기반</a></em> HTTP 클라이언트이다.</p>
+<p>브라우저와 node.js에서 실행할 수 있다. 서버 사이드에서는 네이티브 node.js의 <code>http</code> 모듈을 사용하고, 클라이언트(브라우저)에서는 XMLHttpRequests를 사용한다.</p>
+<br/>
+<h3 id="특징">특징</h3>
+<ul>
+<li>브라우저를 위해 <a href="https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest" target="_blank" rel="noopener noreferer">XMLHttpRequests</a> 생성</li>
+<li>node.js를 위해 <a href="http://nodejs.org/api/http.html" target="_blank" rel="noopener noreferer">http</a> 요청 생성</li>
+<li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener noreferer">Promise</a> API를 지원</li>
+<li>요청 및 응답 인터셉트</li>
+<li>요청 및 응답 데이터 변환</li>
+<li>요청 취소</li>
+<li>JSON 데이터 자동 변환</li>
+<li><a href="https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B4%ED%8A%B8_%EA%B0%84_%EC%9A%94%EC%B2%AD_%EC%9C%84%EC%A1%B0" target="_blank" rel="noopener noreferer">XSRF</a>를 막기위한 클라이언트 사이드 지원</li>
+</ul>
+<br/>
+<h3 id="설치">설치</h3>
+<p>npm 사용하기:</p>
+<pre class="language-powershell"><code class="language-powershell code-highlight"><span class="code-line">$ npm install axios
+</span></code></pre>
+<br/>
+<h3 id="axios-api">*<strong>*Axios API**</strong></h3>
+<p><code>axios</code>에 해당 config을 전송하면 요청이 가능하다.</p>
+<p><strong>axios(config)</strong></p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token comment">// POST 요청 전송</span>
+</span><span class="code-line"><span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'post'</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'/user/12345'</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token literal-property property">firstName</span><span class="token operator">:</span> <span class="token string">'Fred'</span><span class="token punctuation">,</span>
+</span><span class="code-line">    <span class="token literal-property property">lastName</span><span class="token operator">:</span> <span class="token string">'Flintstone'</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token comment">// node.js에서 GET 요청으로 원격 이미지 가져오기</span>
+</span><span class="code-line"><span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'get'</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'http://bit.ly/2mTM3nY'</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">responseType</span><span class="token operator">:</span> <span class="token string">'stream'</span><span class="token punctuation">,</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  response<span class="token punctuation">.</span><span class="token property-access">data</span><span class="token punctuation">.</span><span class="token method function property-access">pipe</span><span class="token punctuation">(</span>fs<span class="token punctuation">.</span><span class="token method function property-access">createWriteStream</span><span class="token punctuation">(</span><span class="token string">'ada_lovelace.jpg'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<br/>
+<h3 id="config-option과-응답-스키마"><strong>config option과 응답 스키마</strong></h3>
+<p>응답 스키마는 데이터를 받아올 때 알아야 하는데 다음과 같이 6종류가 있다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token comment">// `data`는 서버가 제공한 응답(데이터)입니다.</span>
+</span><span class="code-line">  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token comment">// `status`는 서버 응답의 HTTP 상태 코드입니다.</span>
+</span><span class="code-line">  <span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token comment">// `statusText`는 서버 응답으로 부터의 HTTP 상태 메시지입니다.</span>
+</span><span class="code-line">  <span class="token literal-property property">statusText</span><span class="token operator">:</span> <span class="token string">'OK'</span><span class="token punctuation">,</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token comment">// `headers` 서버가 응답 한 헤더는 모든 헤더 이름이 소문자로 제공됩니다.</span>
+</span><span class="code-line">  <span class="token literal-property property">headers</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token comment">// `config`는 요청에 대해 `axios`에 설정된 구성(config)입니다.</span>
+</span><span class="code-line">  <span class="token literal-property property">config</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token comment">// `request`는 응답을 생성한 요청입니다.</span>
+</span><span class="code-line">  <span class="token comment">// 브라우저: XMLHttpRequest 인스턴스</span>
+</span><span class="code-line">  <span class="token comment">// Node.js: ClientRequest 인스턴스(리디렉션)</span>
+</span><span class="code-line">  <span class="token literal-property property">request</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span></code></pre>
+<p><code>then</code>을 사용하면 다음과 같이 응답을 받을 수 있다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line">axios<span class="token punctuation">.</span><span class="token method function property-access">get</span><span class="token punctuation">(</span><span class="token string">'/user/12345'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span><span class="token property-access">data</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span><span class="token property-access">status</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span><span class="token property-access">statusText</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span><span class="token property-access">headers</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span><span class="token property-access">config</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<br/>
+<h2 id="마치며" class="heading"><strong>마치며</strong></h2>
+<p>평소에 axios를 쓰다가 fetch가 있는데 왜 굳이 axios를 쓰지? 하는 생각이 많이 들었었는데 이번 기회에 axios를 공부하면서 궁금점을 조금이나마 해결할 수 있었다.</p>
+<p>단순히 라이브러리가 유명해서 쓰는 것이 아닌 왜 이 라이브러리를 쓰는지 이 라이브러리의 장점은 꼭 알아야겠다고 생각해서 앞으로도 라이브러리를 하나하나 간단하게라도 정리해볼까 한다.</p>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220723]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220723</link>
+    <pubDate>2022-07-23</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220723</guid>
+    <description>
+    <![CDATA[미니 프로젝트 기본 설계]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>미니 프로젝트 기본 설계를 하였다.
+<ul>
+<li>프로젝트 세팅 및 Main page 기본 Header UI
+<ul>
+<li>처음 기본 디자인을 설정하는데 reference 사이트들을 찾고 와이어 프레임이 명확하지 않아 어려움을 겪었다.</li>
+<li>CSS 설정하는게 아직도 여전히 어려운 것 같다.</li>
+</ul>
+</li>
+<li>API 재설계</li>
+<li>와이어 프레임 수정</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>프로그래머스 알고리즘 2문제</li>
+<li>메인 페이지 UI 마무리</li>
+<li>로그인 , 회원가입 UI 마무리</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220722]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220722</link>
+    <pubDate>2022-07-22</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220722</guid>
+    <description>
+    <![CDATA[미니 프로젝트 주차 발제, 미니 프로젝트 계획 및 설계]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>미니 프로젝트 주차 발제
+<ul>
+<li>미니 프로젝트 주차가 시작되었다. 백엔드 분들과 처음으로 과제를 하게 되는데 설레면서도 조금 걱정이 되었다. 이번 주차는 이전 주차에 했던 기능들을 복습하는 느낌이기에 추가 기능을 고려하기보다는 익숙해지는것에 초점을 두고 프로젝트를 기획하였다.</li>
+</ul>
+</li>
+<li>미니 프로젝트 기획 및 설계
+<ul>
+<li><a href="https://www.notion.so/4-SA-05f4cb72bb1b4f6f8081fe4f29a60224" target="_blank" rel="noopener noreferer">SA 링크</a></li>
+<li>주제 및 기능 정하기
+<ul>
+<li>주제는 면접 질문용 커뮤니티를 만들기로 하였고 핵심 기능은 게시판, 회원가입, 댓글 기능이다. 전에 했던 CRUD를 복습하는 의미에서 기능을 정하였고 나머지들은 시간이 남으면 추가 기능으로 구현하기로 하였다.</li>
+</ul>
+</li>
+<li>와이어 프레임</li>
+<li>API 설계
+<ul>
+<li>API 설계를 처음에 잘 해놓아야 백엔드와 프론트엔드 간의 소통이 원할하게 이뤄질 수 있다고 생각하여 꼼꼼히 설계를 해놓은것 같다. 조금 부족한 부분이 있겠지만 멘토님에게 피드백을 받을 예정이다.</li>
+</ul>
+</li>
+<li>DB 스키마</li>
+</ul>
+</li>
+<li>깃 pull request - 협업을 할때 도움이 되는 깃 pull request 기능에 대해 다른 분이 설명해주셔서 듣게 되었는데 이해는 되었으나 직접 해보지 않아 확실히 정리가 되지 않는 느낌이다. 이번에 프로젝트를 하면서 적용을 시켜보아야겠다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>미니 프로젝트 Main page 구현</li>
+<li>프론트엔드 API 통신 방법 공부</li>
+<li>프로그래머스 완전 탐색 2문제</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220721]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220721</link>
+    <pubDate>2022-07-21</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220721</guid>
+    <description>
+    <![CDATA[React 심화 주차 개인 과제 기능 구현 및 배포]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React 심화 주차 개인 과제 기능 구현 및 배포
+<ul>
+<li>게시글 작성, 수정, 삭제 기능 구현
+<ul>
+<li>파이어 스토어에서 데이터를 수정 삭제하는데 파이어스토어가 제공하는 메소드들의 동작 원리를 이해하는데 시간이 조금 걸렸다.</li>
+<li>Redux에서 작성, 수정, 삭제 로직은 이제 확실히 익숙해지게 된 것 같다.</li>
+</ul>
+</li>
+<li>개인 과제 배포 및 제출</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>미니 프로젝트 주차 발제</li>
+<li>미니 프로젝트 기획 및 설계</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220720]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220720</link>
+    <pubDate>2022-07-20</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220720</guid>
+    <description>
+    <![CDATA[React 심화 주차 개인 과제 기능 구현 및 배포]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React 심화 주차 개인 과제 기능 구현
+<ul>
+<li>회원가입 유효성 검사
+<ul>
+<li>회원가입을 할때 유효성 검사에서 조금 어려움을 겪었다. error 메세지가 Input 값이 바뀔때마다 나오게 하고 싶었는데 어떻게 구현을 해야할지 몰라서 error를 state로 주고 회원가입 버튼을 누를때 값이 나오게 하였다.</li>
+<li>error 메세지를 p 태그로 만들었는데 error 메세지가 생성되면 height가 변하였는데 이것을 수정하려고 하는데 시간이 좀 걸렸다. 알고보니 CSS 속성인 visibility: hidden을 통해서 해주면 되는것이었다. 다음에는 꼭 적용하자.</li>
+</ul>
+</li>
+<li>세션스토리지에 유저 정보 저장해서 새로고침해도 유저 정보가 남아있게 하기
+<ul>
+<li>로그인을 하면 로그인 한 user 정보가 Header에 가게 되는데 Redux에 저장된 user 정보는 새로고침을 하게 되면 사라지게 되어 이 값을 불러오는 방법을 고민하여서 멘토님에게 물어보았다. Redux에 있는 state는 새로고침을 하면 사라지게 된다. 그래서 session에 user를 저장해놓고 새로고침을 해도 session의 값은 남아있게 되기 때문에 session에 값이 있는지 없는지로 로그인 상태를 파악한다. 머릿속으로는 이해를 하였으나 아직 익숙치 않다. 계속해서 구현을 해보아야겠다.</li>
+</ul>
+</li>
+<li>My page
+<ul>
+<li>본인이 올린 게시물만 볼 수 있도록 하기 위해서 My page를 만들었다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>React 심화 주차 개인 과제 CRUD 구현</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220719]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220719</link>
+    <pubDate>2022-07-19</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220719</guid>
+    <description>
+    <![CDATA[깃헙 블로그 테마 변경, React 심화 주차 개인 과제 기능 구현]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>깃헙 블로그 테마 변경
+<ul>
+<li>Github 블로그가 테마도 이쁘고 Github과 연동되는 이유로 쓰고 있는데 이번에는 게시글이 업로드가 안되는 현상이 발생하였다.</li>
+</ul>
+</li>
+<li>React 심화주차 개인과제 기능 구현 및 디자인
+<ul>
+<li>페이지 별 기본 Theme CSS로 구현</li>
+<li>로그인 기능 구현</li>
+<li>회원가입 기능 구현</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>React 심화 주차 개인 과제</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220718]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220718</link>
+    <pubDate>2022-07-18</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220718</guid>
+    <description>
+    <![CDATA[프로그래머스 완전탐색, 비동기 & Promise, Redux-thunk]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>프로그래머스 완전탐색 문제를 풀었다.
+<ul>
+<li>dfs 방법으로 푸는 문제를 처음 접하여서 문제를 풀지 못하였고 답을 이해하는데도 시간이 오래걸렸다. 콜백에 대한 개념이 부족한 것 같다.</li>
+<li>dfs, bfs 개념을 이해하고 문제를 다시 풀어보아야겠다. 코딩 테스트의 중요성을 여실히 느끼는 지금 시간을 더 많이 투자해야할 것 같다.</li>
+</ul>
+</li>
+<li>프론트엔드 개념 스터디를 하였다.
+<ul>
+<li>비동기, Promise에 대해 설명을 하였는데 조금 더 깊은 이해가 된 것 같다. 자주 나오는거보면 확실히 중요한 것 같다.</li>
+<li>Redux-thunk의 역할에 대해서 공부하였다. redux-thunk 대신 그냥 api 호출을 하게 되면 어떻게 되는지에 대해서 알게 되었다. 조금 더 redux-thunk에 대한 깊은 이해를 한 것 같다.
+[redux-thunk 블로그 링크]</li>
+</ul>
+</li>
+<li>React 심화 주차 과제를 위한 로그인 인강을 들었다. 파이어베이스를 통한 로그인 기능을 구현해야하는데 이번에는 로그인 정보가 남아있어야해서 localstorage에 user 정보를 남기는 방식으로 구현해볼 생각이다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>프로그래머스 완전탐색 2문제 및 못 푼 문제 복습</li>
+<li>React 심화 주차 개인과제</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220717]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220717</link>
+    <pubDate>2022-07-17</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220717</guid>
+    <description>
+    <![CDATA[WIL 작성]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React 심화주차 개인 과제 프로젝트 렌더링 오류 해결
+<ul>
+<li>React 심화 주차 기본 기능을 다 완성하였다. 로그인이라는 추가적 기능을 구현하여서 User 정보에 따른 데이터를 받아오고 적용하는데 꽤 어려움을 겪었다.</li>
+<li>추가적 기능인 무한 스크롤링을 나중에 시간이 있을때 적용해보아야겠다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>4주차 WIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220716]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220716</link>
+    <pubDate>2022-07-16</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220716</guid>
+    <description>
+    <![CDATA[React 숙련 주차 개인 과제 프로젝트]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React 심화주차 개인 과제 프로젝트 렌더링 오류 해결
+<ul>
+<li>React 심화 주차 기본 기능을 다 완성하였다. 로그인이라는 추가적 기능을 구현하여서 User 정보에 따른 데이터를 받아오고 적용하는데 꽤 어려움을 겪었다.</li>
+<li>추가적 기능인 무한 스크롤링을 나중에 시간이 있을때 적용해보아야겠다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>4주차 WIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220715]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220715</link>
+    <pubDate>2022-07-15</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220715</guid>
+    <description>
+    <![CDATA[React 숙련 주차 개인 과제, React 심화주차 발제]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React 심화 주차 발제
+<ul>
+<li>심화 주차가 시작되었다. 새로운 과제를 부여 받았다. 간단한 sns를 구현하는데 기능이 꽤나 많아 시간이 꽤나 오래걸릴 것 같았다. 아직 Redux toolkit으로 CRUD를 만드는 것이 익숙치 않다. 이번 과제를 통해 tool kit을 활용한 CRUD 만드는것에 익숙해져야겠다.</li>
+</ul>
+</li>
+<li>React 숙련 주차 개인 과제
+<ul>
+<li>숙련 주차 개인과제 수정과 삭제 기능을 구현하였다.</li>
+<li>CSS로 height 설정하는데 어려움을 겪었다. 어떤식으로 height를 설정하는지 멘토님께 여쭤봐야겠다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>프로그래머스 완전 탐색 2문제</li>
+<li>React 숙련주차 개인 과제 프로젝트 마무리</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220714]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220714</link>
+    <pubDate>2022-07-14</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220714</guid>
+    <description>
+    <![CDATA[React 숙련 주차 개인 과제 프로젝트, Firestore]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>마감시한이 오늘까지라 개인 과제 프로젝트를 하루종일 하였다.
+<ul>
+<li>Firebase Store에서 User에 해당하는 data를 가져오는데 어려움을 겪었다. Redux toolkit에 대한 개념이 부족하여서 계속 찾아보면서 적용을 시켜나갔다.</li>
+<li>toolkit에 비동기 처리를 쉽게 하는 createAsyncThunk의 사용법을 잘 몰라서 물어보기도 하였다. Redux를 처음 써보고 거기다 toolkit을 바로 써보니 확실히 프로젝트를 하면서 부족한게 여실히 드러났다. 다음 프로젝트에도 Redux toolkit을 이용하여 state 관리를 해보려고 한다. Redux toolkit에 익숙해지고 동작원리 코드 모듈을 확실하게 내 것으로 만들어야겠다.</li>
+<li>firestore에 데이터 추가하는 기능만 만들고 수정, 삭제 기능을 하지 못하여서 조금 아쉽다. 나머지 기능도 어서 만들고 추가 요구사항인 무한 스크롤링도 구현을 해봐야겠다.</li>
+<li>개인 과제를 마무리 못하고 제출한게 조금 아쉽다. 강의보다는 과제를 시작하면서 필요할 때만 강의를 보았으면 더 좋지 않았을까, CSS에 치중하기보다는 기능 구현을 먼저 했으면 하는 아쉬움이 남았다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>React 숙련주차 개인과제 프로젝트 마무리</li>
+<li>React 스터디 개념 블로그에 정리하기</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220713]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220713</link>
+    <pubDate>2022-07-13</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220713</guid>
+    <description>
+    <![CDATA[Redux toolkit, 동기 & 비동기, Suspense in React]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>Redux에 대해 복습을 하였고 Redux toolkit을 사용하는 방법을 간단한 코드를 통해서 실습해보았다.
+<ul>
+<li>Redux toolkit을 쓰다보니 확실히 bolier plate가 없어져서 간단하여 손쉽게 Redux 모듈을 작성할 수 있었다. Redux toolkit 내에는 thunk가 자체적으로 있는데 아직 thunk의 동작원리를 정확하게 모르겠다. 코드를 짜보면서 thunk를 왜 사용하고 필요한지에 대해 직접 느껴보고 동작원리에 대해서도 한번 찾아봐야할 것 같다.</li>
+</ul>
+</li>
+<li>리액트 팀 과제 스터디를 하였다.
+<ul>
+<li>자바 스크립트 동기와 비동기에 대해서 토의를 하였다. 아직 동기, 비동기에 대한 개념이 많이 헷갈리는걸 알게 되었다.</li>
+<li>Suspense라는 개념을 새로 배웠다. 비동기 작업에서 유용하게 쓰일것 같아 나중에 한번 사용해봐야겠다.</li>
+<li>context API와 Redux의 차이점에 대해 토의를 하였다. 둘 다 장단점이 명확하므로 적절한 상황에 맞게 올바른 것을 쓰면 될 것 같다.</li>
+</ul>
+</li>
+<li>개인 과제 프로젝트의 page component들을 다 구성하였다. CSS를 이쁘게 하고 싶어서 시간이 좀 걸렸다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>개인 과제 프로젝트 마무리</li>
+<li>알고리즘 완전 탐색 공부</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220712]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220712</link>
+    <pubDate>2022-07-12</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220712</guid>
+    <description>
+    <![CDATA[Github issue, Redux]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>Github issue로 프로젝트 관리하는 방법을 공부하였다.
+<ul>
+<li>Github issue 템플릿을 만들고 프로젝트 진행 중 feature, bug를 정리하면서 코딩을 하였다. 나중에 trouble shooting을 상기시킬때도 유용할 것 같아서 지금부터 습관으로 만들어야겠다.</li>
+</ul>
+</li>
+<li>Redux 동작원리에 대해서 복습을 하고 Redux Toolkit 사용하는 방법을 배웠다.
+<ul>
+<li>Redux의 동작 원리를 스스로 설명할 수 있어야한다. 흐름을 파악하면 이해가 쉽다.</li>
+<li>모듈 파일을 많이 만드는 연습을 하자.</li>
+</ul>
+</li>
+<li>개인 과제 프로젝트 로그인, 회원가입을 파이어스토어를 통해 구현하였다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>Udemy Redux part 인강</li>
+<li>개인 과제 프로젝트</li>
+<li>리액트 개념 스터디</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220711]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220711</link>
+    <pubDate>2022-07-11</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220711</guid>
+    <description>
+    <![CDATA[프로그래머스 정렬, React 심화 인강 2주차]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>프로그래머스 정렬 1문제를 풀었다.
+<ul>
+<li>문제를 풀지 못하여서 다른 사람의 풀이를 보았는데 발상의 전환이었다. 문제를 확실히 많이 풀어봐야 다양한 방식으로 생각할 수 있을것 같다.</li>
+</ul>
+</li>
+<li>매니저님께 궁금한 것 질문을 하는 시간을 가졌다.
+<ul>
+<li>리액트를 실무에서 어떻게 사용하는지에 대한 궁금증을 해결할 수 있었다. 어서 빨리 과제를 하면서 궁금한 것을 물어보고 싶다. 내일부터 과제를 바로 시작하자. 확실한 건 누군가에게 개념을 설명할 수 있을 정도가 되어야 한다. 갈길이 멀지만 계속해서 반복 학습을 하자.</li>
+</ul>
+</li>
+<li>리액트 스터디를 하였다.
+<ul>
+<li>옵셔널 체이닝과 리덕스에서 state가 변하였을때 동작 원리를 토의하면서 더 깊게 알게 되었다.</li>
+</ul>
+</li>
+<li>항해99 리액트 심화 인강 2주차까지 들었다.
+<ul>
+<li>자바스크립트 기본 문법부터 React 기초까지 배웠는데 특히 비동기,동기 파트와 Redux 부분이 아직 완전히 와닿지는 않는다. 코드를 직접 많이 안 쳐봐서 그런것 같다. Redux는 특히 React에서 상태 관리를 할 때 중요하므로 모듈을 안 보고 칠 수 있도록 익히자. 동작원리도 다른 사람에게 설명할 수 있을 정도로 공부하자.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>항해99 리액트 심화 3주차 인강 듣기</li>
+<li>프로그래머스 정렬 1문제 풀기</li>
+<li>리액트 개인 과제</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220710]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220710</link>
+    <pubDate>2022-07-10</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220710</guid>
+    <description>
+    <![CDATA[React 입문 주차 개인 과제 추가 기능 구현]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>WIL을 작성하며 회고를 하였다.
+<ul>
+<li>DOM</li>
+<li>Severless</li>
+</ul>
+</li>
+<li>리액트 심화반 인강 3주차 복습을 하였다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>프로그래머스 정렬 1문제</li>
+<li>리액트 스터디</li>
+<li>리액트 심화 인강 2주차</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220709]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220709</link>
+    <pubDate>2022-07-09</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220709</guid>
+    <description>
+    <![CDATA[React 입문 주차 개인 과제 추가 기능 구현]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>리액트 심화반 3주차 파이어베이스 part 인강을 들었다.</li>
+<li>MPA, SPA 개념에 대해 공부하였다.</li>
+<li>프로그래머스 힙 한 문제를 풀었다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>리액트 심화반 3주차 인강 복습</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220708]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220708</link>
+    <pubDate>2022-07-08</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220708</guid>
+    <description>
+    <![CDATA[블로그 정리, Heap 자료구조]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>블로그 정리를 하였다.</li>
+<li>바벨로 리액트 앱을 만드는 것을 하였다.</li>
+<li>Heap 자료 구조 강의를 들었다.</li>
+<li>React SA를 제출하였다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>프로그래머스 Heap 한문제</li>
+<li>React 심화반 3주차 인강 듣기</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220707]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220707</link>
+    <pubDate>2022-07-07</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220707</guid>
+    <description>
+    <![CDATA[React 입문 주차 개인 과제 추가 기능 구현]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>[항해99] 리액트 개인 과제 추가적 기능을 추가하여 배포하였다.
+<ul>
+<li>오늘 날짜별로 정렬하는 기능 추가
+<ul>
+<li>객체로 된 배열의 데이터를 날짜별로 정렬하는데 조금 어려움을 겪었다. 알고리즘을 생각하지 못하였는데 slice 함수로 쉽게 해결할 수 있었다.</li>
+</ul>
+</li>
+<li>키보드 숫자로 평점 입력하기 추가</li>
+<li>개인 과제를 하면서 느낀점은 아직 CSS랑 state 다루기, 최적화가 아직 부족하단것을 알게 되었다. 공부를 하면서 계속 보안해나가자.</li>
+</ul>
+</li>
+<li>블로그를 이전하였다. 깃헙 블로그가 계속 CSS가 적용이 안 되어서 다른 깃헙 블로그로 이전하였다. 게시물들을 차근차근 옮겨야겠다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>[항해99] 리액트 기초반 강의 4주차, 5주차 듣기</li>
+<li>[항해99] 리액트 SA 제출</li>
+<li>프로그래머스 스택 오늘 못 푼 문제, 힙 1문제 풀기</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220706]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220706</link>
+    <pubDate>2022-07-06</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220706</guid>
+    <description>
+    <![CDATA[React 입문 주차 개인 과제 기능 구현]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>[항해99] 리액트 개인과제 기능을 다 구현하였다.
+<ul>
+<li>CSS에서 반응형으로 구현을 하려다가 애를 먹었다. 반응형에 관해서 따로 정리를 해서 공부를 해야겠다.</li>
+<li>강의에서 배웠던 내용이고 Redux를 쓰지 않아도 되어서 쉽게 구현할 수 있었다.</li>
+</ul>
+</li>
+<li>리액트 개념에 관하여 스터디를 하였다.
+<ul>
+<li>리액트에서 렌더링 향상을 위한 방법에 관해서 얘기를 깊게 나누었는데 내가 알고 있던 것 보다 더 많이 있었다. 비슷한게 많아서 아직 많이 헷갈린다. 여러가지의 최적화 방법 중 어떤 것이 적재적소에 쓰일 수 있을지 확실히 인지하고 있어야하고 써먹어야한다.</li>
+</ul>
+</li>
+<li>항해99를 수료한 현직 개발자의 특강을 들었다.
+<ul>
+<li>알고리즘을 열심히 해야한다. 기능을 구현할 때 트러블 슈팅 같은것을 항상 정리해놓아라. 목표를 높게 잡아야 한다 등 특히 코딩 테스트 공부 관련해서 얘기해주신 점이 많이 도움이 된 것 같다. 그리고 항해99를 하면서 생활 루틴, 마음가짐 등에 대해서 얘기 해주어서 정말 보람찬 특강이었다.</li>
+<li>면접 후기 및 준비했던 과정을 들으면서 정말 열심히 해야겠구나. 나는 아직 부족한게 너무 많구나 하고 생각이 들었다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>[항해99] 리액트 기초반 강의 4주차 듣기</li>
+<li>[항해99] 리액트 개인과제 배포 및 추가 기능 구현하기</li>
+<li>프로그래머스 스택 1문제 풀</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220705]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220705</link>
+    <pubDate>2022-07-05</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220705</guid>
+    <description>
+    <![CDATA[React 기초반 2주차 강의, ref를 쓰는 이유, SPA & MPA]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>[항해99] 리액트 기초반 3주차 강의를 들었다.
+<ul>
+<li>React-router로 주소에 따라 다른 페이지를 보여주는 방법을 배웠다.
+<ul>
+<li>react-router-dom 이 강의에서는 ver5여서 ver6와는 조금 달라서 문법을 이해하는데 시간이 더 걸렸다. ver5와 ver6의 차이점을 블로그에 정리를 해야겠다. 비교하면서 사용하다보니 ver6가 확실히 더 편리한것 같다.</li>
+</ul>
+</li>
+<li>Redux로 상태관리를 해보고 상태관리 흐름을 이해하였다.
+<ul>
+<li>Redux를 왜 사용하는지에 대해서 알았고 props drilling을 하지 않아도 되서 상태관리를 편하게 할 수 있다는 것을 깨달았다. Redux 모듈에 아직 익숙치 않아서 코드를 많이 스스로 짜봐야겠다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>리액트 스터디를 통해 ref를 쓰는 이유, SPA 방식과 MPA 방식에 대해 토의하였다.
+<ul>
+<li><a href="https://dgd03146.github.io/react/20220705-why-use-ref/" target="_blank" rel="noopener noreferer">ref를 쓰는 이유</a></li>
+<li>SPA 방식과 MPA 방식</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>[항해99] 리액트 개인 과제 기능 구현 완료하기</li>
+<li>프로그래머스 스택 한문제 풀기</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220704]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220704</link>
+    <pubDate>2022-07-04</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220704</guid>
+    <description>
+    <![CDATA[React 기초반 2주차 강의, 라이프사이클]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>[항해99] 리액트 기초 강의 2주차를 들었다.
+<ul>
+<li>라이프 사이클에 대해 이해를 하였다. 컴포넌트의 라이프 사이클(= 컴포넌트 생명주기)은 정말 중요한 개념이다. <strong>컴포넌트가 렌더링을 준비하는 순간부터, 페이지에서 사라질 때까지</strong>가 라이프 사이클이라고 한다. 어떻게 동작을 하는지 제대로 이해를 하고 있어야한다.</li>
+</ul>
+</li>
+<li>[프로그래머스] 해쉬 한 문제를 풀었다.
+<ul>
+<li>해쉬에 대한 개념이 없이 문제를 푸니까 접근을 하기가 어려웠다. Map 함수에 대해서 공부를 하였고 Object와 Map의 차이점에 대해서도 알게 되었다. 아직 어떤 식으로 접근을 해야할지 감이 잡히지 않는다. 계속해서 알고리즘 문제를 풀어봐야할 것 같다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>[항해99] 리액트 기초반 강의 3주차 듣기</li>
+<li>리액트 스터디 개념 공부하기</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220703]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220703</link>
+    <pubDate>2022-07-03</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220703</guid>
+    <description>
+    <![CDATA[WIL 작성, 자바스크립트 ES5/ES6]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>WIL 작성
+<ul>
+<li>한 주를 회고하면서 느낀점은 시간이 엄청 빨리 간다. 더 열심히 하며 시간을 보낼 수 있지 않았을까 하는 아쉬움이 들었다.</li>
+</ul>
+</li>
+<li>ES5/ES6 문법 차이를 공부하면서 자바스크립트 복습을 하였다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>프로그래머스 해쉬 풀기</li>
+<li>리액트 기초 강의</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220702]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220702</link>
+    <pubDate>2022-07-02</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220702</guid>
+    <description>
+    <![CDATA[리액트 스터디, 프로그래머스 Hash]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>리액트 개념 스터디를 하였다.
+<ul>
+<li>조별로 팀 과제가 주어졌는데 프론트엔드 개념에 대한 질문을 답하는것이었다. 우리조는 각각 문제를 맡아서 발표하는것으로 정하였다. 아무래도 발표를 하게 되면 조금 더 기억에 남게 되고 남에게 설명해주어야하니까 깊이 있게 공부를 할 수 있을것 같았다.</li>
+<li>자바스크립트에서 유사배열과 배열의 차이
+<ul>
+<li>유사배열이란 단어를 처음 들어보았는데 배열 같은 객체이다. 배열처럼 관리하고싶지만 배열의 prototype을 상속받고 싶지 않을때, 즉 메서드를 사용하지 못하게하여 사용자 실수를 방지하고 싶을때 사용하는것이 핵심이다.</li>
+</ul>
+</li>
+<li>리액트에서 컴포넌트 라이프 사이클 흐름
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/914055b1-be7f-4bcc-bbcd-a1000a713fa1/Untitled.png" alt="Untitled">
+이 이미지로 요약을 할 수 있다. <strong>컴포넌트가 렌더링을 준비하는 순간부터, 페이지에서 사라질 때까지</strong>가 라이프 사이클이다. 라이프 사이클은 정말 중요한 개념이다. 나중에 정리해서 제대로 익힐수 있도록 하자.</li>
+</ul>
+</li>
+<li>알고리즘 Hash 문제를 풀었다.
+<ul>
+<li>확실히 프로그래머스 레벨2라서 어려웠다. 아직도 가야할 길이 많다. 꾸준히 계속 알고리즘 문제를 풀자.</li>
+</ul>
+</li>
+<li>리액트 강의를 다시 복습하면서 기초를 다지는데 내가 알고 있다고 생각했지만 몰랐던 개념이 꽤 있었다. 강의를 다 들으면서 스스로 만들어보고 해야 내 것이 될것 같다. 능동적으로 공부하자!</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>리액트 기초 강의</li>
+<li>한입으로 잘라먹는 React 실전</li>
+<li>WIL 작성</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220701]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220701</link>
+    <pubDate>2022-07-01</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220701</guid>
+    <description>
+    <![CDATA[한입으로 잘라먹는 React 기본 강의]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>한입크기로 잘라먹는 React 기본 강의를 들었다.
+<ul>
+<li>아직 CRUD를 작성하는데 익숙치 않은것 같다. <code>onChange</code>를 통해 <code>Input</code> 태그의 value를 <code>state</code>로 설정하는 방법을 배웠다. <code>Input</code> 태그에서 언제 <code>onChange</code>와 <code>ref</code>를 사용해야 하는지에 대해 감이 잡혔다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>프로그래머스 고득점 Kit Hash 문제</li>
+<li>리액트 기초반 인강 1 ~ 3주차 듣기</li>
+<li>프로그래머스 고득점 Kit Hash 문제</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220630]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220630</link>
+    <pubDate>2022-06-30</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220630</guid>
+    <description>
+    <![CDATA[항해99 2주차 알고리즘 스터디]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>알고리즘 시험을 쳤다.
+<ul>
+<li>문제가 생각보다 쉬워서 금방 풀었다.</li>
+</ul>
+</li>
+<li>알고리즘 달리기반 36번을 풀었다.
+<ul>
+<li>문제를 너무 오랫동안 고민해서 겨우 풀었다. 문제를 확실히 많이 풀어야겠다는 생각을 든다. 그래도 문제를 풀때는 집중해서 하게 되니 시간이 잘 가는것 같다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>한입크기로 잘라먹는 React React 기본 강의 듣기</li>
+<li>프로그래머스 고득점 Kit Hash 문제</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220629]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220629</link>
+    <pubDate>2022-06-29</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220629</guid>
+    <description>
+    <![CDATA[항해99 2주차 알고리즘 스터디]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>알고리즘 달리기반 프로그래머스 33 ~ 35번 문제룰 풀었다.
+<ul>
+<li>프로그래머스 레벨1을 푸는데도 조금 시간이 걸린다. 더 열심히 해야하는 생각 밖에 없다.멘토님께 물어봐도 누구나 처음부터 잘하는 사람은 없으니까 계속 꾸준히 하면 실력이 는다라고 자신감을 심어주셨다. 알고리즘 주차가 끝나도 꾸준히 알고리즘을 계속 풀어서 실력을 높이자. 중요한건 꾸준함이다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>알고리즘 달리기반 36 ~ 37번 문제 풀기</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220628]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220628</link>
+    <pubDate>2022-06-28</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220628</guid>
+    <description>
+    <![CDATA[항해99 2주차 알고리즘 스터디]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>[항해99] 알고리즘 프로그래머스 25 ~ 28</li>
+</ul>
+<br/>
+<h2 id="daily-review" class="heading">Daily Review</h2>
+<ul>
+<li>알고리즘 모의고사를 쳤는데 많이 어려울까봐 걱정했는데 생각보다 쉬워서 다행이었다.</li>
+<li>알고리즘 달리기반 29번 ~ 32번 문제를 풀었다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>알고리즘 달리기반 33 ~ 36번 문제 풀기</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220627]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220627</link>
+    <pubDate>2022-06-27</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220627</guid>
+    <description>
+    <![CDATA[항해99 2주차 알고리즘 스터디]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>[항해99] 알고리즘 프로그래머스 25 ~ 28</li>
+</ul>
+<br/>
+<h2 id="daily-review" class="heading">Daily Review</h2>
+<ul>
+<li>하루종일 알고리즘 문제만 풀었다. 전에 못 풀었던 문제도 다시 풀고 오늘 분량만큼의 알고리즘 문제도 풀었다. 알고리즘 문제를 풀면서 느낀건 효율성과 정확성이 중요한것 같다. 코드를 짤때도 런타임을 고려하면서 코드를 짜야 효율적인 코드인것 같다. 시간 복잡도, 알고리즘 유형에 대한 공부의 필요성을 느꼈다. 그러한 것들을 알아야 문제의 접근 방법 및 코드 작성이 간결하고 쉬워질것 같다. 공부해야할게 많은데 알고리즘에 흥미가 있고 잘해지고 싶은 마음이 있기에 열심히 하면 결과는 저절로 따라오게 된다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>[항해99] 알고리즘 프로그래머스 29 ~ 32</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220626]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220626</link>
+    <pubDate>2022-06-26</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220626</guid>
+    <description>
+    <![CDATA[항해99 2주차 알고리즘 스터디]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>WIL 작성 및 제출</li>
+<li>[항해99] 알고리즘 프로그래머스 17 ~ 24</li>
+</ul>
+<br/>
+<h2 id="daily-review" class="heading">Daily Review</h2>
+<ul>
+<li>오늘은 따로 스터디가 없다. 그래서 자율적으로 문제만 풀기만 하면된다. 확실히 난이도가 올라갔다. 2문제 정도 못풀어서 풀이를 보았는데 풀이를 보면 정말 잘 푸는 사람이 많다고 느꼈다. 그리고 나는 이렇게 밖에 생각을 못했는데 저렇게도 생각을 할 수 있구나 하는 새로운 발견을 하게 된다. 풀이를 보아도 이해를 하고 다시 코드를 작성해보면서 내것으로 만드는게 중요하다. 그래서 38번까지 다 풀고 나서 문제를 시간을 정해놓고 다시 한번 풀어볼 생각이다. 정규표현식, 메소드 사용법을 정확히 알고 있어야 겠다. 그래도 알고리즘 문제 푸는것에 흥미가 생겼다. 더 잘해지고 싶은 마음이 많이 생긴다. 알고리즘 주차가 끝나도 꾸준히 계속 풀자!</li>
+<li>1주차를 회고하면서 JWT와 API를 키워드로 해서 Week I learned 를 제출하는 과제를 부여받았는데 다시 1주차 미니프로젝트를 회고해볼 수 있었고 생각을 정리할 수 있었다. TIL만 써왔는데 WIL을 쓰면서 한주를 다시 회고하고 요약할 수 있어서 WIL도 써볼 생각이다. 블로그에 써야할게 많지만 매일 회고하면서 하루를 복습하게 되어서 좋은것 같아서 계속 쓸 예정이다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>항해99] 알고리즘 프로그래머스 25 ~ 28 문제 풀기</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220625]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220625</link>
+    <pubDate>2022-06-25</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220625</guid>
+    <description>
+    <![CDATA[항해99 2주차 알고리즘 스터디]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>[항해99] 프로그래머스 알고리즘 문제 1 ~ 10</li>
+<li>TIL 작성</li>
+</ul>
+<br/>
+<h2 id="daily-review" class="heading">Daily Review</h2>
+<ul>
+<li>주말이라 뭔가 여유가 생기는 기분이었다. 뭔가 알고리즘 주차는 주어진 문제와 과제만 해결하면 되어서 스터디원들과 합의하에 자율적으로 공부를 할 수 있었다. 대신 하루에 정해진 문제는 꼭 풀어야했다. 오늘은 16번까지 풀이여서 문제를 풀었는데 확실히 난이도가 조금씩 상승하고 있는걸 느꼈다. 그리고 자바스크립트 메소드를 내가 다 정확히 알지 못해서 검색도 많이 했는데 나중에 결국은 외워야한다. 시간을 내서 메소드를 정리하고 내 머리속에 집어넣자. 메소드를 알고 있으면 알고리즘 문제에 많은 도움이 된다. 빈 노트에 적으면서 문제를 풀면 조금 생각이 정리되어서 좋은것 같다. 아직은 머릿속에서 구현하는 능력이 부족하기에 적어가면서 문제를 풀어야겠다. 해결하는데 어려움을 겪었던 문제들은 정리를 다시해서 풀자! 멘토님이 여러 문제를 푸는것보다 풀었던 문제를 다시 한번 더 풀어보는게 좋다고 말씀하셨다. 확실히 문제를 많이 풀어봐야겠다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>[항해99] 알고리즘 프로그래머스 17~ 24 문제 풀기</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220624]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220624</link>
+    <pubDate>2022-06-24</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220624</guid>
+    <description>
+    <![CDATA[항해99 2주차 알고리즘 스터디]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>[항해99] 프로그래머스 알고리즘 문제 1 ~ 10</li>
+<li>TIL 작성</li>
+</ul>
+<br/>
+<h2 id="daily-review" class="heading">Daily Review</h2>
+<ul>
+<li>드디어 알고리즘 주차가 시작되었다. 오전9시에 알고리즘에 대해 발의를 하고 새로운 조를 짜주었다. 나는 달리기반을 신청하여서 6월30일까지 프로그래머스 38문제를 푸는게 과제였다. 그러려면 하루에 최소 8문제 정도는 풀어야 한다. 팀원들과 문제 풀이 계획을 세우고 바로 알고리즘 문제를 풀기 시작했다. 문제를 풀면서 느낀건 나는 알고리즘을 아직 진짜 못하는구나. 자바스크립트에 대한 개념이 부족하구나 생각했다. 부족한만큼 내가 더 노력해야겠다고 생각했다. 1번부터 10번까지 풀었는데 그중에 두문제를 못 풀었었다. 그래서 다른 사람의 풀이를 들었는데 확실히 다들 알고리즘 문제를 푼 경험이 있으셔서 쉽게 문제를 풀었다. 아직 내가 부족하다는걸 안다. 그러나 주눅들지 말고 그만큼 더 열심히해서 따라잡고 넘으면 된다. 그동안 알고리즘을 계속 미루고 피해왔었는데 이번을 계기로 뭔가 동기부여가 되었다. 꾸준히 계속해서 발전하면 언젠가는 나도 잘할 수 있다. 그냥 하면 된다. 지속해서 성장해나가자!</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>[항해99] 프로그래머스 알고리즘 문제 11 ~ 16</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220623]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220623</link>
+    <pubDate>2022-06-23</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220623</guid>
+    <description>
+    <![CDATA[항해99 1주차 프로젝트 마무리 및 회고]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>[항해99] 프로젝트 readme 작성, 회고</li>
+<li>TIL 작성</li>
+</ul>
+<br/>
+<h2 id="daily-review" class="heading">Daily Review</h2>
+<ul>
+<li>프로젝트 마무리
+<ul>
+<li>마지막으로 프로젝트의 기능을 점검하고 main branch에다가 최종적으로 커밋을 하였다. 중간중간에 오류도 많았었는데 짧은 기간 동안 팀원들과 함께 협력하면서 프로젝트를 성공적으로 마무리 할 수 있었다. 단기간에 프로젝트를 만드느라 다들 고생하였는데 나에게도 많은 성장이 된 것 같다.</li>
+<li>Read me 작성을 하면서 프로젝트를 회고해보았는데 우리가 겪었던 어려움들을 생각해보고 어떻게 해결해갔는지를 작성하였다. Trouble shooting이라고 부르는데 문제 해결과정을 기술하는게 처음이라 쉽지는 않았다. 이러한 경험들이 나중에 낯선 문제들을 만났을때에 좋은 경험들로 작용할 것 같다.</li>
+</ul>
+</li>
+<li>아쉬웠던 점
+<ul>
+<li>프로젝트를 하면서 조금 더 내가 코드를 짜보고 적극적으로 기능을 추가하여서 구현할 수 있었는데 그점이 조금 아쉽다. 내가 많이 부족하기도 하고 단기간에 프로젝트를 만드느라 강의를 많이 못 들었던 점. Flask를 처음 써봐서 익숙하지 않았었던 점이 아쉽게 작용했다. 조금 더 열심히 할 수 있었지 않았을까 하는 아쉬움이 살짝 든다.</li>
+<li>Git으로 프로젝트를 협업하는 경험의 부족으로 매번 branch에 푸쉬하고 불러올때 오류를 겪었다. 소스트리로 된 강의가 있지만 터미널로 하고 싶어서 인터넷에 찾아보면서 하였는데 정확한 개념이 없이 하니 파일도 몇번 날라가고 어려움을 겪었다. Git으로 된 자료들을 찾아보면서 정확하게 이해를 하고 넘어가야할 필요성을 느꼈다. 나중에 공부 다시 꼭 하고 블로그에도 정리를 해놓자.</li>
+</ul>
+</li>
+<li>미니 프로젝트를 마치고 이제 알고리즘 주차가 시작된다. 알고리즘을 평소에 공부를 거의 안하다시피하여서 많이 부족하다고 느끼는데 이번을 계기로 알고리즘에 더이상 두려워하지말고 익숙해졌으면 좋겠다. 하면 는다! 하면!</li>
+<li>당분간 개인 공부를 할 시간이 있을지 모르겠다. 주말에 여유가 있으면 React나 Git을 공부하면서 블로그에도 정리를 하고 토이프로젝트도 마무리 하여야겠다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>[항해99] 알고리즘</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220622]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220622</link>
+    <pubDate>2022-06-22</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220622</guid>
+    <description>
+    <![CDATA[항해99 1주차 프로젝트 코드 구현 & Jinja]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<p>[x] [항해99] 1주차 프로젝트
+[x] Ranking page 구현
+[x] 코드 합치기, 기능 체크 및 배포
+[x] TIL 작성</p>
+<br/>
+<h2 id="daily-review" class="heading">Daily Review</h2>
+<ul>
+<li>[항해99] 1주차 프로젝트가 어느정도 구현이 되었고 Ranking page만 남았다. 팀원들이 출중하여서 프로젝트가 원활하게 진행되었던 것 같다. 나는 비교적 쉬운 파트를 맡았던 것 같았고 Jinja를 사용해본 적이 없었기에 Ranking page를 데이터베이스에서 불러와 Jinja로 구현해보는것을 하기로 하였다.
+<ul>
+<li>파이썬 서버에서 데이터베이스에서 데이터를 불러오고 하는게 좀 헷갈렸는데 강의를 보면서 다시 복습하니 이해가 되었다. Jinja 템플릿 언어를 사용하면 html에서도 코드를 사용할 수 있다.</li>
+<li>Jinja는 python flask 패키지에 내장된 템플릿 엔진이다. 개발자가 동적으로 변하는 웹 페이지를 쉽게 구현할 수 있도록 도와준다.</li>
+</ul>
+</li>
+<li>[항해99] 1주차 프로젝트 코드 합치기, 배포 완료
+<ul>
+<li>코드를 합치는 과정에서 코드가 날라갈까봐 두려워서 main에 합치지 않고 branch에 먼저 커밋 및 푸시를 하였다. Git으로 협업해본 경험이 없어 프로젝트를 끝내고 팀원들과 Git으로 협업하는 방법을 실습해보아야겠다.</li>
+</ul>
+</li>
+<li>프로젝트가 거의 마무리되었고 내일 최종 점검 및 Readme 작성, 회고만 하면 될것 같다. 짧은 시간내에 팀원들과 협력해서 프로젝트를 만들었는데 간단하지만 나름 완성도 있게 만든것 같아 뿌듯하다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>[항해99] 1주차 프로젝트 배포 및 점검
+<ul>
+<li>Read me 작성</li>
+<li>회고</li>
+</ul>
+</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220621]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220621</link>
+    <pubDate>2022-06-21</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220621</guid>
+    <description>
+    <![CDATA[항해99 1주차 프로젝트 코드 구현 & JWT]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>[항해99] 1주차 프로젝트</li>
+<li>Main page 구현</li>
+<li>Login page 강의 듣고 구현</li>
+<li>TIL 작성</li>
+</ul>
+<br/>
+<h2 id="daily-review" class="heading">Daily Review</h2>
+<ul>
+<li>[항해99] 1주차 프로젝트 코드 구현을 시작하였다. 나는 Main page와 Login page를 맡았는데 Login 기능을 구현하는데 조금 어려움을 겪었다. 그래서 강의를 보았고 JWT를 사용하여 로그인을 구현하는 방법을 배웠다. 처음에 원리를 이해하기 어려웠는데 강의를 보다보니 코드가 조금 이해되었고 프로젝트에도 적용시킬 수 있었다.
+<ul>
+<li>JWT란 JSON Web Token의 줄임말로, JSON 객체를 사용해 정보를 안정성 있게 전달하는 웹표준이다. 예를 들어, 로그인 기능을 생각해보면 사용자가 로그인하면 서버에서 회원임을 인증하는 토큰을 넘겨줌으로써 이후 회원만 접근할 수 있는 서비스 영역에서 신분을 확인하는 데 쓰일 수 있다.</li>
+<li>플라스크 서버에서 로그인 기능 구현
+<ul>
+<li>로그인 시, 비밀번호를 같은 방법으로 암호화한 후, DB에서 해당 아이디와 비밀번호를 갖는 회원이 있는지 찾는다. 회원 정보가 없는 경우 실패 메시지를 보내고, 찾은 경우 아이디와 토큰 만료 시간을 저장하는 토큰을 만들어 넘겨준다.</li>
+<li>로그인 성공 메시지를 받으면 건네받은 토큰을 쿠키로 저장하여 만료되기 전까지 갖고 있으면서, API 요청을 보낼 때마다 회원임을 확인받는다.</li>
+<li>로그아웃 시 해당 토큰을 삭제한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Git 협업 개념의 부족
+<ul>
+<li>터미널로 깃을 사용해서 branch에 코드를 커밋하고 main branch에 코드를 merge하는 방식이 아직 익숙하지 않아서 프로젝트 도중 Git을 사용하다가 코드를 2번 정도 날려먹었다. 강의에서는 Sourcetree를 사용해서 branch를 다루는데 멘토님이 결국엔 터미널을 써야 편리하고 그게 좋은 방법이라고 해서 터미널에 익숙해지려고 한다. 프로젝트를 어서 끝내고 시간이 남으면 Git 공부를 하면서 블로그에 정리도 하여 개념을 내것으로 만들어야겠다.</li>
+</ul>
+</li>
+<li>프로젝트로 인한 React 공부 시간의 부족
+<ul>
+<li>React로 진행중이던 토이프로젝트를 끝내려고 마음 먹었는데 하다보니 시간이 없었다. 프로젝트 하는 동안엔 시간이 나지 않을것 같아서 주말에 하거나 프로젝트를 빠르게 마무리하고 React 토이프로젝트를 진행해야할 것 같다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>[항해99] 1주차 프로젝트 기능 마무리, 코드 합치기</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220620]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220620</link>
+    <pubDate>2022-06-20</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220620</guid>
+    <description>
+    <![CDATA[항해99 OT & 1주차 프로젝트 설계]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>[항해] OT</li>
+<li>[항해] 1주차 조별과제 Starting Assignment 작성 , 기획 멘토링</li>
+<li>Git branch로 협업하는 방법 공부</li>
+<li>TIL 작성</li>
+</ul>
+<br/>
+<h2 id="daily-review" class="heading">Daily Review</h2>
+<ul>
+<li>오늘 드디어 항해 OT를 하였다. 조별로 나뉘어서 1주차 과제를 부여받았다. 1주차 과제는 사전과제에 공부한 지식을 바탕으로 프로젝트를 완성하는 것이었다. Jinja2 템플릿 엔진을 이용한 서버사이드 렌더링, JWT 인증 방식으로 로그인 구현하기가 필수 내용이었고 새로운 강의를 부여받았다. 프로젝트 주제를 정하고 SW를 작성하며 프로젝트 를 구체화해갔다.</li>
+<li>Starting Assignment 작성
+<ul>
+<li>프로젝트 제목, 와이어 프레임, 기능 정리, 역할분담을 하였다. 로그인 page와 main page를 맡았고 내일부터 코드 구현을 할 예정이다.</li>
+</ul>
+</li>
+<li>프로젝트 기획멘토링
+<ul>
+<li>멘토님과 우리가 설계한 SW에 대해서 의논을 하였다. 아이디어가 신선하고 충분히 기간안에 만들수 있을것 같다고 하였다. 개인적으로 궁금한점이 많이 있어서 질문을 했었는데 도움이 많이 되었다.</li>
+</ul>
+</li>
+<li>Git branch로 협업방법 공부
+<ul>
+<li>프로젝트로 협업을 하기 위해서 repository를 branch로 나누어서 협업하는 방법을 알고 있어야 했는데 터미널로 하고 싶어서 인터넷에 검색을 하면서 찾아보고 branch에 commit 및 push 그리고 main branch에 merge하는 방법까지 실습해보았다.</li>
+<li>Issue에 대해서도 조금 강의를 들었는데 아직은 개념이 정확하게 잡히지 않아서 Git 강의를 다시 들으면서 전체적으로 복습을 하고 블로그에 정리를 해서 내것으로 만들어야겠다.</li>
+</ul>
+</li>
+<li>진행중이던 React Question Diary 토이프로젝트를 오늘 끝내려고 계획 했으나 항해99에 몰두한 나머지 시간이 없어서 따로 개인 공부를 할수가 없었다. 시간 관리를 잘해서 빠른 시일내에 React 프로젝트도 마무리 할 수 있도록 해야겠다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>Question Diary 프로젝트 CRUD</li>
+<li>웹개발 플러스 로그인 강의</li>
+<li>로그인 페이지 구현</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220616]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220616</link>
+    <pubDate>2022-06-16</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220616</guid>
+    <description>
+    <![CDATA[항해99 사전 강의 정리 & Question Diary 토이 프로젝트 기본 틀 잡기]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>Question Diary toy project mock-up &#x26; 기본 틀</li>
+<li>TIL 작성</li>
+<li>웹개발 종합반 1 ~ 5주차 WIL 작성</li>
+</ul>
+<br/>
+<h2 id="daily-review" class="heading">Daily Review</h2>
+<ul>
+<li>항해 입학 시험에 통과하였다. 다음주부터 월~토 아침 9시부터 저녁 9시까지 부트캠프에 참여하게 된다. 99일간의 짧지만 긴 여정이 될 것 이다. 주특기는 당연히 React를 선택하였다. 프론트엔드 개발자가 되고 싶고 평소에도 React를 조금씩 공부를 했기에 항해99에서 프론트로써 하는 프로젝트들이 기대가 된다. 수료를 마치고 많이 성장해서 내가 원하는 곳에 취업을 하면 좋을 것 같다.</li>
+<li>웹개발 종합반 강의 1 ~ 5주차 공부한것들을 정리하였다. 알고 있는것도 많았지만 새로 배우는 개념들도 있었다. 입학시험을 위해 강의를 들었는데 입학시험이 생각보다 쉽게 나와서 바로 풀 수 있었다.</li>
+<li>한입 크기로 잘라먹는 React 강의를 들으면서 일기장을 클론코딩 하였는데 다 듣고 나서 추가적인 기능을 추가하여 혼자 스스로의 힘으로 토이 프로젝트를 만들려고 한다. 확실히 처음부터 모든 것을 만드는것은 어려운 것 같다. 모를때마다 강의를 다시 보면서 내가 스스로 코드를 짤 수 있도록 혼자 해결하는 힘을 길러야겠다. 기능과 디자인을 정리하고 Calendar 라이브러리를 리액트에서 처음 사용하고 적용하는데 생각보다 시간이 많이 걸렸다. 내일은 코드를 짜는데만 집중을 해서 내일 안에 왠만하면 토이 프로젝트를 완성시키고 싶다.</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>Question Diary toy project 완성</li>
+<li>TIL 작성</li>
+</ul>
+<br/>]]>
     </content:encoded>
   </item>
     </channel>
