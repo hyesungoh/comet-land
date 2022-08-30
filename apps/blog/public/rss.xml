@@ -12,8 +12,99 @@
           <![CDATA[I like to share my knowledge.]]>
         </description>
         <language>en</language>
-        <lastBuildDate>2022-08-18</lastBuildDate>
+        <lastBuildDate>2022-08-30</lastBuildDate>
         <item>
+    <title><![CDATA[[TIL] 20220830]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220830</link>
+    <pubDate>2022-08-30</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220830</guid>
+    <description>
+    <![CDATA[웹소켓 통신 공부, 실전 프로젝트 기능 구현]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React에서 Stomp JS를 이용한 웹소켓 통신 공부
+<ul>
+<li>이번 실전 프로젝트에서 websocket을 통한 1대1 실시간 채팅을 구현하게 되었다.</li>
+<li>웹소켓은 <strong>Statefull protocol이다.</strong> 즉 요청을 매번 보내는게 아니라 connection을 유지해서 양방향 통신 또는 데이터 전송이 가능하도록 하는 기술이다.</li>
+<li>stomp는 단순 (또는 스트리밍) 텍스트 지향 메시징 프로토콜이다. spring에 종속적이며, 구독방식으로 사용하고 있습니다. 가벼워서 보통 많이들 사용한다.</li>
+</ul>
+</li>
+<li>실전 프로젝트 좋아요, 참여 기능 구현
+<ul>
+<li>state값에 따라 버튼의 색깔이 변경이 되고 Mutate를 통해서 데이터의 값이 바로 바로 바뀌는 걸 적용시켰다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>LeetCode 알고리즘 2문제</li>
+<li>채팅 페이지 구현</li>
+<li>JavaScript 알고리즘 Udemy
+<br/></li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220820]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220820</link>
+    <pubDate>2022-08-20</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220820</guid>
+    <description>
+    <![CDATA[React-Query 무한 스크롤]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React Query Infinite Scroll
+<ul>
+<li>사용자가 스크롤 할 때마다 새로운 데이터를 가져오는 것이. 당연히 모든 데이터를 한 번에 가져오는 것보다 훨씬 효율적이다. 엄청난 양의 데이터가 있는 사이트를 구축한다면 더더욱 그렇다.</li>
+<li>useInfiniteQuery에서 객체는 두 개의 프로퍼티를 가지고 있다. 데이터 객체에는 두 개의 프로퍼티가 있다.
+하나는 데이터 페이지 객체의 배열(Array)인 페이지이다. 페이지에 있는 각 요소가 하나의 useQuery에서 받는 데이터에 해당한다.
+그리고 pageParams가 있다. 각 페이지의 매개변수가 기록되어 있고 모든 쿼리는 페이지 배열에 고유한 요소를 가지고 있고 그 요소는 해당 쿼리에 대한 데이터에 해당한다. 페이지기 진행되면서 쿼리도 바뀐다. pageParams은 검색된 쿼리의 키를 추적한다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>실전 프로젝트 모임 게시판 페이지</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220819]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220819</link>
+    <pubDate>2022-08-19</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220819</guid>
+    <description>
+    <![CDATA[React-Query 무한 스크롤]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React Query Infinite Scroll
+<ul>
+<li>사용자가 스크롤 할 때마다 새로운 데이터를 가져오는 것이. 당연히 모든 데이터를 한 번에 가져오는 것보다 훨씬 효율적이다. 엄청난 양의 데이터가 있는 사이트를 구축한다면 더더욱 그렇다.</li>
+<li>useInfiniteQuery에서 객체는 두 개의 프로퍼티를 가지고 있다. 데이터 객체에는 두 개의 프로퍼티가 있다.
+하나는 데이터 페이지 객체의 배열(Array)인 페이지이다. 페이지에 있는 각 요소가 하나의 useQuery에서 받는 데이터에 해당한다.
+그리고 pageParams가 있다. 각 페이지의 매개변수가 기록되어 있고 모든 쿼리는 페이지 배열에 고유한 요소를 가지고 있고 그 요소는 해당 쿼리에 대한 데이터에 해당한다. 페이지기 진행되면서 쿼리도 바뀐다. pageParams은 검색된 쿼리의 키를 추적한다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>실전 프로젝트 모임 게시판 페이지</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
     <title><![CDATA[[LeetCode] Add Binary]]></title>
     <link>https://dgd03146-github-io.vercel.app//220818-Add-Binary</link>
     <pubDate>2022-08-18</pubDate>
@@ -164,6 +255,147 @@
 <p>원리는 똑같지만 한 for문 안에서 실행해서 코드가 더 갅단해졌고 불필요한 for문이 없어져서 런타임도 줄어들게 되었다.</p>]]>
     </content:encoded>
   </item><item>
+    <title><![CDATA[[TIL] 20220818]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220818</link>
+    <pubDate>2022-08-18</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220818</guid>
+    <description>
+    <![CDATA[React-Query 무한 스크롤]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React Query Infinite Scroll
+<ul>
+<li>사용자가 스크롤 할 때마다 새로운 데이터를 가져오는 것이. 당연히 모든 데이터를 한 번에 가져오는 것보다 훨씬 효율적이다. 엄청난 양의 데이터가 있는 사이트를 구축한다면 더더욱 그렇다.</li>
+<li>useInfiniteQuery에서 객체는 두 개의 프로퍼티를 가지고 있다. 데이터 객체에는 두 개의 프로퍼티가 있다.
+하나는 데이터 페이지 객체의 배열(Array)인 페이지이다. 페이지에 있는 각 요소가 하나의 useQuery에서 받는 데이터에 해당한다.
+그리고 pageParams가 있다. 각 페이지의 매개변수가 기록되어 있고 모든 쿼리는 페이지 배열에 고유한 요소를 가지고 있고 그 요소는 해당 쿼리에 대한 데이터에 해당한다. 페이지기 진행되면서 쿼리도 바뀐다. pageParams은 검색된 쿼리의 키를 추적한다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>실전 프로젝트 모임 게시판 페이지</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220817]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220817</link>
+    <pubDate>2022-08-17</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220817</guid>
+    <description>
+    <![CDATA[실전 프로젝트 기획 회의, React Query 커스텀 훅]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>디자인 기획 회의
+<ul>
+<li>디자이너님이 거의 대부분의 디자인을 만들어 오셔서 수정사항을 고치고 미 완료된 부분에 대해서 어떻게 하면 될지 회의를 하였다. 대부분의 디자인이 마무리가 되어서 이제 프론트 작업에 박차를 가할 수 있을것 같고 피그마에 값들이 다 들어있어서 CSS도 수월하게 할 수 있을것 같다.</li>
+<li>모든 것을 다 정하였고 최종 디자인이 나오면 거기에 맞게 CSS를 맞추고 추가적 기능을 구현할 수 있도록 해야한다.</li>
+</ul>
+</li>
+<li>React Query 커스텀 훅
+<ul>
+<li>더 큰 앱들에서는 각 데이터 유형에 커스텀 훅을 만드는 것이 매우 흔하다.</li>
+<li>다수의 컴포넌트에서 데이터를 액세스해야 하는 경우 useQuery 호출을 재작성할 필요가 없다.</li>
+<li>queryKey 일관성
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword module">export</span> <span class="token keyword">const</span> queryKeys <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token literal-property property">treatments</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'treatments'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">appointments</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'appointments'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">user</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'user'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">staff</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'staff'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword module">export</span> <span class="token keyword">function</span> <span class="token function">useTreatments</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token maybe-class-name">Treatment</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token comment">// TODO: get data from server via useQuery</span>
+</span><span class="code-line">  <span class="token keyword">const</span> <span class="token punctuation">{</span> data <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useQuery</span><span class="token punctuation">(</span>queryKeys<span class="token punctuation">.</span><span class="token property-access">treatments</span><span class="token punctuation">,</span> getTreatments<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> data<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span></code></pre>
+쿼리 키의 일관성이야말로 캐시된 데이터를 캐시가 제공할 수 있도록 한다.
+쿼리키는 react-query의 작업을 최대한 효율적이 되도록 하는 키이다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>React Query 섹션 4 마무리</p>
+</li>
+<li>
+<p>LeetCode 2문제</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220815]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220815</link>
+    <pubDate>2022-08-15</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220815</guid>
+    <description>
+    <![CDATA[실전 프로젝트 게시판, React Query 무한 스크롤]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>모임 게시판 페이지 만들기
+<ul>
+<li>게시판 목록 페이지</li>
+<li>상세 페이지</li>
+</ul>
+</li>
+<li>React Query Infinite scroll 개념 복습</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>모임 작성 페이지</p>
+</li>
+<li>
+<p>React query 무한 스크롤 복습</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220814]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220814 copy</link>
+    <pubDate>2022-08-14</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220814 copy</guid>
+    <description>
+    <![CDATA[React-Query 무한 스크롤]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>React Query Infinite Scroll
+<ul>
+<li>사용자가 스크롤 할 때마다 새로운 데이터를 가져오는 것이. 당연히 모든 데이터를 한 번에 가져오는 것보다 훨씬 효율적이다. 엄청난 양의 데이터가 있는 사이트를 구축한다면 더더욱 그렇다.</li>
+<li>useInfiniteQuery에서 객체는 두 개의 프로퍼티를 가지고 있다. 데이터 객체에는 두 개의 프로퍼티가 있다.
+하나는 데이터 페이지 객체의 배열(Array)인 페이지이다. 페이지에 있는 각 요소가 하나의 useQuery에서 받는 데이터에 해당한다.
+그리고 pageParams가 있다. 각 페이지의 매개변수가 기록되어 있고 모든 쿼리는 페이지 배열에 고유한 요소를 가지고 있고 그 요소는 해당 쿼리에 대한 데이터에 해당한다. 페이지기 진행되면서 쿼리도 바뀐다. pageParams은 검색된 쿼리의 키를 추적한다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>실전 프로젝트 모임 게시판 페이지</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
     <title><![CDATA[[TIL] 20220814]]></title>
     <link>https://dgd03146-github-io.vercel.app//220814</link>
     <pubDate>2022-08-14</pubDate>
@@ -188,6 +420,44 @@
 <ul>
 <li>
 <p>실전 프로젝트 모임 게시판 페이지</p>
+<br/>
+</li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[TIL] 20220816]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220816</link>
+    <pubDate>2022-08-14</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220816</guid>
+    <description>
+    <![CDATA[React-Query 무한 스크롤]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>모임 작성 페이지</li>
+<li>React-query 무한스크롤 강의
+<ul>
+<li>사용자가 버튼을 클릭해서 새로운 데이터를 요청하거나 페이지의 특정 지점을 스크롤 했을 때 새 데이터를 가져오게 하는 것이다.
+사용자가 데이터의 하단으로 오면 새로운 데이터를 가져와서 사용자가 중단 없이 계속 스크롤 할 수 있도록 한다.
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">const</span> <span class="token punctuation">{</span> data<span class="token punctuation">,</span> fetchNextPage<span class="token punctuation">,</span> hasNextPage <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useInfiniteQuery</span><span class="token punctuation">(</span><span class="token string">'sw-people'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> pageParam <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token function">fetchUrl</span><span class="token punctuation">(</span>pageParam<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token function-variable function">getNextPageParam</span><span class="token operator">:</span> <span class="token parameter">lastPage</span> <span class="token arrow operator">=></span> lastPage<span class="token punctuation">.</span><span class="token property-access">next</span> <span class="token operator">||</span> <span class="token keyword nil">undefined</span><span class="token punctuation">,</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>팀원 코드 리뷰
+<ul>
+<li>팀원의 코드를 보면서 코드가 비효율적이거나 어떻게 만들어야할지에 대한 제시를 해주었다.</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>
+<p>React query 인강 섹션4</p>
 <br/>
 </li>
 </ul>]]>
