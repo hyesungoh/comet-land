@@ -83,10 +83,10 @@
 <p>carry가 1이면 carry를 sum에 추가한다.</p>]]>
     </content:encoded>
   </item><item>
-    <title><![CDATA[[LeetCode] Spiral Matrix]]></title>
-    <link>https://dgd03146-github-io.vercel.app//220817-Pascal-Triangle</link>
-    <pubDate>2022-08-17</pubDate>
-    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220817-Pascal-Triangle</guid>
+    <title><![CDATA[[LeetCode] Pascal Triangle]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220818-Pascal-Triangle</link>
+    <pubDate>2022-08-18</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220818-Pascal-Triangle</guid>
     <description>
     <![CDATA[Array and String]]>
     </description>
