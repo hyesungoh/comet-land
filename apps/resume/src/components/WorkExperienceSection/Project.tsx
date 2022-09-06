@@ -16,9 +16,9 @@ function Project({ title, description, startDate, endDate, which, techStack }: I
       </small>
       <span>{description}</span>
       {which.length > 0 && (
-        <ul data-testid="which wrapper">
+        <ul>
           {which.map((each, index) => (
-            <Li key={index} theme={theme}>
+            <Li key={index} theme={theme} dangerouslySetInnerHTML={{ __html: each }}>
               {each}
             </Li>
           ))}
