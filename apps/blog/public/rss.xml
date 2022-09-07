@@ -104,23 +104,23 @@
 <p>세계적으로 많은 기업들이 CI / CD 프로세스를 사용한다.</p>
 <br/>
 <h2 id="ci--cd란" class="heading">CI / CD란?</h2>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/745884ca-a82b-4e6e-9339-17be981c3c4f/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/745884ca-a82b-4e6e-9339-17be981c3c4f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022005Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=27076f1ac24c0b3b18e97953b5ef737afcbc17a18c9bbf5cdc791e2589050aae&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <p>어플리케이션 개발 단계부터 배포 때까지 모든 단계들을 자동화를 통해서 조금 더 효율적이고 빠르게 사용자에게 빈번이 배포할 수 있도록 만드는 것을 말한다.</p>
 <br/>
 <h2 id="ci" class="heading">CI</h2>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f57bc008-1c09-4d2a-a143-8b3ac900a5f3/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f57bc008-1c09-4d2a-a143-8b3ac900a5f3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022041Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=1fe1d07cf91b879a3bb149f2527252948690dc1bb9919f6f26943c280db6087b&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <p>Continuous Intergration 지속적인 통합</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cccca7ae-5a04-439a-b568-c6744b796ac4/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/cccca7ae-5a04-439a-b568-c6744b796ac4/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022103Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=7034d8648076b644511d7b85b73430d2f5c6893aa41529aadf2690d4ef12f1e4&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <p>CI(지속적인 통합)는 수정이나 새로 만드는 기능들이 메인 레포지토리에 주기적으로 빌드 되고 테스트가 되어서 머지 되는 것을 말한다.</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b45248c8-686c-499e-bb5f-c2fb22d44c56/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b45248c8-686c-499e-bb5f-c2fb22d44c56/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022119Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=ee3d98884aa1d5e31f5d2c4e283795a342dd53911c923de2ac068c5db3672fa4&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <p>버그를 수정하거나 새로운 기능을 구현할 때는 이 기능을 어떻게 작은 단위로 나눠서 내가 메인 레포지토리에 반영하거나 또는 작은 단위로 나눠서 내가 사용자에게 배포할 수 있을지 최대한 작은 단위로 나누어서 개발하고 통합해 나가는 것이 중요하다.</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/768f8890-8c10-47d2-a1f6-a98662acd36c/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/768f8890-8c10-47d2-a1f6-a98662acd36c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022136Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=31c5b0b19d30a61f5448c3d3ec9b16a06c7a376f86d7ae6f355eccad5920c49e&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <p>주기적으로 머지 된 이 코드의 변경 사항이 자동으로 빌드가 되어서 코드 변경 사항이 후에도 빌드가 성공적으로 되는지 확인이 되어야 되고 그리고 새로 추가된 이 코드의 변경사항 뿐만 아니라 기존의</p>
 <p>시스템의 다른 버그를 초래 하지는 않았는지 자동으로 테스트까지 되어야 한다.</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ad54aa13-0ab6-43b7-95a7-fcf2c53bb33e/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ad54aa13-0ab6-43b7-95a7-fcf2c53bb33e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022150Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=5ca7e4bbbcb5ff323135a49f472d6234279d6799082d07e090f6f971ebe057f5&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <br/>
 <h3 id="ci-장점들">CI 장점들</h3>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c2f1b3eb-9fba-425e-ac55-3a146405936e/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c2f1b3eb-9fba-425e-ac55-3a146405936e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022204Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=c25ec2bf769213941243bc4a15aec88e42d03288c8682c30ec7ad4598024daa5&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <ol>
 <li>주기적으로 머지를 하기 때문에 머지 충돌을 피할 수 있어서 개발의 생산성을 더 높일 수 있다.</li>
 <li>머지 되는 모든 코드들은 자동으로 빌드 되고 테스트 되기 때문에 코드의 결함이나 문제점이 빠르게 발견될 수 있다</li>
@@ -130,24 +130,24 @@
 <br/>
 <h2 id="cd" class="heading">CD</h2>
 <h3 id="continous-delivery">Continous Delivery</h3>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5de5eff4-d9bd-486d-81a5-05b492dcd209/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5de5eff4-d9bd-486d-81a5-05b492dcd209/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022219Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=46c769303257a2d6faec458f044536431a6bb51be3e88ff5b379a47b41538ab4&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <p>Continous Delivery 지속적인 제공</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7b8a57cc-3b8b-4892-88ca-ed9ec2580bfe/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7b8a57cc-3b8b-4892-88ca-ed9ec2580bfe/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022230Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=d04660bfa30f7f2da94829aebf6977993c939ac78e061d1bc12b0911786ba9cd&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <p>CI 를 통해서 주기적으로 머지 된 코드의 변경사항들이 자동으로 빌드가 되고 테스트가 되었다면 이제 배포 하는 단계에서 배포 할 즉 릴리즈 할 준비 과정을 거친다. 그리고 준비된 릴리즈가 괜찮은지 정상적인 지 아무런 문제가 없는 지 직접 개발자나 또는 검증 팀이 검증을 한 다음에 아 이제 최종적으로 사용자에게 배포 해도 되겠다 라고 결정이 되면 수동적으로 배포하는 요 단계를 Continous Delivery라고 한다.</p>
 <h3 id="continous-deployment">Continous Deployment</h3>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58ce651d-fd32-461d-8872-be20a565251a/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/58ce651d-fd32-461d-8872-be20a565251a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022244Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=7fd0ebfba9f812a01302d2caf948f2880bdce9480796ca3d4dcdf4c12822e097&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <p>Continous Deployment 지속적인 배포로 사용하는 경우도 있다.</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c8960c74-eb93-4160-ba47-71a41199882c/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c8960c74-eb93-4160-ba47-71a41199882c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022259Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=76de7a0fc768a2cc4f7937aa2b22ce21d864d9b6a29786afa57b718834e0f5a5&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <p>릴리즈가 준비가 되자마자 자동으로 후 사용자에게 배포할 수 있도록 만들 수도 있다. 이렇게 모든 과정을 자동화 해놓는 것을 Continuous Deployment라고 부른다.</p>
 <p>딜리버리 와 살짝 비슷하지만 최종 단계가 자동화가 되었는지 되지 않았는지 에 따라서 살짝씩 달라질 수 있다.</p>
 <p>회사마다 어느 정도의 얼마만큼의 자동화를 하냐가 달라지기 때문에 CI CD라고 해서 모든 회사가 똑같은 프로세스를 거치는 것은 아니고 회사마다 팀마다 다른 방식으로 적용해서 사용할 수 있다.</p>
 <br/>
 <h2 id="ci--cd-파이프라인" class="heading">CI / CD 파이프라인</h2>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c59bfc75-3a3d-498d-a689-17831e94e162/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c59bfc75-3a3d-498d-a689-17831e94e162/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022316Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=61fb86446a884917156071239e739628355dde59a26bd5783a5bb33d61752352&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <p>개발자가 작은 단위로 기능을 나누어서 주기적으로 메인 레포지토리에 머지를 하면 자동으로 빌드를 하고 테스트 과정을 거쳐서 릴리즈 준비를 한다. 여기서 수동적으로 또는 자동으로 최종 배포를 거치게 된다.</p>
 <br/>
 <h2 id="ci--cd-툴" class="heading">CI / CD 툴</h2>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2bc170ef-3ac6-4ace-9bf5-665c542b5d14/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2bc170ef-3ac6-4ace-9bf5-665c542b5d14/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022331Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=511461b68d8be3e8db539e4979ddf026413c5bdec1ff225fa5c585319d19486f&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <br/>
 <blockquote>
 <p>References</p>
