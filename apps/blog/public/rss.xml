@@ -12,8 +12,84 @@
           <![CDATA[I like to share my knowledge.]]>
         </description>
         <language>en</language>
-        <lastBuildDate>2022-09-03</lastBuildDate>
+        <lastBuildDate>2022-09-07</lastBuildDate>
         <item>
+    <title><![CDATA[[LeetCode] Longest Common Prefix]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220907-Longest-Common-Prefix</link>
+    <pubDate>2022-09-07</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220907-Longest-Common-Prefix</guid>
+    <description>
+    <![CDATA[Array and String]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="description" class="heading">Description</h2>
+<p>Write a function to find the longest common prefix string amongst an array of strings.</p>
+<p>If there is no common prefix, return an empty string <code>""</code>.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code class="code-highlight"><span class="code-line">Input: strs = ["flower","flow","flight"]
+</span><span class="code-line">Output: "fl"
+</span><span class="code-line">
+</span></code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code class="code-highlight"><span class="code-line">Input: strs = ["dog","racecar","car"]
+</span><span class="code-line">Output: ""
+</span><span class="code-line">Explanation: There is no common prefix among the input strings.
+</span><span class="code-line">
+</span></code></pre>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &#x3C;= strs.length &#x3C;= 200</code></li>
+<li><code>0 &#x3C;= strs[i].length &#x3C;= 200</code></li>
+<li><code>strs[i]</code> consists of only lowercase English letters.</li>
+</ul>
+<br/>
+<h2 id="submission" class="heading">Submission</h2>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function">longestCommonPrefix</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">strs</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword">let</span> answer <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>strs<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">&#x3C;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword control-flow">return</span> answer<span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">  <span class="token keyword">const</span> first <span class="token operator">=</span> strs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> first<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword">const</span> check <span class="token operator">=</span> first<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">    <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&#x3C;</span> strs<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>check <span class="token operator">!==</span> strs<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">        <span class="token keyword control-flow">return</span> answer<span class="token punctuation">;</span>
+</span><span class="code-line">      <span class="token punctuation">}</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">    answer <span class="token operator">+=</span> check<span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> answer<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>Runtime: <strong>81 ms</strong></p>
+<p>Memory Usage: <strong>42.4 MB</strong></p>
+<p>공통된 문자열을 찾아내는 문제이다. 첫 문자를 기준으로 한 글자씩 다음 요소와 글자와 비교해 겹치는 것만 찾아낸다.</p>
+<br/>
+<h2 id="others-solution" class="heading">Other’s Solution</h2>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function">longestCommonPrefix</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">strs</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword">let</span> key <span class="token operator">=</span> strs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> word <span class="token keyword">of</span> strs<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword">let</span> goodChars <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> word<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>word<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">        goodChars <span class="token operator">+=</span> word<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">      <span class="token punctuation">}</span> <span class="token keyword control-flow">else</span> <span class="token punctuation">{</span>
+</span><span class="code-line">        <span class="token keyword control-flow">break</span><span class="token punctuation">;</span>
+</span><span class="code-line">      <span class="token punctuation">}</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">    key <span class="token operator">=</span> goodChars<span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> key<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>Runtime: 60 <strong>ms</strong></p>
+<p>원리는 같으나 prefix가 같지 않을때 break를 걸어서 불필요하게 for문을 반복하는 코드를 줄여서 runtime을 줄였기 때문에 확실히 간단해진 것 같다.</p>]]>
+    </content:encoded>
+  </item><item>
     <title><![CDATA[[TIL] 20220903]]></title>
     <link>https://dgd03146-github-io.vercel.app//220903</link>
     <pubDate>2022-09-03</pubDate>
