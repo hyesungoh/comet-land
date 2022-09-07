@@ -2833,6 +2833,282 @@ react-query가 업그레이드 되면서 invalidateQueries 사용 방법이 조�
 <br/>]]>
     </content:encoded>
   </item><item>
+    <title><![CDATA[[WIL] 항해99 2주차 WIL]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220703-wil</link>
+    <pubDate>2022-07-03</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220703-wil</guid>
+    <description>
+    <![CDATA[2주차 회고 - 알고리즘 스터디]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="알고리즘-스터디" class="heading">알고리즘 스터디</h2>
+<h3 id="2주차-과제">2주차 과제</h3>
+<p>평소에 알고리즘 공부를 워낙 안했어서 문제를 푸는것에 두려움이 가득했다. 걷기반과 달리기반으로 반을 나누었는데 나는 달리기반을 신청하였다.</p>
+<p>달리기반은 총 38문제를 푸는것이었고 난이도가 중상, 상인 문제까지 푸는것이었다. 팀원들은 다 전공자여서 내가 가장 부족하지 않을까 하는 걱정도 앞섰다.</p>
+<p><img src="../../assets/images/posts_img/%ED%95%AD%ED%95%B499-wil-2/%ED%95%AD%ED%95%B499-wil-2.png" alt="Untitled"></p>
+<h3 id="스터디-회고">스터디 회고</h3>
+<p>문제들은 프로그래머스 레벨 1정도 되었는데 문제를 풀면서 그만큼 알고리즘 지식이 많이 부족하다는것을 알게 되었다.</p>
+<p>그래도 팀원들과 함께 문제 풀이를 공유하면서 꾸준히 풀다보니 알고리즘 문제에 대한 두려움이 사라졌다. 팀원들과 스터디를 하면서 많이 배우게 된것 같다. 서로 풀이를 공유하다보니 사람마다 생각하는 방법이 다르고 풀이가 달라서 여러가지의 문제 접근 방식을 배우게 된 것 같다.</p>
+<p>아직 부족한 게 많다. 외워야할 메소드도 많고 헷갈리는게 많다. 멘토님께 알고리즘 관련 질문을 했었는데 누구나 처음부터 잘하는 사람은 없다고 하였다.</p>
+<p>중요한 것은 꾸준히 계속 풀고 복습하고 외우는 것이다. 문제를 많이 접하면서 개념과 접근방식을 이겨나가자.</p>
+<h1 id="이번주의-핵심-키워드" class="heading">이번주의 핵심 키워드</h1>
+<h2 id="javascript의-es란" class="heading">JavaScript의 ES란?</h2>
+<h3 id="es란">ES란?</h3>
+<p>ES란 ECMA Script의 약자로써 자바스크립트의 표준 규격을 의미한다. ECMAScript 는 Ecma 인터내셔널의 ECMA-262 기술 규격에 정의된 표준화된 스크립트 프로그래밍 언어이다. 자바스크립트를 표준화하기 위해서 만들어졌으며 꼭 자바스크립트가 아니더라도 어도비 플래시를 사용하는 소프트웨어에서 사용하는 액션스크립트, MS 사의 인터넷 익스플로러에 쓰이는 J스크립트 등 다른 구현체들 역시 포함하고 있다.</p>
+<h3 id="등장배경">등장배경</h3>
+<p>자바스크립트는 1990년대 Netscape 회사의 Brendan Eich 라는 사람에 의해 최초 개발되었다. 자바스크립트가 성공하자 MS에서 Jscript라는 언어를 개발해 IE에 탑재하였는데, 이 두 스크립트가 너무 제각각이라, 표준이 필요하게 되었다. 표준을 위해 자바스크립트를 ECMA(European Computer Manufactures Association)라는 정보와 통신시스템의 비영리 표준 기구에 제출하였고 표준에 대한 작업을 ECMA-262란 이름으로 1996년 11월에 시작해 1997년 6월에 채택되었고 이러한 배경으로 ES가 등장하게 되었다.</p>
+<br/>
+<h2 id="es5es6-문법-차이" class="heading">ES5/ES6 문법 차이</h2>
+<h3 id="let-const-키워드-추가">let, const 키워드 추가</h3>
+<p>ES5에선 <code>var</code> 밖에 존재하지 않았다. <code>var</code> 는 변수를 선언할 때 사용되는 키워드로,재할당과 재선언에 굉장히 자유로웠다.</p>
+<p>ES6 부터 let과 const가 추가가 되었는데 <code>let</code>은 한번 선언된 변수에 동일한 이름으로 선언할 수 없다. 값은 재할당 할 수 있다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+</span><span class="code-line">x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//5</span>
+</span><span class="code-line"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span> <span class="token comment">// Identifier 'x' has already been declared</span>
+</span></code></pre>
+<p><code>const</code>는 한번 초기화된 변수에 재할당/재선언을 할 수 없다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 10;</span>
+</span><span class="code-line">x <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span> <span class="token comment">// TypeError: Assignment to constant variable.</span>
+</span></code></pre>
+<p><code>let</code>, <code>const</code>는 블록 스코프 또는 Function 스코프 내부에 선언되면 해당 스코프 밖에서 안에 있는 변수를 참조할 수 없다. 중괄호로 묶인 부분 내부에 선언된 <code>let</code>, <code>const</code>를 중괄호 외부에서 참조할 수 없다. 밖에서 안에 있는 <code>const</code> , <code>let</code> 은 참조할 수는 있다.</p>
+<p>반면에 <code>var</code>는 Function 스코프는 내부에 선언된 <code>var</code>를 외부에서 참조할 수 없지만</p>
+<p>블록 스코프에선 내부에 선언되어 있어도 외부에서 참조 가능하다.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d195485c-cf81-4970-9c37-3a8c21dac56b/HYO9xE2.png" alt="HYO9xE2.png"></p>
+<br/>
+<h2 id="모듈" class="heading">모듈</h2>
+<p>모듈이란, 재사용하기 위한 코드 조각을 뜻하며, 세부사항은 캡슐화시키고, API 부분만 외부에 노출시킨 코드들이다.</p>
+<p>ES5 에선 <code>require</code>  를 통해 모듈화를 할 수 있었다.</p>
+<p>ES6 부터는 <code>import</code> /<code>export</code>  로 모듈을 관리할 수 있다. 클래스와 같은 모듈이 로딩될 때, <code>import</code>
+와 <code>export</code> 키워드로 사용수 있다.</p>
+<p><strong>하나의 모듈만 공유할 때</strong></p>
+<p>로드 모듈import 'import to loadname' from '파일 경로’</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword module">import</span> to loadname <span class="token keyword module">from</span> <span class="token string">'파일 경로'</span>
+</span></code></pre>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token string">'module'</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">Carousel</span></span> <span class="token keyword module">from</span> <span class="token string">'./carousel'</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token keyword">const</span> carousel <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Carousel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p><strong>여러 모듈을 사용할 때</strong></p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span>a1<span class="token punctuation">,</span> a2<span class="token punctuation">,</span> <span class="token spread operator">...</span><span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'파일 경로'</span>
+</span></code></pre>
+<br/>
+<h2 id="화살표-함수" class="heading">화살표 함수</h2>
+<p>기존의 선언 방식</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">function</span> <span class="token function">plus</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function">plus</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>ES6 함수의 선언 방식</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">let</span> <span class="token function-variable function">plus</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>화살표 선언 방식을 통해 간결해진것을 확인할 수 있다.</p>
+<br/>
+<h2 id="템플릿-리터럴" class="heading">템플릿 리터럴</h2>
+<p>ES6부터 등장한 백틱으로 문자열을 감싸 표현하는 기능이다.</p>
+<p>템플릿 리터럴이란 작은 따옴표나 큰 따옴표 대신 백틱 ````으로 문자열을 감싸 표현하는 기능을 말한다.</p>
+<p>템플릿 리터럴을 사용하면 플레이스 홀더 <code>${variable}</code> 를 사용하여 백틱 내부에 문자열과 함께 표현식을 넣을 수 있다.</p>
+<p>ES5</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">'이름'</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token keyword">var</span> age <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'저의 이름은'</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">'이고, 나이는 '</span> <span class="token operator">+</span> age <span class="token operator">+</span> <span class="token string">'입니다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>ES6</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">'이름'</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">저의 이름은 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">이고, 나이는 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>age<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">살 입니다.</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<br/>
+<h2 id="default-parameter" class="heading">Default parameter</h2>
+<p>인자가 없거나 'undefined'인 경우에 들어갈 기본값을 설정해 놓아야 한다.</p>
+<p>ES6에서는 <strong>기본 매개 변수</strong>(Default Parameters)를 제공하고, 매개변수가 없을 경우 지정한 기본값을 인자로 전달한다.</p>
+<p>ES5</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function">person</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword">var</span> name <span class="token operator">=</span> name <span class="token operator">||</span> <span class="token string">'이름'</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> name<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>ES6</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">let</span> <span class="token function-variable function">person</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">'이름'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> name<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<h2 id="비구조화-할당" class="heading">비구조화 할당</h2>
+<p>비구조화 할당, 배열이나 객체의 요소를 해체하여 별개의 변수로 추출할 수 있다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token constant">ES5</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token keyword">var</span> res <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</span><span class="code-line">  first <span class="token operator">=</span> res<span class="token punctuation">.</span><span class="token property-access">first</span><span class="token punctuation">,</span>
+</span><span class="code-line">  second <span class="token operator">=</span> res<span class="token punctuation">.</span><span class="token property-access">second</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token constant">ES6</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token keyword">var</span> <span class="token punctuation">{</span> first<span class="token punctuation">,</span> second <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> <span class="token spread operator">...</span>rest<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token number">10</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token number">20</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>rest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span></code></pre>
+<br/>
+<h2 id="promises" class="heading">Promises</h2>
+<p>비동기를 위한 객체, 어떤 일의 진행 상태를 나타내는 객체로 <strong>상태</strong>와 <strong>값</strong>이라는 속성을 갖고 있다. resolve, reject를 호출하여 진행 상태를 결정할 수 있다. promise의 값은 resolve, reject를 호출할 때 넘긴 인자에 의해 결정된다. then(), catch()는 일의 진행 상태를 나타내는 객체다 promise가 fullfilled일 때 then()에 등록한 함수를 실행하고, promise가 rejected일 때는 아무것도 하지 않는다.</p>
+<p>⑴ 동기</p>
+<p>요청과 응답이 동시에 일어난다 설계가 간단하고 직관적이지만 응답이 있을 때까지 대기해야 한다.</p>
+<p>ex) 은행 계좌이체</p>
+<p>⑵ 비동기</p>
+<p>요청과 응답이 동시에 일어나지 않는다 응답이 오기 전까지 다른 요청이나 작업이 가능하다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token constant">ES5</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Yay!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token constant">ES6</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function">wait1000</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span>
+</span><span class="code-line">  <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token function">setTimeout</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token function">wait1000</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</span><span class="code-line">  <span class="token punctuation">.</span><span class="token method function property-access">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'WOW!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token keyword control-flow">return</span> <span class="token function">wait1000</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span><span class="code-line">  <span class="token punctuation">.</span><span class="token method function property-access">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'WOWWOW!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<br/>
+<h2 id="클래스" class="heading">클래스</h2>
+<p>ES5</p>
+<p><strong>ES5</strong>에선 <code>class</code> 라는 키워드는 없었지만 프로토타입을 통해 실현 가능했다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function"><span class="token maybe-class-name">Add</span></span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">arg1<span class="token punctuation">,</span> arg2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg1</span> <span class="token operator">=</span> arg1<span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg2</span> <span class="token operator">=</span> arg2<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token class-name">Add</span><span class="token punctuation">.</span><span class="token property-access">prototype</span><span class="token punctuation">.</span><span class="token method-variable function-variable method function property-access">calc</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg1</span> <span class="token operator">+</span> <span class="token string">'+'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg2</span> <span class="token operator">+</span> <span class="token string">'='</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg1</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Add</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>num<span class="token punctuation">.</span><span class="token method function property-access">calc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>ES6</p>
+<p>ES6부터 <code>class</code> 키워드가 사용 가능하다. ES6에서는 <code>class</code> 키워드를 사용해서 선언할 수 있다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">class</span> <span class="token class-name">Add</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">arg1<span class="token punctuation">,</span> arg2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg1</span> <span class="token operator">=</span> arg1<span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg2</span> <span class="token operator">=</span> arg2<span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">  <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword control-flow">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg1</span> <span class="token operator">+</span> <span class="token string">'+'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg2</span> <span class="token operator">+</span> <span class="token string">'='</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg1</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Add</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>num<span class="token punctuation">.</span><span class="token method function property-access">calc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<h3 id="클래스-상속">클래스 상속</h3>
+<p>클래스의 상속과 오버라이딩은 <code>super</code>를 사용해서 수행할 수 있다.</p>
+<p>ES5</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line">copy javascriptvar <span class="token function-variable function"><span class="token maybe-class-name">AddSquare</span></span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">arg1<span class="token punctuation">,</span> arg2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token maybe-class-name">Add</span><span class="token punctuation">.</span><span class="token method function property-access">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> arg1<span class="token punctuation">,</span> arg2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token known-class-name class-name">Object</span><span class="token punctuation">.</span><span class="token method function property-access">assign</span><span class="token punctuation">(</span><span class="token class-name">AddSquare</span><span class="token punctuation">.</span><span class="token property-access">prototype</span><span class="token punctuation">,</span> <span class="token class-name">Add</span><span class="token punctuation">.</span><span class="token property-access">prototype</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token class-name">AddSquare</span><span class="token punctuation">.</span><span class="token property-access">prototype</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token function-variable function">calc</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line"><span class="token comment">// 메소드는 생략될 수 없습니다.</span>
+</span><span class="code-line">    <span class="token class-name">Add</span><span class="token punctuation">.</span><span class="token property-access">prototype</span><span class="token punctuation">.</span><span class="token method function property-access">calc</span><span class="token punctuation">.</span><span class="token method function property-access">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token function-variable function">calcSquare</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">pow</span> <span class="token operator">=</span> <span class="token known-class-name class-name">Math</span><span class="token punctuation">.</span><span class="token method function property-access">pow</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg1</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token keyword control-flow">return</span> <span class="token string">"("</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg1</span> <span class="token operator">+</span> <span class="token string">"+"</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg2</span> <span class="token operator">+</span> <span class="token string">")^2="</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">pow</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">var</span> numSquare <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AddSquare</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>numSquare<span class="token punctuation">.</span><span class="token method function property-access">calc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 5 + 8 = 13console.log(numSquare.calcSquare());// (5 + 8) ^ 2 =169</span>
+</span></code></pre>
+<p>ES6</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line">copy scalaclass <span class="token maybe-class-name">AddSquare</span> <span class="token keyword">extends</span> <span class="token class-name">Add</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">arg1<span class="token punctuation">,</span> arg2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword">super</span><span class="token punctuation">(</span>arg1<span class="token punctuation">,</span> arg2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">  <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token method function property-access">calc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line">  <span class="token function">calcSquare</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">pow</span> <span class="token operator">=</span> <span class="token known-class-name class-name">Math</span><span class="token punctuation">.</span><span class="token method function property-access">pow</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg1</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token keyword control-flow">return</span> <span class="token string">"("</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg1</span> <span class="token operator">+</span> <span class="token string">"+"</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">arg2</span> <span class="token operator">+</span> <span class="token string">") ^ 2 ="</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">pow</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">var</span> numSquare <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AddSquare</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>numSquare<span class="token punctuation">.</span><span class="token method function property-access">calc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 5 + 8 = 13</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>numSquare<span class="token punctuation">.</span><span class="token method function property-access">calcSquare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// (5 + 8) ^ 2 = 169</span>
+</span></code></pre>
+<br/>
+<h2 id="this-사용의-변화" class="heading">this 사용의 변화</h2>
+<p>ES5</p>
+<p>ES5같은 경우 객체내에있는 메소드를 실행시 메소드의 this는 메소드가 선언된 해당 객체를 가리킨다. 하지만 객체안에서 선언된 함수의 this는 해당 객체가 아닌 window를 바라보고있기 떄문에 함수 안에서 <a href="https://juniordev-team.tistory.com/this.name" target="_blank" rel="noopener noreferer">this.name</a> , <a href="https://juniordev-team.tistory.com/this.age%EB%A5%BC" target="_blank" rel="noopener noreferer">this.age를</a> 하여도 아무 값이 나오지 않는다. 이러한 경우 해결방안으로 는 <a href="https://juniordev-team.tistory.com/innerInfo.call(this)%EB%A5%BC" target="_blank" rel="noopener noreferer">innerInfo.call(this)를</a> 통해 this를 바인딩 시켜주었거나 this를 해당 변수에 담아서 var self = this 와 같은 방식으로 접근하여 사용하였다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> thisTest <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'임거정'</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">27</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token function-variable function">info</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">name</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">age</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">    <span class="token keyword">function</span> <span class="token function">innerInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">      <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">      <span class="token keyword control-flow">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">name</span> <span class="token operator">+</span> <span class="token string">':'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">age</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token punctuation">}</span>
+</span><span class="code-line">    <span class="token keyword control-flow">return</span> <span class="token function">innerInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// 실행결과</span>
+</span><span class="code-line"><span class="token comment">// {name: "임거정", age: 27, info: ƒ}</span>
+</span><span class="code-line"><span class="token comment">// 임거정 27</span>
+</span><span class="code-line"><span class="token comment">// Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}</span>
+</span><span class="code-line"><span class="token comment">// ":undefined"</span>
+</span></code></pre>
+<p>ES6
+ES6에서의 this는 자신을 둘러싸고 있는 this를 바라보기때문에  따로 바인딩이나 변수에 담을 필요없이 사용 가능하다 .또한 ES5의 info : function(){} 처럼 사용하지 않고 바로 info key에게 함수를 선언하여 사용할 수있도록 되어 좀더 간결하게 짤수있다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">let</span> thisTest <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'임거정'</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">27</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token function">info</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">name</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">age</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">    <span class="token function-variable function">innerInfo</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+</span><span class="code-line">      <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">      <span class="token keyword control-flow">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">name</span> <span class="token operator">+</span> <span class="token string">':'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">age</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line">    <span class="token keyword control-flow">return</span> <span class="token function">innerInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<br/>
+<h2 id="앞으로의-계획" class="heading">앞으로의 계획</h2>
+<ul>
+<li>문제를 풀때 시간이 많이 걸렸던 문제들이나 못 풀어서 솔루션을 본 문제들은 시간을 투자해서 다시 꾸준히 풀어봐야겠다.</li>
+<li>알고리즘 및 자료구조 지식을 길러야겠다. 유튜브나 인강을 통해서 먼저 개념을 익히고 알고리즘 문제 풀이에 접근하면 다양한 방식으로 문제를 풀고 쉽게 풀 수 있을것 같다.</li>
+<li>알고리즘 스터디를 계속 진행하기로 하였다. 프로그래머스로 다양한 유형의 문제를 풀어보면서 코딩테스트까지 준비할 예정이다. 매일 꾸준히 한문제씩 풀고 스터디하기로 하였다. 많은 도움이 될 것 같다.</li>
+<li>Git을 확실하게 정리하고 넘어가야겠다. 추천된 인터넷 강의들을 보면서 정리를 하고 실전에서 써보자. 협업을 할때 Git을 모르면 골치가 아파지기에 미리 미리 익혀놓자.</li>
+<li>주특기 주차를 맞이하게 된다. 나는 프론트엔드를 공부하고 싶기에 React를 선택하였다. React를 조금 공부한 적이 있는데 이번 기회를 통해서 완전히 내 것으로 만들고 싶다. 특히 Redux를 통한 state의 전역관리 방법에 대해 많이 배우고 싶다.</li>
+</ul>
+<p><strong>Reference</strong></p>
+<p><a href="https://usefultoknow.tistory.com/entry/ECMA-SCript%EB%9E%80-ES%EB%9E%80" target="_blank" rel="noopener noreferer">https://usefultoknow.tistory.com/entry/ECMA-SCript란-ES란</a></p>
+<p><a href="https://hbsowo58.tistory.com/407" target="_blank" rel="noopener noreferer">https://hbsowo58.tistory.com/407</a></p>
+<p><a href="https://juniordev-team.tistory.com/6" target="_blank" rel="noopener noreferer">https://juniordev-team.tistory.com/6</a></p>
+<p><a href="https://y-chyachya.tistory.com/49" target="_blank" rel="noopener noreferer">https://y-chyachya.tistory.com/49</a></p>]]>
+    </content:encoded>
+  </item><item>
     <title><![CDATA[[TIL] 20220702]]></title>
     <link>https://dgd03146-github-io.vercel.app//220702</link>
     <pubDate>2022-07-02</pubDate>
@@ -3034,6 +3310,119 @@ react-query가 업그레이드 되면서 invalidateQueries 사용 방법이 조�
 <li>TIL 작성</li>
 </ul>
 <br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[WIL] 항해99 1주차 WIL]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220626-wil</link>
+    <pubDate>2022-06-26</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220626-wil</guid>
+    <description>
+    <![CDATA[1주차 회고 - 미니프로젝트]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<p><img src="../../assets/images/posts_img/%ED%95%AD%ED%95%B499-wil-1/%ED%95%AD%ED%95%B499-wil-1-1.png" alt="image"></p>
+<p><a href="https://www.youtube.com/watch?v=FhEKosjdt3M&#x26;t=2s" target="_blank" rel="noopener noreferer">백수탈출 프로젝트 시연연상</a></p>
+<h2 id="팀원-배정" class="heading">팀원 배정</h2>
+<p>팀원 배정을 받았는데 조별로 하는건 오랜만이어서 조금 설레었던 것 같다. 전공자도 있었고 다들 코딩 공부를 조금 하시고 오신 분들이라 프로젝트 진행이 원활할것 같았다.</p>
+<br/>
+<h2 id="프로젝트-기획" class="heading">프로젝트 기획</h2>
+<p>아이디어가 많았는데 뭔가 재밌고 우리 모두와 관련된 걸로 하고 싶었다. 아이디어를 냈는데 다른 팀원들도 좋게 봐주셔서 일사천리로 프로젝트를 결정하였다. 방 탈출을 모티브로 하여 퀴즈를 풀며 취업난에서 탈출하는 간단한 퀴즈를 진행한다. 항해99에서 지급받은 강의 내용의 퀴즈를 내면서 그 문제를 맞추면 리뷰를 쓸 수 있고 취업공고 페이지도 보여주는 그런 프로젝트를 계획하였다.</p>
+<br/>
+<h2 id="역할배분" class="heading">역할배분</h2>
+<p>나는 메인 페이지와 로그인 페이지를 맡았는데 로그인 페이지와 회원가입이 연결이 되어있어서 나중에는 랭킹 페이지를 맡게 되었다. 로그인 페이지를 구현했는데 작동이 안 되어서 회원가입 페이지를 맡은 분이 로그인까지 같이 하기로 하였다. 그리고 퀴즈 페이지가 가장 어렵고 시간이 걸릴것 같아 퀴즈 페이지를 두명이 맡았다.</p>
+<br/>
+<h2 id="와이어프레임--api-설계" class="heading">와이어프레임 &#x26; API 설계</h2>
+<p><img src="../../assets//images/posts_img/%ED%95%AD%ED%95%B499-wil-1/%ED%95%AD%ED%95%B499-wil-1-2.png" alt="Untitled.png"></p>
+<p><a href="https://www.notion.so/68b25c3d43884ea1be7cfa70e17969ff" target="_blank" rel="noopener noreferer">백수탈출 API </a></p>
+<p>API와 와이어프레임으로 먼저 작성해놓으니 나중에 기능 구현을 할때 쉽게 할 수 있었다. 기능 구현에 집중하여 구조를 만들었다.</p>
+<br/>
+<h2 id="핵심-기능" class="heading"><strong>핵심 기능</strong></h2>
+<h3 id="회원가입-및-로그인"><strong>회원가입 및 로그인</strong></h3>
+<ul>
+<li>회원가입
+<ul>
+<li>아이디 &#x26; 비밀번호 형식 확인</li>
+<li>아이디 중복 확인</li>
+<li>DB에 아이디와 비밀번호 저장하여 회원가입 &#x26; 로그인 화면으로 전환</li>
+</ul>
+</li>
+<li>로그인
+<ul>
+<li>아이디 &#x26; 비밀번호 입력 확인</li>
+<li>서버로 POST 요청을 보내 가입 정보가 존재하는지 확인</li>
+<li>회원일 경우 토큰 부여</li>
+</ul>
+</li>
+<li>로그아웃 시 토큰이 삭제되고 메인 페이지로 이동한다.</li>
+</ul>
+<h3 id="랭킹"><strong>랭킹</strong></h3>
+<ul>
+<li>데이터베이스에 저장된 User들을 불러와서 퀴즈 완료 시간으로 정렬하여 보여준다.</li>
+<li>게임을 완료하면 랭킹 페이지로 이동한다.</li>
+</ul>
+<h3 id="취업공고"><strong>취업공고</strong></h3>
+<ul>
+<li>크롤링을 통하여 잡코리아 사이트의 취업공고를 보여준다.</li>
+</ul>
+<h3 id="퀴즈"><strong>퀴즈</strong></h3>
+<ul>
+<li>퀴즈의 정답을 맞추면 캐릭터가 이동하고 다음 퀴즈로 넘어간다.</li>
+<li>정답을 못 맞출시 재도전 및 메인페이지로 돌아갈 수 있다.</li>
+</ul>
+<br/>
+<h2 id="프로젝트-중-힘들었던-점" class="heading"><strong>프로젝트 중 힘들었던 점</strong></h2>
+<ul>
+<li>Git 협업 경험의 부재로 인한 프로젝트 관리의 어려움</li>
+<li>잦은 컨플릭</li>
+</ul>
+<br/>
+<h2 id="trouble-shooting" class="heading"><strong>Trouble Shooting</strong></h2>
+<ul>
+<li>새로고침을 하면 타이머가 리셋이 되는 문제
+<ul>
+<li>새로고침 방지할 수 있는 KEYKODE를 작성</li>
+</ul>
+</li>
+<li>정답 란에 영어를 적으면 에러 발생
+<ul>
+<li>변수 충돌로 인해 변수명을 다시 작성</li>
+</ul>
+</li>
+<li>OG 타이틀 적용 문제
+<ul>
+<li>로그인 페이지로 랜더링이 되는것을 메인페이지로 바꿈</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="what-i-learned" class="heading">What I learned</h2>
+<ul>
+<li>JWT 인증 방식과 jinja2 템플릿을 이용하여 서버사이드 렌더링에 대해 공부하게 되었고 미니프로젝트에 적용 시키면서 로그인 시 회원정보를 가져오고 페이지 렌더링에 대해 경험해보았다.</li>
+<li>팀원들과 협업을 하면서 서로 모르는게 있으면 의지를 하면서 도와주기도 하였고 혼자 코딩 공부를 할때보다 확실히 책임감이 생기면서 집중을 하게 되는것 같다. 그리고 문제를 팀원들과 공유해나가면서 해결하니 확실히 효율적이었다.</li>
+</ul>
+<h3 id="jwt">JWT</h3>
+<ul>
+<li>JSON Web Token의 약자로 전자 서명 된 URL-safe (URL로 이용할 수있는 문자 만 구성된)의 JSON이다.</li>
+<li>JWT 인증방식은 인증에 필요한 정보들을 암호화시킨 토큰을 말한다. 알고리즘과 토큰 형식을 담는 Header와 data 값을 담는 Payload, 마지막으로 Verify Signature 의 세 부분으로 구성되어 있다.</li>
+<li>세션/쿠키 방식은 별도의 저장소 관리가 필요하다. 그러나 JWT는 발급 후 검증만 하면 되기 때문에 추가 저장소가 필요하지 않으며 간편하다는 장점이 있다. 그래서 서버를 확장하거나 유지, 보수하는데 유리하다.</li>
+</ul>
+<h3 id="api">API</h3>
+<ul>
+<li>API는 프로그램들이 서로 상호작용하는 것을 도와주는 매개체이다.</li>
+<li>웹 사이트 개발에서 다른 서비스에 요청을 보내고 응답을 받기 위해 열려있는 일조으이 은행 창구 역할을 한다.</li>
+<li>API는 손님(프로그램)이 주문할 수 있게 메뉴(명령 목록)를 정리하고, 주문(명령)을 받으면 요리사(응용프로그램)와 상호작용하여 요청된 메뉴(명령에 대한 값)를 전달한다.</li>
+</ul>
+<h3 id="api의-역할">API의 역할</h3>
+<ul>
+<li>데이터베이스에는 소중한 정보들이 저장되는데 모든 사람들이 이 데이터베이스에 접근할 수 있으면 안된다. API는 이를 방지하기 위해 서버와 데이터베이스에 대한 출입구 역할을 하며, 허용된 사람들에게만 접근성을 부여해준다.</li>
+<li>API는 애플리케이션과 기기가 원활하게 통신할 수 있도록 한다.
+기서 애플리케이션이란 우리가 흔히 알고 있는 스마트폰 어플이나 프로그램을 말한다. API는 애플리케이션과 기기가 데이터를 원활히 주고받을 수 있도록 돕는 역할을 한다.</li>
+<li>API는 모든 접속을 표준화한다.
+API는 모든 접속을 표준화하기 때문에 기계/ 운영체제 등과 상관없이 누구나 동일한 액세스를 얻을 수 있다. 쉽게 말해, API는 범용 플러그처럼 작동한다고 볼 수 있다.</li>
+</ul>
+<br/>
+<h2 id="review" class="heading">Review</h2>
+<p>4일동안 팀원들과 협업 하며 미니 프로젝트를 만들어보았다. 파이썬 Flask를 처음 써봐서 어려움이 있었지만 강의를 보고 팀원들과 협업을 하여서 프로젝트를 완성할 수 있었던것 같다. 이제 첫주가 지나고 알고리즘 공부를 하게 되는데 부족한 알고리즘 실력을 많이 늘리고 싶고 또 다른 팀원들도 만나서 서로 으쌰으쌰하며 성장해나가고 싶다. 깃에 대한 개념이 많이 부족한데 깃 강의를 들으면서 실습을 해보아야할것 같다. 알고리즘 주차도 화이팅!</p>]]>
     </content:encoded>
   </item><item>
     <title><![CDATA[[TIL] 20220625]]></title>
@@ -3299,6 +3688,1012 @@ react-query가 업그레이드 되면서 invalidateQueries 사용 방법이 조�
 <li>TIL 작성</li>
 </ul>
 <br/>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[WIL] 스파르타코딩클럽 웹개발 종합반 5주차]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220606-wil</link>
+    <pubDate>2022-06-06</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220606-wil</guid>
+    <description>
+    <![CDATA[EC2에 프로젝트 배포]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="목표" class="heading">목표</h2>
+<ol>
+<li>Flask 프레임워크를 활용해서 API를 만들 수 있다.</li>
+<li>EC2에 내 프로젝트를 올린다</li>
+</ol>
+<br/>
+<p><img src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F02fac3d2-c8d5-473a-b596-406c3ae5b199%2FUntitled.png?table=block&#x26;id=7aa0b1b4-85c0-49d0-b33c-39336d9b7297&#x26;spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&#x26;width=2000&#x26;userId=&#x26;cache=v2" alt=""></p>
+<h2 id="프로젝트를-서버에-올리기" class="heading"><strong>프로젝트를 서버에 올리기</strong></h2>
+<h3 id="웹서비스-런칭-에-필요한-개념-소개">"웹서비스 런칭" 에 필요한 개념 소개</h3>
+<aside>
+👉 이제 내가 만든 프로젝트를 배포해보자. 배포는 누구나 내 서비스를 사용할 수 있게 하기 위해서 작업들이다.  웹 서비스를 런칭하는 것!
+</aside>
+<ul>
+<li>웹 서비스를 런칭하기 위해 클라이언트의 요청에 항상 응답해줄 수 있는 서버에 프로젝트를 실행시켜준다.</li>
+<li>언제나 요청에 응답하려면,</li>
+</ul>
+<ol>
+<li>컴퓨터가 <strong>항상</strong> 켜져있고 프로그램이 실행되어 있어야하고,</li>
+<li>모두가 접근할 수 있는 공개 주소인 공개 IP 주소(Public IP Address)로 나의 웹 서비스에 <strong>접근할 수 있도록</strong> 해야한다.</li>
+</ol>
+<ul>
+<li>서버는 그냥 컴퓨터라는거! 외부 접속이 가능하게 설정한 다음에 내 컴퓨터를 서버로 사용할 수도 있다.</li>
+<li>AWS 라는 클라우드 서비스에서 편하게 서버를 관리하기 위해서 항상 켜 놓을 수 있는 컴퓨터인 EC2 사용권을 구입해 서버로 사용한다.</li>
+</ul>
+<br/>
+<h2 id="review" class="heading">Review</h2>
+<p>1~4주차 까지 배웠던 모든 개념을 통합해서 기존에 만든 프로젝트를 배포하는 방법을 배웠다. 내가 직접 만든 사이트를 가비아를 통해서 배포하고 다른 사람들도 내 사이트를 이용할 수 있어서 신기했다. 드디어 웹 개발 사전강의를 수료하였다. 항해99 입학시험을 위해 들었지만 기존에 알고 있는 것도 있었서 복습도 하고 새로운 개념도 배울 수 있었다. 강의를 한번 더 들어서 입학시험까지 통과할 수 있도록 항해하자!</p>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[WIL] 스파르타코딩클럽 웹개발 종합반 4주차]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220530-wil</link>
+    <pubDate>2022-05-30</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220530-wil</guid>
+    <description>
+    <![CDATA[Flask 프레임워크를 통해 API를 만들고 클라이언트에 연결하기]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="목표" class="heading">목표</h2>
+<ol>
+<li>Flask 프레임워크를 활용해서 API를 만들 수 있다.</li>
+</ol>
+<br/>
+<h2 id="flask---서버만들기" class="heading"><strong>Flask - 서버만들기</strong></h2>
+<h3 id="flask-기본-실행">Flask 기본 실행</h3>
+<ul>
+<li>
+<p>Flask 프레임워크: 서버를 구동시켜주는 편한 코드 모음. 서버를 구동하려면 필요한 복잡한 일들을 쉽게 가져다 쓸 수 있다.</p>
+  <aside>
+  👉 프레임워크를 쓰지 않으면 태양초를 빻아서 고추장을 만드는 격!
+  프레임워크는 3분 요리/소스 세트라고 생각하면 된다!
+  </aside>
+</li>
+<li>
+<p><a href="http://app.py" target="_blank" rel="noopener noreferer">app.py</a> 파일을 만들어 아래 코드를 붙여넣어본다.</p>
+  <aside>
+  👉 파일 이름은 아무렇게나 해도 상관없지만, 통상적으로 flask 서버를 돌리는 파일은 app.py라고 이름 짓는!
+  </aside>
+<p><strong>flask 시작 코드</strong></p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask
+</span><span class="code-line">app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token keyword">def</span> <span class="token function">home</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+</span><span class="code-line">   <span class="token keyword">return</span> <span class="token string">'This is Home!'</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>  
+</span><span class="code-line">   app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token string">'0.0.0.0'</span><span class="token punctuation">,</span>port<span class="token operator">=</span><span class="token number">5000</span><span class="token punctuation">,</span>debug<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+</span></code></pre>
+</li>
+<li>
+<p>오른쪽 클릭 → '<code>Run app</code>'을 클릭하고, 터미널에 아래와 같은 메시지가 뜨면 실행 성공!
+<img src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F210e5f1c-5d62-4181-b79d-a39e9c17b664%2FUntitled.png?table=block&#x26;id=dfd29600-6c3b-44d8-b8b2-76cc38746c90&#x26;spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&#x26;width=2000&#x26;userId=&#x26;cache=v2" alt="Untitled"></p>
+</li>
+<li>
+<p>이제 크롬에서 <a href="http://localhost:5000" target="_blank" rel="noopener noreferer">http://localhost:5000</a>/ 으로 접속!</p>
+  <aside>
+  👉 화면에 `Hello World!` 가 보이면 성공한 것! 👏
+  </aside>
+</li>
+<li>
+<p>종료하는 방법</p>
+  <aside>
+  👉 터미널 창을 클릭하시고, ctrl + c 을 누르시면 서버를 종료할 수 있다.
+  </aside>
+</li>
+</ul>
+<h3 id="url-나눠보기">URL 나눠보기</h3>
+<ul>
+<li>
+<p>@app.route('/) 부분을 수정해서 URL을 나눌 수 있다!</p>
+  <aside>
+  👉 url 별로 함수명이 같거나, route('/')내의 주소가 같으면 안된다.
+  </aside>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask
+</span><span class="code-line">app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token keyword">def</span> <span class="token function">home</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+</span><span class="code-line">   <span class="token keyword">return</span> <span class="token string">'This is Home!'</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/mypage'</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token keyword">def</span> <span class="token function">mypage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  
+</span><span class="code-line">   <span class="token keyword">return</span> <span class="token string">'This is My Page!'</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>  
+</span><span class="code-line">   app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token string">'0.0.0.0'</span><span class="token punctuation">,</span>port<span class="token operator">=</span><span class="token number">5000</span><span class="token punctuation">,</span>debug<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+</span></code></pre>
+</li>
+</ul>
+<br/>
+<h2 id="flask---본격-api-만들기" class="heading"><strong>Flask - 본격 API 만들기</strong></h2>
+<h3 id="1-들어가기-전에-get-post-요청타입---리마인드">1) 들어가기 전에: GET, POST 요청타입 - 리마인드</h3>
+<aside>
+👉 리마인드! 
+은행의 창구가 API와 같다! ****같은 예금 창구에서도 개인 고객이냐 기업 고객이냐에 따라 처리하는 것이 다른 것처럼,
+<p><strong>클라이언트가 요청 할 때에도, "방식"이 존재한다.</strong>
+클라이언트는 요청할 때 HTTP request method(요청 메소드)를 통해, 어떤 요청 종류인지 응답하는 서버 쪽에 정보를 알려주는 것이다.</p>
+</aside>
+<aside>
+👉 GET, POST 방식
+<ul>
+<li>GET → 통상적으로! 데이터 조회(Read)를 요청할 때<br>
+예) 영화 목록 조회<br>
+→ <strong>데이터 전달</strong> : URL 뒤에 물음표를 붙여 key=value로 전달<br>
+→ 예: google.com?q=북극곰</li>
+<li>POST → 통상적으로! 데이터 생성(Create), 변경(Update), 삭제(Delete) 요청 할 때<br>
+예) 회원가입, 회원탈퇴, 비밀번호 수정<br>
+→ <strong>데이터 전달 :</strong> 바로 보이지 않는 HTML body에 key:value 형태로 전달</li>
+</ul>
+</aside>
+<h3 id="2-get-post-요청에서-클라이언트의-데이터를-받는-방법">2) GET, POST 요청에서 클라이언트의 데이터를 받는 방법</h3>
+<ul>
+<li>
+<p>예를 들어, 클라이언트에서 서버에 title_give란 키 값으로 데이터를 들고왔다고 생각한다. (주민등록번호 라는 키 값으로 900120- .. 을 가져온 것과 같은 의미)
+<strong>Jquery 임포트</strong></p>
+<pre class="language-csharp"><code class="language-csharp code-highlight"><span class="code-line"><span class="token operator">&#x3C;</span><span class="token class-name">script</span> src<span class="token operator">=</span><span class="token string">"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</span><span class="token operator">></span><span class="token operator">&#x3C;</span><span class="token operator">/</span>script<span class="token operator">></span>
+</span></code></pre>
+<p><strong>GET 요청 API코드</strong></p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/test'</span><span class="token punctuation">,</span> methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'GET'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token keyword">def</span> <span class="token function">test_get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+</span><span class="code-line">   title_receive <span class="token operator">=</span> request<span class="token punctuation">.</span>args<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'title_give'</span><span class="token punctuation">)</span>
+</span><span class="code-line">   <span class="token keyword">print</span><span class="token punctuation">(</span>title_receive<span class="token punctuation">)</span>
+</span><span class="code-line">   <span class="token keyword">return</span> jsonify<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'result'</span><span class="token punctuation">:</span><span class="token string">'success'</span><span class="token punctuation">,</span> <span class="token string">'msg'</span><span class="token punctuation">:</span> <span class="token string">'이 요청은 GET!'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span></code></pre>
+<p><strong>GET 요청 확인 Ajax코드</strong></p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line">$<span class="token punctuation">.</span><span class="token method function property-access">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'GET'</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'/test?title_give=봄날은간다'</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p><strong>POST 요청 API코드</strong></p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/test'</span><span class="token punctuation">,</span> methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'POST'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token keyword">def</span> <span class="token function">test_post</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+</span><span class="code-line">   title_receive <span class="token operator">=</span> request<span class="token punctuation">.</span>form<span class="token punctuation">[</span><span class="token string">'title_give'</span><span class="token punctuation">]</span>
+</span><span class="code-line">   <span class="token keyword">print</span><span class="token punctuation">(</span>title_receive<span class="token punctuation">)</span>
+</span><span class="code-line">   <span class="token keyword">return</span> jsonify<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'result'</span><span class="token punctuation">:</span><span class="token string">'success'</span><span class="token punctuation">,</span> <span class="token string">'msg'</span><span class="token punctuation">:</span> <span class="token string">'이 요청은 POST!'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span></code></pre>
+<p><strong>POST 요청 확인 Ajax코드</strong></p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line">$<span class="token punctuation">.</span><span class="token method function property-access">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'/test'</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">title_give</span><span class="token operator">:</span> <span class="token string">'봄날은간다'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+</li>
+</ul>
+<br/>
+<h2 id="review" class="heading">Review</h2>
+<p>Flask 프레임워크를 활용해서 API를 만들고 클라이언트에 연결하여서 POST와 GET 요청을 통해 데이터를 보여주고 전달하는 실습을 진행해보았다. 뭔가 제대로 된 코딩을 하는 느낌이 들어서 재밌게 간단한 프로젝트를 진행하였다.</p>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[WIL] 스파르타코딩클럽 웹개발 종합반 3주차]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220523-wil</link>
+    <pubDate>2022-05-23</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220523-wil</guid>
+    <description>
+    <![CDATA[파이썬 기초 문법, 크롤링, pymongo를 통해 mongoDB 제어]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="목표" class="heading">목표</h2>
+<ol>
+<li>파이썬 기초 문법을 안다.</li>
+<li>원하는 페이지를 크롤링 할 수 있다.</li>
+<li>pymongo를 통해 mongoDB를 제어할 수 있다.</li>
+</ol>
+<br/>
+<h2 id="파이썬" class="heading"><strong>파이썬</strong></h2>
+<h3 id="파이썬-기초-문법">파이썬 기초 문법</h3>
+<details>
+<summary>변수 & 기본연산</summary>
+<div markdown="1">
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line">a <span class="token operator">=</span> <span class="token number">3</span>      <span class="token comment"># 3을 a에 넣는다</span>
+</span><span class="code-line">b <span class="token operator">=</span> a      <span class="token comment"># a를 b에 넣는다</span>
+</span><span class="code-line">a <span class="token operator">=</span> a <span class="token operator">+</span> <span class="token number">1</span>  <span class="token comment"># a+1을 다시 a에 넣는다</span>
+</span><span class="code-line">
+</span><span class="code-line">num1 <span class="token operator">=</span> a<span class="token operator">*</span>b <span class="token comment"># a*b의 값을 num1이라는 변수에 넣는다</span>
+</span><span class="code-line">num2 <span class="token operator">=</span> <span class="token number">99</span> <span class="token comment"># 99의 값을 num2이라는 변수에 넣는다</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 변수의 이름은 마음대로 지을 수 있음!</span>
+</span><span class="code-line"><span class="token comment"># 진짜 "마음대로" 짓는 게 좋을까? var1, var2 이렇게?</span>
+</span></code></pre>
+</div>
+</details>
+<details>
+<summary>자료형</summary>
+<div markdown="1">
+<ul>
+<li>
+<p>숫자, 문자형</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line">name <span class="token operator">=</span> <span class="token string">'bob'</span> <span class="token comment"># 변수에는 문자열이 들어갈 수도 있고,</span>
+</span><span class="code-line">num <span class="token operator">=</span> <span class="token number">12</span> <span class="token comment"># 숫자가 들어갈 수도 있고,</span>
+</span><span class="code-line">
+</span><span class="code-line">is_number <span class="token operator">=</span> <span class="token boolean">True</span> <span class="token comment"># True 또는 False -> "Boolean"형이 들어갈 수도 있다.</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">#########</span>
+</span><span class="code-line"><span class="token comment"># 그리고 List, Dictionary 도 들어갈 수도 있다.</span>
+</span></code></pre>
+</li>
+<li>
+<p>리스트 형 (Javascript의 배열형과 동일)</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line">a_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+</span><span class="code-line">a_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>     <span class="token comment"># 리스트에 값을 넣는다</span>
+</span><span class="code-line">a_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment"># 리스트에 [2,3]이라는 리스트를 다시 넣는다</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># a_list의 값은? [1,[2,3]]</span>
+</span><span class="code-line"><span class="token comment"># a_list[0]의 값은? 1</span>
+</span><span class="code-line"><span class="token comment"># a_list[1]의 값은? [2,3]</span>
+</span><span class="code-line"><span class="token comment"># a_list[1][0]의 값은? 2</span>
+</span></code></pre>
+</li>
+<li>
+<p>Dictionary 형 (Javascript의 dictionary형과 동일)</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line">a_dict <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</span><span class="code-line">a_dict <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span><span class="token string">'bob'</span><span class="token punctuation">,</span><span class="token string">'age'</span><span class="token punctuation">:</span><span class="token number">21</span><span class="token punctuation">}</span>
+</span><span class="code-line">a_dict<span class="token punctuation">[</span><span class="token string">'height'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">178</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># a_dict의 값은? {'name':'bob','age':21, 'height':178}</span>
+</span><span class="code-line"><span class="token comment"># a_dict['name']의 값은? 'bob'</span>
+</span><span class="code-line"><span class="token comment"># a_dict['age']의 값은? 21</span>
+</span><span class="code-line"><span class="token comment"># a_dict['height']의 값은? 178</span>
+</span></code></pre>
+</li>
+<li>
+<p>Dictionary 형과 List형의 조합</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line">people <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span><span class="token string">'bob'</span><span class="token punctuation">,</span><span class="token string">'age'</span><span class="token punctuation">:</span><span class="token number">20</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span><span class="token string">'carry'</span><span class="token punctuation">,</span><span class="token string">'age'</span><span class="token punctuation">:</span><span class="token number">38</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># people[0]['name']의 값은? 'bob'</span>
+</span><span class="code-line"><span class="token comment"># people[1]['name']의 값은? 'carry'</span>
+</span><span class="code-line">
+</span><span class="code-line">person <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span><span class="token string">'john'</span><span class="token punctuation">,</span><span class="token string">'age'</span><span class="token punctuation">:</span><span class="token number">7</span><span class="token punctuation">}</span>
+</span><span class="code-line">people<span class="token punctuation">.</span>append<span class="token punctuation">(</span>person<span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># people의 값은? [{'name':'bob','age':20},{'name':'carry','age':38},{'name':'john','age':7}]</span>
+</span><span class="code-line"><span class="token comment"># people[2]['name']의 값은? 'john'</span>
+</span></code></pre>
+</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>함수</summary>
+<div markdown="1">
+<ul>
+<li>
+<p>함수의 정의 - 이름은 마음대로 정할 수 있음!</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token comment"># 수학문제에서</span>
+</span><span class="code-line">f<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token operator">*</span>x<span class="token operator">+</span><span class="token number">3</span>
+</span><span class="code-line">y <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+</span><span class="code-line">y의 값은? <span class="token number">7</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 참고: 자바스크립트에서는</span>
+</span><span class="code-line">function f<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">	<span class="token keyword">return</span> <span class="token number">2</span><span class="token operator">*</span>x<span class="token operator">+</span><span class="token number">3</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 파이썬에서</span>
+</span><span class="code-line"><span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+</span><span class="code-line">	<span class="token keyword">return</span> <span class="token number">2</span><span class="token operator">*</span>x<span class="token operator">+</span><span class="token number">3</span>
+</span><span class="code-line">
+</span><span class="code-line">y <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+</span><span class="code-line">y의 값은? <span class="token number">7</span>
+</span></code></pre>
+</li>
+<li>
+<p>함수의 응용</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token keyword">def</span> <span class="token function">sum_all</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">)</span><span class="token punctuation">:</span>
+</span><span class="code-line">	<span class="token keyword">return</span> a<span class="token operator">+</span>b<span class="token operator">+</span>c
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">def</span> <span class="token function">mul</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">:</span>
+</span><span class="code-line">	<span class="token keyword">return</span> a<span class="token operator">*</span>b
+</span><span class="code-line">
+</span><span class="code-line">result <span class="token operator">=</span> sum_all<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">+</span> mul<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># result라는 변수의 값은?</span>
+</span></code></pre>
+</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>조건문</summary>
+<div markdown="1">
+<ul>
+<li>
+<p>if / else 로 구성!</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token keyword">def</span> <span class="token function">oddeven</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># oddeven이라는 이름의 함수를 정의한다. num을 변수로 받는다.</span>
+</span><span class="code-line">	<span class="token keyword">if</span> num <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span> <span class="token comment"># num을 2로 나눈 나머지가 0이면</span>
+</span><span class="code-line">		 <span class="token keyword">return</span> <span class="token boolean">True</span>   <span class="token comment"># True (참)을 반환한다.</span>
+</span><span class="code-line">	<span class="token keyword">else</span><span class="token punctuation">:</span>            <span class="token comment"># 아니면,</span>
+</span><span class="code-line">		 <span class="token keyword">return</span> <span class="token boolean">False</span>  <span class="token comment"># False (거짓)을 반환한다.</span>
+</span><span class="code-line">
+</span><span class="code-line">result <span class="token operator">=</span> oddeven<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token comment"># result의 값은 무엇일까요?</span>
+</span></code></pre>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token keyword">def</span> <span class="token function">is_adult</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">:</span>
+</span><span class="code-line">	<span class="token keyword">if</span> age <span class="token operator">></span> <span class="token number">20</span><span class="token punctuation">:</span>
+</span><span class="code-line">		<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'성인입니다'</span><span class="token punctuation">)</span>    <span class="token comment"># 조건이 참이면 성인입니다를 출력</span>
+</span><span class="code-line">	<span class="token keyword">else</span><span class="token punctuation">:</span>
+</span><span class="code-line">		<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'청소년이에요'</span><span class="token punctuation">)</span>  <span class="token comment"># 조건이 거짓이면 청소년이에요를 출력</span>
+</span><span class="code-line">
+</span><span class="code-line">is_adult<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+</span></code></pre>
+</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>반복문</summary>
+<div markdown="1">
+<p>👉 파이썬에서의 반복문은, 리스트의 요소들을 하나씩 꺼내쓰는 형태이다.</p>
+<ul>
+<li>
+<p>무조건 리스트와 함께 쓰인다!</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line">fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'사과'</span><span class="token punctuation">,</span><span class="token string">'배'</span><span class="token punctuation">,</span><span class="token string">'감'</span><span class="token punctuation">,</span><span class="token string">'귤'</span><span class="token punctuation">]</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">for</span> fruit <span class="token keyword">in</span> fruits<span class="token punctuation">:</span>
+</span><span class="code-line">	<span class="token keyword">print</span><span class="token punctuation">(</span>fruit<span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 사과, 배, 감, 귤 하나씩 꺼내어 찍힙니다.</span>
+</span></code></pre>
+</li>
+<li>
+<p>과일 갯수 세기 함수</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line">fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'사과'</span><span class="token punctuation">,</span><span class="token string">'배'</span><span class="token punctuation">,</span><span class="token string">'배'</span><span class="token punctuation">,</span><span class="token string">'감'</span><span class="token punctuation">,</span><span class="token string">'수박'</span><span class="token punctuation">,</span><span class="token string">'귤'</span><span class="token punctuation">,</span><span class="token string">'딸기'</span><span class="token punctuation">,</span><span class="token string">'사과'</span><span class="token punctuation">,</span><span class="token string">'배'</span><span class="token punctuation">,</span><span class="token string">'수박'</span><span class="token punctuation">]</span>
+</span><span class="code-line">
+</span><span class="code-line">count <span class="token operator">=</span> <span class="token number">0</span>
+</span><span class="code-line"><span class="token keyword">for</span> fruit <span class="token keyword">in</span> fruits<span class="token punctuation">:</span>
+</span><span class="code-line">	<span class="token keyword">if</span> fruit <span class="token operator">==</span> <span class="token string">'사과'</span><span class="token punctuation">:</span>
+</span><span class="code-line">		count <span class="token operator">+=</span> <span class="token number">1</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">print</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 사과의 갯수를 세어 보여준다.</span>
+</span></code></pre>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token keyword">def</span> <span class="token function">count_fruits</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span><span class="token punctuation">:</span>
+</span><span class="code-line">	count <span class="token operator">=</span> <span class="token number">0</span>
+</span><span class="code-line">	<span class="token keyword">for</span> fruit <span class="token keyword">in</span> fruits<span class="token punctuation">:</span>
+</span><span class="code-line">		<span class="token keyword">if</span> fruit <span class="token operator">==</span> target<span class="token punctuation">:</span>
+</span><span class="code-line">			count <span class="token operator">+=</span> <span class="token number">1</span>
+</span><span class="code-line">	<span class="token keyword">return</span> count
+</span><span class="code-line">
+</span><span class="code-line">subak_count <span class="token operator">=</span> count_fruits<span class="token punctuation">(</span><span class="token string">'수박'</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token keyword">print</span><span class="token punctuation">(</span>subak_count<span class="token punctuation">)</span> <span class="token comment">#수박의 갯수</span>
+</span><span class="code-line">
+</span><span class="code-line">gam_count <span class="token operator">=</span> count_fruits<span class="token punctuation">(</span><span class="token string">'감'</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token keyword">print</span><span class="token punctuation">(</span>gam_count<span class="token punctuation">)</span> <span class="token comment">#감의 갯수</span>
+</span></code></pre>
+</li>
+<li>
+<p>다른 예제</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line">people <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span> <span class="token string">'bob'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">          <span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span> <span class="token string">'carry'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token punctuation">:</span> <span class="token number">38</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">          <span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span> <span class="token string">'john'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token punctuation">:</span> <span class="token number">7</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">          <span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span> <span class="token string">'smith'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token punctuation">:</span> <span class="token number">17</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">          <span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span> <span class="token string">'ben'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token punctuation">:</span> <span class="token number">27</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 모든 사람의 이름과 나이를 출력해보기.</span>
+</span><span class="code-line"><span class="token keyword">for</span> person <span class="token keyword">in</span> people<span class="token punctuation">:</span>
+</span><span class="code-line">    <span class="token keyword">print</span><span class="token punctuation">(</span>person<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> person<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 이번엔, 반복문과 조건문을 응용한 함수를 만들어보기.</span>
+</span><span class="code-line"><span class="token comment"># 이름을 받으면, age를 리턴해주는 함수</span>
+</span><span class="code-line"><span class="token keyword">def</span> <span class="token function">get_age</span><span class="token punctuation">(</span>myname<span class="token punctuation">)</span><span class="token punctuation">:</span>
+</span><span class="code-line">    <span class="token keyword">for</span> person <span class="token keyword">in</span> people<span class="token punctuation">:</span>
+</span><span class="code-line">        <span class="token keyword">if</span> person<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span> <span class="token operator">==</span> myname<span class="token punctuation">:</span>
+</span><span class="code-line">            <span class="token keyword">return</span> person<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span>
+</span><span class="code-line">    <span class="token keyword">return</span> <span class="token string">'해당하는 이름이 없습니다'</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">print</span><span class="token punctuation">(</span>get_age<span class="token punctuation">(</span><span class="token string">'bob'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token keyword">print</span><span class="token punctuation">(</span>get_age<span class="token punctuation">(</span><span class="token string">'kay'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</span></code></pre>
+</li>
+</ul>
+</div>
+</details>
+<br/>
+<h2 id="웹-스크롤링" class="heading">웹 스크롤링</h2>
+<h3 id="웹스크래핑-해보기-영화-제목">웹스크래핑 해보기 (영화 제목)</h3>
+<ul>
+<li>
+<p>패키지 추가 설치하기(beautifulsoup4)</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line">bs4
+</span></code></pre>
+</li>
+<li>
+<p>크롤링 기본 세팅</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token keyword">import</span> requests
+</span><span class="code-line"><span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+</span><span class="code-line">
+</span><span class="code-line">headers <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'User-Agent'</span> <span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'</span><span class="token punctuation">}</span>
+</span><span class="code-line">data <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'https://movie.naver.com/movie/sdb/rank/rmovie.naver?sel=pnt&#x26;date=20210829'</span><span class="token punctuation">,</span>headers<span class="token operator">=</span>headers<span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line">soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>data<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token string">'html.parser'</span><span class="token punctuation">)</span>
+</span></code></pre>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token keyword">import</span> requests
+</span><span class="code-line"><span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 타겟 URL을 읽어서 HTML를 받아오고,</span>
+</span><span class="code-line">headers <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'User-Agent'</span> <span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'</span><span class="token punctuation">}</span>
+</span><span class="code-line">data <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'https://movie.naver.com/movie/sdb/rank/rmovie.naver?sel=pnt&#x26;date=20210829'</span><span class="token punctuation">,</span>headers<span class="token operator">=</span>headers<span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># HTML을 BeautifulSoup이라는 라이브러리를 활용해 검색하기 용이한 상태로 만듦</span>
+</span><span class="code-line"><span class="token comment"># soup이라는 변수에 "파싱 용이해진 html"이 담긴 상태가 됨</span>
+</span><span class="code-line"><span class="token comment"># 이제 코딩을 통해 필요한 부분을 추출하면 된다.</span>
+</span><span class="code-line">soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>data<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token string">'html.parser'</span><span class="token punctuation">)</span>
+</span></code></pre>
+</li>
+<li>
+<p>select / select_one의 사용법을 익혀보기.</p>
+  <aside>
+  👉 영화 제목을 가져와보기!
+  </aside>
+  <aside>
+  👉 태그 안의 텍스트를 찍고 싶을 땐 → 태그.text  
+      태그 안의 속성을 찍고 싶을 땐 → 태그['속성']
+  </aside>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token keyword">import</span> requests
+</span><span class="code-line"><span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># URL을 읽어서 HTML를 받아오고,</span>
+</span><span class="code-line">headers <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'User-Agent'</span> <span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'</span><span class="token punctuation">}</span>
+</span><span class="code-line">data <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'https://movie.naver.com/movie/sdb/rank/rmovie.naver?sel=pnt&#x26;date=20210829'</span><span class="token punctuation">,</span>headers<span class="token operator">=</span>headers<span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># HTML을 BeautifulSoup이라는 라이브러리를 활용해 검색하기 용이한 상태로 만듦</span>
+</span><span class="code-line">soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>data<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token string">'html.parser'</span><span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># select를 이용해서, tr들을 불러오기</span>
+</span><span class="code-line">movies <span class="token operator">=</span> soup<span class="token punctuation">.</span>select<span class="token punctuation">(</span><span class="token string">'#old_content > table > tbody > tr'</span><span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># movies (tr들) 의 반복문을 돌리기</span>
+</span><span class="code-line"><span class="token keyword">for</span> movie <span class="token keyword">in</span> movies<span class="token punctuation">:</span>
+</span><span class="code-line">    <span class="token comment"># movie 안에 a 가 있으면,</span>
+</span><span class="code-line">    a_tag <span class="token operator">=</span> movie<span class="token punctuation">.</span>select_one<span class="token punctuation">(</span><span class="token string">'td.title > div > a'</span><span class="token punctuation">)</span>
+</span><span class="code-line">    <span class="token keyword">if</span> a_tag <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+</span><span class="code-line">        <span class="token comment"># a의 text를 찍어본다.</span>
+</span><span class="code-line">        <span class="token keyword">print</span> <span class="token punctuation">(</span>a_tag<span class="token punctuation">.</span>text<span class="token punctuation">)</span>
+</span></code></pre>
+</li>
+<li>
+<p>beautifulsoup 내 select에 미리 정의된 다른 방법</p>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token comment"># 선택자를 사용하는 방법 (copy selector)</span>
+</span><span class="code-line">soup<span class="token punctuation">.</span>select<span class="token punctuation">(</span><span class="token string">'태그명'</span><span class="token punctuation">)</span>
+</span><span class="code-line">soup<span class="token punctuation">.</span>select<span class="token punctuation">(</span><span class="token string">'.클래스명'</span><span class="token punctuation">)</span>
+</span><span class="code-line">soup<span class="token punctuation">.</span>select<span class="token punctuation">(</span><span class="token string">'#아이디명'</span><span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line">soup<span class="token punctuation">.</span>select<span class="token punctuation">(</span><span class="token string">'상위태그명 > 하위태그명 > 하위태그명'</span><span class="token punctuation">)</span>
+</span><span class="code-line">soup<span class="token punctuation">.</span>select<span class="token punctuation">(</span><span class="token string">'상위태그명.클래스명 > 하위태그명.클래스명'</span><span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 태그와 속성값으로 찾는 방법</span>
+</span><span class="code-line">soup<span class="token punctuation">.</span>select<span class="token punctuation">(</span><span class="token string">'태그명[속성="값"]'</span><span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 한 개만 가져오고 싶은 경우</span>
+</span><span class="code-line">soup<span class="token punctuation">.</span>select_one<span class="token punctuation">(</span><span class="token string">'위와 동일'</span><span class="token punctuation">)</span>
+</span></code></pre>
+</li>
+<li>
+<p>항상 정확하지는 않으나, 크롬 개발자도구를 참고할 수도 있다.</p>
+<ol>
+<li>원하는 부분에서 마우스 오른쪽 클릭 → 검사</li>
+<li>원하는 태그에서 마우스 오른쪽 클릭</li>
+<li>Copy → Copy selector로 선택자를 복사할 수 있음
+<img src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6a40280b-252d-4655-9540-b76bfed20292%2FUntitled.png?table=block&#x26;id=46697e28-6788-4588-a390-e84b8c1eb1db&#x26;spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&#x26;width=1670&#x26;userId=&#x26;cache=v2" alt=""></li>
+</ol>
+</li>
+</ul>
+<br/>
+<h2 id="db개괄" class="heading"><strong>DB개괄</strong></h2>
+<h3 id="db의-두-가지-종류">DB의 두 가지 종류</h3>
+<aside>
+👉 Database에는, 크게 두 가지 종류가 있다.
+</aside>
+<p><img src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff78826c3-3d3d-4789-98bf-dd85cb229fad%2FUntitled.png?table=block&#x26;id=2a483d31-3d11-441b-9158-076e77418b2b&#x26;spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&#x26;width=770&#x26;userId=&#x26;cache=v2" alt=""></p>
+<aside>
+👉 RDBMS(SQL)
+행/열의 생김새가 정해진 엑셀에 데이터를 저장하는 것과 유사합니다. 데이터 50만 개가 적재된 상태에서, 갑자기 중간에 열을 하나 더하기는 어려울 것이다. 그러나, 정형화되어 있는 만큼, 데이터의 일관성이나 / 분석에 용이할 수 있다.  
+ex) MS-SQL, My-SQL 등
+</aside>
+<aside>
+👉 No-SQL
+딕셔너리 형태로 데이터를 저장해두는 DB이다. 고로 데이터 하나 하나 마다 같은 값들을 가질 필요가 없게 된다. 자유로운 형태의 데이터 적재에 유리한 대신, 일관성이 부족할 수 있다.  
+ex) MongoDB
+</aside>
+<br/>
+<h2 id="pymongo로-db조작하기" class="heading"><strong>pymongo로 DB조작하기</strong></h2>
+<h3 id="pymongo-사용법">pymongo 사용법</h3>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token comment"># 저장 - 예시</span>
+</span><span class="code-line">doc <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span><span class="token string">'bobby'</span><span class="token punctuation">,</span><span class="token string">'age'</span><span class="token punctuation">:</span><span class="token number">21</span><span class="token punctuation">}</span>
+</span><span class="code-line">db<span class="token punctuation">.</span>users<span class="token punctuation">.</span>insert_one<span class="token punctuation">(</span>doc<span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 한 개 찾기 - 예시</span>
+</span><span class="code-line">user <span class="token operator">=</span> db<span class="token punctuation">.</span>users<span class="token punctuation">.</span>find_one<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span><span class="token string">'bobby'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 여러개 찾기 - 예시 ( _id 값은 제외하고 출력)</span>
+</span><span class="code-line">all_users <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>db<span class="token punctuation">.</span>users<span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token string">'_id'</span><span class="token punctuation">:</span><span class="token boolean">False</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 바꾸기 - 예시</span>
+</span><span class="code-line">db<span class="token punctuation">.</span>users<span class="token punctuation">.</span>update_one<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span><span class="token string">'bobby'</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token string">'$set'</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token string">'age'</span><span class="token punctuation">:</span><span class="token number">19</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 지우기 - 예시</span>
+</span><span class="code-line">db<span class="token punctuation">.</span>users<span class="token punctuation">.</span>delete_one<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span><span class="token string">'bobby'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span></code></pre>
+<br/>
+<h2 id="review" class="heading">Review</h2>
+<p>웹크롤링과 pymongo로 mongoDB를 조작하는 방법을 배웠다. 크롤링을 통해서 웹사이트의 정보를 가지고 올 수 있는게 신기하였고 웹스크래핑 결과를 데이터베이스에 데이터를 저장하고, 찾고, 바꾸고, 지우는걸 실습해보면서 DB를 왜 쓰는지, DB 개념에 대해 알게 되었다.</p>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[WIL] 스파르타코딩클럽 웹개발 종합반 2주차]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220516-wil</link>
+    <pubDate>2022-05-16</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220516-wil</guid>
+    <description>
+    <![CDATA[jQuery로 간단한 HTML을 조작, 서버 클라이언트 통신]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="목표" class="heading">목표</h2>
+<ol>
+<li>Javascript 문법에 익숙해진다.</li>
+<li>jQuery로 간단한 HTML을 조작할 수 있다.</li>
+<li>Ajax로 서버 API(약속)에 데이터를 주고, 결과를 받아온다.</li>
+</ol>
+<br/>
+<h2 id="jquery" class="heading"><strong>JQuery</strong></h2>
+<h3 id="jquery-란">jQuery 란?</h3>
+<p>HTML의 요소들을 조작하는, 편리한 Javascript를 미리 작성해둔 것. 라이브러리!</p>
+<aside>
+👉 Javascript로도 모든 기능(예 - 버튼 글씨 바꾸기 등)을 구현할 수는 있지만, 
+1) 코드가 복잡하고, 2) 브라우저 간 호환성 문제도 고려해야해서, **j**Query라는 라이브러리가 등장하게 되었다.
+</aside>
+<h3 id="jquery와-javascript---코드-비교해보기">jQuery와 Javascript - 코드 비교해보기</h3>
+<aside>
+👉 jQuery는 Javascript와 다른 특별한 소프트웨어가 아니라 미리 작성된 Javascript 코드이다. (그렇기 때문에, 쓰기 전에 "임포트"를 해야한다!)
+</aside>
+<p>Javascript로 길고 복잡하게 써야 하는 것을</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">getElementById</span><span class="token punctuation">(</span><span class="token string">'element'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token property-access">style</span><span class="token punctuation">.</span><span class="token property-access">display</span> <span class="token operator">=</span> <span class="token string">'none'</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>jQuery로 보다 직관적으로 쓸 수 있어서 편리하다.</p>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#element'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<h3 id="jquery를-사용하는-방법">jQuery를 사용하는 방법</h3>
+<aside>
+👉 css와 마찬가지로, jQuery를 쓸 때에도 "가리켜야" → 조작할 수 있다.
+css에서는 선택자로 class를 썼지만 jQuery에서는 id 값을 통해 특정 버튼/인풋박스/div/.. 등을 가리키게 된다.
+</aside>
+<br/>
+<h2 id="서버-클라이언트-통신-이해하기" class="heading"><strong>서버-클라이언트 통신 이해하기</strong></h2>
+<h3 id="서버클라이언트-json을-이해하기">서버→클라이언트: "JSON"을 이해하기</h3>
+<p>JSON은, Key:Value로 이루어져 있다. 자료형 Dictionary와 아주 유사하다.</p>
+<aside>
+👉 위 예제에서는 RealtimeCityAir라는 키 값에 딕셔너리 형 value가 들어가있고, 그 안에 row라는 키 값에는 리스트형 value가 들어가있다.
+</aside>
+<h3 id="클라이언트서버-get-요청-이해하기">클라이언트→서버: GET 요청 이해하기</h3>
+<aside>
+👉 API는 은행 창구와 같다!  
+같은 예금 창구에서도 개인 고객이냐 기업 고객이냐에 따라 가져와야 하는 것 / 처리해주는 것이 다른 것처럼, 클라이언트가 요청 할 때에도, "타입"이라는 것이 존재한다.  
+- GET → 통상적으로! 데이터 조회(Read)를 요청할 때  
+  예) 영화 목록 조회
+<ul>
+<li>POST → 통상적으로! 데이터 생성(Create), 변경(Update), 삭제(Delete) 요청 할 때<br>
+예) 회원가입, 회원탈퇴, 비밀번호 수정</li>
+</ul>
+</aside>
+<aside>
+👉 **GET 방식으로 데이터를 전달하는 방법**
+<p>? : 여기서부터 전달할 데이터가 작성된다는 의미이다.<br>
+&#x26; : 전달할 데이터가 더 있다는 뜻이다.</p>
+<p>예시) google.com/search?q=아이폰&#x26;sourceid=chrome&#x26;ie=UTF-8</p>
+<pre><code class="code-highlight"><span class="code-line">     위 주소는 google.com의 search 창구에 다음 정보를 전달한다!
+</span><span class="code-line">     q=아이폰                        (검색어)
+</span><span class="code-line">     sourceid=chrome        (브라우저 정보)
+</span><span class="code-line">     ie=UTF-8                      (인코딩 정보)
+</span></code></pre>
+</aside>
+<br/>
+<h2 id="review" class="heading">Review</h2>
+<p>자바스크립트만 쓰다가 jQuery를 사용하니 훨씬 쉽게 코드를 짤 수 있었다. 클라이언트와 서버간의 GET, POST 개념에 대해 공부하였고 GET 방식으로 데이터를 전달하는 방법을 실습해보았다. API를 받아오고 전달하는것은 앞으로 자주 쓰이기때문에 개념을 확실히 알고 있으면 좋을것 같다. 다음엔 POST 방식으로 학습을 하게 되는데 기대가 된다.</p>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[[WIL] 스파르타코딩클럽 웹개발 종합반 1주차]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220509-wil</link>
+    <pubDate>2022-05-09</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220509-wil</guid>
+    <description>
+    <![CDATA[HTML, CSS 기본 내용, JavaScript 기초 문법]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="목표" class="heading">목표</h2>
+<ol>
+<li>서버와 클라이언트의 역할에 대해 이해한다.</li>
+<li>HTML, CSS의 기초 지식을 이해한다. 부트스트랩을 가져다 쓸 줄 안다!</li>
+<li>Javascript 기초 문법을 익힌다.</li>
+</ol>
+<br/>
+<h2 id="서버클라이언트웹의-동작-개념" class="heading">서버/클라이언트/웹의 동작 개념</h2>
+<h3 id="웹의-동작-개념-html을-받는-경우">웹의 동작 개념 (HTML을 받는 경우)</h3>
+<aside>
+👉 우리가 보는 웹페이지는 모두 서버에서 미리 준비해두었던 것을 "받아서",
+"그려주는" 것입니다. 즉, 브라우저가 하는 일은 1) 요청을 보내고, 2) 받은 HTML 파일을 그려주는 일 뿐이다.
+</aside>
+<aside>
+👉 서버가 만들어 놓은 "API"라는 창구에 미리 정해진 약속대로 요청을 보내는 것이다.
+<p>예) <a href="https://naver.com/" target="_blank" rel="noopener noreferer">https://naver.com/</a>
+→ 이것은 "naver.com"이라는 이름의 서버에 있는, "/" 창구에 요청을 보낸 것!</p>
+</aside>
+<p><img src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff4770f1b-1509-4e69-b971-1cd5ceb258a6%2FUntitled.png?table=block&#x26;id=0115b3e0-4e16-4808-8f0e-5d34e14d06d9&#x26;spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&#x26;width=2000&#x26;userId=&#x26;cache=v2" alt=""></p>
+<h3 id="웹의-동작-개념-데이터만-받는-경우">웹의 동작 개념 (데이터만 받는 경우)</h3>
+<p><img src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe495bccc-7a19-40e6-8669-0e59d5506bfd%2FUntitled.png?table=block&#x26;id=80b5ea39-6f75-4bce-a0a7-2b34c6774102&#x26;spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&#x26;width=1970&#x26;userId=&#x26;cache=v2" alt=""></p>
+<aside>
+👉 데이터만 내려올 경우는, 이렇게 생겼는데 이런 생김새를 JSON 형식이라고 한다.
+</aside>
+<p><img src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F00ffef83-0d54-463d-b164-70f9b60f4b62%2FUntitled.png?table=block&#x26;id=18be6f59-af0f-47ff-b3b1-30db387f6432&#x26;spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&#x26;width=2000&#x26;userId=&#x26;cache=v2" alt=""></p>
+<br/>
+<h2 id="html-css-기본-내용" class="heading"><strong>HTML, CSS 기본 내용</strong></h2>
+<h3 id="html과-css의-개념">HTML과 CSS의 개념</h3>
+<aside>
+👉 HTML은 뼈대, CSS는 꾸미기!
+</aside>
+<ul>
+<li>HTML은 구역과 텍스트를 나타내는 코드로, CSS는 잡은 구역을 꾸며주는 것으로 생각합니다. HTML 내 style 속성으로 꾸미기를 할 수 있지만, 긴 세월동안 이것을 한데 모아 볼 수 있는 CSS 파일이 탄생하게 되었습니다. HTML 코드 내에 CSS 파일을 불러와서 적용힌다.</li>
+<li>또한 CSS를 잘 사용할 줄 아는 것과, '예쁘게' 만드는 것은 다른 영역이기 때문에(붓을 잡을 줄 아는 것과 그림을 잘 그릴 줄 아는 것의 차이), 많은 경우 웹디자이너나 퍼블리셔에게 의존하게 된다.</li>
+</ul>
+<h3 id="html-기초">HTML 기초</h3>
+<aside>
+👉 HTML은 크게 head와 body로 구성된다.
+</aside>
+<ul>
+<li>head안에는 페이지의 속성 정보를, body안에는 페이지의 내용을 담는다.</li>
+<li>head 안에 들어가는 대표적인 요소들: meta, script, link, title 등</li>
+</ul>
+<aside>
+👉 페이지의 속성을 정의하거나, 필요한 스크립트들을 부릅니다. 즉, 눈에 안 보이는 필요한 것들을 담는 것.
+</aside>
+<h3 id="css-기초"><strong>CSS 기초</strong></h3>
+<ul>
+<li>
+<p>CSS는 어떻게 사용하나요?</p>
+  <aside>
+  👉 <head> ~ </head> 안에 <style> ~ </style> 로 공간을 만들어 작성합니다.
+<p>mytitle라는 클래스를 가리킬 때, .mytitle { ... } 라고 써줘야 하는 것을 꼭! 기억!</p>
+  </aside>
+</li>
+</ul>
+<br/>
+<h2 id="javascript" class="heading"><strong>Javascript</strong></h2>
+<h3 id="자바스크립트란">자바스크립트란?</h3>
+<ul>
+<li>
+<p>프로그래밍 언어 중 하나로, 브라우저가 알아들을 수 있는 언어이다.</p>
+  <aside>
+  👉 이론 설명 때, 클라이언트가 서버에 요청하면, 서버가 클라이언트에게 HTML+CSS+Javascript를 준다.
+  </aside>
+  <aside>
+  👉 [잠깐 상식!]  
+<p>Q. 왜 브라우저는 Javascript만 알아들을까? HTML안에다 파이썬, Java 같은 언어를 써서 주면 안될까?</p>
+<p>A. 불가능한 이야기는 아니다. 다만, 이 "역사적인 이유 &#x26; 이미 만들어진 표준"이기 때문에, 모든 브라우저는 기본적으로 Javascript를 알아듣게 설계되어있고, 모든 웹서버는 HTML+CSS+Javascript를 주게 된다.</p>
+  </aside>
+</li>
+</ul>
+<h3 id="javascript-기초-문법">Javascript 기초 문법</h3>
+<details>
+<summary>변수 & 기본연산</summary>
+<div markdown="1">
+<ul>
+<li>
+<p>변수 대입( a = 2 )의 의미: "오른쪽에 있는 것을 왼쪽에 넣는 것!"
+(2를 a라는 변수에 넣는다)</p>
+<ul>
+<li>
+<p>let으로 변수를 선언합니다.</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+</span><span class="code-line">num <span class="token operator">=</span> <span class="token string">'Bob'</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// 변수는 값을 저장하는 박스예요.</span>
+</span><span class="code-line"><span class="token comment">// 한 번 선언했으면, 다시 선언하지 않고 값을 넣습니다.</span>
+</span></code></pre>
+</li>
+<li>
+<p>사칙연산, 그리고 문자열 더하기가 기본적으로 가능하다.</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">a <span class="token operator">+</span> b<span class="token punctuation">;</span> <span class="token comment">// 3</span>
+</span><span class="code-line">a <span class="token operator">/</span> b<span class="token punctuation">;</span> <span class="token comment">// 0.5</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">let</span> first <span class="token operator">=</span> <span class="token string">'Bob'</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token keyword">let</span> last <span class="token operator">=</span> <span class="token string">'Lee'</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line">first <span class="token operator">+</span> last<span class="token punctuation">;</span> <span class="token comment">// 'BobLee'</span>
+</span><span class="code-line">
+</span><span class="code-line">first <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> last<span class="token punctuation">;</span> <span class="token comment">// 'Bob Lee'</span>
+</span><span class="code-line">
+</span><span class="code-line">first <span class="token operator">+</span> a<span class="token punctuation">;</span> <span class="token comment">// Bob1 -> 문자+숫자를 하면, 숫자를 문자로 바꾼 뒤 수행한다.</span>
+</span></code></pre>
+</li>
+<li>
+<p>변수명은 아무렇게나?</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">let</span> first_name <span class="token operator">=</span> <span class="token string">'bob'</span> <span class="token comment">// snake case라고 합니다.</span>
+</span><span class="code-line">
+</span><span class="code-line">또는<span class="token punctuation">,</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">let</span> firstName <span class="token operator">=</span> <span class="token string">'bob'</span> <span class="token comment">// camel case라고 합니다. 회사마다 규칙이 있다.</span>
+</span><span class="code-line">
+</span><span class="code-line">과 같이<span class="token punctuation">,</span> 쉽게 알아볼 수 있게 쓰는 게 중요하다<span class="token punctuation">.</span>
+</span><span class="code-line"><span class="token property-access">다른</span> 특수문자 또는 띄워쓰기는 불가능하다<span class="token operator">!</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>리스트 & 딕셔너리</summary>
+<div markdown="1">
+<ul>
+<li>
+<p>리스트: 순서를 지켜서 가지고 있는 형태입니다.</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">let</span> a_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 리스트를 선언. 변수 이름은 역시 아무렇게나 가능!</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// 또는,</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">let</span> b_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'hey'</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 로 선언 가능</span>
+</span><span class="code-line">
+</span><span class="code-line">b_list<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 2 를 출력</span>
+</span><span class="code-line">b_list<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 'hey'를 출력</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// 리스트에 요소 넣기</span>
+</span><span class="code-line">b_list<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span><span class="token string">'헤이'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">b_list<span class="token punctuation">;</span> <span class="token comment">// [1, 2, "hey", 3, "헤이"] 를 출력</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// 리스트의 길이 구하기</span>
+</span><span class="code-line">b_list<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> <span class="token comment">// 5를 출력</span>
+</span></code></pre>
+</li>
+<li>
+<p>딕셔너리: 키(key)-밸류(value) 값의 묶음</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">let</span> a_dict <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 딕셔너리 선언. 변수 이름은 역시 아무렇게나 가능!</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// 또는,</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">let</span> b_dict <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Bob'</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">21</span> <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 로 선언 가능</span>
+</span><span class="code-line">b_dict<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 'Bob'을 출력</span>
+</span><span class="code-line">b_dict<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 21을 출력</span>
+</span><span class="code-line">
+</span><span class="code-line">b_dict<span class="token punctuation">[</span><span class="token string">'height'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">180</span><span class="token punctuation">;</span> <span class="token comment">// 딕셔너리에 키:밸류 넣기</span>
+</span><span class="code-line">b_dict<span class="token punctuation">;</span> <span class="token comment">// {name: "Bob", age: 21, height: 180}을 출력</span>
+</span></code></pre>
+</li>
+<li>
+<p>리스트와 딕셔너리의 조합</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line">names <span class="token operator">=</span> <span class="token punctuation">[</span>
+</span><span class="code-line">  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'bob'</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">20</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'carry'</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">38</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line"><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// names[0]['name']의 값은? 'bob'</span>
+</span><span class="code-line"><span class="token comment">// names[1]['name']의 값은? 'carry'</span>
+</span><span class="code-line">
+</span><span class="code-line">new_name <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'john'</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">7</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line">names<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span>new_name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// names의 값은? [{'name':'bob','age':20},{'name':'carry','age':38},{'name':'john','age':7}]</span>
+</span><span class="code-line"><span class="token comment">// names[2]['name']의 값은? 'john'</span>
+</span></code></pre>
+</li>
+<li>
+<p>왜 필요할까요?</p>
+  <aside>
+  💡 순서를 표시할 수 있고, 정보를 묶을 수 있다.  
+  </aside>  
+<p>앞에서 언급한 &#x3C;스파르타과일가게>가 정말 잘 되어서 전국에서 손님이 찾아오고 있다. 대기표를 작성하기 위해서 온 순서대로 이름,  휴대폰 번호를 적도록 하였는데 변수만을 사용한 모습은 다음과 같다.</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">let</span> customer_1_name <span class="token operator">=</span> <span class="token string">'김스파'</span><span class="token punctuation">;</span>  
+</span><span class="code-line"><span class="token keyword">let</span> customer_1_phone <span class="token operator">=</span> <span class="token string">'010-1234-1234'</span><span class="token punctuation">;</span>  
+</span><span class="code-line"><span class="token keyword">let</span> customer_2_name <span class="token operator">=</span> <span class="token string">'박르탄'</span><span class="token punctuation">;</span>  
+</span><span class="code-line"><span class="token keyword">let</span> customer_2_phone <span class="token operator">=</span> <span class="token string">'010-4321-4321'</span><span class="token punctuation">;</span>  
+</span><span class="code-line"><span class="token comment">//...(알아보기 힘들다.)</span>
+</span></code></pre>
+<p>👉딕셔너리를 활용한다면 다음과 같이 고객 별로 정보를 묶을 수 있다.</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">let</span> customer_1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string-property property">'name'</span><span class="token operator">:</span> <span class="token string">'김스파'</span><span class="token punctuation">,</span> <span class="token string-property property">'phone'</span><span class="token operator">:</span> <span class="token string">'010-1234-1234'</span><span class="token punctuation">}</span><span class="token punctuation">;</span>  
+</span><span class="code-line"><span class="token keyword">let</span> customer_2 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string-property property">'name'</span><span class="token operator">:</span> <span class="token string">'박르탄'</span><span class="token punctuation">,</span> <span class="token string-property property">'phone'</span><span class="token operator">:</span> <span class="token string">'010-4321-4321'</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>👉그리고 순서를 나타내기 위해 리스트를 사용하면, 이렇게나 깔끔해진다.</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">let</span> customer <span class="token operator">=</span> <span class="token punctuation">[</span>
+</span><span class="code-line">    <span class="token punctuation">{</span><span class="token string-property property">'name'</span><span class="token operator">:</span> <span class="token string">'김스파'</span><span class="token punctuation">,</span> <span class="token string-property property">'phone'</span><span class="token operator">:</span> <span class="token string">'010-1234-1234'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">    <span class="token punctuation">{</span><span class="token string-property property">'name'</span><span class="token operator">:</span> <span class="token string">'박르탄'</span><span class="token punctuation">,</span> <span class="token string-property property">'phone'</span><span class="token operator">:</span> <span class="token string">'010-4321-4321'</span><span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token punctuation">]</span>
+</span></code></pre>
+<p>✅보기에도 깔끔해지고, 다루기도 쉬워지고, 고객이 새로 한 명 더 오더라도 .push 함수를 이용해 간단하게 대응할 수 있다.</p>
+</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>기본 함수들</summary>
+<div markdown="1">
+<ul>
+<li>
+<p>사칙연산 외에도, 기본적으로 제공하는 여러 함수들이 존재합니다.</p>
+<ul>
+<li>
+<p>예를 들면, '나눗셈의나머지'를 구하고 싶은 경우</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line">    <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">20</span>
+</span><span class="code-line">    <span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token number">7</span>
+</span><span class="code-line">    a <span class="token operator">%</span> b <span class="token operator">=</span> <span class="token number">6</span>
+</span></code></pre>
+</li>
+<li>
+<p>또, 특정 문자로 문자열을 나누고 싶은 경우</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">let</span> myemail <span class="token operator">=</span> <span class="token string">'sparta@gmail.com'</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">let</span> result <span class="token operator">=</span> myemail<span class="token punctuation">.</span><span class="token method function property-access">split</span><span class="token punctuation">(</span><span class="token string">'@'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ['sparta','gmail.com']</span>
+</span><span class="code-line">
+</span><span class="code-line">result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// sparta</span>
+</span><span class="code-line">result<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// gmail.com</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">let</span> result2 <span class="token operator">=</span> result<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token method function property-access">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ['gmail','com']</span>
+</span><span class="code-line">
+</span><span class="code-line">result2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// gmail -> 우리가 알고 싶었던 것!</span>
+</span><span class="code-line">result2<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// com</span>
+</span><span class="code-line">
+</span><span class="code-line">myemail<span class="token punctuation">.</span><span class="token method function property-access">split</span><span class="token punctuation">(</span><span class="token string">'@'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token method function property-access">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// gmail -> 간단하게 쓸 수도 있다!</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>함수</p>
+<ul>
+<li>
+<p>기본 생김새</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token comment">// 만들기</span>
+</span><span class="code-line"><span class="token keyword">function</span> <span class="token function">함수이름</span><span class="token punctuation">(</span><span class="token parameter">필요한 변수들</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">	내릴 명령들을 순차적으로 작성
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token comment">// 사용하기</span>
+</span><span class="code-line"><span class="token function">함수이름</span><span class="token punctuation">(</span>필요한 변수들<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+</li>
+<li>
+<p>예시</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token comment">// 두 숫자를 입력받으면 더한 결과를 돌려주는 함수</span>
+</span><span class="code-line"><span class="token keyword">function</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token parameter">num1<span class="token punctuation">,</span> num2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'숫자'</span><span class="token punctuation">,</span> num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword control-flow">return</span> num1 <span class="token operator">+</span> num2<span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 8</span>
+</span><span class="code-line"><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>조건문</p>
+<ul>
+<li>
+<p>20 보다 작으면 작다고, 크면 크다고 알려주는 함수</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">function</span> <span class="token function">is_adult</span><span class="token punctuation">(</span><span class="token parameter">age</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>age <span class="token operator">></span> <span class="token number">20</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'성인이에요'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span> <span class="token keyword control-flow">else</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'청소년이에요'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token function">is_adult</span><span class="token punctuation">(</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+</li>
+<li>
+<p>if, else if, else if, else if else</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">function</span> <span class="token function">is_adult</span><span class="token punctuation">(</span><span class="token parameter">age</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>age <span class="token operator">></span> <span class="token number">20</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'성인이에요'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span> <span class="token keyword control-flow">else</span> <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>age <span class="token operator">></span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'청소년이에요'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span> <span class="token keyword control-flow">else</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'10살 이하!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token function">is_adult</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>반복문</summary>
+<div markdown="1">
+<ul>
+<li>
+<p>예를 들어 0부터 99까지 출력해야 하는 상황이라면!</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token spread operator">...</span>
+</span><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token number">99</span><span class="token punctuation">)</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// 이렇게 쓰기엔 무리가 있겠죠? 그래서, 반복문이라는 것이 존재합니다!</span>
+</span></code></pre>
+<ul>
+<li>
+<p>반복문을 이용하면 아래와 같이 단 세줄로, 출력할 수 있습니다.</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span></code></pre>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token number">1.</span> 시작조건<span class="token punctuation">;</span> <span class="token number">2.</span> 반복조건<span class="token punctuation">;</span> <span class="token number">3.</span> 더하기<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">	<span class="token number">4.</span> 매번실행
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token number">1</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token number">2</span>체크하고 <span class="token operator">-</span><span class="token operator">></span> <span class="token punctuation">(</span>괜찮으면<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token number">4</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token number">3</span>
+</span><span class="code-line"><span class="token operator">-</span><span class="token operator">></span> <span class="token number">2</span>체크하고 <span class="token operator">-</span><span class="token operator">></span> <span class="token punctuation">(</span>괜찮으면<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token number">4</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token number">3</span>
+</span><span class="code-line"><span class="token operator">-</span><span class="token operator">></span> <span class="token number">2</span>체크하고 <span class="token operator">-</span><span class="token operator">></span> <span class="token punctuation">(</span>괜찮으면<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token number">4</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token number">3</span>
+</span><span class="code-line"><span class="token operator">-</span><span class="token operator">></span> <span class="token number">2</span>체크하고 <span class="token operator">-</span><span class="token operator">></span> <span class="token punctuation">(</span>괜찮으면<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token number">4</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token number">3</span>
+</span><span class="code-line">
+</span><span class="code-line">와 같은 순서로 실행됩니다<span class="token punctuation">.</span>
+</span><span class="code-line"><span class="token property-access">i가</span> 증가하다가 반복조건에 맞지 않으면<span class="token punctuation">,</span> 반복을 종료하고 빠져나옵니다<span class="token punctuation">.</span>
+</span></code></pre>
+</li>
+<li>
+<p>그러나 위처럼 숫자를 출력하는 경우보다는, 반복문은 주로 리스트와 함께 쓰입니다.</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">let</span> people <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'철수'</span><span class="token punctuation">,</span> <span class="token string">'영희'</span><span class="token punctuation">,</span> <span class="token string">'민수'</span><span class="token punctuation">,</span> <span class="token string">'형준'</span><span class="token punctuation">,</span> <span class="token string">'기남'</span><span class="token punctuation">,</span> <span class="token string">'동희'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// 이렇게 하면 리스트의 모든 원소를 한번에 출력할 수 있겠죠?</span>
+</span><span class="code-line"><span class="token comment">// i가 1씩 증가하면서, people의 원소를 차례대로 불러올 수 있게 됩니다.</span>
+</span><span class="code-line"><span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> people<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>people<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span></code></pre>
+</li>
+<li>
+<p>리스트도 그냥 리스트가 아닙니다! 딕셔너리가 들어간 리스트와 찰떡이다</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token keyword">let</span> scores <span class="token operator">=</span> <span class="token punctuation">[</span>
+</span><span class="code-line">  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'철수'</span><span class="token punctuation">,</span> <span class="token literal-property property">score</span><span class="token operator">:</span> <span class="token number">90</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'영희'</span><span class="token punctuation">,</span> <span class="token literal-property property">score</span><span class="token operator">:</span> <span class="token number">85</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'민수'</span><span class="token punctuation">,</span> <span class="token literal-property property">score</span><span class="token operator">:</span> <span class="token number">70</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'형준'</span><span class="token punctuation">,</span> <span class="token literal-property property">score</span><span class="token operator">:</span> <span class="token number">50</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'기남'</span><span class="token punctuation">,</span> <span class="token literal-property property">score</span><span class="token operator">:</span> <span class="token number">68</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line">  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'동희'</span><span class="token punctuation">,</span> <span class="token literal-property property">score</span><span class="token operator">:</span> <span class="token number">30</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line"><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> scores<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>scores<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// 이렇게 하면 리스트 내의 딕셔너리를 하나씩 출력할 수 있고,</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> scores<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>scores<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'score'</span><span class="token punctuation">]</span> <span class="token operator">&#x3C;</span> <span class="token number">70</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>scores<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment">// 이렇게 하면 점수가 70점 미만인 사람들의 이름만 출력할 수도 있습니다.</span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+<br>
+<h2 id="review" class="heading">Review</h2>
+<p>프론트엔드를 공부하면서 전반적으로 아는 내용이라 빠르게 복습하는 식으로 하고 넘겼다. 부트스트랩을 처음 써보았는데 확실히 디자인이 더 깔끔하고 사용하기가 편한 것 같다.</p>]]>
     </content:encoded>
   </item>
     </channel>
