@@ -90,6 +90,52 @@
 <p>원리는 같으나 prefix가 같지 않을때 break를 걸어서 불필요하게 for문을 반복하는 코드를 줄여서 runtime을 줄였기 때문에 확실히 간단해진 것 같다.</p>]]>
     </content:encoded>
   </item><item>
+    <title><![CDATA[[LeetCode] Reverse String]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220907-Reverse-String</link>
+    <pubDate>2022-09-07</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220907-Reverse-String</guid>
+    <description>
+    <![CDATA[Array and String]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="description" class="heading">Description</h2>
+<p>Write a function that reverses a string. The input string is given as an array of characters <code>s</code>.</p>
+<p>You must do this by modifying the input array <a href="https://en.wikipedia.org/wiki/In-place_algorithm" target="_blank" rel="noopener noreferer">in-place</a> with <code>O(1)</code> extra memory.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code class="code-highlight"><span class="code-line">Input: s = ["h","e","l","l","o"]
+</span><span class="code-line">Output: ["o","l","l","e","h"]
+</span><span class="code-line">
+</span></code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code class="code-highlight"><span class="code-line">Input: s = ["H","a","n","n","a","h"]
+</span><span class="code-line">Output: ["h","a","n","n","a","H"]
+</span><span class="code-line">
+</span></code></pre>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &#x3C;= s.length &#x3C;= 105</code></li>
+<li><code>s[i]</code> is a <a href="https://en.wikipedia.org/wiki/ASCII#Printable_characters" target="_blank" rel="noopener noreferer">printable ascii character</a>.</li>
+</ul>
+<br/>
+<h2 id="submission" class="heading">Submission</h2>
+<pre class="language-jsx"><code class="language-jsx code-highlight"><span class="code-line"><span class="token keyword">var</span> <span class="token function-variable function">reverseString</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">  <span class="token keyword">let</span> p <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword">let</span> q <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token keyword control-flow">while</span> <span class="token punctuation">(</span>p <span class="token operator">&#x3C;=</span> q<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token keyword">let</span> temp <span class="token operator">=</span> s<span class="token punctuation">[</span>q<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">    s<span class="token punctuation">[</span>q<span class="token punctuation">]</span> <span class="token operator">=</span> s<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line">    s<span class="token punctuation">[</span>p<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+</span><span class="code-line">    p<span class="token operator">++</span><span class="token punctuation">;</span>
+</span><span class="code-line">    q<span class="token operator">--</span><span class="token punctuation">;</span>
+</span><span class="code-line">  <span class="token punctuation">}</span>
+</span><span class="code-line"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>Runtime: <strong>121 ms</strong></p>
+<p>Memory Usage: <strong>49.2 MB</strong></p>
+<p>배열을 역순으로 출력하는 문제였다. <code>reverse</code> 메소드를 사용해서 간단하게 풀 수 있었으나 투포인터 알고리즘을 사용하여 풀었다.</p>
+<p>배열의 첫번째와 마지막 두개의 포인터로 첫번째 포인터는 더하고 마지막 포인터는 빼면서 두 포인터가 같거나 작을때까지 바꿔준다.</p>]]>
+    </content:encoded>
+  </item><item>
     <title><![CDATA[[DevOps] CI / CD]]></title>
     <link>https://dgd03146-github-io.vercel.app//220907-CI-CD</link>
     <pubDate>2022-09-07</pubDate>
@@ -150,9 +196,9 @@
 <p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2bc170ef-3ac6-4ace-9bf5-665c542b5d14/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&#x26;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&#x26;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&#x26;X-Amz-Date=20220907T022331Z&#x26;X-Amz-Expires=86400&#x26;X-Amz-Signature=511461b68d8be3e8db539e4979ddf026413c5bdec1ff225fa5c585319d19486f&#x26;X-Amz-SignedHeaders=host&#x26;response-content-disposition=filename%20%3D%22Untitled.png%22&#x26;x-id=GetObject" alt="Untitled"></p>
 <br/>
 <blockquote>
-<p>References</p>
-</blockquote>
-<p><a href="https://www.youtube.com/watch?v=0Emq5FypiMM" target="_blank" rel="noopener noreferer">https://www.youtube.com/watch?v=0Emq5FypiMM</a></p>]]>
+<p>References
+<a href="https://www.youtube.com/watch?v=0Emq5FypiMM" target="_blank" rel="noopener noreferer">https://www.youtube.com/watch?v=0Emq5FypiMM</a></p>
+</blockquote>]]>
     </content:encoded>
   </item><item>
     <title><![CDATA[[TIL] 20220903]]></title>
