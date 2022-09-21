@@ -93,6 +93,33 @@
 </ul>]]>
     </content:encoded>
   </item><item>
+    <title><![CDATA[[TIL] 20220913]]></title>
+    <link>https://dgd03146-github-io.vercel.app//220913</link>
+    <pubDate>2022-09-13</pubDate>
+    <guid isPermaLink="false">https://dgd03146-github-io.vercel.app//220913</guid>
+    <description>
+    <![CDATA[프로젝트 에러 수정, 발표 준비]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="what-i-did-today" class="heading">What I Did Today</h2>
+<ul>
+<li>프로젝트 에러 고치기</li>
+<li>프로젝트 발표 ppt 만들기
+<ul>
+<li>트러블 슈팅 정리</li>
+<li>브로셔 정리</li>
+<li>구현 아키텍쳐 정리</li>
+</ul>
+</li>
+</ul>
+<br/>
+<h2 id="tomorrows-to-dos" class="heading">Tomorrow’s To-dos</h2>
+<ul>
+<li>프로젝트 발표 준비하기
+<br/></li>
+</ul>]]>
+    </content:encoded>
+  </item><item>
     <title><![CDATA[[LeetCode] Longest Common Prefix]]></title>
     <link>https://dgd03146-github-io.vercel.app//220907-Longest-Common-Prefix</link>
     <pubDate>2022-09-07</pubDate>
