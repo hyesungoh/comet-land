@@ -18,7 +18,8 @@
     "cypress": "turbo run cypress",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "export:blog": "cd apps/blog && yarn export",
-    "export:resume": "cd apps/resume && yarn export"
+    "export:resume": "cd apps/resume && yarn export",
+    "prepare": "husky install"
   },
   "engines": {
     "npm": ">=7.0.0",
