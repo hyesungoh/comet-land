@@ -1,0 +1,28 @@
+'test: unit':
+  - '*.test.{js,jsx,ts,tsx}'
+  - '**/*.test.{js,jsx,ts,tsx}'
+
+'test: e2e':
+  - '*.spec.{js,jsx,ts,tsx}'
+  - '**/*.spec.{js,jsx,ts,tsx}'
+
+ci:
+  - .github/workflows/CI.yml
+
+workflow:
+  - .github/workflows/*
+
+'area: blog':
+  - apps/blog/*
+  - apps/blog/**/*
+
+'area: resume':
+  - apps/resume/*
+  - apps/resume/**/*
+
+'area: core':
+  - packages/core/*
+  - packages/core/**/*
+
+documentation:
+  - any: ['*.md', '**/*.md', '!apps/blog/_content/*']
