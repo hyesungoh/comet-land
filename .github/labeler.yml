@@ -25,6 +25,4 @@ workflow:
   - packages/core/**/*
 
 documentation:
-  - '*.md'
-  - '**/*.md'
-  - '!apps/blog/_content/*'
+  - any: ['*.md', '**/*.md', '!apps/blog/_content/*']
