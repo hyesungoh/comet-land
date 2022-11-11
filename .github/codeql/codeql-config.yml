@@ -1,0 +1,7 @@
+name: 'Comet land CodeQL config'
+
+paths-ignore:
+  - '**/*.test.ts'
+  - '**/*.test.tsx'
+  - '**/*.spec.ts'
+  - '**/*.spec.tsx'
