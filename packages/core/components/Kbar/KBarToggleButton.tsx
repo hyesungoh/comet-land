@@ -9,7 +9,7 @@ export function KBarToggleButton() {
 
   return (
     <Button
-      onClick={() => query.toggle()}
+      onClick={query.toggle}
       auto
       size="sm"
       aria-label="search button"

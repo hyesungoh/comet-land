@@ -15,13 +15,13 @@ describe('blog - components - Comments', () => {
   it('should create script tag', () => {
     jest.spyOn(document, 'createElement');
     render(<Comments />);
-    expect(document.createElement).lastCalledWith('script');
+    expect(document.createElement).toHaveBeenLastCalledWith('script');
   });
 
   it('should useRef called once', () => {
     const useRefSpy = jest.spyOn(React, 'useRef');
     render(<Comments />);
-    expect(useRefSpy).toBeCalledTimes(1);
+    expect(useRefSpy).toHaveBeenCalledTimes(1);
   });
 
   it('should check html theme', () => {

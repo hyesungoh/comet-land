@@ -11,9 +11,7 @@ export function MainHeader() {
   return (
     <Header>
       <H1 h1 css={{ textGradient: `45deg, ${theme.colors.text.value} -20%, ${theme.colors.primary.value} 70%` }}>
-        <Link href="/">
-          <a dangerouslySetInnerHTML={{ __html: blogName }}></a>
-        </Link>
+        <Link href="/" dangerouslySetInnerHTML={{ __html: blogName }}></Link>
       </H1>
       <ButtonWrapper>
         <ThemeSwitch />

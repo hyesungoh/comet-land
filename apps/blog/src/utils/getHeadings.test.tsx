@@ -51,7 +51,7 @@ describe('blog - utils - getHeadings', () => {
     const querySelectorAllSpy = jest.spyOn(document, 'querySelectorAll');
     const result = getHeadings();
 
-    expect(querySelectorAllSpy).toBeCalledWith(`.${HEADING_CLASS_NAME}`);
+    expect(querySelectorAllSpy).toHaveBeenCalledWith(`.${HEADING_CLASS_NAME}`);
     expect(result).toHaveLength(0);
   });
 

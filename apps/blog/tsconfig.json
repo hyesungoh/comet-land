@@ -1,6 +1,7 @@
 {
   "extends": "tsconfig/config-nextjs.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "**/*.spec.tsx", "**/*.test.tsx"]
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "**/*.spec.tsx", "**/*.test.tsx"],
+  "compilerOptions": { "types": ["@emotion/react/types/css-prop"] }
   // note: extending exclude must have baseUrl
 }

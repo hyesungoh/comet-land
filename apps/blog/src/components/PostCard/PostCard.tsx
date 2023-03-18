@@ -17,11 +17,9 @@ function PostCard({ slug, title, subtitle, date, category, theme }: Props) {
   return (
     <Article>
       <h3>
-        <NextLink href={`/${slug}`} passHref>
-          <Link underline css={{ color: theme.colors.text.value }}>
-            {title}
-          </Link>
-        </NextLink>
+        <Link as={NextLink} href={`/${slug}`} underline css={{ color: theme.colors.text.value }}>
+          {title}
+        </Link>
       </h3>
       <Small theme={theme}>
         <DateAndCategoryLink date={date} category={category} />

@@ -10,16 +10,14 @@ export default function KBarSearch(props: React.InputHTMLAttributes<HTMLInputEle
     actions: state.actions,
   }));
   const { theme } = useTheme();
-  const ownRef = React.useRef<HTMLInputElement>(null);
 
   React.useEffect(() => {
     query.setSearch('');
-    ownRef.current?.focus();
   }, [currentRootActionId, query]);
 
   return (
     <Input
-      ref={ownRef}
+      ref={query.inputRefSetter}
       {...props}
       value={search}
       placeholder="Cmd (or Ctrl) + K to toggle"
