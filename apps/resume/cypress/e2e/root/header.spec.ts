@@ -29,9 +29,7 @@ describe('root - header', { testIsolation: false }, () => {
     // it means prefer light theme and width greater than 650px
     cy.visit('/', {
       onBeforeLoad: win => {
-        cy.stub(win, 'matchMedia')
-          .withArgs('(prefers-color-scheme: dark)')
-          .returns({ matches: true, addListener: () => {}, removeListener: () => {} });
+        cy.stub(win, 'matchMedia').returns({ matches: true, addListener: () => {}, removeListener: () => {} });
       },
     });
 
