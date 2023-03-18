@@ -40,7 +40,6 @@
   "devDependencies": {
     "config": "*",
     "cypress": "^12.8.1",
-    "intersection-observer": "^0.12.2",
     "tsconfig": "*"
   }
 }
