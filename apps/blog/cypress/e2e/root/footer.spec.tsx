@@ -1,4 +1,4 @@
-describe('root - footer', () => {
+describe('root - footer', { testIsolation: false }, () => {
   it('should render footer', () => {
     cy.visit('/');
     cy.scrollTo('bottom');

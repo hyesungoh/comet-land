@@ -1,4 +1,4 @@
-describe('root - main', () => {
+describe('root - main', { testIsolation: false }, () => {
   it('should render level 3 heading inside of main', () => {
     cy.visit('/');
     cy.get('main').find('h3').should('exist');

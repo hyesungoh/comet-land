@@ -14,9 +14,9 @@ function DateAndCategoryLink({ date, category }: Props) {
         <>
           {' '}
           at{' '}
-          <NextLink href={`/category/${category}`} passHref>
-            <Link color="primary">{category}</Link>
-          </NextLink>{' '}
+          <Link as={NextLink} href={`/category/${category}`} color="primary">
+            {category}
+          </Link>{' '}
           category
         </>
       )}

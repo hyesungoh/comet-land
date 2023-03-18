@@ -1,6 +1,6 @@
 import { data as workExperienceData } from '../../../_content/Work-Experience';
 
-describe('root - work experience', () => {
+describe('root - work experience', { testIsolation: false }, () => {
   it('should render work experience title', () => {
     cy.visit('/');
     // NOTE: scrollIntoView is used because user can change the position of work experience section.

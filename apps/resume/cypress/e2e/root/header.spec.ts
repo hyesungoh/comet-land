@@ -1,6 +1,6 @@
 import { data as headerData } from '../../../_content/Header';
 
-describe('root - header', () => {
+describe('root - header', { testIsolation: false }, () => {
   it('should display level 1 heading at header', () => {
     cy.visit('/');
     cy.get('header').find('h1').should('be.visible');
@@ -29,15 +29,17 @@ describe('root - header', () => {
     // it means prefer light theme and width greater than 650px
     cy.visit('/', {
       onBeforeLoad: win => {
-        cy.stub(win, 'matchMedia').returns({ matches: false, addListener: () => {}, removeListener: () => {} });
+        cy.stub(win, 'matchMedia').returns({ matches: true, addListener: () => {}, removeListener: () => {} });
       },
     });
 
     cy.get('body').then($body => {
-      const lightBgColor = $body.css('background-color');
-
+      const firstBackgroundColor = $body.css('background-color');
+      cy.wait(1000);
       cy.get(GET_THEME_SWITCH_BY_LABEL).click();
-      cy.get('body').should('have.css', 'background-color').and('not.eq', lightBgColor);
+
+      cy.wait(1000);
+      cy.get('body').should('have.css', 'background-color').and('not.eq', firstBackgroundColor);
     });
   });
 });

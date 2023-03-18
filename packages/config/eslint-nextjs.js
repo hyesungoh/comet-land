@@ -71,5 +71,5 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: ['**/*.js', '**/*.json', 'node_modules', 'public', 'styles', '.next', 'coverage', 'dist', '.turbo'],
+  ignorePatterns: ['node_modules', '.next', 'coverage', 'dist'],
 };
