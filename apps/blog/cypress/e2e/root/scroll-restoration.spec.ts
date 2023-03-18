@@ -3,6 +3,7 @@ describe('root - store restoration', { testIsolation: false }, () => {
     const SCROLL_Y_POSITION = 30;
 
     cy.visit('/');
+    cy.wait(1000);
     cy.window().then($window => {
       $window.scrollTo(0, SCROLL_Y_POSITION);
     });
