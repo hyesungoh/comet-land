@@ -32,6 +32,7 @@ describe('root - header', { testIsolation: false }, () => {
       const lightBgColor = $body.css('background-color');
 
       cy.get(GET_THEME_SWITCH_BY_LABEL).click();
+      cy.wait(1000);
       cy.get('body').should('have.css', 'background-color').and('not.eq', lightBgColor);
     });
   });
