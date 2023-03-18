@@ -22,8 +22,6 @@
     "@nextui-org/react": "^1.0.0-beta.12",
     "core": "*",
     "gray-matter": "^4.0.3",
-    "jest": "^29.5.0",
-    "jest-environment-jsdom": "^29.5.0",
     "kbar": "^0.1.0-beta.40",
     "next": "^13.2.4",
     "next-themes": "^0.2.1",
@@ -37,7 +35,6 @@
     "remark-gfm": "^3.0.1",
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
-    "turbo": "^1.8.3",
     "unified": "^10.1.2"
   },
   "devDependencies": {
