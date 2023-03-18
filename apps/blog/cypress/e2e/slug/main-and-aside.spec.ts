@@ -1,4 +1,4 @@
-describe('slug - main', () => {
+describe('slug - main', { testIsolation: false }, () => {
   it('should linkable to slug', () => {
     cy.visit('/');
     cy.get('main').find('a').first().click();

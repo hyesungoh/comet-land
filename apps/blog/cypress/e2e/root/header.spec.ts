@@ -1,4 +1,4 @@
-describe('root - header', () => {
+describe('root - header', { testIsolation: false }, () => {
   it('should has header', () => {
     cy.visit('/');
     cy.get('header').should('be.visible');

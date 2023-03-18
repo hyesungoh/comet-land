@@ -1,6 +1,6 @@
 import { data as headerData } from '../../../_content/Header';
 
-describe('root - header', () => {
+describe('root - header', { testIsolation: false }, () => {
   it('should display level 1 heading at header', () => {
     cy.visit('/');
     cy.get('header').find('h1').should('be.visible');

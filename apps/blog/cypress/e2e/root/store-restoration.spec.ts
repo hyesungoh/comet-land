@@ -1,4 +1,4 @@
-describe('root - store restoration', () => {
+describe('root - store restoration', { testIsolation: false }, () => {
   it('should restore scroll position when reload', () => {
     const SCROLL_Y_POSITION = 200;
 
