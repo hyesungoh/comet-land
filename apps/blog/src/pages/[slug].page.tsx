@@ -33,7 +33,7 @@ function Post({ title, subtitle, category, date, content, ogImage }: Props) {
         <P theme={theme}>
           <DateAndCategoryLink date={date} category={category} />
         </P>
-        <article dangerouslySetInnerHTML={{ __html: content }}></article>
+        <Article dangerouslySetInnerHTML={{ __html: content }}></Article>
       </Main>
       <AuthorSection hasKbarButton />
       <Comments />
@@ -57,6 +57,36 @@ const P = styled.p<{ theme: NextUITheme | undefined }>`
   margin-top: 0;
   margin-bottom: 3rem;
   color: ${({ theme }) => theme.colors.accents6.value};
+`;
+
+const Article = styled.article`
+  & h1,
+  & h2 {
+    margin-top: 2rem;
+  }
+
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    margin-top: 1rem;
+  }
+
+  & img {
+    margin-top: 0.75rem;
+  }
+
+  & hr {
+    margin: 1.5rem 0;
+  }
+
+  & p {
+    margin-bottom: 0.25rem;
+  }
+
+  & blockquote p:last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 interface Paths {
