@@ -36,4 +36,12 @@ describe('blog - components - Comments', () => {
     render(<Comments />);
     expect(querySelectorSpy).toHaveBeenCalledWith(UTTERANCE_QUERY);
   });
+
+  it('should createElement called once', () => {
+    const createElementSpy = jest.spyOn(document, 'createElement');
+    render(<Comments />);
+    // NOTE: 1 div, 2 section
+    expect(createElementSpy).toHaveBeenNthCalledWith(3, 'script');
+    expect(createElementSpy).not.toHaveBeenNthCalledWith(4, 'script');
+  });
 });
