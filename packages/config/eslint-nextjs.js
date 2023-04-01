@@ -71,5 +71,5 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: ['node_modules', '.next', 'coverage', 'dist'],
+  ignorePatterns: ['node_modules', '.next', 'coverage', 'dist', '*/config/*'],
 };
