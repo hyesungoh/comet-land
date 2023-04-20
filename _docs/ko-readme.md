@@ -1,6 +1,6 @@
 # Comet-land
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/hyesungoh/comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/comet-land/context:javascript) [![Continious Intergration](https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml/badge.svg)](https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml) [![codecov](https://codecov.io/gh/hyesungoh/comet-land/branch/main/graph/badge.svg?token=TA7LT3RQ1P)](https://codecov.io/gh/hyesungoh/comet-land) [![blog](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/yiddyz&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/yiddyz/runs) [![resume](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/inc4yo&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/inc4yo/runs)
+[![CodeQL](https://github.com/hyesungoh/comet-land/actions/workflows/codeql.yml/badge.svg)](https://github.com/hyesungoh/comet-land/actions/workflows/codeql.yml) [![Continious Intergration](https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml/badge.svg)](https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml) [![codecov](https://codecov.io/gh/hyesungoh/comet-land/branch/main/graph/badge.svg?token=TA7LT3RQ1P)](https://codecov.io/gh/hyesungoh/comet-land) [![blog](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/yiddyz&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/yiddyz/runs) [![resume](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/inc4yo&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/inc4yo/runs)
 
 turborepo를 사용한 블로그와 이력서 템플릿입니다.
 
@@ -148,7 +148,11 @@ yarn add package-name -DW
 
 - [hyesungoh.xyz](https://www.hyesungoh.xyz/)
 - [seulheehan.com](https://www.seulheehan.com/)
-- [bong-bonga.vercel.app](https://bong-bonga.vercel.app/)
+- [thebong.net](https://thebong.net/)
+- [coderoad.kr](https://blog.coderoad.kr)
+- [govindkumar.in](https://www.govindkumar.in/)
+- [blog.milansachani.dev](https://blog.milansachani.dev/)
+- [resume.jadecode.xyz](https://resume.jadecode.xyz/)
 
 ## 영감
 
