@@ -19,7 +19,7 @@ export function KBarResult() {
             {item.icon && (
               <Icon
                 name={item.icon as IconNameType}
-                fill={active ? theme?.colors.primary.value : theme?.colors.accents4.value}
+                fill={active ? theme?.colors.primary.value : theme?.colors.accents6.value}
                 style={{ transition: 'fill 0.3s', marginRight: '12px', flexShrink: '0' }}
               />
             )}
@@ -41,7 +41,7 @@ const B = styled.b<{ theme: NextUITheme | undefined }>`
   flex-direction: column;
   align-items: flex-start;
   font-size: 12px;
-  color: ${({ theme }) => theme.colors.accents4.value};
+  color: ${({ theme }) => theme.colors.accents6.value};
   padding: 4px 16px;
 `;
 
@@ -89,5 +89,5 @@ const Title = styled.span`
 
 const SubTitle = styled.span<{ theme: NextUITheme | undefined }>`
   font-size: 12px;
-  color: ${({ theme }) => theme.colors.accents4.value};
+  color: ${({ theme }) => theme.colors.accents6.value};
 `;

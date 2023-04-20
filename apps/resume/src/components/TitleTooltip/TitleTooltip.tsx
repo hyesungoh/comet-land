@@ -39,12 +39,12 @@ function TooltipContent({ githubLink, otherLink }: TooltipProps) {
     <Div>
       {githubLink && (
         <a href={githubLink} rel="noreferrer" target="_blank">
-          <Button auto light icon={<Icon name="GithubLine" fill={theme.colors.accents4.value} />} />
+          <Button auto light icon={<Icon name="GithubLine" fill={theme.colors.accents6.value} />} />
         </a>
       )}
       {otherLink && (
         <a href={otherLink} rel="noreferrer" target="_blank">
-          <Button auto light icon={<Icon name="Link" fill={theme.colors.accents4.value} />} />
+          <Button auto light icon={<Icon name="Link" fill={theme.colors.accents6.value} />} />
         </a>
       )}
     </Div>

@@ -51,7 +51,7 @@ const Input = styled.input<{ theme: NextUITheme | undefined }>`
   }
 
   &::placeholder {
-    color: ${({ theme }) => theme.colors.accents4.value};
+    color: ${({ theme }) => theme.colors.accents6.value};
     transition: opacity 0.25s ease 0s;
     -moz-transition: opacity 0.25s ease 0s;
     -ms-transition: opacity 0.25s ease 0s;
