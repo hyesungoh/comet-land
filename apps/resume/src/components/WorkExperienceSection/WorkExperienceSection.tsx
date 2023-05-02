@@ -33,7 +33,7 @@ export default WorkExperienceSection;
 
 const CompanyWrapper = styled.div`
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 
   & > div:first-of-type {
     height: auto;
