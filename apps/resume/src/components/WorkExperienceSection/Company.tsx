@@ -32,6 +32,7 @@ const CompanyCard = styled.div`
   @media ${config.media.xsMax} {
     width: 100%;
     padding-right: 0;
+    margin-bottom: 1rem;
   }
 `;
 
