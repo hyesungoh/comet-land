@@ -5,9 +5,9 @@ import { authorName, defaultMetaBackground } from 'core/constants';
 import { blogDescription, blogName, blogUrl } from '../../../_config';
 
 interface Props {
-  title?: string | undefined;
-  description?: string | undefined;
-  ogImage?: string | null;
+  title?: string;
+  description?: string;
+  ogImage?: string;
 }
 
 function SEO({ title, description, ogImage }: Props) {
