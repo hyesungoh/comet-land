@@ -1,8 +1,8 @@
 import jsonData from './data.json';
 
-export interface IHeader {
+export interface Header {
   heading: string;
   description: string;
 }
 
-export const data: IHeader = jsonData;
+export const data: Header = jsonData;

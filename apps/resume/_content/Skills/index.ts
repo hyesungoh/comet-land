@@ -1,13 +1,13 @@
 import data from './data.json';
 
-export interface ISkill {
+export interface Skill {
   name: string;
   descriptions: string[];
 }
 
-export interface ISkills {
+export interface Skills {
   title: string;
-  list: ISkill[];
+  list: Skill[];
 }
 
 export { data };
