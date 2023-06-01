@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 import { useTheme } from '@nextui-org/react';
 
-import { IExperience } from '../../../_content/Other-Experience';
+import { Experience } from '../../../_content/Other-Experience';
 import Li from '../Li';
 import TitleTooltip from '../TitleTooltip';
 
-function Experience({ title, position, startDate, endDate, description, which }: IExperience) {
+function Experience({ title, position, startDate, endDate, description, which }: Experience) {
   const { theme } = useTheme();
 
   return (

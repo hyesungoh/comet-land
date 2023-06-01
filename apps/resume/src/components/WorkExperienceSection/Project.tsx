@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 import { NextUITheme, useTheme } from '@nextui-org/react';
 
-import { IProject } from '../../../_content/Work-Experience';
+import { Project } from '../../../_content/Work-Experience';
 import Li from '../Li';
 import TitleTooltip from '../TitleTooltip';
 
-function Project({ title, description, startDate, endDate, which, techStack }: IProject) {
+function Project({ title, description, startDate, endDate, which, techStack }: Project) {
   const { theme } = useTheme();
 
   return (

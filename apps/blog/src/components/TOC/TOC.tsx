@@ -4,10 +4,10 @@ import styled from '@emotion/styled';
 import { Link, NextUITheme, useTheme } from '@nextui-org/react';
 import { useMediaQuery } from 'core';
 
-import getHeadings, { IHeading } from '../../utils/getHeadings';
+import getHeadings, { Heading } from '../../utils/getHeadings';
 
 function TOC() {
-  const [headings, setHeadings] = useState<IHeading[]>([]);
+  const [headings, setHeadings] = useState<Heading[]>([]);
   const router = useRouter();
   const { theme } = useTheme();
 
