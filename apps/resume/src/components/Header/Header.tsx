@@ -3,9 +3,9 @@ import { Avatar, Text, useTheme } from '@nextui-org/react';
 import { ThemeSwitch } from 'core';
 import { authorImage, authorName } from 'core/constants';
 
-import { IHeader } from '../../../_content/Header';
+import { Header } from '../../../_content/Header';
 
-function Header({ heading, description }: IHeader) {
+function Header({ heading, description }: Header) {
   const { theme } = useTheme();
 
   return (

@@ -1,6 +1,6 @@
 import data from './data.json';
 
-export interface IProject {
+export interface Project {
   title: {
     text: string;
     githubLink: string | null;
@@ -13,18 +13,18 @@ export interface IProject {
   techStack: string[] | null;
 }
 
-export interface ICompany {
+export interface Company {
   name: string;
   position: string;
   startDate: string;
   endDate: string;
   description: string;
-  projects: IProject[];
+  projects: Project[];
 }
 
-export interface IWorkExperience {
+export interface WorkExperience {
   title: string;
-  list: ICompany[];
+  list: Company[];
 }
 
 export { data };

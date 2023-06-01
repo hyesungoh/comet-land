@@ -1,8 +1,8 @@
-import { ISkills } from '../../../_content/Skills';
+import { Skills } from '../../../_content/Skills';
 import Section from '../Section';
 import Skill from './Skill';
 
-function SkillsSection({ title, list }: ISkills) {
+function SkillsSection({ title, list }: Skills) {
   return (
     <Section>
       <h2>{title}</h2>

@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 import { config, NextUITheme, useTheme } from '@nextui-org/react';
 
-import { IWorkExperience } from '../../../_content/Work-Experience';
+import { WorkExperience } from '../../../_content/Work-Experience';
 import Section from '../Section';
 import Company from './Company';
 import Project from './Project';
 
-function WorkExperienceSection({ title, list }: IWorkExperience) {
+function WorkExperienceSection({ title, list }: WorkExperience) {
   const { theme } = useTheme();
 
   return (
