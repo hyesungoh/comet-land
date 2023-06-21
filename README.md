@@ -153,6 +153,7 @@ check [this wiki](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting)
 - [govindkumar.in](https://www.govindkumar.in/)
 - [blog.milansachani.dev](https://blog.milansachani.dev/)
 - [resume.jadecode.xyz](https://resume.jadecode.xyz/)
+- [jaegwan.kim](https://jaegwan.kim/)
 
 ## Inspired
 
