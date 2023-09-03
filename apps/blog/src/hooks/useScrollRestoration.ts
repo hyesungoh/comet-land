@@ -13,12 +13,13 @@ function restoreScrollPos(url) {
   }
 }
 
+let shouldScrollRestore = false;
+
 function useScrollRestoration() {
   const router = useRouter();
 
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
-      let shouldScrollRestore = false;
       window.history.scrollRestoration = 'manual';
       restoreScrollPos(router.asPath);
 
