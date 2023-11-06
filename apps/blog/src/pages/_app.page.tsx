@@ -6,6 +6,7 @@ import { NextUIProvider } from '@nextui-org/react';
 import { darkTheme, lightTheme } from 'core';
 import { KBarProvider, useRegisterActions } from 'kbar';
 
+import useScrollRestoration from '../hooks/useScrollRestoration';
 import generateKbarAction from '../libs/kbarActions';
 
 const KbarComponent = dynamic(() => import('core/components/Kbar'), {
@@ -15,6 +16,8 @@ const KbarComponent = dynamic(() => import('core/components/Kbar'), {
 export default function BlogApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const kbarActions = generateKbarAction(router);
+
+  useScrollRestoration();
 
   return (
     <NextThemesProvider

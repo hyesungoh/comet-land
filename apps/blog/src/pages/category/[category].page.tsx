@@ -6,7 +6,6 @@ import { MainHeader } from '../../components/Header';
 import PostCard from '../../components/PostCard';
 import SEO from '../../components/SEO';
 import useInfiniteScroll from '../../hooks/useInfiniteScroll';
-import useScrollRestoration from '../../hooks/useScrollRestoration';
 import { getAllCategories, getAllPostsByCategory } from '../../libs/api';
 
 interface Props {
@@ -16,7 +15,6 @@ interface Props {
 
 function EachCategory({ category, allPosts }: Props) {
   const { theme } = useTheme();
-  useScrollRestoration();
 
   const { setTarget, elements: posts, isEnded } = useInfiniteScroll<PostType>({ offset: 12, fullElements: allPosts });
 
