@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "config": "*",
-    "cypress": "^12.8.1",
+    "cypress": "^13.5.0",
     "tsconfig": "*"
   }
 }

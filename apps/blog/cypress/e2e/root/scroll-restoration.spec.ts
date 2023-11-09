@@ -6,12 +6,12 @@ describe('root - store restoration', { testIsolation: false }, () => {
     cy.visit('/');
     cy.wait('@visitHome');
 
-    cy.get('main').find('a').first().click();
-    cy.wait(2000);
-
     cy.window().then($window => {
       $window.scrollTo(0, SCROLL_Y_POSITION);
     });
+
+    cy.get('main').find('a').first().click();
+    cy.wait(2000);
 
     cy.go('back');
 
