@@ -6,7 +6,7 @@ describe('root - store restoration', { testIsolation: false }, () => {
     cy.visit('/');
     cy.wait('@visitHome');
 
-    cy.get('main').get('article').first().find('a').first().click();
+    cy.get('main').find('a').first().click();
     cy.wait(2000);
 
     cy.window().then($window => {
@@ -14,6 +14,7 @@ describe('root - store restoration', { testIsolation: false }, () => {
     });
 
     cy.go('back');
+
     cy.window().its('scrollY').should('not.eq', 0);
   });
 });
