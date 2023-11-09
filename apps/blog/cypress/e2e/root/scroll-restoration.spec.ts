@@ -7,8 +7,7 @@ describe('root - store restoration', { testIsolation: false }, () => {
     cy.wait('@visitHome');
 
     cy.get('main').get('article').first().find('a').first().click();
-    cy.intercept(/\/\w+/).as('visitArticle');
-    cy.wait('@visitArticle');
+    cy.wait(2000);
 
     cy.window().then($window => {
       $window.scrollTo(0, SCROLL_Y_POSITION);
