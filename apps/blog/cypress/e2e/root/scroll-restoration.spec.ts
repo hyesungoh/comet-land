@@ -12,6 +12,7 @@ describe('root - store restoration', { testIsolation: false }, () => {
 
     cy.get('main').find('a').first().click();
     cy.wait(2000);
+    cy.reload();
 
     cy.go('back');
 
