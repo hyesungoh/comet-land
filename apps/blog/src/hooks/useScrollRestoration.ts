@@ -21,18 +21,16 @@ function useScrollRestoration() {
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
-      restoreScrollPos(router.asPath);
 
-      const onBeforeUnload = event => {
+      const onBeforeUnload = () => {
         saveScrollPos(router.asPath);
-        delete event['returnValue'];
       };
 
       const onRouteChangeStart = () => {
         saveScrollPos(router.asPath);
       };
 
-      const onRouteChangeComplete = url => {
+      const onRouteChangeComplete = (url: string) => {
         if (shouldScrollRestore) {
           shouldScrollRestore = false;
           restoreScrollPos(url);
