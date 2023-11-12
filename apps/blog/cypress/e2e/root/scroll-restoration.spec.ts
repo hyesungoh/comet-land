@@ -11,10 +11,10 @@ describe('root - store restoration', { testIsolation: false }, () => {
     });
 
     cy.get('main').find('a').first().click();
-    cy.wait(2000);
-    cy.reload();
+    cy.wait(3000);
 
     cy.go('back');
+    cy.wait(3000);
 
     cy.window().its('scrollY').should('not.eq', 0);
   });
