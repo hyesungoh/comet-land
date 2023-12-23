@@ -154,6 +154,7 @@ check [this wiki](https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting)
 - [blog.milansachani.dev](https://blog.milansachani.dev/)
 - [resume.jadecode.xyz](https://resume.jadecode.xyz/)
 - [jaegwan.kim](https://jaegwan.kim/)
+- [min71.dev](https://resume.min71.dev)
 
 ## Inspired
 
