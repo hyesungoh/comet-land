@@ -153,6 +153,7 @@ yarn add package-name -DW
 - [govindkumar.in](https://www.govindkumar.in/)
 - [blog.milansachani.dev](https://blog.milansachani.dev/)
 - [resume.jadecode.xyz](https://resume.jadecode.xyz/)
+- [min71.dev](https://resume.min71.dev)
 
 ## 영감
 
