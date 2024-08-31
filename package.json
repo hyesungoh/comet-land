@@ -25,7 +25,7 @@
     "npm": ">=7.0.0",
     "node": ">=18.0.0"
   },
-  "packageManager": "yarn@1.22.17",
+  "packageManager": "yarn@4.4.1",
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
@@ -43,11 +43,11 @@
     "eslint": "^8.37.0",
     "husky": "^8.0.3",
     "identity-obj-proxy": "^3.0.0",
+    "intersection-observer": "^0.12.2",
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
     "jest-watch-typeahead": "^1.1.0",
     "lint-staged": "^13.2.0",
-    "intersection-observer": "^0.12.2",
     "prettier": "^2.8.7",
     "ts-jest": "^29.0.5",
     "turbo": "^1.8.8",
