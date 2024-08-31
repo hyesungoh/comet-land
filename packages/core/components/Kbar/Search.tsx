@@ -11,19 +11,31 @@ export default function KBarSearch(props: React.InputHTMLAttributes<HTMLInputEle
   }));
   const { theme } = useTheme();
 
-  React.useEffect(() => {
-    query.setSearch('');
-  }, [currentRootActionId, query]);
+  React.useEffect(
+    function resetWhenInit() {
+      query.setSearch('');
+    },
+    [currentRootActionId, query]
+  );
+
+  const [input, setInput] = React.useState(search);
+
+  React.useEffect(
+    function updateSearch() {
+      query.setSearch(input);
+    },
+    [input, query]
+  );
 
   return (
     <Input
       ref={query.inputRefSetter}
       {...props}
-      value={search}
+      value={input}
       placeholder="Cmd (or Ctrl) + K to toggle"
       onChange={event => {
         props.onChange?.(event);
-        query.setSearch(event.target.value);
+        setInput(event.target.value);
       }}
       onKeyDown={event => {
         if (currentRootActionId && !search && event.key === 'Backspace') {
